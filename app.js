@@ -1676,6 +1676,9 @@ function vResult() {
   try {
     const now = new Date();
     const expireDate = new Date(now.getTime() + 30 * 24 * 60 * 60 * 1000);
+    const dFmt = (dateObj instanceof Date ? dateObj : now).toLocaleString('pl-PL', {
+      day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit'
+    });
 
     await addDoc(collection(db, "wyniki-bhp"), {
       login: login || 'nieznany',
@@ -1684,7 +1687,7 @@ function vResult() {
       kurs_id: S.cat,
       wynik: `${sc}/${tot}`,
       procent: pct,
-      data_egzaminu: dateObj,
+      data_egzaminu: dFmt,
       data_utworzenia: serverTimestamp(),
       wygasa: expireDate
     });

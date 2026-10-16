@@ -742,21 +742,50 @@
           return tB - tA;
         });
 
+        function formatExamDate(raw) {
+          if (!raw) return '—';
+          try {
+            let d = null;
+            if (typeof raw.toDate === 'function') {
+              d = raw.toDate();
+            } else if (typeof raw === 'object' && typeof raw.seconds === 'number') {
+              d = new Date(raw.seconds * 1000);
+            } else if (typeof raw === 'string') {
+              const m = raw.match(/seconds=(\d+)/);
+              if (m) d = new Date(parseInt(m[1], 10) * 1000);
+              else return raw;
+            } else if (raw instanceof Date) {
+              d = raw;
+            }
+            if (d && !isNaN(d.getTime())) {
+              return d.toLocaleString('pl-PL', {
+                day: '2-digit',
+                month: '2-digit',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+              });
+            }
+          } catch (_) {}
+          return String(raw);
+        }
+
         tbody.innerHTML = active.map(r => {
           const daysLeft = r.expDate
             ? Math.max(1, Math.ceil((r.expDate - now) / (1000 * 60 * 60 * 24)))
             : 30;
+          const niceDate = formatExamDate(r.data_egzaminu || r.data_utworzenia);
           return `
             <tr>
               <td>
                 <strong>${r.podpis || '—'}</strong>
                 <div style="font-size:0.78rem;color:var(--muted)">Login: ${r.login || '—'}</div>
               </td>
-              <td>${r.kurs || r.kurs_id || '—'}</td>
-              <td><span class="badge badge--ok">${r.wynik || ''} (${r.procent || 0}%)</span></td>
-              <td style="font-size:0.84rem">${r.data_egzaminu || '—'}</td>
-              <td style="font-size:0.82rem;color:var(--muted)">za ${daysLeft} dni</td>
-              <td style="text-align:right">
+              <td style="white-space:nowrap">${r.kurs || r.kurs_id || '—'}</td>
+              <td style="white-space:nowrap"><span class="badge badge--ok" style="white-space:nowrap">${r.wynik || ''} (${r.procent || 0}%)</span></td>
+              <td style="font-size:0.86rem;white-space:nowrap">${niceDate}</td>
+              <td style="font-size:0.82rem;color:var(--muted);white-space:nowrap">za ${daysLeft} dni</td>
+              <td style="text-align:right;white-space:nowrap">
                 <button type="button" class="btn btn--danger btn--sm" data-del-res="${r.id}">🗑️ Usuń</button>
               </td>
             </tr>
