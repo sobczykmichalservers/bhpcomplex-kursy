@@ -1,0 +1,474 @@
+backend:
+  name: github
+  repo: sobczykmichalservers/bhpcomplex-kursy
+  branch: main
+
+media_folder: "img"
+public_folder: "/img"
+
+collections:
+  # ==========================================
+  # WSPÓLNA OBSŁUGA TECHNICZNA CODZIENNA (UDT)
+  # ==========================================
+  - name: "udt-obsluga"
+    label: "🛠️ UDT: Obsługa techniczna codzienna (Wspólna)"
+    files:
+      - name: "otc"
+        label: "Obsługa techniczna codzienna (wszystkie kursy UDT)"
+        file: "data/udt_obsluga.json"
+        fields:
+          - label: "Lista pytań i zagadnień (wyświetlana w każdym kursie UDT)"
+            name: "items"
+            widget: "list"
+            summary: "Pytanie: {{fields.question}}"
+            fields:
+              - { label: "ID (opcjonalnie)", name: "id", widget: "number", required: false }
+              - { label: "Pytanie / Zagadnienie", name: "question", widget: "string" }
+              - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false }
+              - { label: "Zdjęcie główne pod pytaniem (opcjonalnie)", name: "image", widget: "image", required: false }
+              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false }
+              - { label: "Link do wideo / strony (opcjonalnie)", name: "link", widget: "string", required: false }
+
+  # ==========================================
+  # KURSY UDT (6 KATEGORII)
+  # ==========================================
+  - name: "wozki-podnosnikowe"
+    label: "🚜 UDT: Wózki widłowe podnośnikowe"
+    files:
+      - name: "questions"
+        label: "Pytania Egzaminacyjne"
+        file: "data/wozki-podnosnikowe.json"
+        fields:
+          - label: "Lista pytań"
+            name: "questions"
+            widget: "list"
+            summary: "Pytanie {{fields.id}}: {{fields.question}}"
+            fields:
+              - { label: "ID pytania (Numer)", name: "id", widget: "number" }
+              - { label: "Treść pytania", name: "question", widget: "text" }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+              - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
+                name: "options"
+                widget: "list"
+                field: { label: "Odpowiedź", name: "option", widget: "string" }
+              - { label: "Poprawna odpowiedź (1=A, 2=B, 3=C, 4=D)", name: "correct", widget: "number", min: 1, max: 4 }
+      - name: "wiedza"
+        label: "Baza wiedzy"
+        file: "data/wozki-podnosnikowe_wiedza.json"
+        fields:
+          - label: "Lista pytań (Baza wiedzy)"
+            name: "items"
+            widget: "list"
+            summary: "Pytanie: {{fields.question}}"
+            fields:
+              - { label: "ID (opcjonalnie)", name: "id", widget: "number", required: false }
+              - { label: "Pytanie / Zagadnienie", name: "question", widget: "string" }
+              - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+      - name: "exam"
+        label: "Ustawienia Egzaminu"
+        file: "data/wozki-podnosnikowe_ustawienia.json"
+        fields:
+          - label: "Pule losowania pytań (Suma musi dawać 15)"
+            name: "rules"
+            widget: "list"
+            fields:
+              - { label: "Ile pytań wylosować z tego zakresu?", name: "count", widget: "number" }
+              - { label: "Od pytania nr (ID)", name: "min", widget: "number" }
+              - { label: "Do pytania nr (ID)", name: "max", widget: "number" }
+
+  - name: "wozki-specjalizowane"
+    label: "🚜 UDT: Wózki widłowe specjalizowane"
+    files:
+      - name: "questions"
+        label: "Pytania Egzaminacyjne"
+        file: "data/wozki-specjalizowane.json"
+        fields:
+          - label: "Lista pytań"
+            name: "questions"
+            widget: "list"
+            summary: "Pytanie {{fields.id}}: {{fields.question}}"
+            fields:
+              - { label: "ID pytania (Numer)", name: "id", widget: "number" }
+              - { label: "Treść pytania", name: "question", widget: "text" }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+              - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
+                name: "options"
+                widget: "list"
+                field: { label: "Odpowiedź", name: "option", widget: "string" }
+              - { label: "Poprawna odpowiedź (1=A, 2=B, 3=C, 4=D)", name: "correct", widget: "number", min: 1, max: 4 }
+      - name: "wiedza"
+        label: "Baza wiedzy"
+        file: "data/wozki-specjalizowane_wiedza.json"
+        fields:
+          - label: "Lista pytań (Baza wiedzy)"
+            name: "items"
+            widget: "list"
+            summary: "Pytanie: {{fields.question}}"
+            fields:
+              - { label: "ID (opcjonalnie)", name: "id", widget: "number", required: false }
+              - { label: "Pytanie / Zagadnienie", name: "question", widget: "string" }
+              - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+      - name: "exam"
+        label: "Ustawienia Egzaminu"
+        file: "data/wozki-specjalizowane_ustawienia.json"
+        fields:
+          - label: "Pule losowania pytań (Suma musi dawać 15)"
+            name: "rules"
+            widget: "list"
+            fields:
+              - { label: "Ile pytań wylosować z tego zakresu?", name: "count", widget: "number" }
+              - { label: "Od pytania nr (ID)", name: "min", widget: "number" }
+              - { label: "Do pytania nr (ID)", name: "max", widget: "number" }
+
+  - name: "podesty"
+    label: "🏗️ UDT: Podesty ruchome"
+    files:
+      - name: "questions"
+        label: "Pytania Egzaminacyjne"
+        file: "data/podesty.json"
+        fields:
+          - label: "Lista pytań"
+            name: "questions"
+            widget: "list"
+            summary: "Pytanie {{fields.id}}: {{fields.question}}"
+            fields:
+              - { label: "ID pytania (Numer)", name: "id", widget: "number" }
+              - { label: "Treść pytania", name: "question", widget: "text" }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+              - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
+                name: "options"
+                widget: "list"
+                field: { label: "Odpowiedź", name: "option", widget: "string" }
+              - { label: "Poprawna odpowiedź (1=A, 2=B, 3=C, 4=D)", name: "correct", widget: "number", min: 1, max: 4 }
+      - name: "wiedza"
+        label: "Baza wiedzy"
+        file: "data/podesty_wiedza.json"
+        fields:
+          - label: "Lista pytań (Baza wiedzy)"
+            name: "items"
+            widget: "list"
+            summary: "Pytanie: {{fields.question}}"
+            fields:
+              - { label: "ID (opcjonalnie)", name: "id", widget: "number", required: false }
+              - { label: "Pytanie / Zagadnienie", name: "question", widget: "string" }
+              - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+      - name: "exam"
+        label: "Ustawienia Egzaminu"
+        file: "data/podesty_ustawienia.json"
+        fields:
+          - label: "Pule losowania pytań (Suma musi dawać 15)"
+            name: "rules"
+            widget: "list"
+            fields:
+              - { label: "Ile pytań wylosować z tego zakresu?", name: "count", widget: "number" }
+              - { label: "Od pytania nr (ID)", name: "min", widget: "number" }
+              - { label: "Do pytania nr (ID)", name: "max", widget: "number" }
+
+  - name: "suwnice"
+    label: "🏗️ UDT: Suwnice"
+    files:
+      - name: "questions"
+        label: "Pytania Egzaminacyjne"
+        file: "data/suwnice.json"
+        fields:
+          - label: "Lista pytań"
+            name: "questions"
+            widget: "list"
+            summary: "Pytanie {{fields.id}}: {{fields.question}}"
+            fields:
+              - { label: "ID pytania (Numer)", name: "id", widget: "number" }
+              - { label: "Treść pytania", name: "question", widget: "text" }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+              - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
+                name: "options"
+                widget: "list"
+                field: { label: "Odpowiedź", name: "option", widget: "string" }
+              - { label: "Poprawna odpowiedź (1=A, 2=B, 3=C, 4=D)", name: "correct", widget: "number", min: 1, max: 4 }
+      - name: "wiedza"
+        label: "Baza wiedzy"
+        file: "data/suwnice_wiedza.json"
+        fields:
+          - label: "Lista pytań (Baza wiedzy)"
+            name: "items"
+            widget: "list"
+            summary: "Pytanie: {{fields.question}}"
+            fields:
+              - { label: "ID (opcjonalnie)", name: "id", widget: "number", required: false }
+              - { label: "Pytanie / Zagadnienie", name: "question", widget: "string" }
+              - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+      - name: "exam"
+        label: "Ustawienia Egzaminu"
+        file: "data/suwnice_ustawienia.json"
+        fields:
+          - label: "Pule losowania pytań (Suma musi dawać 15)"
+            name: "rules"
+            widget: "list"
+            fields:
+              - { label: "Ile pytań wylosować z tego zakresu?", name: "count", widget: "number" }
+              - { label: "Od pytania nr (ID)", name: "min", widget: "number" }
+              - { label: "Do pytania nr (ID)", name: "max", widget: "number" }
+
+  - name: "zurawie-przenosne"
+    label: "🏗️ UDT: Żurawie przenośne"
+    files:
+      - name: "questions"
+        label: "Pytania Egzaminacyjne"
+        file: "data/zurawie-przenosne.json"
+        fields:
+          - label: "Lista pytań"
+            name: "questions"
+            widget: "list"
+            summary: "Pytanie {{fields.id}}: {{fields.question}}"
+            fields:
+              - { label: "ID pytania (Numer)", name: "id", widget: "number" }
+              - { label: "Treść pytania", name: "question", widget: "text" }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+              - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
+                name: "options"
+                widget: "list"
+                field: { label: "Odpowiedź", name: "option", widget: "string" }
+              - { label: "Poprawna odpowiedź (1=A, 2=B, 3=C, 4=D)", name: "correct", widget: "number", min: 1, max: 4 }
+      - name: "wiedza"
+        label: "Baza wiedzy"
+        file: "data/zurawie-przenosne_wiedza.json"
+        fields:
+          - label: "Lista pytań (Baza wiedzy)"
+            name: "items"
+            widget: "list"
+            summary: "Pytanie: {{fields.question}}"
+            fields:
+              - { label: "ID (opcjonalnie)", name: "id", widget: "number", required: false }
+              - { label: "Pytanie / Zagadnienie", name: "question", widget: "string" }
+              - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+      - name: "exam"
+        label: "Ustawienia Egzaminu"
+        file: "data/zurawie-przenosne_ustawienia.json"
+        fields:
+          - label: "Pule losowania pytań (Suma musi dawać 15)"
+            name: "rules"
+            widget: "list"
+            fields:
+              - { label: "Ile pytań wylosować z tego zakresu?", name: "count", widget: "number" }
+              - { label: "Od pytania nr (ID)", name: "min", widget: "number" }
+              - { label: "Do pytania nr (ID)", name: "max", widget: "number" }
+
+  - name: "zurawie-samojezdne"
+    label: "🏗️ UDT: Żurawie samojezdne"
+    files:
+      - name: "questions"
+        label: "Pytania Egzaminacyjne"
+        file: "data/zurawie-samojezdne.json"
+        fields:
+          - label: "Lista pytań"
+            name: "questions"
+            widget: "list"
+            summary: "Pytanie {{fields.id}}: {{fields.question}}"
+            fields:
+              - { label: "ID pytania (Numer)", name: "id", widget: "number" }
+              - { label: "Treść pytania", name: "question", widget: "text" }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+              - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
+                name: "options"
+                widget: "list"
+                field: { label: "Odpowiedź", name: "option", widget: "string" }
+              - { label: "Poprawna odpowiedź (1=A, 2=B, 3=C, 4=D)", name: "correct", widget: "number", min: 1, max: 4 }
+      - name: "wiedza"
+        label: "Baza wiedzy"
+        file: "data/zurawie-samojezdne_wiedza.json"
+        fields:
+          - label: "Lista pytań (Baza wiedzy)"
+            name: "items"
+            widget: "list"
+            summary: "Pytanie: {{fields.question}}"
+            fields:
+              - { label: "ID (opcjonalnie)", name: "id", widget: "number", required: false }
+              - { label: "Pytanie / Zagadnienie", name: "question", widget: "string" }
+              - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+      - name: "exam"
+        label: "Ustawienia Egzaminu"
+        file: "data/zurawie-samojezdne_ustawienia.json"
+        fields:
+          - label: "Pule losowania pytań (Suma musi dawać 15)"
+            name: "rules"
+            widget: "list"
+            fields:
+              - { label: "Ile pytań wylosować z tego zakresu?", name: "count", widget: "number" }
+              - { label: "Od pytania nr (ID)", name: "min", widget: "number" }
+              - { label: "Do pytania nr (ID)", name: "max", widget: "number" }
+
+  # ==========================================
+  # SZKOLENIA BHP (4 MODUŁY)
+  # ==========================================
+  - name: "bhp-1"
+    label: "🦺 BHP: Moduł 1"
+    files:
+      - name: "questions"
+        label: "Pytania Egzaminacyjne (ukryte w menu, używane w egzaminie)"
+        file: "data/bhp-1.json"
+        fields:
+          - label: "Lista pytań"
+            name: "questions"
+            widget: "list"
+            summary: "Pytanie {{fields.id}}: {{fields.question}}"
+            fields:
+              - { label: "ID pytania (Numer)", name: "id", widget: "number" }
+              - { label: "Treść pytania", name: "question", widget: "text" }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+              - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
+                name: "options"
+                widget: "list"
+                field: { label: "Odpowiedź", name: "option", widget: "string" }
+              - { label: "Poprawna odpowiedź (1=A, 2=B, 3=C, 4=D)", name: "correct", widget: "number", min: 1, max: 4 }
+      - name: "materialy"
+        label: "Materiały szkoleniowe"
+        file: "data/bhp-1_materialy.json"
+        fields:
+          - label: "Materiały szkoleniowe (Pytania / Zagadnienia)"
+            name: "items"
+            widget: "list"
+            summary: "Pytanie: {{fields.question}}"
+            fields:
+              - { label: "ID (opcjonalnie)", name: "id", widget: "number", required: false }
+              - { label: "Pytanie / Tytuł zagadnienia", name: "question", widget: "string" }
+              - { label: "Treść / Odpowiedź (formatowanie jak w Wordzie, zdjęcia, listy)", name: "answer", widget: "markdown", required: false }
+              - { label: "Zdjęcie / Ilustracja (opcjonalnie)", name: "image", widget: "image", required: false }
+              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false }
+              - { label: "Link do wideo / prezentacji (opcjonalnie)", name: "link", widget: "string", required: false }
+      - name: "exam"
+        label: "Ustawienia Egzaminu"
+        file: "data/bhp-1_ustawienia.json"
+        fields:
+          - { label: "Liczba pytań na egzaminie (X pytań po kolei z bazy)", name: "count", widget: "number", default: 15, min: 1 }
+          - { label: "Próg zdawalności w % (domyślnie 80% zależne od liczby pytań)", name: "pass_pct", widget: "number", default: 80, min: 1, max: 100 }
+
+  - name: "bhp-2"
+    label: "🦺 BHP: Moduł 2"
+    files:
+      - name: "questions"
+        label: "Pytania Egzaminacyjne (ukryte w menu, używane w egzaminie)"
+        file: "data/bhp-2.json"
+        fields:
+          - label: "Lista pytań"
+            name: "questions"
+            widget: "list"
+            summary: "Pytanie {{fields.id}}: {{fields.question}}"
+            fields:
+              - { label: "ID pytania (Numer)", name: "id", widget: "number" }
+              - { label: "Treść pytania", name: "question", widget: "text" }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+              - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
+                name: "options"
+                widget: "list"
+                field: { label: "Odpowiedź", name: "option", widget: "string" }
+              - { label: "Poprawna odpowiedź (1=A, 2=B, 3=C, 4=D)", name: "correct", widget: "number", min: 1, max: 4 }
+      - name: "materialy"
+        label: "Materiały szkoleniowe"
+        file: "data/bhp-2_materialy.json"
+        fields:
+          - label: "Materiały szkoleniowe (Pytania / Zagadnienia)"
+            name: "items"
+            widget: "list"
+            summary: "Pytanie: {{fields.question}}"
+            fields:
+              - { label: "ID (opcjonalnie)", name: "id", widget: "number", required: false }
+              - { label: "Pytanie / Tytuł zagadnienia", name: "question", widget: "string" }
+              - { label: "Treść / Odpowiedź (formatowanie jak w Wordzie, zdjęcia, listy)", name: "answer", widget: "markdown", required: false }
+              - { label: "Zdjęcie / Ilustracja (opcjonalnie)", name: "image", widget: "image", required: false }
+              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false }
+              - { label: "Link do wideo / prezentacji (opcjonalnie)", name: "link", widget: "string", required: false }
+      - name: "exam"
+        label: "Ustawienia Egzaminu"
+        file: "data/bhp-2_ustawienia.json"
+        fields:
+          - { label: "Liczba pytań na egzaminie (X pytań po kolei z bazy)", name: "count", widget: "number", default: 15, min: 1 }
+          - { label: "Próg zdawalności w % (domyślnie 80% zależne od liczby pytań)", name: "pass_pct", widget: "number", default: 80, min: 1, max: 100 }
+
+  - name: "bhp-3"
+    label: "🦺 BHP: Moduł 3"
+    files:
+      - name: "questions"
+        label: "Pytania Egzaminacyjne (ukryte w menu, używane w egzaminie)"
+        file: "data/bhp-3.json"
+        fields:
+          - label: "Lista pytań"
+            name: "questions"
+            widget: "list"
+            summary: "Pytanie {{fields.id}}: {{fields.question}}"
+            fields:
+              - { label: "ID pytania (Numer)", name: "id", widget: "number" }
+              - { label: "Treść pytania", name: "question", widget: "text" }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+              - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
+                name: "options"
+                widget: "list"
+                field: { label: "Odpowiedź", name: "option", widget: "string" }
+              - { label: "Poprawna odpowiedź (1=A, 2=B, 3=C, 4=D)", name: "correct", widget: "number", min: 1, max: 4 }
+      - name: "materialy"
+        label: "Materiały szkoleniowe"
+        file: "data/bhp-3_materialy.json"
+        fields:
+          - label: "Materiały szkoleniowe (Pytania / Zagadnienia)"
+            name: "items"
+            widget: "list"
+            summary: "Pytanie: {{fields.question}}"
+            fields:
+              - { label: "ID (opcjonalnie)", name: "id", widget: "number", required: false }
+              - { label: "Pytanie / Tytuł zagadnienia", name: "question", widget: "string" }
+              - { label: "Treść / Odpowiedź (formatowanie jak w Wordzie, zdjęcia, listy)", name: "answer", widget: "markdown", required: false }
+              - { label: "Zdjęcie / Ilustracja (opcjonalnie)", name: "image", widget: "image", required: false }
+              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false }
+              - { label: "Link do wideo / prezentacji (opcjonalnie)", name: "link", widget: "string", required: false }
+      - name: "exam"
+        label: "Ustawienia Egzaminu"
+        file: "data/bhp-3_ustawienia.json"
+        fields:
+          - { label: "Liczba pytań na egzaminie (X pytań po kolei z bazy)", name: "count", widget: "number", default: 15, min: 1 }
+          - { label: "Próg zdawalności w % (domyślnie 80% zależne od liczby pytań)", name: "pass_pct", widget: "number", default: 80, min: 1, max: 100 }
+
+  - name: "bhp-4"
+    label: "🦺 BHP: Moduł 4"
+    files:
+      - name: "questions"
+        label: "Pytania Egzaminacyjne (ukryte w menu, używane w egzaminie)"
+        file: "data/bhp-4.json"
+        fields:
+          - label: "Lista pytań"
+            name: "questions"
+            widget: "list"
+            summary: "Pytanie {{fields.id}}: {{fields.question}}"
+            fields:
+              - { label: "ID pytania (Numer)", name: "id", widget: "number" }
+              - { label: "Treść pytania", name: "question", widget: "text" }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+              - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
+                name: "options"
+                widget: "list"
+                field: { label: "Odpowiedź", name: "option", widget: "string" }
+              - { label: "Poprawna odpowiedź (1=A, 2=B, 3=C, 4=D)", name: "correct", widget: "number", min: 1, max: 4 }
+      - name: "materialy"
+        label: "Materiały szkoleniowe"
+        file: "data/bhp-4_materialy.json"
+        fields:
+          - label: "Materiały szkoleniowe (Pytania / Zagadnienia)"
+            name: "items"
+            widget: "list"
+            summary: "Pytanie: {{fields.question}}"
+            fields:
+              - { label: "ID (opcjonalnie)", name: "id", widget: "number", required: false }
+              - { label: "Pytanie / Tytuł zagadnienia", name: "question", widget: "string" }
+              - { label: "Treść / Odpowiedź (formatowanie jak w Wordzie, zdjęcia, listy)", name: "answer", widget: "markdown", required: false }
+              - { label: "Zdjęcie / Ilustracja (opcjonalnie)", name: "image", widget: "image", required: false }
+              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false }
+              - { label: "Link do wideo / prezentacji (opcjonalnie)", name: "link", widget: "string", required: false }
+      - name: "exam"
+        label: "Ustawienia Egzaminu"
+        file: "data/bhp-4_ustawienia.json"
+        fields:
+          - { label: "Liczba pytań na egzaminie (X pytań po kolei z bazy)", name: "count", widget: "number", default: 15, min: 1 }
+          - { label: "Próg zdawalności w % (domyślnie 80% zależne od liczby pytań)", name: "pass_pct", widget: "number", default: 80, min: 1, max: 100 }

@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "question": "Diagram udźwigu wózka widłowego",
+      "answer": "Określa maksymalny dopuszczalny ciężar ładunku w zależności od położenia środka ciężkości ładunku względem czoła wideł (odległości 'c') oraz wysokości podnoszenia. Przekroczenie wartości z diagramu grozi natychmiastową utratą stateczności wózka i jego wywróceniem.",
+      "image": ""
+    },
+    {
+      "id": 2,
+      "question": "Trójkąt stateczności wózka jezdniowego",
+      "answer": "Obszar wyznaczony przez punkty podparcia: dwa skrajne punkty przedniej osi napędowej oraz centralny sworzeń osi tylnej (kierowanej). Wypadkowy środek ciężkości całego układu (wózek + ładunek) musi zawsze znajdować się wewnątrz tego trójkąta, aby zapobiec przewróceniu pojazdu.",
+      "image": ""
+    },
+    {
+      "id": 3,
+      "question": "Zawór przelewowy układu hydraulicznego",
+      "answer": "Zawór bezpieczeństwa chroniący pompę i instalację hydrauliczną przed przeciążeniem i rozerwaniem przewodów (np. przy próbie podniesienia ładunku przekraczającego udźwig nominalny). Po przekroczeniu nastawionego ciśnienia otwiera się i odprowadza olej do zbiornika.",
+      "image": ""
+    },
+    {
+      "id": 4,
+      "question": "Księga rewizyjna urządzenia UDT",
+      "answer": "Podstawowy dokument techniczny wydawany przez Urząd Dozoru Technicznego dla zarejestrowanego wózka. Zawiera decyzję zezwalającą na eksploatację, protokoły z badań okresowych/doraźnych inspektora UDT oraz wpisy konserwatora.",
+      "image": ""
+    }
+  ]
+}

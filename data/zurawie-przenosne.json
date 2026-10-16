@@ -1,0 +1,3904 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Urządzenie techniczne objęte dozorem technicznym może być eksploatowane na podstawie:",
+      "image": null,
+      "options": [
+        "Zezwolenia ustnego lub pisemnego wydanego przez upoważnionego konserwatora",
+        "Ważnej decyzji zezwalającej na eksploatację wydanej przez organ właściwej jednostki dozoru technicznego",
+        "Oznaczenia CE umieszczonego na urządzeniu",
+        "Deklaracji zgodności wystawionej przez wytwórcę"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 2,
+      "question": "Które z wymienionych czynności nie należą do zakresu obowiązków obsługującego UTB:",
+      "image": null,
+      "options": [
+        "Wykonywanie niewielkich napraw urządzenia w ramach posiadanego wykształcenia i umiejętności",
+        "Przestrzeganie instrukcji eksploatacji w zakresie obsługi UTB",
+        "Zapoznanie się z planem pracy i wielkością przenoszonych ładunków",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 3,
+      "question": "Terminy przeglądów konserwacyjnych urządzeń technicznych:",
+      "image": null,
+      "options": [
+        "Są zawarte w instrukcji eksploatacji urządzenia",
+        "Określa konserwator urządzenia",
+        "Określa w protokole inspektor wykonujący badanie",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 4,
+      "question": "Dozorem technicznym nazywamy:",
+      "image": null,
+      "options": [
+        "Określone ustawą działania zmierzające do zapewnienia bezpiecznego funkcjonowania urządzeń technicznych i urządzeń do odzyskiwania par paliwa oraz działania zmierzające do zapewnienia bezpieczeństwa publicznego w tych obszarach",
+        "Instytucje kontrolujące stan techniczny urządzeń",
+        "Urząd Dozoru Technicznego",
+        "UDT, WDT, TDT"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 5,
+      "question": "Dozór techniczny nad urządzeniami technicznymi wykonuje:",
+      "image": null,
+      "options": [
+        "Urząd Dozoru Technicznego oraz specjalistyczne jednostki dozoru technicznego",
+        "Urząd Dozoru Technicznego oraz upoważnione przez UDT organizacje",
+        "Urząd Dozoru Technicznego i zagraniczne jednostki dozoru technicznego",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 6,
+      "question": "Zmiana parametrów technicznych lub zmiana konstrukcji urządzenia technicznego traktowana jest jako:",
+      "image": null,
+      "options": [
+        "Modernizacja urządzenia technicznego",
+        "Naprawa urządzenia technicznego",
+        "Usuwanie usterek i innych nieprawidłowości urządzenia technicznego",
+        "Wytworzenie nowego urządzenia"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 7,
+      "question": "Uzgodnioną naprawę lub modernizację urządzeń technicznych może wykonać:",
+      "image": null,
+      "options": [
+        "Naprawiający lub modernizujący, który posiada uprawnienie wydane przez organ właściwej jednostki dozoru technicznego",
+        "Eksploatujący urządzenie techniczne posiadający odpowiednie doświadczenie w zakresie napraw lub modernizacji",
+        "Konserwator posiadający odpowiednie doświadczenie w zakresie napraw lub modernizacji",
+        "W niewielkim zakresie kompetentny operator"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 8,
+      "question": "Ustawa o dozorze technicznym określa następujące formy dozoru technicznego:",
+      "image": null,
+      "options": [
+        "Całkowita, częściowa, ograniczona",
+        "Pełna, ograniczona, uproszczona",
+        "Pełna, cykliczna, sporadyczna",
+        "UDT, WDT, TDT"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 9,
+      "question": "Decyzję zezwalającą na eksploatację urządzenia technicznego wydaje:",
+      "image": null,
+      "options": [
+        "Konserwator po wykonaniu przeglądu z wynikiem pozytywnym",
+        "Organ właściwej jednostki dozoru technicznego lub eksploatujący urządzenie techniczne z upoważnienia organu właściwej jednostki dozoru technicznego",
+        "Organ właściwej jednostki dozoru technicznego lub organ administracji publicznej z upoważnienia organu właściwej jednostki dozoru technicznego",
+        "Organ właściwej jednostki dozoru technicznego"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 10,
+      "question": "Obsługujący urządzenie techniczne może podjąć pracę gdy:",
+      "image": null,
+      "options": [
+        "Urządzenie posiada ważną decyzję zezwalającą na eksploatację jeżeli wymagają tego odpowiednie przepisy",
+        "Posiada zaświadczenie kwalifikacyjne odpowiedniej kategorii",
+        "Urządzenie posiada aktualny pozytywny wynik przeglądu konserwacyjnego",
+        "Wszystkie powyższe warunki muszą być spełnione jednocześnie"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 11,
+      "question": "Obsługujący urządzenie techniczne może podjąć pracę gdy:",
+      "image": null,
+      "options": [
+        "Urządzenie posiada aktualny wpis w dzienniku konserwacji potwierdzający sprawność urządzenia",
+        "Przeszedł odpowiednie szkolenie stanowiskowe",
+        "Urządzenie posiada ważną decyzję zezwalającą na eksploatację",
+        "Wszystkie powyższe warunki muszą być spełnione jednocześnie"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 12,
+      "question": "W przypadku nieprzestrzegania przez eksploatującego przepisów o dozorze technicznym eksploatujący:",
+      "image": null,
+      "options": [
+        "Otrzymuje pisemne upomnienie",
+        "Otrzymuje zalecenia pokontrolne",
+        "Podlega grzywnie lub karze ograniczenia wolności",
+        "Odpowiedź a i b jest prawidłowa"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 13,
+      "question": "W przypadku stwierdzenia zagrożenia dla życia lub zdrowia ludzkiego oraz mienia i środowiska inspektor:",
+      "image": null,
+      "options": [
+        "Wydaje decyzję wstrzymującą eksploatację urządzenia technicznego",
+        "Wystawia mandat karny",
+        "Pisemnie poucza eksploatującego",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 14,
+      "question": "W przypadku niebezpiecznego uszkodzenia urządzenia technicznego lub nieszczęśliwego wypadku eksploatujący:",
+      "image": null,
+      "options": [
+        "Niezwłocznie powiadamia UDT o zaistniałym zdarzeniu",
+        "Powiadamia producenta urządzenia o przyczynach powstałego zdarzenia",
+        "Niezwłocznie dokonuje naprawy urządzenia i przekazuje do dalszej eksploatacji",
+        "Zgłasza urządzenie do wykonania naprawy"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 15,
+      "question": "Zaświadczenie kwalifikacyjne do obsługi może zostać cofnięte przez:",
+      "image": null,
+      "options": [
+        "Organ właściwej jednostki dozoru technicznego",
+        "Eksploatującego urządzenie techniczne",
+        "Inspektora bhp",
+        "Państwową Inspekcję Pracy"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 16,
+      "question": "Urządzenia techniczne nieobjęte dozorem technicznym to:",
+      "image": null,
+      "options": [
+        "Żurawie o udźwigu do 3,2 t",
+        "Wciągniki i wciągarki oraz suwnice",
+        "Wózki jezdniowe podnośnikowe oraz podesty ruchome",
+        "Zawiesia transportowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 17,
+      "question": "Urządzenia techniczne objęte dozorem technicznym to:",
+      "image": null,
+      "options": [
+        "Przenośniki kabinowe i krzesełkowe",
+        "Układnice magazynowe oraz urządzenia dla osób niepełnosprawnych",
+        "Wyciągi towarowe i wyciągi statków",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 18,
+      "question": "Niebezpieczne uszkodzenie urządzenia technicznego to:",
+      "image": null,
+      "options": [
+        "Każda usterka UTB",
+        "Nieprzewidziane uszkodzenie, w wyniku którego urządzenie nadaje się do częściowej eksploatacji",
+        "Nieprzewidziane uszkodzenie, w wyniku którego nadaje się do eksploatacji tylko przy obniżonych parametrach",
+        "Nieprzewidziane uszkodzenie, w wyniku którego urządzenie nie nadaje się do eksploatacji lub jego dalsza eksploatacja stanowi zagrożenie"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 19,
+      "question": "Nieszczęśliwy wypadek to:",
+      "image": null,
+      "options": [
+        "Nagłe zdarzenie, które spowodowało obrażenia ciała lub śmierć",
+        "Nagłe zdarzenie, które spowodowało przerwę w pracy",
+        "Nagłe zdarzenie, które skutkuje wyłączeniem urządzenia technicznego z eksploatacji",
+        "Każda usterka UTB spowodowana przyczyną losową"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 20,
+      "question": "Podnoszenie i przenoszenie osób przez urządzenie techniczne przeznaczone wyłącznie do transportu ładunków wymaga:",
+      "image": null,
+      "options": [
+        "Uzgodnienia z organem właściwej jednostki dozoru technicznego",
+        "Uzgodnienia z przełożonym",
+        "Uzgodnienia ze służbą BHP",
+        "Jest możliwe przy zachowaniu szczególnej ostrożności i pod nadzorem inspektora"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 21,
+      "question": "Odpowiedzialnym za zapewnienie właściwej obsługi i konserwacji urządzenia technicznego jest:",
+      "image": null,
+      "options": [
+        "Eksploatujący urządzenie techniczne",
+        "Organ właściwej jednostki dozoru technicznego",
+        "Państwowa Inspekcja Pracy",
+        "Inspektor UDT"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 22,
+      "question": "Wymagane przepisami prawa przeglądy konserwacyjne wykonuje:",
+      "image": null,
+      "options": [
+        "Osoba posiadająca zaświadczenie kwalifikacyjne do konserwacji",
+        "Pracownik autoryzowanego serwisu producenta urządzenia (pod warunkiem posiadania zaświadczeń kwalifikacyjnych do konserwacji)",
+        "Zakładowe służby utrzymania ruchu",
+        "Odpowiedź a i b jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 23,
+      "question": "Dziennik konserwacji urządzenia technicznego prowadzi:",
+      "image": null,
+      "options": [
+        "Inspektor UDT w księdze rewizyjnej urządzenia",
+        "Uprawniony operator",
+        "Wyznaczony pracownik eksploatującego",
+        "Konserwator urządzenia technicznego"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 24,
+      "question": "Badania odbiorcze przeprowadza się dla urządzeń technicznych:",
+      "image": null,
+      "options": [
+        "W terminach zgodnych z zapisami rozporządzenia w sprawie warunków technicznych dozoru technicznego",
+        "Przed wydaniem pierwszej decyzji zezwalającej na eksploatacje",
+        "Po naprawie urządzenia technicznego",
+        "Po każdej zmianie eksploatującego"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 25,
+      "question": "Badania okresowe przeprowadza się dla urządzeń technicznych objętych dozorem:",
+      "image": null,
+      "options": [
+        "Ograniczonym",
+        "Pełnym",
+        "Uproszczonym",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 26,
+      "question": "Nieobecność konserwującego na badaniu urządzenia technicznego wymaga min.:",
+      "image": null,
+      "options": [
+        "Wcześniejszego uzgodnienia tego faktu z organem właściwej jednostki dozoru technicznego",
+        "Przedstawienia pisemnego usprawiedliwienia nieobecności konserwatora",
+        "Przedstawienia zwolnienia lekarskiego potwierdzającego niezdolność konserwatora do pracy",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 27,
+      "question": "Kandydat na obsługującego urządzenie techniczne musi:",
+      "image": null,
+      "options": [
+        "Mieć ukończone 18 lat",
+        "Posiadać przynajmniej wykształcenie zawodowe",
+        "Posiadać przynajmniej 1 rok stażu pracy",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 28,
+      "question": "Obsługujący urządzenie techniczne ma obowiązek przerwać pracę gdy:",
+      "image": null,
+      "options": [
+        "Jego stan fizyczny i psychiczny w dniu pracy jest nieodpowiedni",
+        "Stwierdzi, że dalsza praca urządzeniem stwarza zagrożenie",
+        "Urządzenie jest niesprawne",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 29,
+      "question": "Terminy przeglądów konserwacyjnych urządzenia mogą być określone:",
+      "image": null,
+      "options": [
+        "W instrukcji eksploatacji urządzenia",
+        "W ustawie o dozorze technicznym",
+        "W rozporządzeniu określającym warunki techniczne dozoru technicznego",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 30,
+      "question": "Terminy badań okresowych i doraźnych kontrolnych UTB określone są:",
+      "image": null,
+      "options": [
+        "W ustawie o dozorze technicznym",
+        "W rozporządzeniu określającym warunki techniczne dozoru technicznego",
+        "W dokumentacji konstrukcyjnej urządzenia",
+        "W dzienniku konserwacji"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 31,
+      "question": "Obowiązkiem obsługującego urządzenie techniczne jest:",
+      "image": null,
+      "options": [
+        "Przestrzeganie instrukcji eksploatacji w zakresie obsługi urządzenia",
+        "Przestrzeganie instrukcji eksploatacji w zakresie konserwacji urządzenia",
+        "Wykonywanie napraw urządzenia",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 32,
+      "question": "Urządzenie techniczne można eksploatować na podstawie:",
+      "image": null,
+      "options": [
+        "Aktualnej naklejki organu właściwej jednostki dozoru technicznego określającej termin kolejnego badania",
+        "Aktualnego wpisu konserwatora urządzenia w dzienniku konserwacji",
+        "Ważnej decyzji zezwalającej na eksploatację wydanej przez organ właściwej jednostki dozoru technicznego",
+        "Pozytywnego protokołu z badania okresowego lub odbiorczego"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 33,
+      "question": "Po wykonanych czynnościach przy urządzeniu technicznym inspektor sporządza:",
+      "image": null,
+      "options": [
+        "Instrukcję eksploatacji urządzenia",
+        "Decyzję i protokół z wykonanych czynności",
+        "Deklarację zgodności CE",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 34,
+      "question": "Naprawę i modernizację urządzenia technicznego wykonuje:",
+      "image": null,
+      "options": [
+        "Operator w ramach posiadanych umiejętności",
+        "Konserwator",
+        "Zakład uprawniony",
+        "Eksploatujący"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 35,
+      "question": "Bezpośrednio odpowiedzialnym za bezpieczną eksploatację urządzenia technicznego jest:",
+      "image": null,
+      "options": [
+        "Obsługujący urządzenie",
+        "Producent urządzenia",
+        "Zakładowy inspektor BHP",
+        "Inspektor UDT"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 36,
+      "question": "Informacje dotyczące zasad bezpiecznej obsługi urządzenia są zawarte w:",
+      "image": null,
+      "options": [
+        "Instrukcji eksploatacji urządzenia",
+        "Ustawie o dozorze technicznym",
+        "Dzienniku konserwacji",
+        "Protokole z badania wykonanego przez inspektora UDT"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 37,
+      "question": "W ramach czynności przed rozpoczęciem pracy obsługujący:",
+      "image": null,
+      "options": [
+        "Sprawdza stan techniczny urządzenia poprzez oględziny",
+        "Wykonuje próby statyczną i dynamiczną",
+        "Wykonuje próby ruchowe urządzenia",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 38,
+      "question": "Zaświadczenia kwalifikacyjne do obsługi urządzeń technicznych podlegających dozorowi technicznemu wydaje:",
+      "image": null,
+      "options": [
+        "Firma szkoleniowa po pozytywnym wyniku egzaminu sprawdzającego",
+        "Inspektor BHP na podstawie zaświadczenia o ukończeniu kursu",
+        "Pracodawca na podstawie zdanego egzaminu",
+        "Organ właściwej jednostki dozoru technicznego"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 39,
+      "question": "Przeciążanie UTB w trakcie pracy:",
+      "image": null,
+      "options": [
+        "Jest zabronione",
+        "Jest dopuszczalne",
+        "Jest dopuszczalne ale tylko do 125% udźwigu nominalnego",
+        "Jest dopuszczalne ale tylko do 110% udźwigu nominalnego"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 40,
+      "question": "Badania doraźne eksploatacyjne wykonuje się m.in.:",
+      "image": null,
+      "options": [
+        "Po każdym usunięciu usterki przez konserwatora",
+        "Po wymianie cięgien nośnych",
+        "Raz na rok",
+        "Po wypadku na urządzeniu"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 41,
+      "question": "Obowiązki obsługującego określone są:",
+      "image": null,
+      "options": [
+        "W instrukcji eksploatacji urządzenia",
+        "W dzienniku konserwacji",
+        "W ustawie o dozorze technicznym",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 42,
+      "question": "Badania okresowe urządzenia technicznego są wykonywane przez:",
+      "image": null,
+      "options": [
+        "Konserwatora posiadającego odpowiednie zaświadczenie kwalifikacyjne",
+        "Inspektora organu właściwej jednostki dozoru technicznego",
+        "Pracownika serwisu producenta",
+        "Operatora"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 43,
+      "question": "Jednostką dozoru technicznego jest:",
+      "image": null,
+      "options": [
+        "Urząd Dozoru Technicznego",
+        "Wojskowy Dozór techniczny",
+        "Transportowy dozór Techniczny",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 44,
+      "question": "Zaświadczenia kwalifikacyjne uprawniające do obsługi urządzeń technicznych ważne są na terenie:",
+      "image": null,
+      "options": [
+        "Rzeczypospolitej Polskiej",
+        "Unii Europejskiej",
+        "Nie mają określonego obszaru ważności",
+        "Krajów strefy Schengen"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 45,
+      "question": "Obowiązek stosowania środków ochrony indywidualnej przez operatorów urządzeń technicznych wynika z:",
+      "image": null,
+      "options": [
+        "Instrukcji eksploatacji producenta",
+        "Przepisów BHP",
+        "Przepisów wewnątrzzakładowych",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 46,
+      "question": "Zgodnie z rozporządzeniem Rady Ministrów w sprawie rodzajów urządzeń technicznych podlegających dozorowi technicznemu przepisom dozoru technicznego podlegają:",
+      "image": null,
+      "options": [
+        "Dźwigi, żurawie, suwnice, wciągarki i wciągniki",
+        "Wózki jezdniowe podnośnikowe z mechanicznym napędem podnoszenia, podesty ruchome",
+        "Dźwignice linotorowe, przenośniki kabinowe i krzesełkowe",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 47,
+      "question": "Instrukcja eksploatacji może nie zawierać:",
+      "image": null,
+      "options": [
+        "Informacji o terminach i zakresie przeglądów konserwacyjnych UTB",
+        "Podstawowych parametrów i przeznaczenia UTB",
+        "Terminów badań technicznych wykonywanych przez jednostkę inspekcyjną",
+        "Informacji o sposobie obsługi urządzenia"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 48,
+      "question": "Księga rewizyjna urządzenia musi zawierać:",
+      "image": null,
+      "options": [
+        "Zbiór protokołów z badań wykonywanych przez jednostkę inspekcyjną",
+        "Dokument, w którym odnotowywane są przeglądy konserwacyjne",
+        "Treść aktualnych aktów prawnych",
+        "Wykaz uprawnionych operatorów"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 49,
+      "question": "Decyzja wydana przez UDT:",
+      "image": null,
+      "options": [
+        "Nie podlega odwołaniu",
+        "Może zostać zmieniona przez inspektora PIP",
+        "Podlega możliwości odwołania się przez eksploatującego",
+        "Każda odpowiedź jest niepoprawna"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 50,
+      "question": "Do egzaminu sprawdzającego kwalifikacje może przystąpić osoba, która:",
+      "image": null,
+      "options": [
+        "Złożyła wniosek o sprawdzenie kwalifikacji",
+        "Ukończyła 18 lat",
+        "Nie ma przeciwwskazań zdrowotnych do obsługi urządzeń technicznych",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 51,
+      "question": "Po zakończonym badaniu technicznym z wynikiem pozytywnym inspektor UDT:",
+      "image": null,
+      "options": [
+        "Przedłuża ważność świadectwa kwalifikacji operatora",
+        "Oznakowuje urządzenie naklejką, która jest zezwoleniem na użytkowanie urządzenia",
+        "Informuje użytkownika pisemnie w dzienniku konserwacji, że wyraża zgodę na eksploatację urządzenia",
+        "Sporządza protokół z wykonanych czynności i wydaje decyzję administracyjną zezwalającą na eksploatację"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 52,
+      "question": "Zaświadczenia kwalifikacyjne:",
+      "image": null,
+      "options": [
+        "Są ważne bezterminowo",
+        "Są terminowe z okresem ważności uzależnionym od ilości uzyskanych punktów na egzaminie",
+        "Są terminowe z okresem ważności zgodnym z zapisami rozporządzenia w sprawie trybu sprawdzenia kwalifikacji",
+        "Są ważne przez okres 15 lat"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 53,
+      "question": "Dokonujący przeróbek urządzenia technicznego bez uzgodnienia z organem właściwej jednostki dozoru technicznego:",
+      "image": null,
+      "options": [
+        "Podlega karze grzywny lub ograniczenia wolności",
+        "Podlega ukaraniu mandatem karnym",
+        "Nie podlega karze",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 54,
+      "question": "Kto dopuszcza do eksploatacji urządzenie techniczne bez ważnej decyzji zezwalającej na eksploatację:",
+      "image": null,
+      "options": [
+        "Podlega karze grzywny lub ograniczenia wolności",
+        "Nie podlega karze, jeżeli nie dojdzie do wypadku",
+        "Podlega wyłącznie karze grzywny",
+        "Podlega karze więzienia"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 55,
+      "question": "Instrukcja eksploatacji to:",
+      "image": null,
+      "options": [
+        "Zbiór informacji niezbędnych do bezpiecznej eksploatacji urządzenia udostępniany przez producenta",
+        "Zbiór zaleceń wydawanych przez Urząd Dozoru Technicznego",
+        "Instrukcja, którą musi stworzyć użytkownik urządzenia",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 56,
+      "question": "Zaświadczeń kwalifikacyjnych do obsługi nie wymaga się:",
+      "image": null,
+      "options": [
+        "Jeżeli urządzenie jest obsługiwane przez jego właściciela",
+        "Jeżeli wszystkie mechanizmy urządzenia mają napęd ręczny",
+        "Jeśli urządzenie jest wykorzystywane do celów prywatnych, nie zarobkowych",
+        "Od osób po 60 roku życia"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 57,
+      "question": "Osoba posiadająca zaświadczenia kwalifikacyjne może obsługiwać:",
+      "image": null,
+      "options": [
+        "Tylko urządzenia wymienione w zakresie uprawnienia",
+        "Wszystkie urządzenia podlegające dozorowi technicznemu",
+        "Inne urządzenia podlegające dozorowi technicznemu za zgoda pracodawcy",
+        "Wszystkie UTB o udźwigu do 3,2 t"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 58,
+      "question": "Obowiązkiem obsługującego urządzenie techniczne jest:",
+      "image": null,
+      "options": [
+        "Odmówić obsługi urządzenia, jeżeli wygasła decyzja zezwalająca na eksploatację tego urządzenia",
+        "Zawsze stosować się do poleceń przełożonego nakazujących eksploatację urządzenia",
+        "Stosować się do zapisów zawartych w instrukcji eksploatacji",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 59,
+      "question": "Zaświadczenie kwalifikacyjne do obsługi urządzeń technicznych są:",
+      "image": null,
+      "options": [
+        "Ważne na terenie Unii Europejskiej",
+        "Ważne z dowodem tożsamości",
+        "Bezterminowe",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 60,
+      "question": "Obsługujący który jest świadkiem wypadku ma obowiązek:",
+      "image": null,
+      "options": [
+        "Udzielić pomocy ofierze (lub ofiarom) wypadku",
+        "Zabezpieczyć miejsce zdarzenia",
+        "Powiadomić przełożonego",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 61,
+      "question": "Obsługującemu nie wolno:",
+      "image": null,
+      "options": [
+        "Podnosić ładunków, których masy nie potrafi określić",
+        "Kontrolować stanu technicznego urządzenia",
+        "Stosować się do zapisów zawartych w instrukcji eksploatacji",
+        "Dokonywać oględzin zewnętrznych urządzenia"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 62,
+      "question": "Formami dozoru technicznego są:",
+      "image": null,
+      "options": [
+        "Dozór pełny, dozór uproszczony, dozór ograniczony",
+        "Badanie odbiorcze, badanie okresowe i badanie doraźne",
+        "UDT, TDT, WDT",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 63,
+      "question": "Podnoszenie osób urządzeniami, które zostały zaprojektowane i wykonane wyłącznie do podnoszenia ładunków:",
+      "image": null,
+      "options": [
+        "Jest dopuszczalne, po zapewnieniu odpowiedniego poziomu bezpieczeństwa",
+        "Jest zabronione",
+        "Jest dopuszczalne, po uzgodnieniu z organem właściwej jednostki dozoru tchnicznego szczegółowych warunków eksploatacji",
+        "Jest dopuszczalne jednorazowo na pisemne polecenie przełożonego"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 64,
+      "question": "Podnoszenie ładunków za pomocą dwóch lub więcej UTB:",
+      "image": null,
+      "options": [
+        "Jest dopuszczalne, pod warunkiem opracowania przez eksploatującego szczegółowych warunków eksploatacji, opisujących czynności organizacyjno-techniczne minimalizujące ryzyko",
+        "Jest zawsze dopuszczalne jeżeli masa ładunku nie przekracza sumy udźwigów wykorzystywanych urządzeń",
+        "Jest dopuszczalne jeżeli masa ładunku nie przekracza połowy udźwigu każdego z wykorzystanych urządzeń",
+        "Nie jest nigdy dopuszczalna"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 65,
+      "question": "Przebywanie osób pod ładunkiem przenoszonym jest:",
+      "image": null,
+      "options": [
+        "Zawsze niedozwolone",
+        "Dozwolone dla osób kontrolującej spód ładunku",
+        "Dozwolone jeżeli współczynnik bezpieczeństwa cięgien wynosi nie mniej niż 5",
+        "Dozwolone jeżeli współczynnik bezpieczeństwa cięgien wynosi nie mniej niż 7"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 66,
+      "question": "Przenoszenia ładunków nad osobami jest:",
+      "image": null,
+      "options": [
+        "Dozwolone pod warunkiem uzyskania pisemnego zezwolenia od osoby kierującej transportem",
+        "Dozwolone, po zapewnieniu współczynników bezpieczeństwa dla cięgien i urządzeń chwytnych większych niż 10",
+        "Dozwolone pod warunkiem powiadomienia osób i wyposażeniu ich w środki ochrony indywidualnej",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 67,
+      "question": "Zaświadczenia kwalifikacyjne do obsługi urządzeń technicznych podlegających dozorowi technicznemu wydaje:",
+      "image": null,
+      "options": [
+        "Właściciel urządzenia",
+        "UDT, TDT, WDT",
+        "PIP",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 68,
+      "question": "Komisja egzaminacyjna powiadamia osobę zainteresowaną o wyniku egzaminu:",
+      "image": null,
+      "options": [
+        "W ciągu 7 dni po egzaminie w formie pisemnej",
+        "Bezpośrednio po egzaminie",
+        "W ciągu 14 dni po egzaminie w formie elektronicznej",
+        "Listem poleconym lub pocztą elektroniczną po upływie 30 dni roboczych od daty egzaminu"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 69,
+      "question": "Dziennik konserwacji powinien być prowadzony:",
+      "image": null,
+      "options": [
+        "Tylko w formie papierowej",
+        "W formie elektronicznej lub papierowej",
+        "Tylko w formie elektronicznej",
+        "Przez obsługującego"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 70,
+      "question": "Instrukcja stanowiskowa:",
+      "image": null,
+      "options": [
+        "Jest zawsze dostarczana wraz z instrukcją obsługi przez producenta urządzenia",
+        "Stanowi niepisany zbiór zwyczajów przyjętych w zakładzie pracy",
+        "Jest wydawana przez pracodawcę i zawiera szczegółowe wskazówki dotyczące bhp na stanowisku pracy",
+        "Nie dotyczy operatorów urządzeń mobilnych"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 71,
+      "question": "Po upływie terminu ważności zaświadczenia kwalifikacyjnego do obsługi urządzenia obsługujący:",
+      "image": null,
+      "options": [
+        "Może obsługiwać UTB o ile kontynuuje pracę u tego samego pracodawcy",
+        "Może obsługiwać UTB o ile złoży wniosek o wydanie kolejnego zaświadczenia",
+        "Może obsługiwać UTB dopiero po uzyskaniu nowego zaświadczenia kwalifikacyjnego",
+        "Składa wniosek o przedłużenie terminu ważności zaświadczenia kwalifikacyjnego"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 72,
+      "question": "Przedłużenie ważności zaświadczenie kwalifikacyjnego następuje:",
+      "image": null,
+      "options": [
+        "Na pisemny wniosek obsługującego",
+        "Automatycznie po upływie terminu ważności zaświadczenia",
+        "Na pisemne zgłoszenie pracodawcy obsługującego",
+        "Po wcześniejszym zgłoszeniu telefonicznym"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 73,
+      "question": "Udźwig UTB to parametr urządzenia bezpośrednio związany z:",
+      "image": null,
+      "options": [
+        "Maksymalną wysokością podnoszonego ładunku",
+        "Maksymalną objętością podnoszonego ładunku",
+        "Maksymalną masą podnoszonego ładunku",
+        "Iloczynem masy i objętości podnoszonego ładunku"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 74,
+      "question": "Masa netto 1000 l wody wynosi ok:",
+      "image": null,
+      "options": [
+        "800 kg",
+        "900 kg",
+        "1000 kg",
+        "1100 kg"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 75,
+      "question": "Masa ładunku składającego się z 40 opakowań po 25 kg każdy wynosi:",
+      "image": null,
+      "options": [
+        "800 kg",
+        "1000 kg",
+        "1100 kg",
+        "900 kg"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 76,
+      "question": "Masa 60 kartonów po 20 kg każdy wynosi:",
+      "image": null,
+      "options": [
+        "800 kg",
+        "1000 kg",
+        "1100 kg",
+        "1200 kg"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 77,
+      "question": "Masę podnoszonego ładunku można określić na podstawie:",
+      "image": null,
+      "options": [
+        "Zawieszki zbiorczej znajdującej się na transportowanym ładunku",
+        "Przeliczając uwzględniając ciężar właściwy i objętość",
+        "Dokumentacji przewozowej i magazynowej",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 78,
+      "question": "Informacja dotycząca udźwigu urządzenia może być zawarta:",
+      "image": null,
+      "options": [
+        "W instrukcji eksploatacji",
+        "Na tabliczce znamionowej",
+        "Na urządzeniu technicznym",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 79,
+      "question": "Prawidłowe określenie jednostki udźwigu to:",
+      "image": null,
+      "options": [
+        "Kg",
+        "Pa",
+        "Mth",
+        "Mm"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 80,
+      "question": "Który z elementów nie wchodzi w skład układu hydraulicznego żurawia?",
+      "image": null,
+      "options": [
+        "Pompa, zamek hydrauliczny, filtr oleju",
+        "Rozrusznik, zawór, silnik elektryczny",
+        "Manometr, zawór zwrotny, odpowietrznik",
+        "Wszystkie odpowiedzi są nieprawidłowe"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 81,
+      "question": "Zawór zwrotny sterowany (zamek hydrauliczny) w układzie hydraulicznym żurawia zapewnia ochronę przed:",
+      "image": null,
+      "options": [
+        "Nadmiernym wzrostem ciśnienia w układzie hydraulicznym",
+        "Skutkami pęknięcia przewodu hydraulicznego",
+        "Nieautoryzowanym uruchomieniem urządzenia",
+        "Dzieleniem strumienia na poszczególne obwody układu hydraulicznego"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 82,
+      "question": "Jaki zawór zabezpieczający znajduje się w układzie hydraulicznym podpór?",
+      "image": null,
+      "options": [
+        "Zawór zwrotny sterowany (zamek hydrauliczny)",
+        "Zawór powrotny",
+        "Zawór upustowy",
+        "Zawór bezpieczeństwa"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 83,
+      "question": "Zawory zwrotne (zamki hydrauliczne) montuje się w układach:",
+      "image": null,
+      "options": [
+        "Mechanizmu podpór",
+        "Mechanizmu podnoszenia",
+        "Mechanizmu zmiany wysięgu",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 84,
+      "question": "Elementem wytwarzającym ciśnienie w układzie hydraulicznym żurawia jest:",
+      "image": null,
+      "options": [
+        "Silnik hydrauliczny",
+        "Pompa hydrauliczna",
+        "Kompresor",
+        "Sprężarka"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 85,
+      "question": "Zawór przelewowy instalowany w układzie hydraulicznym żurawia ma za zadanie:",
+      "image": null,
+      "options": [
+        "Zabezpiecza przed nadmiernym ciśnieniem",
+        "Utrzymanie siłownika w stałej pozycji",
+        "Zabezpiecza układ podnoszenia przed opadaniem",
+        "Jest elementem zasilającym układ hydrauliczny"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 86,
+      "question": "Hydrauliczne elementy bezpieczeństwa to:",
+      "image": null,
+      "options": [
+        "Zawór przelewowy, zawory zwrotno-dławiące",
+        "Pompa, rozdzielacz, siłownik teleskopowania",
+        "Silnik obrotu, blokada zerowa, zawór kulowy",
+        "Rozdzielacz, zawory kulowe, odboje"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 87,
+      "question": "Zawór bezpieczeństwa w układzie hydraulicznym zabezpiecza:",
+      "image": null,
+      "options": [
+        "Układ hydrauliczny oraz pompę przed uszkodzeniem za skutek wzrostu ciśnienia",
+        "Przed przekroczeniem udźwigu nominalnego",
+        "Przed utratą stateczności",
+        "Przed niekontrolowanym ruchem żurawia"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 88,
+      "question": "Zamki hydrauliczne instalowane w układach hydraulicznych żurawi samojezdnych:",
+      "image": null,
+      "options": [
+        "Zabezpieczają układ przed skutkami nadmiernego wzrostu ciśnienia oleju w obwodach hydraulicznych",
+        "Zabezpieczają przed nieuprawnioną obsługą - zamykają dostęp do rozdzielacza ruchów roboczych",
+        "Zabezpieczają siłowniki przed skutkami pęknięcia przewodu hydraulicznego",
+        "Zamykają dostęp do kabiny operatora żurawia samojezdnego"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 89,
+      "question": "Zawory zwrotne sterowane (zamki hydrauliczne):",
+      "image": null,
+      "options": [
+        "Są elementami roboczymi, służącymi do ograniczania niebezpiecznych ruchów roboczych żurawia",
+        "Są elementami bezpieczeństwa, których zadaniem jest ograniczenie ciśnienia w danym układzie hydraulicznym podczas przeciążenia żurawia",
+        "Są elementami roboczymi, których zadaniem jest blokowanie pozycji żurawia podczas przestojów żurawia z zawieszonym ładunkiem",
+        "Są elementami bezpieczeństwa, których zadaniem jest odcięcie niekontrolowanego wypływu oleju z siłowników, podczas uszkodzenia (rozszczelnienia) elastycznych przewodów, doprowadzających olej do siłowników"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 90,
+      "question": "Bezpieczny sposób sprawdzenia działania zaworu przelewowego w żurawiach przeprowadza się:",
+      "image": null,
+      "options": [
+        "Z ładunkiem nominalnym na wysokości około 1/2 wysokości podnoszenia",
+        "Z załączoną pompą hydrauliczną, bez ładunku zawieszonego na haku",
+        "Wychylając i przytrzymując dźwignię jednego z mechanizmu znajdującym się w skrajnym położeniu",
+        "Odpowiedz b i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 91,
+      "question": "Rozdzielacz hydrauliczny instalowany jest w układzie w celu:",
+      "image": null,
+      "options": [
+        "Dławienia ciśnienia w poszczególnych obwodach",
+        "Zabezpiecza układ przed nadmiernym wzrostem ciśnienia",
+        "Kieruje przepływ czynnika roboczego do poszczególnych obwodów",
+        "Zabezpiecza pompę przed uszkodzeniem"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 92,
+      "question": "Elementem wykonawczym w układzie hydraulicznym żurawia jest:",
+      "image": null,
+      "options": [
+        "Siłownik mechanizmu podnoszenia",
+        "Silnik hydrauliczny",
+        "Siłownik mechanizmu teleskopowania",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 93,
+      "question": "Elementem chroniącym układ hydrauliczny przed nadmiernym wzrostem ciśnienia jest:",
+      "image": null,
+      "options": [
+        "Zamek zwrotny sterowany",
+        "Zawór dławiący",
+        "Rozdzielacz hydrauliczny",
+        "Zawór przelewowy"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 94,
+      "question": "Zawór bezpieczeństwa w układzie hydraulicznym żurawia:",
+      "image": null,
+      "options": [
+        "Utrzymuje nurnik siłownika podnoszenia w stałym położeniu",
+        "Jest elementem ograniczającym udźwig nominalny w przypadku wystąpienia przeciążenia",
+        "Zabezpiecza pompę hydrauliczną przed uszkodzeniem",
+        "Spowalnia prędkość opuszczania podniesionego ładunku, w sytuacji gdy dojdzie do pęknięcia przewodu hydraulicznego"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 95,
+      "question": "Jaki zawór w układzie hydraulicznym żurawia może być zintegrowany z siłownikiem?",
+      "image": null,
+      "options": [
+        "zawór dławiący",
+        "zamek hydrauliczny",
+        "zawór przelewowy",
+        "odpowiedź a i b jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 96,
+      "question": "Zawór przelewowy w układzie hydraulicznym żurawia podczas nadmiernego wzrostu ciśnienia oleju kieruje go:",
+      "image": null,
+      "options": [
+        "z powrotem do zbiornika oleju",
+        "na zewnątrz żurawia (jest to sytuacja awaryjna)",
+        "do innej sekcji rozdzielacza",
+        "odpowiedź a i b jest prawidłowa"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 97,
+      "question": "Gdzie znajdują się zawory zwrotne sterowane (zamki)?",
+      "image": null,
+      "options": [
+        "na siłownikach",
+        "w pulpicie sterującym",
+        "przy pompie",
+        "na wężach elastycznych"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 98,
+      "question": "Łącznik bezpieczeństwa STOP jest:",
+      "image": null,
+      "options": [
+        "zabezpieczony przed przypadkowym zadziałaniem",
+        "umieszczony blisko stanowiska obsługującego",
+        "koloru czerwonego",
+        "odpowiedź b i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 99,
+      "question": "Gdzie w żurawiu przeładunkowym znajduje się łącznik bezpieczeństwa STOP?",
+      "image": null,
+      "options": [
+        "przy lewej podporze tylnej",
+        "za kabiną obsługującego",
+        "w kabinie kierowcy",
+        "na stanowisku sterowania"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 100,
+      "question": "W skład mechanizmu obrotu żurawia wchodzi:",
+      "image": null,
+      "options": [
+        "silnik obrotu, hamulec obrotu, zawór zwrotno-dławiący, rozdzielacz sterujący mechanizmem obrotu",
+        "wysięgnik, hamulec, koło linowe, lina",
+        "silnik obrotu, zawór bezpieczeństwa, siłownik teleskopowania",
+        "hamulec, rozdzielacz kierunkowy, kryza, przewody hydrauliczne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 101,
+      "question": "Moment wywracający żurawia wzrasta:",
+      "image": null,
+      "options": [
+        "Wraz ze wzrostem masy przeciwwagi",
+        "Wraz z długością wysięgnika",
+        "Gdy masa ładunku maleje",
+        "Przy słabym wietrze"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 102,
+      "question": "W przypadku gdy moment ustalający jest większy od momentu wywracającego:",
+      "image": null,
+      "options": [
+        "Żuraw może utracić stateczność",
+        "Wzrasta wartość udźwigu żurawia",
+        "Żuraw zachowuje stateczność",
+        "Nastąpi obrót wysięgnika żurawia"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 103,
+      "question": "Wysięg żurawia przeładunkowego:",
+      "image": null,
+      "options": [
+        "Jest stały",
+        "Zależy od rozstawienia podpór",
+        "Maleje wraz ze wzrostem masy ładunku",
+        "Odpowiedź b i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 104,
+      "question": "Rozstawione podpory żurawia przeładunkowego:",
+      "image": null,
+      "options": [
+        "Zwiększają jego stateczność",
+        "Znacznie zwiększają wysokość podnoszenia",
+        "Uniemożliwiają pracę w pobliżu wykopów",
+        "Zmniejszają stateczność"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 105,
+      "question": "Wysięg żurawia jest to odległość pozioma pomiędzy punktem mocowania urządzenia chwytającego na wysięgniku a:",
+      "image": null,
+      "options": [
+        "Podporą żurawia",
+        "Zewnętrznym obrysem pojazdu",
+        "Osią obrotu kolumny żurawia",
+        "Odpowiedź b i c jest prawidłowa"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 106,
+      "question": "Jaka jest różnica pomiędzy wysięgiem a wysięgnikiem?",
+      "image": null,
+      "options": [
+        "Wysięg to parametr techniczny a wysięgnik to element konstrukcji",
+        "Wysięg i wysięgnik określają to samo",
+        "Wysięg to element bezpieczeństwa a wysięgnik to element konstrukcji",
+        "Wysięgnik jest blachownicowy a wysięg kratownicowy"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 107,
+      "question": "Zwiększenie wysięgu może być realizowane przez:",
+      "image": null,
+      "options": [
+        "Mechanizm podnoszenia i opuszczania wysięgnika",
+        "Mechanizm obrotu",
+        "Mechanizm teleskopowania",
+        "Odpowiedzi a i c są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 108,
+      "question": "Wysięgnik teleskopowy żurawia:",
+      "image": null,
+      "options": [
+        "Posiada mechaniczny układ zmiany wysięgu",
+        "Składa się z kilku członów",
+        "Umożliwia bezpieczną pracę przy liniach elektroenergetycznych",
+        "Odpowiedź a i b jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 109,
+      "question": "Wykres udźwigów żurawia przedstawia zależność:",
+      "image": null,
+      "options": [
+        "Masy podnoszonego ładunku i prędkości wiatru",
+        "Masy podnoszonego ładunku, wysięgu i wysokości podnoszenia",
+        "Wysokości podnoszenia ładunku i wysięgu",
+        "Wysięgu i prędkości wiatru"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 110,
+      "question": "Wysięgnik pomocniczy żurawia przeładunkowego:",
+      "image": null,
+      "options": [
+        "Zwiększa udźwig żurawia",
+        "Umożliwia pracę przy silnym wietrze",
+        "Zwiększa wysięg żurawia",
+        "Żadna z powyższych odpowiedzi nie jest poprawna"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 111,
+      "question": "Na stateczność żurawia przeładunkowego ma wpływ:",
+      "image": null,
+      "options": [
+        "Rodzaj i pochylenie podłoża",
+        "Sposób rozstawienia podpór",
+        "Ciężar ładunku",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 112,
+      "question": "Z przeciążeniem konstrukcji nośnej żurawia mamy do czynienia w przypadku:",
+      "image": null,
+      "options": [
+        "Przekroczenia dopuszczalnego udźwigu dla danego wysięgu",
+        "Zmniejszenie wysięgu poza wysięg dopuszczalny dla danego udźwigu",
+        "Przekroczenia dopuszczalnego kąta obrotu żurawia",
+        "Przekroczenia dopuszczalnego kąta pochylenia wysięgnika"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 113,
+      "question": "Przedstawiony rysunek pokazuje:",
+      "image": "/img/ZURAWIE-PRZENOSNE_113.webp",
+      "options": [
+        "Stan poziomu paliwa w zbiorniku",
+        "Prędkość obrotową silnika",
+        "Wskazania ogranicznika obciążenia",
+        "Wielkość podnoszonego ciężaru"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 114,
+      "question": "Przedstawiony rysunek określa wskazania dla:",
+      "image": "/img/ZURAWIE-PRZENOSNE_114.webp",
+      "options": [
+        "Wysięgnika żurawia z ręcznym układem teleskopowania",
+        "Wysokości podnoszenia",
+        "Wartości osiągniętego wysięgu",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 115,
+      "question": "Przedstawiony rysunek określa wskazania:",
+      "image": "/img/ZURAWIE-PRZENOSNE_115.webp",
+      "options": [
+        "Określające długość wysięgnika",
+        "Wartość osiągniętego wysięgu",
+        "Minimalnej odległości wysięgnika od linii elektroenergetycznych",
+        "Wartości wysunięcia podpór"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 116,
+      "question": "Przedstawiony rysunek informuje obsługującego o:",
+      "image": "/img/ZURAWIE-PRZENOSNE_116.webp",
+      "options": [
+        "2 pozycji wychylenia dźwigni sterującej z 4 stopniowej skali",
+        "Ilość pasm lin zblocza hakowego",
+        "Średniej prędkości wiatru",
+        "Aktualnej prędkości wiatru"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 117,
+      "question": "Przedstawiony symbol graficzny dotyczy:",
+      "image": "/img/ZURAWIE-PRZENOSNE_117.webp",
+      "options": [
+        "Zewnętrznej temperatury powietrza",
+        "Wartości obciążenia przeciwwagi żurawia",
+        "Wartości maksymalnego udźwigu",
+        "Temperatury oleju hydraulicznego"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 118,
+      "question": "Wychylenie dźwigni w kierunku C zgodnie z rysunkiem powoduje:",
+      "image": "/img/ZURAWIE-PRZENOSNE_118.webp",
+      "options": [
+        "Załączenie mechanizmu podnoszenia wysięgnika",
+        "Załączenie mechanizmu teleskopowania w kierunku \"zwiększenia wysięgu\"",
+        "Załączenie mechanizmu obrotu w kierunku \"prawo\"",
+        "Załączenie mechanizmu podnoszenia haka"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 119,
+      "question": "Wychylenie dźwigni w kierunku B zgodnie z rysunkiem powoduje:",
+      "image": "/img/ZURAWIE-PRZENOSNE_119.webp",
+      "options": [
+        "Załączenie mechanizmu podnoszenia wysięgnika teleskopowego",
+        "Załączenie mechanizmu teleskopowania w kierunku \"zwiększenia wysięgu\"",
+        "Załączenie mechanizmu obrotu w kierunku \"prawo\"",
+        "Załączenie mechanizmu opuszczenia wysięgnika głównego"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 120,
+      "question": "Wychylenie dźwigni w kierunku C zgodnie z rysunkiem powoduje:",
+      "image": "/img/ZURAWIE-PRZENOSNE_120.webp",
+      "options": [
+        "Załączenie mechanizmu podnoszenia w kierunku \"góra\"",
+        "Załączenie mechanizmu obrotu w kierunku \"w prawo\"",
+        "Zamknięcie chwytaka",
+        "Załączenie mechanizmu teleskopowania w kierunku \"zwiększenia wysięgu\""
+      ],
+      "correct": 3
+    },
+    {
+      "id": 121,
+      "question": "Przedstawiony symbol graficzny dotyczy:",
+      "image": "/img/ZURAWIE-PRZENOSNE_121.webp",
+      "options": [
+        "Opisu dźwigni sterującej mechanizmu podnoszenia wysięgnika teleskopowego",
+        "Opisu dźwigni sterującej mechanizmu obrotu",
+        "Opisu dźwigni sterującej mechanizmu podnoszenia wysięgnika głównego",
+        "Załączenie mechanizmu opuszczania podpór"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 122,
+      "question": "Przedstawiony symbol graficzny dotyczy:",
+      "image": "/img/ZURAWIE-PRZENOSNE_122.webp",
+      "options": [
+        "Opisu dźwigni sterującej mechanizmu podnoszenia wysięgnika teleskopowego",
+        "Opisu dźwigni sterującej mechanizmu teleskopowania",
+        "Opisu dźwigni sterującej mechanizmu podnoszenia wysięgnika głównego",
+        "Załączenie mechanizmu opuszczania podpór"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 123,
+      "question": "Przedstawiony rysunek informuje obsługującego o:",
+      "image": "/img/ZURAWIE-PRZENOSNE_123.webp",
+      "options": [
+        "Aktualnym wypoziomowaniu żurawia",
+        "Dokładności odkładania ładunku",
+        "Stopniu wychylenia dźwigni sterowniczych",
+        "Stopniu wychylenia dźwigni sterowniczej"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 124,
+      "question": "Praca żurawiem przenośnym z pękniętą podporą jest:",
+      "image": null,
+      "options": [
+        "Zabroniona, w przypadku wykrycia pęknięcia należy niezwłocznie przerwać pracę",
+        "Dozwolona, do momentu przyjazdu konserwatora i stwierdzeniu pęknięcia",
+        "Dozwolona dla pęknięć nie dłuższych niż 3 mm",
+        "Można pracować z jedną pękniętą podporą"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 125,
+      "question": "Jakie dane odczytuje ogranicznik udźwigu?",
+      "image": null,
+      "options": [
+        "Ilość wysuniętych sekcji wysięgnika, ciężar przeciwwagi, prędkość wiatru",
+        "Ciśnienie w układzie hydraulicznym, ciśnienie w oponach",
+        "Ilość paliwa w zbiorniku, ilość oleju w układzie hydraulicznym",
+        "Kąt wychylenia oraz długość wysięgnika, ciężar ładunku, rozstawienie podpór"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 126,
+      "question": "Blokada transportowa podpór żurawi służy do:",
+      "image": null,
+      "options": [
+        "Zabezpieczenia przed nadmiernym rozłożeniem się podpór",
+        "Zabezpieczenia przed jazdą z niezłożonymi elementami żurawia",
+        "Zabezpieczenia przed wysunięciem podpór podczas jazdy żurawiem",
+        "Zabezpieczenia przed nieupoważnionym dostępem"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 127,
+      "question": "Sterowanie bezpośrednie to:",
+      "image": null,
+      "options": [
+        "Sterowanie w którym obsługujący widzi bezpośrednio całą drogę przenoszonego ładunku",
+        "Sterowanie które odbywa się za pomocą przycisków",
+        "Gdy żuraw jest sterowany zdalnie bezprzewodowo",
+        "Sterowanie gdzie obsługujący steruje dźwigniami połączonymi mechanicznie bezpośrednio z rozdzielaczem"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 128,
+      "question": "Sterowanie pośrednie to:",
+      "image": null,
+      "options": [
+        "Sterowanie gdy obsługujący nie widzi podnoszonego ładunku i korzysta z współpracy sygnalisty",
+        "Sterowanie odbywa się za pomocą dźwigni połączonych mechanicznie za pośrednictwem cięgien z rozdzielaczem",
+        "Sterowanie z kabiny żurawia",
+        "Sterowanie w którym obsługujący steruje joystickami lub przyciskami oddziałującymi na rozdzielacz za pośrednictwem elektrycznego lub hydraulicznego obwodu sterowania"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 129,
+      "question": "Synchroniczny układ teleskopowania wysięgnika oznacza:",
+      "image": null,
+      "options": [
+        "Wszystkie segmenty teleskopu wysuwają się jednocześnie i równomiernie",
+        "Wysięgnik teleskopowany jest przy pomocy dodatkowej pompy hydraulicznej zsynchronizowanej z pompą główną",
+        "Elementy teleskopu wysuwają się kolejno i pojedynczo",
+        "Odpowiedź a i b jest prawidłowa"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 130,
+      "question": "Asynchroniczny układ teleskopowania wysięgnika oznacza:",
+      "image": null,
+      "options": [
+        "Wysuw poszczególnych sekcji sterowany jest przez obsługującego",
+        "Żuraw może pracować na różnym poziomie wysunięcia poszczególnych sekcji",
+        "Wszystkie segmenty teleskopu wysuwają się jednocześnie",
+        "Odpowiedź a i b jest prawidłowa"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 131,
+      "question": "Zabezpieczenia stosowane w hakach żurawi to:",
+      "image": null,
+      "options": [
+        "Ogranicznik udźwigu, łącznik krańcowy wysokości podnoszenia, zabezpieczenie nakrętki haka",
+        "Zamki hydrauliczne, łączniki krańcowe mechanizmu podnoszenia",
+        "Zapadka haka, zabezpieczenie nakrętki haka przed odkręceniem",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 132,
+      "question": "Graniczne parametry zużycia haka określa:",
+      "image": null,
+      "options": [
+        "Konserwator",
+        "Eksploatujący",
+        "Obsługujący",
+        "Producent żurawia"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 133,
+      "question": "O ile wytwórca nie określi inaczej dopuszczalne wytarcie gardzieli haka żurawia wynosi:",
+      "image": null,
+      "options": [
+        "5%",
+        "3%",
+        "10%",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 134,
+      "question": "O ile wytwórca nie określi inaczej dopuszczalne rozwarcie gardzieli haka wynosi:",
+      "image": null,
+      "options": [
+        "2%",
+        "5%",
+        "10%",
+        "15%"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 135,
+      "question": "Stan techniczny haka określa się na podstawie:",
+      "image": null,
+      "options": [
+        "Daty produkcji",
+        "Ilość karbów",
+        "Oględzin i pomiarów",
+        "Ilości przepracowanych cykli"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 136,
+      "question": "W celu regeneracji haka możemy:",
+      "image": null,
+      "options": [
+        "Spawać pęknięte fragmenty",
+        "Napawać drobne ubytki",
+        "Podgrzewać i prostować",
+        "Zeszlifować łagodne zadziory"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 137,
+      "question": "Karta haka jest to:",
+      "image": null,
+      "options": [
+        "Dokument potwierdzający zgodność ze wzorcem",
+        "Dokument wypełniany przez Inspektora UDT",
+        "Dokument kontroli zużycia haka",
+        "Dokument wypełniany przez producenta"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 138,
+      "question": "Wysięgnik pomocniczy montowany w niektórych żurawiach to:",
+      "image": null,
+      "options": [
+        "Dodatkowy wysięgnik zwiększający stateczność żurawia",
+        "Dodatkowy wysięgnik służący do stabilizacji ładunków o dużych gabarytach",
+        "Element konstrukcji służący do zwiększenia rozpiętości podpór",
+        "Dodatkowy element wysięgnika montowany mechanicznie w celu zwiększenia długości wysięgnika"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 139,
+      "question": "Podpora żurawia to:",
+      "image": null,
+      "options": [
+        "Konstrukcja służąca do podniesienia pojazdu podczas poziomowania",
+        "Element służący do podparcia wysięgnika żurawia",
+        "Element umożliwiający pracę żurawia na grząskim gruncie",
+        "Konstrukcja pomocnicza, połączona z podstawą żurawia lub pojazdem, która zapewnia jego stateczność"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 140,
+      "question": "Ogranicznik udźwigu nie zabezpiecza przed:",
+      "image": null,
+      "options": [
+        "Przeciążeniem konstrukcji",
+        "Rozkołysaniem ładunku",
+        "Ryzykiem utraty stateczności",
+        "Niebezpiecznym ruchem ładunku"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 141,
+      "question": "Urządzenia sterownicze po zwolnieniu nacisku powinny:",
+      "image": null,
+      "options": [
+        "Powracać do pozycji wyjściowej tylko po przesterowaniu przez obsługującego",
+        "Samoczynnie powrócić do pozycji wyjściowej",
+        "Pozostać w pozycji zasterowanej",
+        "Umożliwić dokończenie zasterowanego ruchu"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 142,
+      "question": "Kryteria zużycia lin to między innymi:",
+      "image": null,
+      "options": [
+        "Zmniejszenie średnicy zewnętrznej",
+        "Korozja",
+        "Ilość pękniętych drutów",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 143,
+      "question": "Zmniejszenie średnicy zewnętrznej liny nośnej może być spowodowane:",
+      "image": null,
+      "options": [
+        "Uszkodzeniem rdzenia liny",
+        "Wytarciem powierzchni zewnętrznej",
+        "Wyciśnięciem splotki",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 144,
+      "question": "Żurawie przeładunkowe mogą być instalowane na podwoziu:",
+      "image": null,
+      "options": [
+        "Kołowym",
+        "Gąsienicowym",
+        "Samochodowym",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 145,
+      "question": "Zgodnie z przedstawionym diagramem wysięgnik teleskopowy żurawia składa się z:",
+      "image": "/img/ZURAWIE-PRZENOSNE_145.webp",
+      "options": [
+        "2 sekcji",
+        "3 sekcji",
+        "4 sekcji",
+        "5 sekcji"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 146,
+      "question": "Elementy budowy haka to:",
+      "image": null,
+      "options": [
+        "Chwytnia oraz pazur",
+        "Podstawa oraz ucho",
+        "Pręt oraz ucho",
+        "Trzon oraz gardziel"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 147,
+      "question": "Obsługującemu żuraw z koszem do podnoszenia ludzi montowanym bezpośrednio do wysięgnika zgodnie z wytycznymi zawartymi w instrukcji eksploatacji może być osoba która:",
+      "image": null,
+      "options": [
+        "Posiada uprawnienia do obsługi podestów ruchomych",
+        "Posiada uprawnienia do obsługi żurawi przenośnych",
+        "Posiada uprawnienia do obsługi wózków z operatorem podnoszonym wraz z ładunkiem",
+        "Posiada uprawnienia do obsługi dźwigów osobowych"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 148,
+      "question": "W oparciu o przedstawiony rysunek określ jakie ruchy niebezpieczne zostaną odłączone w przypadku zadziałania ogranicznika obciążenia:",
+      "image": "/img/ZURAWIE-PRZENOSNE_148.webp",
+      "options": [
+        "E, F",
+        "A, D",
+        "C, B",
+        "F, D"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 149,
+      "question": "W oparciu o przedstawiony rysunek określ jakie ruchy niebezpieczne zostaną odłączone w przypadku zadziałania ogranicznika obciążenia:",
+      "image": "/img/ZURAWIE-PRZENOSNE_149.webp",
+      "options": [
+        "F, D, B",
+        "A, B, C",
+        "E, C, B",
+        "Wszystkie ruchy wysięgnika"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 150,
+      "question": "Sterowanie ruchem podpór żurawia z ładunkiem zawieszonym na haku żurawia jest:",
+      "image": null,
+      "options": [
+        "Dozwolone w ramach niewielkiej korekty pochylenia podwozia",
+        "Bezwzględnie zabronione",
+        "Zabronione ale tylko dla podpór \"wychylnych\"",
+        "Zawsze dozwolone ponieważ podpory posiadają zamki hydrauliczne"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 151,
+      "question": "W jaki sposób realizowana jest kontrola obciążenia w żurawiach przenośnych:",
+      "image": null,
+      "options": [
+        "Wyłącznie poprzez zawór przelewowy",
+        "Wyłącznie poprzez system elektroniczny",
+        "Wyłącznie poprzez blokowanie dźwigni sterujących",
+        "Zgodnie z instrukcją producenta żurawia"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 152,
+      "question": "O ile wytwórca nie określi inaczej ogranicznik udźwigu powinien zadziałać gdy masa ładunku przekroczy:",
+      "image": null,
+      "options": [
+        "100% udźwigu przy danych parametrach pracy",
+        "90% udźwigu przy danych parametrach pracy",
+        "80% udźwigu przy danych parametrach pracy",
+        "Żadna z powyższych odpowiedzi nie jest prawidłowa"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 153,
+      "question": "Prędkość wiatru, po przekroczeniu której praca żurawiem przenośnym jest zabroniona:",
+      "image": null,
+      "options": [
+        "Wynosi 14,8 m/s",
+        "Wynosi 12,5 m/s",
+        "Określa to instrukcja eksploatacji",
+        "Prędkość wiatru nie wpływa na pracę żurawia przeładunkowego"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 154,
+      "question": "Maksymalne nachylenie podłoża na którym rozstawiany jest żuraw nie może przekraczać:",
+      "image": null,
+      "options": [
+        "Wartości 3°",
+        "Wartości 3%",
+        "Wartości określonej w instrukcji obsługi",
+        "Brak jednoznacznych wytycznych"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 155,
+      "question": "Przed rozstawieniem żurawia w nowym miejscu pracy obsługujący powinien:",
+      "image": null,
+      "options": [
+        "Zapoznać się z rodzajem podłoża na którym ma pracować żuraw",
+        "Sprawdzić nośność podłoża",
+        "Sprawdzić miejsce pracy pod kątem możliwości wystąpienia studzienek i kanałów ściekowych",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 156,
+      "question": "Bezpieczna odległość rozstawienia żurawia od krawędzi wykopu zależy od:",
+      "image": null,
+      "options": [
+        "Głębokości wykopu",
+        "Siły wiatru",
+        "Odpowiedniej widoczności",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 157,
+      "question": "Przed podjęciem prac rozładunkowych obsługujący żurawia ma obowiązek:",
+      "image": null,
+      "options": [
+        "Zapoznać się z wielkością podejmowanych mas ładunków",
+        "Sprawdzić, czy wykorzystywany osprzęt dodatkowy jest odpowiedni do przenoszonych ładunków",
+        "Sprawdzić uprawnienia kierowcy dostarczającego ładunki",
+        "Odpowiedź a i b jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 158,
+      "question": "Podczas oceny stanu technicznego żurawia przed rozpoczęciem pracy obsługujący:",
+      "image": null,
+      "options": [
+        "Dokonuje oceny stanu w zakresie zgodnym z zapisami instrukcji eksploatacji",
+        "Wykonuje próby z przeciążeniem",
+        "W przypadku negatywnej oceny stanu technicznego odmawia rozpoczęcia pracy",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 159,
+      "question": "Podczas oceny stanu technicznego żurawia przed rozpoczęciem pracy obsługujący:",
+      "image": null,
+      "options": [
+        "Sprawdza stan wyposażenia żurawia",
+        "Dokonuje oceny wizualnej stanu technicznego żurawia",
+        "Wykonuje próby ruchowe bez obciążenia i z obciążeniem",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 160,
+      "question": "Podczas oceny stanu technicznego układu hydraulicznego obsługujący:",
+      "image": null,
+      "options": [
+        "Sprawdza poziom oleju hydraulicznego",
+        "Sprawdza stan lepkości oleju hydraulicznego",
+        "Sprawdza szczelność wewnętrzną i zewnętrzną układu",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 161,
+      "question": "Nieszczelność w układzie hydraulicznym żurawia może się objawiać:",
+      "image": null,
+      "options": [
+        "Wyciekiem zewnętrznym",
+        "Niekontrolowanym opadaniem ładunku",
+        "Brak jednoznacznych kryteriów szczelności",
+        "Odpowiedź a i b jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 162,
+      "question": "Stan poziomu oleju w układzie hydraulicznym obsługujący sprawdza:",
+      "image": null,
+      "options": [
+        "Zawsze przed rozpoczęciem pracy",
+        "1 raz w miesiącu",
+        "Zgodnie z zaleceniami zawartymi w instrukcji eksploatacji",
+        "Zgodnie z zaleceniami zawartymi w protokole z badań okresowych"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 163,
+      "question": "O ile wytwórca nie określi inaczej próbę szczelności wewnętrznej układu hydraulicznego wykonujemy:",
+      "image": null,
+      "options": [
+        "Zawsze z obciążeniem 1000kg",
+        "Na wysięgu nie mniejszym niż 3 m",
+        "Ciężar ładunku oraz jego odległość ustalamy w oparciu o diagram udźwigu",
+        "Na wysokości min 4 m"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 164,
+      "question": "Teleskopowanie układu wysięgnikowego wraz z podwieszonym ładunkiem jest:",
+      "image": null,
+      "options": [
+        "Dozwolone o ile taką sytuację przewidział producent urządzenia",
+        "Zabronione",
+        "Jest dozwolone ale z ładunkiem nieprzekraczającym 50% udźwigu nominalnego",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 165,
+      "question": "Podczas pracy mechanizmem obrotu stateczność żurawia:",
+      "image": null,
+      "options": [
+        "Jest niezmienna ponieważ stateczność żurawia zależy wyłącznie od masy podnoszonego ładunku",
+        "Jest niezmienna ponieważ współczynnik stateczności zależy wyłącznie od wysięgu żurawia",
+        "Jest zmieniana ponieważ zmienia się odległość usytuowania układu wysięgnikowego i ładunku od krawędzi wywrotu",
+        "Jest niezmienna ponieważ stateczność żurawia zależy wyłącznie od masy pojazdu i żurawia"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 166,
+      "question": "O ile producent nie określa inaczej skuteczność działania zaworów zwrotnych sterowanych (zamków hydraulicznych) żurawia należy sprawdzić:",
+      "image": null,
+      "options": [
+        "Bez obciążenia",
+        "Z przeciążeniem 125%",
+        "Z obciążeniem nominalnym",
+        "Z przeciążeniem 110%"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 167,
+      "question": "Do parametrów żurawia zaliczamy:",
+      "image": null,
+      "options": [
+        "Udźwig nominalny",
+        "Wysokość podnoszenia",
+        "Prędkość ruchów roboczych",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 168,
+      "question": "Bezpośrednio po zakończeniu pracy, obsługujący żurawia ma obowiązek:",
+      "image": null,
+      "options": [
+        "Sprawdzić stan oleju w silniku",
+        "Sprawdzić temperaturę rozdzielaczy",
+        "Zakonserwować żuraw",
+        "Wyjąć kluczyk i zabezpieczyć przed jego eksploatacją przez osoby postronne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 169,
+      "question": "Nadmiernie rozbujany ładunek może spowodować:",
+      "image": null,
+      "options": [
+        "Uwolnienie się ładunku z zawiesi",
+        "Utratę stateczności, ponieważ wzrasta moment wywracający wywołany siłą boczną rozkołysanego ładunku",
+        "Uszkodzenie wysięgnika",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 170,
+      "question": "Bezpieczny sposób sprawdzenia działania zaworu przelewowego w żurawiach przeładunkowych ze sterowaniem bezpośrednim przeprowadza się:",
+      "image": null,
+      "options": [
+        "Z ładunkiem nominalnym na wysokości ok 1/2 wysokości podnoszenia",
+        "Z włączonym silnikiem bez ładunku",
+        "Wychylając i przytrzymując dźwignię danego mechanizmu aż do momentu uzyskania przez element wykonawczy położenia skrajnego",
+        "Odpowiedź b i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 171,
+      "question": "Kryteria i warunki poprawnego wykonania prób układu hydraulicznego ustala:",
+      "image": null,
+      "options": [
+        "Wytwórca urządzenia",
+        "Konserwator",
+        "Obsługujący",
+        "Brak jednoznacznych wytycznych"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 172,
+      "question": "W oparciu o przedstawiony diagram określ po przekroczeniu jakiego wysięgu zadziała ogranicznik udźwigu żurawia o oznaczeniu 600 T z podwieszonym ładunkiem o masie 700 kg:",
+      "image": "/img/ZURAWIE-PRZENOSNE_172.webp",
+      "options": [
+        "8 m",
+        "9 m",
+        "7 m",
+        "11 m"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 173,
+      "question": "W oparciu o przedstawiony diagram określ na jakim wysięgu zadziała ogranicznik udźwigu żurawia z podwieszonym ładunkiem o masie 3320 kg:",
+      "image": "/img/ZURAWIE-PRZENOSNE_173.webp",
+      "options": [
+        "8,5 m",
+        "9,5 m",
+        "10 m",
+        "7 m"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 174,
+      "question": "Czy obsługujący może sprawdzić ogranicznik udźwigu w żurawiu przenośnym?",
+      "image": null,
+      "options": [
+        "Nie, bo wiąże się to z przeciążaniem urządzenia",
+        "Tak, ale tylko w obecności inspektora BHP",
+        "Tak, zgodnie z instrukcją eksploatacji",
+        "Tak, ale tylko w obecności przełożonego"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 175,
+      "question": "Praca żurawia bez podpór:",
+      "image": null,
+      "options": [
+        "Jest zabroniona w każdym wypadku",
+        "Jest dopuszczalna o ile producent przewidział taką sytuację",
+        "Jest uzależniona od stopnia załadowania skrzyni ładunkowej",
+        "Odpowiedź b i c jest prawidłowa"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 176,
+      "question": "Praca żurawiem podczas burzy z wyładowaniami atmosferycznymi jest:",
+      "image": null,
+      "options": [
+        "Dopuszczalna, pod warunkiem opadów nie ograniczających widoczność",
+        "Niedopuszczalna",
+        "Dopuszczalna, pod warunkiem pisemnej zgody udzielonej od eksploatującego",
+        "Dopuszczalna na wyłączną odpowiedzialność obsługującego"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 177,
+      "question": "Minimalna temperatura po przekroczeniu której żurawiem nie można pracować:",
+      "image": null,
+      "options": [
+        "Jest uzależniona od masy przenoszonych ładunków",
+        "Wynosi -15 °C",
+        "Jest określona w parametrach technicznych pracy żurawia i jest wskazana w instrukcji eksploatacji",
+        "Zależy od rodzaju lepkości oleju hydraulicznego"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 178,
+      "question": "Dopuszczalna maksymalna prędkość wiatru przy której można bezpiecznie pracować żurawiem:",
+      "image": null,
+      "options": [
+        "Wynosi 14 m/s",
+        "Wynosi 12,5 m/s",
+        "Jest określona w instrukcji eksploatacji",
+        "Jest uzależniona jest od umiejętności obsługującego"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 179,
+      "question": "Na wybór odpowiedniego programu pracy ogranicznika obciążenia w żurawiu może mieć wpływ:",
+      "image": null,
+      "options": [
+        "Rodzaj zainstalowanego wysięgnika dodatkowego",
+        "Prędkość obrotowa silnika zasilającego",
+        "Stopień wysunięcia podpór żurawia",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 180,
+      "question": "Układanie podkładów pod podpory żurawia:",
+      "image": null,
+      "options": [
+        "Zwiększa bezpieczeństwo pracy żurawia",
+        "Nie ma wpływu na bezpieczeństwo pracy żurawia",
+        "Zwiększa powierzchnię nacisku wywieranego przez podporę na podłoże",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 181,
+      "question": "Podkładów pod podpory nie stosuje się:",
+      "image": null,
+      "options": [
+        "Na miękkim podłożu",
+        "Przy pracy żurawiem na kołach",
+        "Na twardym podłożu",
+        "Żadna z powyższych odpowiedzi nie jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 182,
+      "question": "Z uwagi na brak wystarczającego miejsca na rozłożenie podpór obsługujący żurawia może:",
+      "image": null,
+      "options": [
+        "Rozłożyć podpory tylko po stronie pobieranego ładunku",
+        "Podjąć pracę z zachowaniem szczególnej ostrożności",
+        "Ograniczyć masę podnoszonego ładunku",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 183,
+      "question": "Podpory żurawia należy rozstawiać:",
+      "image": null,
+      "options": [
+        "Tylko wtedy, gdy żuraw będzie przenosił ładunki na maksymalnym wysięgu lub gdy podłoże pod żurawiem jest niestabilne",
+        "Tylko, gdy podłoże pod żurawiem jest niestabilne a żuraw będzie pracował z wysięgnikiem pomocniczym dodatkowym",
+        "Zgodnie z posiadanymi kompetencjami z możliwością regulacji stopnia ich wysunięcia wraz ze wzrostem lub spadkiem obciążenia wysięgnika",
+        "Zgodnie z wytycznymi zawartymi w instrukcji eksploatacji żurawia bez możliwości ich regulacji w trakcie trwających prac przeładunkowych"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 184,
+      "question": "W oparciu o przedstawiony rysunek wskaż prawidłowy pomiar minimalnej odległości od wykopu:",
+      "image": "/img/ZURAWIE-PRZENOSNE_184.webp",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 185,
+      "question": "Bezpieczna odległość rozstawienia żurawia od krawędzi wykopu zależy od:",
+      "image": null,
+      "options": [
+        "Kąta nachylenia wysięgnika żurawia",
+        "Siły wiatru",
+        "Warunków atmosferycznych",
+        "Głębokości wykopu"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 186,
+      "question": "Rozstawienie żurawia przy krawędzi niezabezpieczonego wykopu:",
+      "image": null,
+      "options": [
+        "Jest możliwe za zgodą kierownika budowy",
+        "Jest możliwe przy słabym wietrze",
+        "Nie wpływa na bezpieczną pracę żurawia",
+        "Jest dopuszczalne pod warunkiem zachowania bezpiecznej odległości"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 187,
+      "question": "Bezpieczna odległość żurawia od linii elektroenergetycznej:",
+      "image": null,
+      "options": [
+        "Jest stała i wynosi 20 m",
+        "Zależy od napięcia linii",
+        "Maleje przy wysokich słupach",
+        "Zależy od wilgotności powietrza"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 188,
+      "question": "Obowiązujące minimalne odległości od linii elektroenergetycznych wynikają z:",
+      "image": null,
+      "options": [
+        "Instrukcji eksploatacji urządzenia",
+        "Przepisów DT",
+        "Przepisów wewnątrzzakładowych",
+        "Odrębnych przepisów krajowych"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 189,
+      "question": "Jaka jest bezpieczna odległość żurawia lub ładunku od skrajnych przewodów linii elektroenergetycznych o napięciu znamionowym od 1kV do 15kV:",
+      "image": null,
+      "options": [
+        "3m",
+        "15m",
+        "5m",
+        "20m"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 190,
+      "question": "Jaka jest bezpieczna odległość żurawia lub ładunku od skrajnych przewodów linii elektroenergetycznych o napięciu znamionowym powyżej 110 kV:",
+      "image": null,
+      "options": [
+        "10m",
+        "15m",
+        "5m",
+        "30m"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 191,
+      "question": "W oparciu o przedstawiony rysunek wskaż prawidłowy pomiar minimalnej odległości od linii elektroenergetycznych:",
+      "image": "/img/ZURAWIE-PRZENOSNE_191.webp",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 192,
+      "question": "Praca żurawia w pobliżu linii elektroenergetycznej w odległości mniejszej od wartości dopuszczalnej jest:",
+      "image": null,
+      "options": [
+        "Zawsze zabroniona",
+        "Dozwolona pod warunkiem uzgodnienia jej szczegółowych warunków pracy z operatorem linii przesyłowej",
+        "Dozwolona pod warunkiem uzgodnienia jej szczegółowych warunków pracy z UDT",
+        "Dozwolona pod warunkiem operowaniem żurawia ze zmniejszonymi prędkościami pracy i w ograniczonym zasięgu"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 193,
+      "question": "Dopuszczalną odległość pracy żurawia od napowietrznej linii elektroenergetycznej mierzy się:",
+      "image": null,
+      "options": [
+        "Od linii w poziomie do osi obrotu żurawia",
+        "Od linii w poziomie do całkowicie wysuniętego wysięgnika wraz z zawieszonym ładunkiem",
+        "Od linii w poziomie do kabiny obsługującego żurawia",
+        "Od linii po skosie do całkowicie wysuniętego wysięgnika wraz z zawieszonym ładunkiem"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 194,
+      "question": "Podczas podnoszenia i przemieszczania ładunków niedopuszczalne jest:",
+      "image": null,
+      "options": [
+        "Przemieszczanie ładunków nad pojazdami",
+        "Przemieszczanie ładunku nad obiektami budowlanymi",
+        "Przemieszczanie ładunków nad maszynami",
+        "Przemieszczanie ładunków nad osobami"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 195,
+      "question": "Podnoszenie ładunków o masie większej niż udźwig dopuszczalny jest:",
+      "image": null,
+      "options": [
+        "Dozwolone gdy masa ładunku jest większa od udźwigu nominalnego o nie więcej niż 10%",
+        "Dozwolone gdy nie ma możliwości przeniesienia ładunku dzieląc go na mniejsze części",
+        "Gdy czas podnoszenia jest krótszy od czasu cyklu roboczego",
+        "Zabronione"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 196,
+      "question": "O ile wytwórca nie określi inaczej próbę zamków hydraulicznych w żurawiach ze sterowaniem bezpośrednim wykonujemy:",
+      "image": null,
+      "options": [
+        "Przy obciążonym siłowniku i wyłączonej pompie hydraulicznej po wysterowaniu rozdzielacza siłownik nie powinien się składać",
+        "Podczas pracy siłownika obserwujemy pracę zaworu zwrotnego sterowanego (zamka)",
+        "Sprawdzamy czy przy maksymalnym wysunięciu siłownika możemy sterować podnoszeniem i opuszczaniem ładunku",
+        "Obserwujemy, czy podczas opuszczania i podnoszenia ciśnienie w układzie hydraulicznym jest jednakowe"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 197,
+      "question": "Podczas rozładunku materiałów z mobilnych środków transportowych obsługujący ma obowiązek upewnić się:",
+      "image": null,
+      "options": [
+        "Że masa podnoszonych ładunków nie przekracza wartości dopuszczalnych wynikających z diagramu udźwigu",
+        "Pasy zabezpieczające ładunek na czas transportu są odczepione",
+        "Środek transportu z którego podejmowany jest ładunek jest zabezpieczony przed przemieszczeniem",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 198,
+      "question": "W których miejscach przebywanie hakowych jest niedozwolone lub niewłaściwe?",
+      "image": null,
+      "options": [
+        "Pod uniesionym/wiszącym/podnoszonym ładunkiem",
+        "W kabinie obsługującego podczas procesu transportu ładunków",
+        "Na wiszącym/ podnoszonym ładunku",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 199,
+      "question": "Podczas operacji podnoszenia obsługujący żurawia:",
+      "image": null,
+      "options": [
+        "Nie może przeciągać ładunków",
+        "Nie może przeciążać żurawia",
+        "Musi stosować się do poleceń przełożonego, z pominięciem zapisów instrukcji eksploatacji",
+        "Odpowiedź a i b jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 200,
+      "question": "Eksploatacja żurawia z hakiem pozbawionym fabrycznego zabezpieczenia gardzieli haka jest:",
+      "image": null,
+      "options": [
+        "Zabroniona",
+        "Dopuszczalna na odpowiedzialność obsługującego",
+        "Dopuszczalna pod warunkiem pracy ze zmniejszonymi prędkościami",
+        "Dopuszczalna na odpowiedzialność konserwującego"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 201,
+      "question": "Podczas oceny stanu technicznego żurawia przed rozpoczęciem pracy obsługujący:",
+      "image": null,
+      "options": [
+        "Dokonuje oceny stanu w zakresie zgodnym z zapisami instrukcji eksploatacji",
+        "Wykonuje próby z przeciążeniem",
+        "W przypadku negatywnej oceny stanu technicznego odmawia rozpoczęcia pracy",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 202,
+      "question": "Korzystając z przedstawionego diagramu wskaż odpowiednią wartość wysięgu i ładunku próbnego podczas przeprowadzenia próby szczelności wewnętrznej żurawia:",
+      "image": "/img/ZURAWIE-PRZENOSNE_202.webp",
+      "options": [
+        "6600 kg i 9,1 m",
+        "6600 kg i 5,2 m",
+        "2090 kg i 9,1 m",
+        "2090 kg i 3,3 m"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 203,
+      "question": "O ile wytwórca nie określi inaczej, maksymalna dopuszczalna wartość opadania ładunku żurawi przenośnych (budowlanych) o wysięgu poniżej 12m podczas próby szczelności wynosi:",
+      "image": null,
+      "options": [
+        "10 mm",
+        "0,5 % długości wysięgu realizowanego hydraulicznie",
+        "2 % maksymalnego wysięgu żurawia",
+        "4 % udźwigu nominalnego wyrażone w mm"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 204,
+      "question": "O ile wytwórca nie określi inaczej maksymalna dopuszczalna wartość opadania ładunku żurawi przeładunkowych do drewna podczas próby szczelności wynosi:",
+      "image": null,
+      "options": [
+        "10 mm",
+        "2,0 % danego wysięgu",
+        "2 % maksymalnego wysięgu żurawia realizowanego hydraulicznie",
+        "4 % udźwigu nominalnego wyrażone w mm"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 205,
+      "question": "Podczas oceny stanu technicznego pulpitu sterującego żurawia obsługujący sprawdza:",
+      "image": null,
+      "options": [
+        "Poprawność oznaczeń dźwigni i przycisków sterujących",
+        "Wielkość nastaw sprężyn dźwigni sterujących",
+        "Wartość natężenia oświetlenia zewnętrznego",
+        "Odpowiedź a i b jest prawidłowa"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 206,
+      "question": "Podczas obsługi codziennej obsługujący żurawia ma obowiązek:",
+      "image": null,
+      "options": [
+        "Sprawdzić momenty dokręcenie śrub mocujących żurawia do ramy podwozia",
+        "Przesmarować zawory przelewowe",
+        "Wykonać próby ruchowe z przeciążeniem",
+        "Wykonać czynności określone przez producenta w instrukcji obsługi"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 207,
+      "question": "W przypadku braku możliwości obserwacji przez obsługującego całej drogi jaką pokonuje ładunek:",
+      "image": null,
+      "options": [
+        "Obsługujący wykonuje czynności przemieszczania ładunku z prędkością równą połowie prędkości maksymalnej danego mechanizmu",
+        "Brak jest możliwości wykonania pracy",
+        "Obsługujący wykonuje czynności przemieszczania ładunku przy współpracy osoby przeszkolonej zwanej sygnalistą",
+        "Do eksploatacji żurawia wyznacza się osoby posiadające udokumentowaną praktykę wykonywania tego typu prac"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 208,
+      "question": "Przy eksploatacji żurawia przeładunkowego do drewna:",
+      "image": null,
+      "options": [
+        "Istnieje zakaz pracy hakiem",
+        "Obsługujący musi posiadać dodatkowe specjalne uprawnienia UDT",
+        "Obsługujący nie musi posiadać żadnych uprawnień, ponieważ najczęściej pracuje w lesie",
+        "Nie są wymagane przeglądy wykonywane przez uprawnionego konserwatora ze względu na prostą konstrukcję urządzenia"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 209,
+      "question": "Nadmiernie rozbujany ładunek może spowodować:",
+      "image": null,
+      "options": [
+        "Uszkodzenie haka żurawia",
+        "Utratę stateczności, ponieważ wzrasta moment wywracający wywołany siłą boczną rozkołysanego ładunku",
+        "Zerwanie liny nośnej",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 210,
+      "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną wysokość można bezpiecznie podnieść ładunek o masie 3,4t:",
+      "image": "/img/ZURAWIE-PRZENOSNE_210.webp",
+      "options": [
+        "17 m",
+        "24,5 m",
+        "18,6 m",
+        "22 m"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 211,
+      "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną odległość można bezpiecznie podać ładunek o masie 3,4t:",
+      "image": "/img/ZURAWIE-PRZENOSNE_211.webp",
+      "options": [
+        "17 m",
+        "14 m",
+        "18,6 m",
+        "10,2 m"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 212,
+      "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
+      "image": "/img/ZURAWIE-PRZENOSNE_212.webp",
+      "options": [
+        "Maksymalny udźwig 13000 kg",
+        "Maksymalny wysięg 23 m",
+        "Maksymalny udźwig na wysięgu 18,5 m wynosi 2,4 t",
+        "Odpowiedź b i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 213,
+      "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
+      "image": "/img/ZURAWIE-PRZENOSNE_213.webp",
+      "options": [
+        "Maksymalny udźwig 17,5 t",
+        "Maksymalny wysięg 26 m",
+        "Maksymalny udźwig na wysięgu 14 m wynosi 2,4 t",
+        "Odpowiedź b i c jest prawidłowa"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 214,
+      "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 10 m:",
+      "image": "/img/ZURAWIE-PRZENOSNE_214.webp",
+      "options": [
+        "4100 kg",
+        "6900 kg",
+        "3260 kg",
+        "5200 kg"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 215,
+      "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 20 m:",
+      "image": "/img/ZURAWIE-PRZENOSNE_215.webp",
+      "options": [
+        "5,2 t",
+        "2,8 t",
+        "2,1 t",
+        "4,1 t"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 216,
+      "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną wysokość można bezpiecznie podać ładunek o masie 3,32 t:",
+      "image": "/img/ZURAWIE-PRZENOSNE_216.webp",
+      "options": [
+        "17 m",
+        "24,5 m",
+        "15 m",
+        "22 m"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 217,
+      "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną odległość można bezpiecznie podać ładunek o masie 3,32 t:",
+      "image": "/img/ZURAWIE-PRZENOSNE_217.webp",
+      "options": [
+        "7,0 m",
+        "10,2 m",
+        "8,6 m",
+        "10,2 m"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 218,
+      "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
+      "image": "/img/ZURAWIE-PRZENOSNE_218.webp",
+      "options": [
+        "Maksymalny udźwig 6200 kg",
+        "Maksymalny wysięg 15 m",
+        "Maksymalny udźwig na wysięgu 10,5 m wynosi 2,61 t",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 219,
+      "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
+      "image": "/img/ZURAWIE-PRZENOSNE_219.webp",
+      "options": [
+        "Maksymalna wysokość podnoszenia 13 m",
+        "Maksymalny wysięg 15 m",
+        "Maksymalny udźwig na wysięgu 14 m wynosi 2,4 t",
+        "Maksymalny udźwig na wysięgu 6,8 m wynosi 4,3 t"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 220,
+      "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 4 m:",
+      "image": "/img/ZURAWIE-PRZENOSNE_220.webp",
+      "options": [
+        "4100 kg",
+        "6200 kg",
+        "3260 kg",
+        "5200 kg"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 221,
+      "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 13 m:",
+      "image": "/img/ZURAWIE-PRZENOSNE_221.webp",
+      "options": [
+        "2,1 t",
+        "2,8 t",
+        "2,4 t",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 222,
+      "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną wysokość można bezpiecznie podać ładunek o masie 890 kg:",
+      "image": "/img/ZURAWIE-PRZENOSNE_222.webp",
+      "options": [
+        "7 m",
+        "5,5 m",
+        "4,4 m",
+        "6 m"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 223,
+      "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną odległość można bezpiecznie podać ładunek o masie 620 kg:",
+      "image": "/img/ZURAWIE-PRZENOSNE_223.webp",
+      "options": [
+        "5,5 m",
+        "4,5 m",
+        "3,5 m",
+        "6 m"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 224,
+      "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
+      "image": "/img/ZURAWIE-PRZENOSNE_224.webp",
+      "options": [
+        "Maksymalny udźwig 620 kg",
+        "Maksymalny wysięg 6,1 m",
+        "Maksymalny udźwig na wysięgu 6,1 m wynosi 4,5 t",
+        "Odpowiedź b i c jest prawidłowa"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 225,
+      "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
+      "image": "/img/ZURAWIE-PRZENOSNE_225.webp",
+      "options": [
+        "Maksymalna wysokość podnoszenia 7 m",
+        "Maksymalny wysięg 7 m",
+        "Maksymalny udźwig na wysięgu 6,1 m wynosi 450 kg",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 226,
+      "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 4 m, przy wysokości 5,8 m:",
+      "image": "/img/ZURAWIE-PRZENOSNE_226.webp",
+      "options": [
+        "620 kg",
+        "450 kg",
+        "720 kg",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 227,
+      "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 1,8 m, przy wysokości 4 m:",
+      "image": "/img/ZURAWIE-PRZENOSNE_227.webp",
+      "options": [
+        "0,45 t",
+        "0,62 t",
+        "0,89 t",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 228,
+      "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną odległość można bezpiecznie podać ładunek o masie 3980 kg:",
+      "image": "/img/ZURAWIE-PRZENOSNE_228.webp",
+      "options": [
+        "5,3 m",
+        "4,5 m",
+        "3,5 m",
+        "6 m"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 229,
+      "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
+      "image": "/img/ZURAWIE-PRZENOSNE_229.webp",
+      "options": [
+        "Maksymalny udźwig 3,98 t",
+        "Maksymalny wysięg 11,1 m",
+        "Maksymalny udźwig na wysięgu 6 m to 4,5 t",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 230,
+      "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
+      "image": "/img/ZURAWIE-PRZENOSNE_230.webp",
+      "options": [
+        "Maksymalna wysokość podnoszenia 11,1 m",
+        "Maksymalny wysięg żurawia z ładunkiem 2,82 t to 7,2 m",
+        "Maksymalny udźwig na wysięgu 3,4 m wynosi 6390 kg",
+        "Odpowiedź b i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 231,
+      "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 7,2 m:",
+      "image": "/img/ZURAWIE-PRZENOSNE_231.webp",
+      "options": [
+        "5,20 t",
+        "2,82 t",
+        "4,32 t",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 232,
+      "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną odległość można bezpiecznie podać ładunek o masie 3790 kg:",
+      "image": "/img/ZURAWIE-PRZENOSNE_232.webp",
+      "options": [
+        "7 m",
+        "5,5 m",
+        "4,4 m",
+        "6,25 m"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 233,
+      "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną wysokość można bezpiecznie podać ładunek o masie 3790 kg:",
+      "image": "/img/ZURAWIE-PRZENOSNE_233.webp",
+      "options": [
+        "18,5 m",
+        "16 m",
+        "10 m",
+        "8 m"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 234,
+      "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
+      "image": "/img/ZURAWIE-PRZENOSNE_234.webp",
+      "options": [
+        "Maksymalny udźwig wynosi 9200 kg",
+        "Maksymalny wysięg żurawia z wysięgnikiem o ręcznym wysuwie wynosi 18,65 m",
+        "Maksymalny udźwig na wysięgu 6 m to 2,81 t",
+        "Odpowiedź a i b jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 235,
+      "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
+      "image": "/img/ZURAWIE-PRZENOSNE_235.webp",
+      "options": [
+        "Praca z wysuniętymi podporami",
+        "Maksymalny wysięg 16 m",
+        "Maksymalny udźwig 9,2 t",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 236,
+      "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 12,25 m:",
+      "image": "/img/ZURAWIE-PRZENOSNE_236.webp",
+      "options": [
+        "6,34 t",
+        "1,76 t",
+        "3,80 t",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 237,
+      "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 17 m:",
+      "image": "/img/ZURAWIE-PRZENOSNE_237.webp",
+      "options": [
+        "1350 kg",
+        "1050 kg",
+        "880 kg",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 238,
+      "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
+      "image": "/img/ZURAWIE-PRZENOSNE_238.webp",
+      "options": [
+        "Maksymalny udźwig żurawia 510 kg",
+        "Maksymalny udźwig żurawia 610 kg",
+        "Maksymalny udźwig żurawia 1000 kg",
+        "Maksymalny udźwig żurawia 440 kg"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 239,
+      "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną odległość można bezpiecznie podać ładunek o masie 1300 kg żurawiem oznaczonym symbolem 700T:",
+      "image": "/img/ZURAWIE-PRZENOSNE_239.webp",
+      "options": [
+        "7 m",
+        "6 m",
+        "4,4 m",
+        "5 m"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 240,
+      "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną odległość można bezpiecznie podać ładunek o masie 1350 kg żurawiem oznaczonym symbolem 600T:",
+      "image": "/img/ZURAWIE-PRZENOSNE_240.webp",
+      "options": [
+        "2 m",
+        "4 m",
+        "5 m",
+        "7 m"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 241,
+      "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawi:",
+      "image": "/img/ZURAWIE-PRZENOSNE_241.webp",
+      "options": [
+        "Maksymalny udźwig żurawia 700 t",
+        "Maksymalny wysięg żurawia z wysięgnikiem o ręcznym wysuwie 14,35 m",
+        "Maksymalny udźwig żurawia 700T na wysięgu 6 m wynosi 1,03 t",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 242,
+      "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
+      "image": "/img/ZURAWIE-PRZENOSNE_242.webp",
+      "options": [
+        "Diagram dotyczy dwóch rodzajów żurawi",
+        "Maksymalny wysięg wynosi 10 m",
+        "Maksymalny udźwig żurawia żurawia 700T to 2,02 t",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 243,
+      "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 10 m, żurawiem oznaczonym symbolem 600T:",
+      "image": "/img/ZURAWIE-PRZENOSNE_243.webp",
+      "options": [
+        "630 kg",
+        "450 kg",
+        "550 kg",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 244,
+      "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 8 m żurawiem oznaczonym symbolem 600T:",
+      "image": "/img/ZURAWIE-PRZENOSNE_244.webp",
+      "options": [
+        "700 kg",
+        "800 kg",
+        "1030 kg",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 245,
+      "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną odległość można bezpiecznie podać ładunek o masie 1290 kg:",
+      "image": "/img/ZURAWIE-PRZENOSNE_245.webp",
+      "options": [
+        "7 m",
+        "5,5 m",
+        "10,3 m",
+        "6,25 m"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 246,
+      "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną wysokość można bezpiecznie podać ładunek o masie 1290 kg:",
+      "image": "/img/ZURAWIE-PRZENOSNE_246.webp",
+      "options": [
+        "14,5 m",
+        "20,7 m",
+        "10 m",
+        "17,9 m"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 247,
+      "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
+      "image": "/img/ZURAWIE-PRZENOSNE_247.webp",
+      "options": [
+        "Maksymalny udźwig 2000 kg",
+        "Maksymalny wysięg żurawia realizowany mechanicznie wynosi 14,35 m",
+        "Maksymalny udźwig na wysięgu 6 m wynosi 3,81 t",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 248,
+      "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
+      "image": "/img/ZURAWIE-PRZENOSNE_248.webp",
+      "options": [
+        "Praca na maksymalnym wysuwie podpór",
+        "Maksymalny wysięg 22 m",
+        "Maksymalny udźwig 8065 kg",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 249,
+      "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 12,35 m:",
+      "image": "/img/ZURAWIE-PRZENOSNE_249.webp",
+      "options": [
+        "0,995 t",
+        "2,23 t",
+        "1,240 t",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 250,
+      "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 6,35 m:",
+      "image": "/img/ZURAWIE-PRZENOSNE_250.webp",
+      "options": [
+        "1350 kg",
+        "1050 kg",
+        "2350 kg",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 251,
+      "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną odległość można bezpiecznie podać ładunek o masie 6470 kg:",
+      "image": "/img/ZURAWIE-PRZENOSNE_251.webp",
+      "options": [
+        "7 m",
+        "9,65 m",
+        "10,3 m",
+        "6,25 m"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 252,
+      "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną wysokość można bezpiecznie podać ładunek o masie 6470 kg:",
+      "image": "/img/ZURAWIE-PRZENOSNE_252.webp",
+      "options": [
+        "14,5 m",
+        "20,0 m",
+        "16 m",
+        "17,5 m"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 253,
+      "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
+      "image": "/img/ZURAWIE-PRZENOSNE_253.webp",
+      "options": [
+        "Maksymalny udźwig 21500 kg",
+        "Maksymalny wysięg żurawia z wysięgnikiem o mechanicznym wysuwie 23,55 m",
+        "Maksymalny udźwig na wysięgu 11,75 m to 5,22 t",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 254,
+      "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
+      "image": "/img/ZURAWIE-PRZENOSNE_254.webp",
+      "options": [
+        "Praca na minimalnym wysuwie podpór",
+        "Maksymalny wysięg wysięgnika z mechanicznym wysuwem 16,15 m",
+        "Maksymalny udźwig 25,1 t",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 255,
+      "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 13,9 m:",
+      "image": "/img/ZURAWIE-PRZENOSNE_255.webp",
+      "options": [
+        "5,520 t",
+        "3,655 t",
+        "4,350 t",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 256,
+      "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 6,95 m:",
+      "image": "/img/ZURAWIE-PRZENOSNE_256.webp",
+      "options": [
+        "8255 kg",
+        "10050 kg",
+        "10940 kg",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 257,
+      "question": "Poniższy rysunek przedstawia cechę:",
+      "image": "/img/ZURAWIE-PRZENOSNE_257.webp",
+      "options": [
+        "Zawiesia łańcuchowego",
+        "Zawiesia linowego",
+        "Zawiesia pasowego",
+        "Trawersy specjalistycznej"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 258,
+      "question": "Poniższy rysunek przedstawia cechę:",
+      "image": "/img/ZURAWIE-PRZENOSNE_258.webp",
+      "options": [
+        "Zawiesia łańcuchowego",
+        "Zawiesia linowego",
+        "Zawiesia pasowego",
+        "Trawersy specjalistycznej"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 259,
+      "question": "Poniższy rysunek przedstawia cechę:",
+      "image": "/img/ZURAWIE-PRZENOSNE_259.webp",
+      "options": [
+        "Zawiesia łańcuchowego",
+        "Zawiesia linowego",
+        "Zawiesia pasowego",
+        "Trawersy specjalistycznej"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 260,
+      "question": "Trawersa służy do:",
+      "image": null,
+      "options": [
+        "Podnoszenia ładunków specjalnych np. arkuszy blachy",
+        "Podnoszenia długich ładunków, przy których użycie zwykłych zawiesi jest niemożliwe lub utrudnione",
+        "Podnoszenia ładunków przekraczających udźwig nominalny urządzenia",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 261,
+      "question": "Minimalny udźwig urządzenia dźwignicowego podnoszącego ładunek o masie 24 t przy użyciu przedstawionej trawersy wynosi:",
+      "image": "/img/ZURAWIE-PRZENOSNE_261.webp",
+      "options": [
+        "20,0 t",
+        "25,2 t",
+        "30,0 t",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 262,
+      "question": "Skrót DOR oznacza:",
+      "image": null,
+      "options": [
+        "Dopuszczalne obciążenie robocze",
+        "Dopuszczalne obciążenie robocze ciągła przy kącie wierzchołkowym alfa 120°",
+        "Dozwolona obsługa ręczna",
+        "Dokumentacja techniczno-ruchowa"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 263,
+      "question": "Ładunek na haku dwurożnym należy zawiesić:",
+      "image": null,
+      "options": [
+        "Tak, aby oba rogi były jednakowo obciążone",
+        "Tak, aby różnica w obciążeniu poszczególnych rogów haka nie była większa niż 30 %",
+        "Wyłącznie przy użyciu specjalnego zawiesia do haka dwurożnego",
+        "Tylko przy użyciu zawiesi łańcuchowych"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 264,
+      "question": "Na redukcję DOR zawiesia wielocięgnowego wpływa:",
+      "image": null,
+      "options": [
+        "Ilość wykorzystanych cięgien",
+        "Dodatkowe obostrzenia eksploatacyjne zawarte w instrukcji zawiesia",
+        "Kąt rozwarcia cięgien",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 265,
+      "question": "W oparciu o przedstawiony rysunek wskaż wartość A dla zawiesia linowego:",
+      "image": "/img/ZURAWIE-PRZENOSNE_265.webp",
+      "options": [
+        "6,0 t",
+        "5,0 t",
+        "7,0 t",
+        "3,5 t"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 266,
+      "question": "W oparciu o przedstawiony rysunek wskaż wartość A dla zawiesia linowego:",
+      "image": "/img/ZURAWIE-PRZENOSNE_266.webp",
+      "options": [
+        "2,0 t",
+        "5,0 t",
+        "7,0 t",
+        "10,0 t"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 267,
+      "question": "Na rysunku pokazana jest:",
+      "image": "/img/ZURAWIE-PRZENOSNE_267.webp",
+      "options": [
+        "Tabliczka znamionowa zawiesia łańcuchowego dwucięgnowego",
+        "Tabliczka znamionowa zawiesia łańcuchowego, o udźwigu maksymalnym 2 500 kg",
+        "Tabliczka znamionowa zawiesia łańcuchowego, o udźwigu maksymalnym 3 550 kg",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 268,
+      "question": "W oparciu o przedstawiony rysunek wskaż wartość A (kąt α) dla zawiesia dwucięgnowego:",
+      "image": "/img/ZURAWIE-PRZENOSNE_268.webp",
+      "options": [
+        "100°",
+        "90°",
+        "70°",
+        "50°"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 269,
+      "question": "W oparciu o przedstawiony rysunek wskaż wartość A (kąt α) dla zawiesia dwucięgnowego:",
+      "image": "/img/ZURAWIE-PRZENOSNE_269.webp",
+      "options": [
+        "120°",
+        "90°",
+        "70°",
+        "50°"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 270,
+      "question": "W oparciu o przedstawiony rysunek wskaż wartość A (DOR w oparciu o kąt α) dla zawiesia dwucięgnowego:",
+      "image": "/img/ZURAWIE-PRZENOSNE_270.webp",
+      "options": [
+        "70%",
+        "90%",
+        "110%",
+        "50%"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 271,
+      "question": "W oparciu o przedstawiony rysunek wskaż wartość A (DOR w oparciu o kąt α) dla zawiesia dwucięgnowego:",
+      "image": "/img/ZURAWIE-PRZENOSNE_271.webp",
+      "options": [
+        "70%",
+        "90%",
+        "110%",
+        "50%"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 272,
+      "question": "W oparciu o przedstawiony rysunek wskaż wartość A (DOR w oparciu o sposób zawieszenia) dla zawiesia pasowego:",
+      "image": "/img/ZURAWIE-PRZENOSNE_272.webp",
+      "options": [
+        "1",
+        "1,4",
+        "0,8",
+        "2"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 273,
+      "question": "W oparciu o przedstawiony rysunek wskaż wartość A (DOR w oparciu o sposób zawieszenia) dla zawiesia pasowego:",
+      "image": "/img/ZURAWIE-PRZENOSNE_273.webp",
+      "options": [
+        "1",
+        "1,4",
+        "0,8",
+        "2"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 274,
+      "question": "W oparciu o przedstawiony rysunek wskaż wartość A (DOR w oparciu o sposób zawieszenia) dla zawiesia pasowego:",
+      "image": "/img/ZURAWIE-PRZENOSNE_274.webp",
+      "options": [
+        "1",
+        "1,4",
+        "0,8",
+        "2"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 275,
+      "question": "Wskaż, który ze sposobów podwieszenia ładunku jest prawidłowy:",
+      "image": "/img/ZURAWIE-PRZENOSNE_275.webp",
+      "options": [
+        "Rys A",
+        "Rys B",
+        "Obydwa sposoby są poprawne",
+        "Obydwa sposoby są niepoprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 276,
+      "question": "Wskaż, który ze sposobów podwieszenia ładunku przy pomocy zawiesia linowego jest prawidłowy:",
+      "image": "/img/ZURAWIE-PRZENOSNE_276.webp",
+      "options": [
+        "Rys A",
+        "Rys B",
+        "Obydwa sposoby są poprawne",
+        "Obydwa sposoby są niepoprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 277,
+      "question": "Poniższy rysunek przedstawia:",
+      "image": "/img/ZURAWIE-PRZENOSNE_277.webp",
+      "options": [
+        "Osprzęt wymienny montowany do głowic urządzeń dźwignicowych",
+        "Element układu podnoszenia wózków jezdniowych podnośnikowych",
+        "Zawiesie specjalistyczne do transportu ładunków umieszczonych na paletach transportowych",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 278,
+      "question": "Poniższy rysunek przedstawia:",
+      "image": "/img/ZURAWIE-PRZENOSNE_278.webp",
+      "options": [
+        "Zawiesie specjalistyczne do transportu rur stalowych i betonowych",
+        "Chwytak kleszczowy do przeładunku złomu",
+        "Zawiesie specjalistyczne do transportu ładunków umieszczonych na paletach transportowych",
+        "Element kleszczy szynowych"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 279,
+      "question": "Przedstawione na rysunku zawiesie specjalistyczne służy do:",
+      "image": "/img/ZURAWIE-PRZENOSNE_279.webp",
+      "options": [
+        "Podnoszenia arkuszy blach stalowych",
+        "Podnoszenia prętów stalowych",
+        "Podnoszenia elementów betonowych",
+        "Podnoszenia elementów z tworzywa sztucznego"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 280,
+      "question": "Przedstawione na rysunku zawiesie specjalistyczne służy do:",
+      "image": "/img/ZURAWIE-PRZENOSNE_280.webp",
+      "options": [
+        "Podnoszenia elementów betonowych",
+        "Podnoszenia elementów z tworzywa sztucznego",
+        "Podnoszenia arkuszy blach stalowych",
+        "Podnoszenia prętów stalowych"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 281,
+      "question": "Za prawidłowy dobór zawiesia odpowiada:",
+      "image": null,
+      "options": [
+        "Hakowy",
+        "Obsługujący (dotyczy sytuacji, gdy obsługujący jest odpowiedzialny za podhaczenie ładunku)",
+        "Zakładowe służby BHP",
+        "Odpowiedź a i b jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 282,
+      "question": "Zawiesia podlegają przeglądom okresowym w terminach:",
+      "image": null,
+      "options": [
+        "Co 30 dni",
+        "Co 2 miesiące",
+        "Nie podlegają przeglądom okresowym",
+        "Zgodnych z zapisami instrukcji eksploatacji zawiesi"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 283,
+      "question": "Wybór rodzaju zastosowanego zawiesia zależy od:",
+      "image": null,
+      "options": [
+        "Rodzaju przenoszonego materiału",
+        "Dostępności zawiesia i odległości pomiędzy miejscem pracy, a miejscem jego składowania",
+        "Warunków środowiskowych miejsca pracy zawiesia np. temperatury, promieniowania UV, wilgotności powietrza",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 284,
+      "question": "Przed rozpoczęciem pracy obsługujący ma obowiązek:",
+      "image": null,
+      "options": [
+        "W oparciu o masę podnoszonych ładunków dobrać zawiesie z odpowiednim DOR",
+        "W oparciu o rodzaj podnoszonych ładunków dobrać zawiesie o właściwej budowie",
+        "Dokonać oceny stanu technicznego zawiesia pod kątem jego zużycia",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 285,
+      "question": "Zawiesie to:",
+      "image": null,
+      "options": [
+        "Element umożliwiający transportowanie ładunku",
+        "Element umieszczony pomiędzy dźwignicą a ładunkiem",
+        "Element, którego masę należy uwzględnić przy podnoszeniu ładunku",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 286,
+      "question": "Zawiesia możemy podzielić:",
+      "image": null,
+      "options": [
+        "Ze względu na materiał, z którego zostały wykonane",
+        "Ze względu na ilość cięgien nośnych",
+        "Ze względu na rodzaj cięgien",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 287,
+      "question": "DOR zawiesia pasowego można określić:",
+      "image": null,
+      "options": [
+        "Testując wytrzymałość ciężarem próbnym",
+        "Mierząc grubość pasa",
+        "Sprawdzając informację na identyfikatorze/etykiecie",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 288,
+      "question": "Praca z zawiesiem bez tabliczki znamionowej:",
+      "image": null,
+      "options": [
+        "Jest zabroniona",
+        "Jest dopuszczalna pod warunkiem zachowania szczególnej ostrożności",
+        "Jest dopuszczalna pod warunkiem określenia udźwigu zawiesi na podstawie nr haka",
+        "Jest dopuszczalna za zgodą konserwatora"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 289,
+      "question": "Zawiesia łańcuchowe:",
+      "image": null,
+      "options": [
+        "Mogą być zakończone wyłącznie hakiem",
+        "Mogą mieć inne zakończenia niż hak, np. szeklę",
+        "Mogą być stosowane w każdej temperaturze otoczenia",
+        "Nie wymagają konserwacji"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 290,
+      "question": "Maksymalny dopuszczalny kąt wierzchołkowy α stosowany w zawiesiu może wynieść:",
+      "image": null,
+      "options": [
+        "120°",
+        "100°",
+        "Nie ma ograniczeń, ponieważ wystarczy zmniejszać dopuszczalne obciążenie robocze zawiesia",
+        "90°"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 291,
+      "question": "Maksymalny kąt β w zawiesiu może wynieść:",
+      "image": null,
+      "options": [
+        "120°",
+        "60°",
+        "Uwzględnia się wyłącznie kąt α",
+        "Nie ma ograniczeń, ponieważ wystarczy zmniejszać dopuszczalne obciążenie robocze zawiesia"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 292,
+      "question": "Wskaż, który ze sposobów podwieszenia ładunku przy pomocy zawiesia linowego jest nieprawidłowy:",
+      "image": "/img/ZURAWIE-PRZENOSNE_292.webp",
+      "options": [
+        "Rys A",
+        "Rys B",
+        "Rys C",
+        "Rys D"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 293,
+      "question": "Wskaż, który ze sposobów zamocowania haka jest prawidłowy:",
+      "image": "/img/ZURAWIE-PRZENOSNE_293.webp",
+      "options": [
+        "Rys A",
+        "Rys B",
+        "Rys C",
+        "Rys D"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 294,
+      "question": "Wskaż, który ze sposobów zamocowania haka jest nieprawidłowy:",
+      "image": "/img/ZURAWIE-PRZENOSNE_294.webp",
+      "options": [
+        "Rys A, B, C",
+        "Rys A, B, D",
+        "Rys A, C, D",
+        "Rys A, B, C, D"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 295,
+      "question": "W oparciu o przedstawiony rysunek wskaż wartość A dla zawiesia dwucięgnowego:",
+      "image": "/img/ZURAWIE-PRZENOSNE_295.webp",
+      "options": [
+        "120%",
+        "90%",
+        "70%",
+        "10%"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 296,
+      "question": "W oparciu o przedstawiony rysunek wskaż wartość A dla zawiesia dwucięgnowego:",
+      "image": "/img/ZURAWIE-PRZENOSNE_296.webp",
+      "options": [
+        "120%",
+        "90%",
+        "70%",
+        "50%"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 297,
+      "question": "O ile wytwórca nie określi inaczej dopuszczalne kryteria zużycia haków przy zawiesiach to:",
+      "image": null,
+      "options": [
+        "Rozwarcie o 5% i wytarcie gardzieli o 10%",
+        "Rozwarcie o 20% i wytarcie gardzieli o 10%",
+        "Rozwarcie i wytarcie gardzieli o 1%",
+        "Wymiary haka nie zmieniają się w trakcie eksploatacji"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 298,
+      "question": "O ile wytwórca nie określi inaczej dopuszczalna ilość pęknięć drutów w zawiesiu linowym wynosi:",
+      "image": null,
+      "options": [
+        "1% drutów w splotce na długości 6 średnic i 10% na długości 30 średnic",
+        "5 drutów w splotce na długości 6 średnic i 10 na długości 30 średnic",
+        "10 % splotek",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 299,
+      "question": "Które z poniższych uszkodzeń dyskwalifikują zawiesie linowe z dalszej eksploatacji?",
+      "image": null,
+      "options": [
+        "Pęknięcie splotki w linie",
+        "Miejscowe zmniejszenie średnicy na skutek przerwania rdzenia liny",
+        "Deformacja w kształcie koszyka",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 300,
+      "question": "Wraz ze wzrostem kąta wierzchołkowego α:",
+      "image": null,
+      "options": [
+        "Dopuszczalne obciążenie robocze rośnie",
+        "Dopuszczalne obciążenie robocze maleje",
+        "Dopuszczalne obciążenie robocze pozostaje bez zmian, ponieważ kąt wpływa tylko na udźwig dźwignicy",
+        "Kąt wierzchołkowy ma tylko znaczenie przy wartości alfa=120 stopni"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 301,
+      "question": "Kąty α i β w odniesieniu do zawiesi:",
+      "image": null,
+      "options": [
+        "Są sobie zawsze równe",
+        "Kąt α stanowi połowę kąta β",
+        "Kąt β stanowi połowę kąta α",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 302,
+      "question": "Podnosząc elementy posiadające ostre krawędzie za pomocą zawiesia pasowego należy:",
+      "image": null,
+      "options": [
+        "Stosować specjalne przekładki zabezpieczające zawiesie przed ostrymi krawędziami",
+        "Nie wolno stosować zawiesi pasowych",
+        "Należy podwójnie opasać ładunek, aby nie doszło do przetarcia pasa",
+        "Stosować tylko zawiesi pasowe poliestrowe"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 303,
+      "question": "Wartość DOR zawiesia wielocięgnowego jest:",
+      "image": null,
+      "options": [
+        "Wartością zależną od udźwigu dźwignicy",
+        "Wartością zmienną i zależy od kąta pomiędzy cięgnami zawiesia",
+        "Zależna od masy transportowanego ładunku",
+        "Wartością stałą"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 304,
+      "question": "Używanie zawiesi w temperaturze powyżej 100°C jest:",
+      "image": null,
+      "options": [
+        "Dopuszczalne ale w krótkim czasie",
+        "Jest dopuszczalne o ile zezwala na to instrukcja zawiesia",
+        "Zabronione",
+        "Dopuszczalne tylko przy stosowaniu zawiesi łańcuchowych"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 305,
+      "question": "Poniższy rysunek przedstawia:",
+      "image": "/img/ZURAWIE-PRZENOSNE_305.webp",
+      "options": [
+        "Cecha zawiesia łańcuchowego czterocięgnowego",
+        "Cecha zawiesia linowego o długości cięgien 10 m",
+        "Cecha zawiesia specjalnego",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 306,
+      "question": "Maksymalny DOR przedstawionego zawiesia wynosi:",
+      "image": "/img/ZURAWIE-PRZENOSNE_306.webp",
+      "options": [
+        "8,4 t",
+        "6,0 t",
+        "10,0 t",
+        "8,0 t"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 307,
+      "question": "Maksymalny DOR przedstawionego zawiesia przy kącie wierzchołkowym β 60° wynosi:",
+      "image": "/img/ZURAWIE-PRZENOSNE_307.webp",
+      "options": [
+        "10,0 t",
+        "8,4 t",
+        "6,0 t",
+        "4,0 t"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 308,
+      "question": "Maksymalny DOR przedstawionego zawiesia przy kącie wierzchołkowym β 45° wynosi:",
+      "image": "/img/ZURAWIE-PRZENOSNE_308.webp",
+      "options": [
+        "8,4 t",
+        "8,0 t",
+        "6,0 t",
+        "4,0 t"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 309,
+      "question": "W oparciu o przedstawiony rysunek wskaż poprawny sposób zamocowania haka:",
+      "image": "/img/ZURAWIE-PRZENOSNE_309.webp",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 310,
+      "question": "Maksymalna masa podnoszonego ładunku przy kącie β wynoszącym 55° nie może przekraczać:",
+      "image": "/img/ZURAWIE-PRZENOSNE_310.webp",
+      "options": [
+        "12000 kg",
+        "9000 kg",
+        "6000 kg",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 311,
+      "question": "Maksymalna masa podnoszonego ładunku przy kącie β wynoszącym 40° nie może przekraczać:",
+      "image": "/img/ZURAWIE-PRZENOSNE_311.webp",
+      "options": [
+        "12000 kg",
+        "9000 kg",
+        "6000 kg",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 312,
+      "question": "Maksymalna masa podnoszonego ładunku przy kącie β wynoszącym 50° nie może przekraczać:",
+      "image": "/img/ZURAWIE-PRZENOSNE_312.webp",
+      "options": [
+        "12000 kg",
+        "9000 kg",
+        "6000 kg",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 313,
+      "question": "Maksymalna masa podnoszonego ładunku przy kącie β wynoszącym 65° nie może przekraczać:",
+      "image": "/img/ZURAWIE-PRZENOSNE_313.webp",
+      "options": [
+        "12000 kg",
+        "9000 kg",
+        "6000 kg",
+        "Nie wolno podnosić"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 314,
+      "question": "W oparciu o przedstawiony rysunek określ maksymalną masę ładunku jaką można podnieść przy pomocy zawiesia 4 cięgnowego:",
+      "image": "/img/ZURAWIE-PRZENOSNE_314.webp",
+      "options": [
+        "6 t",
+        "8,4 t",
+        "12 t",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 315,
+      "question": "W oparciu o przedstawiony rysunek określ maksymalną masę ładunku jaką można podnieść przy pomocy zawiesia 4 cięgnowego:",
+      "image": "/img/ZURAWIE-PRZENOSNE_315.webp",
+      "options": [
+        "6 t",
+        "8,4 t",
+        "12 t",
+        "Odpowiedź a i b jest prawidłowa"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 316,
+      "question": "W oparciu o przedstawiony rysunek określ maksymalną masę ładunku jaką można podnieść przy pomocy zawiesia 4 cięgnowego:",
+      "image": "/img/ZURAWIE-PRZENOSNE_316.webp",
+      "options": [
+        "7 t",
+        "8,4 t",
+        "12 t",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 317,
+      "question": "Które z przedstawionych zawiesi specjalnych można wykorzystać do podnoszenia blach w pozycji pionowej:",
+      "image": "/img/ZURAWIE-PRZENOSNE_317.webp",
+      "options": [
+        "Rys. 1",
+        "Rys. 2",
+        "Rys. 3",
+        "Rys. 4"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 318,
+      "question": "Które z przedstawionego osprzętu do podnoszenia można wykorzystać do podnoszenia blach w pozycji poziomej:",
+      "image": "/img/ZURAWIE-PRZENOSNE_318.webp",
+      "options": [
+        "Rys. 1",
+        "Rys. 2",
+        "Rys. 3",
+        "Rys. 4"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 319,
+      "question": "Które z przedstawionego osprzętu do podnoszenia można wykorzystać do podnoszenia dwuteowych dźwigarów stalowych:",
+      "image": "/img/ZURAWIE-PRZENOSNE_319.webp",
+      "options": [
+        "Rys. 1",
+        "Rys. 2",
+        "Rys. 3",
+        "Rys. 4"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 320,
+      "question": "Które z przedstawionego osprzętu do podnoszenia można wykorzystać do podnoszenia prętów stalowych o znacznej długości:",
+      "image": "/img/ZURAWIE-PRZENOSNE_320.webp",
+      "options": [
+        "Rys. 1",
+        "Rys. 2",
+        "Rys. 3",
+        "Rys. 4"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 321,
+      "question": "Które z przedstawionego osprzętu do podnoszenia można wykorzystać do podnoszenia ładunków składowanych na paletach transportowych:",
+      "image": "/img/ZURAWIE-PRZENOSNE_321.webp",
+      "options": [
+        "Rys. 1",
+        "Rys. 2",
+        "Rys. 3",
+        "Rys. 4"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 322,
+      "question": "Które z przedstawionego osprzętu do podnoszenia można wykorzystać do podnoszenia arkusza blachy w pozycji poziomej:",
+      "image": "/img/ZURAWIE-PRZENOSNE_322.webp",
+      "options": [
+        "Rys. 1 i Rys. 2",
+        "Rys. 2 i Rys. 3",
+        "Rys. 3 i Rys 4",
+        "Rys. 4 i Rys 1"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 323,
+      "question": "Na zdjęciu poniżej symbol α oznacza:",
+      "image": "/img/ZURAWIE-PRZENOSNE_323.webp",
+      "options": [
+        "Kąt rozwarcia cięgien zawiesia",
+        "Maksymalny kąt wierzchołkowy",
+        "Wartość określającą udźwig zawiesia",
+        "DOR zawiesia"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 324,
+      "question": "Na zdjęciu poniżej symbol β oznacza:",
+      "image": "/img/ZURAWIE-PRZENOSNE_324.webp",
+      "options": [
+        "Długość zawiesia",
+        "Kąt odchylenia cięgien od pionu",
+        "Zawiesie łańcuchowe dwucięgnowe",
+        "Wszystkie odpowiedzi są nieprawidłowe"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 325,
+      "question": "Które z poniższych warunków musi bezwzględnie spełniać zawiesie do przemieszczania ładunku:",
+      "image": null,
+      "options": [
+        "Udźwig zawiesia nie może być mniejszy od masy podnoszonego ładunku",
+        "Długość zawiesia musi zapewnić aby kąt rozwarcia zawiesia nie był większy niż 120°",
+        "Zawiesie musi posiadać czytelną cechę znamionową",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TESTY UDT - Szkolenie operatorów urządzeń transportu bliskiego." />
+  <meta name="theme-color" content="#101218" />
+  <title>Testy UDT – Uprawnienia Zawodowe</title>
+  <link rel="stylesheet" href="style.css?v=58" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+
+<body>
+  <!-- STAŁY NAGŁÓWEK (Sticky Header) -->
+  <header id="main-header" class="top-nav">
+    <div class="top-nav__left">
+      <button class="bk top-btn" id="top-bk" style="display:none"></button>
+    </div>
+    <div class="top-nav__mid">
+      <h1 id="top-title" class="top-title">Testy <span class="a">UDT</span></h1>
+    </div>
+    <div class="top-nav__right">
+      <button class="btn btn--d btn--s top-btn" id="top-lo" style="display:none"></button>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Przełącz motyw"></button>
+    </div>
+  </header>
+
+  <div id="app"></div>
+
+  <!-- Lightbox z Zoom & Pan -->
+  <div class="lb" id="lb">
+    <button class="lb__x" id="lb-x" aria-label="Zamknij">&times;</button>
+    <div class="lb__viewport" id="lb-vp">
+      <img class="lb__img" id="lb-img" src="" alt="Powiększenie" draggable="false" />
+    </div>
+  </div>
+
+  <!-- Polityka Prywatności Modal -->
+  <div class="pol-modal" id="pol-modal">
+    <div class="pol-modal__content">
+      <button class="pol-modal__x" id="pol-x" aria-label="Zamknij">&times;</button>
+      <div class="pol-modal__body">
+        <h3>Polityka Prywatności i plików technicznych</h3>
+        <p>Niniejsza polityka wyjaśnia zasady działania aplikacji testowej oraz sposób, w jaki przetwarza ona dane na
+          Twoim urządzeniu. Aplikacja została zaprojektowana z myślą o maksymalnej ochronie prywatności – nie wymaga
+          zakładania konta i nie zbiera danych osobowych w celach marketingowych.</p>
+        <ul>
+          <li><strong>Pliki techniczne (Local Storage i Cache).</strong> Aplikacja nie używa śledzących plików
+            "cookies". Do poprawnego działania (w tym działania w trybie offline oraz zapisywania Twoich postępów i
+            wyników testów) wykorzystywane są wyłącznie technologie Local Storage oraz Cache API wbudowane w Twoją
+            przeglądarkę. Są to tzw. pliki niezbędne, na które nie jest wymagana zgoda. Jeśli chcesz je usunąć, możesz
+            to zrobić w dowolnej chwili, czyszcząc dane przeglądarki.</li>
+          <li><strong>Logi serwera.</strong> Aplikacja jest hostowana na serwerach Google Firebase. Jak każda strona
+            internetowa, podczas łączenia się z serwerem, automatycznie zapisywane są standardowe logi techniczne (np.
+            adres IP, rodzaj przeglądarki, czas zapytania). Dane te służą wyłącznie do zapewnienia bezpieczeństwa i
+            stabilności serwerów.</li>
+          <li><strong>Zmiany.</strong> Zastrzegamy sobie prawo do aktualizacji niniejszej polityki w przypadku zmian
+            technologicznych w aplikacji.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="app.js?v=58"></script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+{
+  "rules": [
+    {
+      "min": 1,
+      "max": 15,
+      "count": 15
+    }
+  ],
+  "count": 15,
+  "pass_pct": 80
+}

@@ -1,0 +1,3136 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Urządzenie techniczne objęte dozorem technicznym może być eksploatowane na podstawie:",
+      "image": null,
+      "options": [
+        "Zezwolenia ustnego lub pisemnego wydanego przez upoważnionego konserwatora",
+        "Ważnej decyzji zezwalającej na eksploatację wydanej przez organ właściwej jednostki dozoru technicznego",
+        "Oznaczenia CE umieszczonego na urządzeniu",
+        "Deklaracji zgodności wystawionej przez wytwórcę"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 2,
+      "question": "Które z wymienionych czynności nie należą do zakresu obowiązków obsługującego UTB:",
+      "image": null,
+      "options": [
+        "Wykonywanie niewielkich napraw urządzenia w ramach posiadanego wykształcenia i umiejętności",
+        "Przestrzeganie instrukcji eksploatacji w zakresie obsługi UTB",
+        "Zapoznanie się z planem pracy i wielkością przenoszonych ładunków",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 3,
+      "question": "Terminy przeglądów konserwacyjnych urządzeń technicznych:",
+      "image": null,
+      "options": [
+        "Są zawarte w instrukcji eksploatacji urządzenia",
+        "Określa konserwator urządzenia",
+        "Określa w protokole inspektor wykonujący badanie",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 4,
+      "question": "Dozorem technicznym nazywamy:",
+      "image": null,
+      "options": [
+        "Określone ustawą działania zmierzające do zapewnienia bezpiecznego funkcjonowania urządzeń technicznych i urządzeń do odzyskiwania par paliwa oraz działania zmierzające do zapewnienia bezpieczeństwa publicznego w tych obszarach",
+        "Instytucje kontrolujące stan techniczny urządzeń",
+        "Urząd Dozoru Technicznego",
+        "UDT, WDT, TDT"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 5,
+      "question": "Dozór techniczny nad urządzeniami technicznymi wykonuje:",
+      "image": null,
+      "options": [
+        "Urząd Dozoru Technicznego oraz specjalistyczne jednostki dozoru technicznego",
+        "Urząd Dozoru Technicznego oraz upoważnione przez UDT organizacje",
+        "Urząd Dozoru Technicznego i zagraniczne jednostki dozoru technicznego",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 6,
+      "question": "Zmiana parametrów technicznych lub zmiana konstrukcji urządzenia technicznego traktowana jest jako:",
+      "image": null,
+      "options": [
+        "Modernizacja urządzenia technicznego",
+        "Naprawa urządzenia technicznego",
+        "Usuwanie usterek i innych nieprawidłowości urządzenia technicznego",
+        "Wytworzenie nowego urządzenia"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 7,
+      "question": "Uzgodnioną naprawę lub modernizację urządzeń technicznych może wykonać:",
+      "image": null,
+      "options": [
+        "Naprawiający lub modernizujący, który posiada uprawnienie wydane przez organ właściwej jednostki dozoru technicznego",
+        "Eksploatujący urządzenie techniczne posiadający odpowiednie doświadczenie w zakresie napraw lub modernizacji",
+        "Konserwator posiadający odpowiednie doświadczenie w zakresie napraw lub modernizacji",
+        "W niewielkim zakresie kompetentny operator"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 8,
+      "question": "Ustawa o dozorze technicznym określa następujące formy dozoru technicznego:",
+      "image": null,
+      "options": [
+        "Całkowita, częściowa, ograniczona",
+        "Pełna, ograniczona, uproszczona",
+        "Pełna, cykliczna, sporadyczna",
+        "UDT, WDT, TDT"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 9,
+      "question": "Decyzję zezwalającą na eksploatację urządzenia technicznego wydaje:",
+      "image": null,
+      "options": [
+        "Konserwator po wykonaniu przeglądu z wynikiem pozytywnym",
+        "Organ właściwej jednostki dozoru technicznego lub eksploatujący urządzenie techniczne z upoważnienia organu właściwej jednostki dozoru technicznego",
+        "Organ właściwej jednostki dozoru technicznego lub organ administracji publicznej z upoważnienia organu właściwej jednostki dozoru technicznego",
+        "Organ właściwej jednostki dozoru technicznego"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 10,
+      "question": "Obsługujący urządzenie techniczne może podjąć pracę gdy:",
+      "image": null,
+      "options": [
+        "Urządzenie posiada ważną decyzję zezwalającą na eksploatację jeżeli wymagają tego odpowiednie przepisy",
+        "Posiada zaświadczenie kwalifikacyjne odpowiedniej kategorii",
+        "Urządzenie posiada aktualny pozytywny wynik przeglądu konserwacyjnego",
+        "Wszystkie powyższe warunki muszą być spełnione jednocześnie"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 11,
+      "question": "Obsługujący urządzenie techniczne może podjąć pracę gdy:",
+      "image": null,
+      "options": [
+        "Urządzenie posiada aktualny wpis w dzienniku konserwacji potwierdzający sprawność urządzenia",
+        "Przeszedł odpowiednie szkolenie stanowiskowe",
+        "Urządzenie posiada ważną decyzję zezwalającą na eksploatację",
+        "Wszystkie powyższe warunki muszą być spełnione jednocześnie"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 12,
+      "question": "W przypadku nieprzestrzegania przez eksploatującego przepisów o dozorze technicznym eksploatujący:",
+      "image": null,
+      "options": [
+        "Otrzymuje pisemne upomnienie",
+        "Otrzymuje zalecenia pokontrolne",
+        "Podlega grzywnie lub karze ograniczenia wolności",
+        "Odpowiedź a i b jest prawidłowa"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 13,
+      "question": "W przypadku stwierdzenia zagrożenia dla życia lub zdrowia ludzkiego oraz mienia i środowiska inspektor:",
+      "image": null,
+      "options": [
+        "Wydaje decyzję wstrzymującą eksploatację urządzenia technicznego",
+        "Wystawia mandat karny",
+        "Pisemnie poucza eksploatującego",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 14,
+      "question": "W przypadku niebezpiecznego uszkodzenia urządzenia technicznego lub nieszczęśliwego wypadku eksploatujący:",
+      "image": null,
+      "options": [
+        "Niezwłocznie powiadamia UDT o zaistniałym zdarzeniu",
+        "Powiadamia producenta urządzenia o przyczynach powstałego zdarzenia",
+        "Niezwłocznie dokonuje naprawy urządzenia i przekazuje do dalszej eksploatacji",
+        "Zgłasza urządzenie do wykonania naprawy"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 15,
+      "question": "Zaświadczenie kwalifikacyjne do obsługi może zostać cofnięte przez:",
+      "image": null,
+      "options": [
+        "Organ właściwej jednostki dozoru technicznego",
+        "Eksploatującego urządzenie techniczne",
+        "Inspektora BHP",
+        "Państwową Inspekcję Pracy"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 16,
+      "question": "Urządzenia techniczne nieobjęte dozorem technicznym to:",
+      "image": null,
+      "options": [
+        "Żurawie o udźwigu do 3,2 t",
+        "Wciągniki i wciągarki oraz suwnice",
+        "Wózki jezdniowe podnośnikowe oraz podesty ruchome",
+        "Zawiesia transportowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 17,
+      "question": "Urządzenia techniczne objęte dozorem technicznym to:",
+      "image": null,
+      "options": [
+        "Przenośniki kabinowe i krzesełkowe",
+        "Układnice magazynowe oraz urządzenia dla osób niepełnosprawnych",
+        "Wyciągi towarowe i wyciągi statków",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 18,
+      "question": "Niebezpieczne uszkodzenie urządzenia technicznego to:",
+      "image": null,
+      "options": [
+        "Każda usterka UTB",
+        "Nieprzewidziane uszkodzenie, w wyniku którego urządzenie nadaje się do częściowej eksploatacji",
+        "Nieprzewidziane uszkodzenie, w wyniku którego nadaje się do eksploatacji tylko przy obniżonych parametrach",
+        "Nieprzewidziane uszkodzenie, w wyniku którego urządzenie nie nadaje się do eksploatacji lub jego dalsza eksploatacja stanowi zagrożenie"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 19,
+      "question": "Nieszczęśliwy wypadek to:",
+      "image": null,
+      "options": [
+        "Nagłe zdarzenie, które spowodowało obrażenia ciała lub śmierć",
+        "Nagłe zdarzenie, które spowodowało przerwę w pracy",
+        "Nagłe zdarzenie, które skutkuje wyłączeniem urządzenia technicznego z eksploatacji",
+        "Każda usterka UTB spowodowana przyczyną losową"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 20,
+      "question": "Podnoszenie i przenoszenie osób przez urządzenie techniczne przeznaczone wyłącznie do transportu ładunków wymaga:",
+      "image": null,
+      "options": [
+        "Uzgodnienia z organem właściwej jednostki dozoru technicznego",
+        "Uzgodnienia z przełożonym",
+        "Uzgodnienia ze służbą BHP",
+        "Jest możliwe przy zachowaniu szczególnej ostrożności i pod nadzorem inspektora"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 21,
+      "question": "Odpowiedzialnym za zapewnienie właściwej obsługi i konserwacji urządzenia technicznego jest:",
+      "image": null,
+      "options": [
+        "Eksploatujący urządzenie techniczne",
+        "Organ właściwej jednostki dozoru technicznego",
+        "Państwowa Inspekcja Pracy",
+        "Inspektor UDT"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 22,
+      "question": "Wymagane przepisami prawa przeglądy konserwacyjne wykonuje:",
+      "image": null,
+      "options": [
+        "Osoba posiadająca zaświadczenie kwalifikacyjne do konserwacji",
+        "Pracownik autoryzowanego serwisu producenta urządzenia (pod warunkiem posiadania zaświadczeń kwalifikacyjnych do konserwacji)",
+        "Zakładowe służby utrzymania ruchu",
+        "Odpowiedź a i b jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 23,
+      "question": "Dziennik konserwacji urządzenia technicznego prowadzi:",
+      "image": null,
+      "options": [
+        "Inspektor UDT w księdze rewizyjnej urządzenia",
+        "Uprawniony operator",
+        "Wyznaczony pracownik eksploatującego",
+        "Konserwator urządzenia technicznego"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 24,
+      "question": "Badania odbiorcze przeprowadza się dla urządzeń technicznych:",
+      "image": null,
+      "options": [
+        "W terminach zgodnych z zapisami rozporządzenia w sprawie warunków technicznych dozoru technicznego",
+        "Przed wydaniem pierwszej decyzji zezwalającej na eksploatację",
+        "Po naprawie urządzenia technicznego",
+        "Po każdej zmianie eksploatującego"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 25,
+      "question": "Badania okresowe przeprowadza się dla urządzeń technicznych objętych dozorem:",
+      "image": null,
+      "options": [
+        "Ograniczonym",
+        "Pełnym",
+        "Uproszczonym",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 26,
+      "question": "Nieobecność konserwującego na badaniu urządzenia technicznego wymaga min.:",
+      "image": null,
+      "options": [
+        "Wcześniejszego uzgodnienia tego faktu z organem właściwej jednostki dozoru technicznego",
+        "Przedstawienia pisemnego usprawiedliwienia nieobecności konserwatora",
+        "Przedstawienia zwolnienia lekarskiego potwierdzającego niezdolność konserwatora do pracy",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 27,
+      "question": "Kandydat na obsługującego urządzenie techniczne musi:",
+      "image": null,
+      "options": [
+        "Mieć ukończone 18 lat",
+        "Posiadać przynajmniej wykształcenie zawodowe",
+        "Posiadać przynajmniej 1 rok stażu pracy",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 28,
+      "question": "Obsługujący urządzenie techniczne ma obowiązek przerwać pracę gdy:",
+      "image": null,
+      "options": [
+        "Jego stan fizyczny i psychiczny w dniu pracy jest nieodpowiedni",
+        "Stwierdzi, że dalsza praca urządzeniem stwarza zagrożenie",
+        "Urządzenie jest niesprawne",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 29,
+      "question": "Terminy przeglądów konserwacyjnych urządzenia mogą być określone:",
+      "image": null,
+      "options": [
+        "W instrukcji eksploatacji urządzenia",
+        "W ustawie o dozorze technicznym",
+        "W rozporządzeniu określającym warunki techniczne dozoru technicznego",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 30,
+      "question": "Terminy badań okresowych i doraźnych kontrolnych UTB określone są:",
+      "image": null,
+      "options": [
+        "W ustawie o dozorze technicznym",
+        "W rozporządzeniu określającym warunki techniczne dozoru technicznego",
+        "W dokumentacji konstrukcyjnej urządzenia",
+        "W dzienniku konserwacji"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 31,
+      "question": "Obowiązkiem obsługującego urządzenie techniczne jest:",
+      "image": null,
+      "options": [
+        "Przestrzeganie instrukcji eksploatacji w zakresie obsługi urządzenia",
+        "Przestrzeganie instrukcji eksploatacji w zakresie konserwacji urządzenia",
+        "Wykonywanie napraw urządzenia",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 32,
+      "question": "Urządzenie techniczne można eksploatować na podstawie:",
+      "image": null,
+      "options": [
+        "Aktualnej naklejki organu właściwej jednostki dozoru technicznego określającej termin kolejnego badania",
+        "Aktualnego wpisu konserwatora urządzenia w dzienniku konserwacji",
+        "Ważnej decyzji zezwalającej na eksploatację wydanej przez organ właściwej jednostki dozoru technicznego",
+        "Pozytywnego protokołu z badania okresowego lub odbiorczego"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 33,
+      "question": "Po wykonanych czynnościach przy urządzeniu technicznym inspektor sporządza:",
+      "image": null,
+      "options": [
+        "Instrukcję eksploatacji urządzenia",
+        "Decyzję i protokół z wykonanych czynności",
+        "Deklarację zgodności CE",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 34,
+      "question": "Naprawę i modernizację urządzenia technicznego wykonuje:",
+      "image": null,
+      "options": [
+        "Operator w ramach posiadanych umiejętności",
+        "Konserwator",
+        "Zakład uprawniony",
+        "Eksploatujący"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 35,
+      "question": "Bezpośrednio odpowiedzialnym za bezpieczną eksploatację urządzenia technicznego jest:",
+      "image": null,
+      "options": [
+        "Obsługujący urządzenie",
+        "Producent urządzenia",
+        "Zakładowy inspektor BHP",
+        "Inspektor UDT"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 36,
+      "question": "Informacje dotyczące zasad bezpiecznej obsługi urządzenia są zawarte w:",
+      "image": null,
+      "options": [
+        "Instrukcji eksploatacji urządzenia",
+        "Ustawie o dozorze technicznym",
+        "Dzienniku konserwacji",
+        "Protokole z badania wykonanego przez inspektora UDT"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 37,
+      "question": "W ramach czynności przed rozpoczęciem pracy obsługujący:",
+      "image": null,
+      "options": [
+        "Sprawdza stan techniczny urządzenia poprzez oględziny",
+        "Wykonuje próby statyczną i dynamiczną",
+        "Wykonuje próby ruchowe urządzenia",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 38,
+      "question": "Zaświadczenia kwalifikacyjne do obsługi urządzeń podlegających dozorowi technicznemu wydaje:",
+      "image": null,
+      "options": [
+        "Firma szkoleniowa po pozytywnym wyniku egzaminu sprawdzającego",
+        "Inspektor BHP na podstawie zaświadczenia o ukończeniu kursu",
+        "Pracodawca na podstawie zdanego egzaminu",
+        "Organ właściwej jednostki dozoru technicznego"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 39,
+      "question": "Przeciążanie UTB w trakcie pracy:",
+      "image": null,
+      "options": [
+        "Jest zabronione",
+        "Jest dopuszczalne",
+        "Jest dopuszczalne ale tylko do 125% udźwigu nominalnego",
+        "Jest dopuszczalne ale tylko do 110% udźwigu nominalnego"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 40,
+      "question": "Badania doraźne eksploatacyjne wykonuje się m.in.:",
+      "image": null,
+      "options": [
+        "Po każdym usunięciu usterki przez konserwatora",
+        "Po wymianie cięgien nośnych",
+        "Raz na rok",
+        "Po wypadku na urządzeniu"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 41,
+      "question": "Obowiązki obsługującego określone są:",
+      "image": null,
+      "options": [
+        "W instrukcji eksploatacji urządzenia",
+        "W dzienniku konserwacji",
+        "W ustawie o dozorze technicznym",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 42,
+      "question": "Badania okresowe urządzenia technicznego są wykonywane przez:",
+      "image": null,
+      "options": [
+        "Konserwatora posiadającego odpowiednie zaświadczenie kwalifikacyjne",
+        "Inspektora organu właściwej jednostki dozoru technicznego",
+        "Pracownika serwisu producenta",
+        "Operatora"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 43,
+      "question": "Jednostką dozoru technicznego jest:",
+      "image": null,
+      "options": [
+        "Urząd Dozoru Technicznego",
+        "Wojskowy Dozór techniczny",
+        "Transportowy dozór Techniczny",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 44,
+      "question": "Zaświadczenia kwalifikacyjne uprawniające do obsługi urządzeń technicznych ważne są na terenie:",
+      "image": null,
+      "options": [
+        "Rzeczypospolitej Polskiej",
+        "Unii Europejskiej",
+        "Nie mają określonego obszaru ważności",
+        "Krajów strefy Schengen"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 45,
+      "question": "Obowiązek stosowania środków ochrony indywidualnej przez operatorów urządzeń technicznych wynika z:",
+      "image": null,
+      "options": [
+        "Instrukcji eksploatacji producenta",
+        "Przepisów BHP",
+        "Przepisów wewnątrzzakładowych",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 46,
+      "question": "Zgodnie z rozporządzeniem Rady Ministrów w sprawie rodzajów urządzeń technicznych podlegających dozorowi technicznemu przepisom dozoru technicznego podlegają:",
+      "image": null,
+      "options": [
+        "Dźwigi, żurawie, suwnice, wciągarki i wciągniki",
+        "Wózki jezdniowe podnośnikowe z mechanicznym napędem podnoszenia, podesty ruchome",
+        "Dźwignice linotorowe, przenośniki kabinowe i krzesełkowe",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 47,
+      "question": "Instrukcja eksploatacji może nie zawierać:",
+      "image": null,
+      "options": [
+        "Informacji o terminach i zakresie przeglądów konserwacyjnych UTB",
+        "Podstawowych parametrów i przeznaczenia UTB",
+        "Terminów badań technicznych wykonywanych przez jednostkę inspekcyjną",
+        "Informacji o sposobie obsługi urządzenia"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 48,
+      "question": "Księga rewizyjna urządzenia musi zawierać:",
+      "image": null,
+      "options": [
+        "Zbiór protokołów z badań wykonywanych przez jednostkę inspekcyjną",
+        "Dokument, w którym odnotowywane są przeglądy konserwacyjne",
+        "Treść aktualnych aktów prawnych",
+        "Wykaz uprawnionych operatorów"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 49,
+      "question": "Decyzja wydana przez UDT:",
+      "image": null,
+      "options": [
+        "Nie podlega odwołaniu",
+        "Może zostać zmieniona przez inspektora PIP",
+        "Podlega możliwości odwołania się przez eksploatującego",
+        "Każda odpowiedź jest niepoprawna"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 50,
+      "question": "Do egzaminu sprawdzającego kwalifikacje może przystąpić osoba, która:",
+      "image": null,
+      "options": [
+        "Złożyła wniosek o sprawdzenie kwalifikacji",
+        "Ukończyła 18 lat",
+        "Nie ma przeciwwskazań zdrowotnych do obsługi urządzeń technicznych",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 51,
+      "question": "Po zakończonym badaniu technicznym z wynikiem pozytywnym inspektor UDT:",
+      "image": null,
+      "options": [
+        "Przedłuża ważność świadectwa kwalifikacji operatora",
+        "Oznakowuje urządzenie naklejką, która jest zezwoleniem na użytkowanie urządzenia",
+        "Informuje użytkownika pisemnie w dzienniku konserwacji, że wyraża zgodę na eksploatację urządzenia",
+        "Sporządza protokół z wykonanych czynności i wydaje decyzję administracyjną zezwalającą na eksploatację"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 52,
+      "question": "Zaświadczenia kwalifikacyjne:",
+      "image": null,
+      "options": [
+        "Są ważne bezterminowo",
+        "Są terminowe z okresem ważności uzależnionym od ilości uzyskanych punktów na egzaminie",
+        "Są terminowe z okresem ważności zgodnym z zapisami rozporządzenia w sprawie trybu sprawdzenia kwalifikacji",
+        "Są ważne przez okres 15 lat"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 53,
+      "question": "Dokonujący przeróbek urządzenia technicznego bez uzgodnienia z organem jednostki dozoru technicznego:",
+      "image": null,
+      "options": [
+        "Podlega karze grzywny lub ograniczenia wolności",
+        "Podlega ukaraniu mandatem karnym",
+        "Nie podlega karze",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 54,
+      "question": "Kto dopuszcza do eksploatacji urządzenie techniczne bez ważnej decyzji zezwalającej na eksploatację:",
+      "image": null,
+      "options": [
+        "Podlega karze grzywny lub ograniczenia wolności",
+        "Nie podlega karze, jeżeli nie dojdzie do wypadku",
+        "Podlega wyłącznie karze grzywny",
+        "Podlega karze więzienia"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 55,
+      "question": "Instrukcja eksploatacji to:",
+      "image": null,
+      "options": [
+        "Zbiór informacji niezbędnych do bezpiecznej eksploatacji urządzenia udostępniany przez producenta",
+        "Zbiór zaleceń wydawanych przez Urząd Dozoru Technicznego",
+        "Instrukcja, którą musi stworzyć użytkownik urządzenia",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 56,
+      "question": "Zaświadczeń kwalifikacyjnych do obsługi nie wymaga się:",
+      "image": null,
+      "options": [
+        "Jeżeli urządzenie jest obsługiwane przez jego właściciela",
+        "Jeżeli wszystkie mechanizmy urządzenia mają napęd ręczny",
+        "Jeśli urządzenie jest wykorzystywane do celów prywatnych, nie zarobkowych",
+        "Od osób po 60 roku życia"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 57,
+      "question": "Osoba posiadająca zaświadczenia kwalifikacyjne może obsługiwać:",
+      "image": null,
+      "options": [
+        "Tylko urządzenia wymienione w zakresie uprawnienia",
+        "Wszystkie urządzenia podlegające dozorowi technicznemu",
+        "Inne urządzenia podlegające dozorowi technicznemu za zgodą pracodawcy",
+        "Wszystkie UTB o udźwigu do 3,2 t"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 58,
+      "question": "Obowiązkiem obsługującego urządzenie techniczne jest:",
+      "image": null,
+      "options": [
+        "Odmówić obsługi urządzenia, jeżeli wygasła decyzja zezwalająca na eksploatację tego urządzenia",
+        "Zawsze stosować się do poleceń przełożonego nakazujących eksploatację urządzenia",
+        "Stosować się do zapisów zawartych w instrukcji eksploatacji",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 59,
+      "question": "Zaświadczenie kwalifikacyjne do obsługi urządzeń technicznych są:",
+      "image": null,
+      "options": [
+        "Ważne na terenie Unii Europejskiej",
+        "Ważne z dowodem tożsamości",
+        "Bezterminowe",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 60,
+      "question": "Obsługujący który jest świadkiem wypadku ma obowiązek:",
+      "image": null,
+      "options": [
+        "Udzielić pomocy ofierze (lub ofiarom) wypadku",
+        "Zabezpieczyć miejsce zdarzenia",
+        "Powiadomić przełożonego",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 61,
+      "question": "Obsługującemu nie wolno:",
+      "image": null,
+      "options": [
+        "Podnosić ładunków, których masy nie potrafi określić",
+        "Kontrolować stanu technicznego urządzenia",
+        "Stosować się do zapisów zawartych w instrukcji eksploatacji",
+        "Dokonywać oględzin zewnętrznych urządzenia"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 62,
+      "question": "Formami dozoru technicznego są:",
+      "image": null,
+      "options": [
+        "Dozór pełny, dozór uproszczony, dozór ograniczony",
+        "Badanie odbiorcze, badanie okresowe i badanie doraźne",
+        "UDT, TDT, WDT",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 63,
+      "question": "Podnoszenie osób urządzeniami, które zostały zaprojektowane i wykonane wyłącznie do podnoszenia ładunków:",
+      "image": null,
+      "options": [
+        "Jest dopuszczalne, po zapewnieniu odpowiedniego poziomu bezpieczeństwa",
+        "Jest zabronione",
+        "Jest dopuszczalne, po uzgodnieniu z organem właściwej jednostki dozoru technicznego szczegółowych warunków eksploatacji",
+        "Jest dopuszczalne jednorazowo na pisemne polecenie przełożonego"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 64,
+      "question": "Podnoszenie ładunków za pomocą dwóch lub więcej UTB:",
+      "image": null,
+      "options": [
+        "Jest dopuszczalne, pod warunkiem opracowania przez eksploatującego szczegółowych warunków eksploatacji, opisujących czynności organizacyjno-techniczne minimalizujące ryzyko",
+        "Jest zawsze dopuszczalne jeżeli masa ładunku nie przekracza sumy udźwigów wykorzystywanych urządzeń",
+        "Jest dopuszczalne jeżeli masa ładunku nie przekracza połowy udźwigu każdego z wykorzystanych urządzeń",
+        "Nie jest nigdy dopuszczalna"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 65,
+      "question": "Przebywanie osób pod ładunkiem przenoszonym jest:",
+      "image": null,
+      "options": [
+        "Zawsze niedozwolone",
+        "Dozwolone dla osób kontrolującej spód ładunku",
+        "Dozwolone jeżeli współczynnik bezpieczeństwa cięgien wynosi nie mniej niż 5",
+        "Dozwolone jeżeli współczynnik bezpieczeństwa cięgien wynosi nie mniej niż 7"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 66,
+      "question": "Przenoszenia ładunków nad osobami jest:",
+      "image": null,
+      "options": [
+        "Dozwolone pod warunkiem uzyskania pisemnego zezwolenia od osoby kierującej transportem",
+        "Dozwolone, po zapewnieniu współczynników bezpieczeństwa dla cięgien i urządzeń chwytnych większych niż 10",
+        "Dozwolone pod warunkiem powiadomienia osób i wyposażeniu ich w środki ochrony indywidualnej",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 67,
+      "question": "Zaświadczenia kwalifikacyjne do obsługi urządzeń technicznych podlegających dozorowi technicznemu wydaje:",
+      "image": null,
+      "options": [
+        "Właściciel urządzenia",
+        "UDT, TDT, WDT",
+        "PIP",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 68,
+      "question": "Komisja egzaminacyjna powiadamia osobę zainteresowaną o wyniku egzaminu:",
+      "image": null,
+      "options": [
+        "W ciągu 7 dni po egzaminie w formie pisemnej",
+        "Bezpośrednio po egzaminie",
+        "W ciągu 14 dni po egzaminie w formie elektronicznej",
+        "Listem poleconym lub pocztą elektroniczną po upływie 30 dni roboczych od daty egzaminu"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 69,
+      "question": "Dziennik konserwacji powinien być prowadzony:",
+      "image": null,
+      "options": [
+        "Tylko w formie papierowej",
+        "W formie elektronicznej lub papierowej",
+        "Tylko w formie elektronicznej",
+        "Przez obsługującego"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 70,
+      "question": "Instrukcja stanowiskowa:",
+      "image": null,
+      "options": [
+        "Jest zawsze dostarczana wraz z instrukcją obsługi przez producenta urządzenia",
+        "Stanowi niepisany zbiór zwyczajów przyjętych w zakładzie pracy",
+        "Jest wydawana przez pracodawcę i zawiera szczegółowe wskazówki dotyczące BHP na stanowisku pracy",
+        "Nie dotyczy operatorów urządzeń mobilnych"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 71,
+      "question": "Po upływie terminu ważności zaświadczenia kwalifikacyjnego do obsługi urządzenia obsługujący:",
+      "image": null,
+      "options": [
+        "Może obsługiwać UTB o ile kontynuuje pracę u tego samego pracodawcy",
+        "Może obsługiwać UTB o ile złoży wniosek o wydanie kolejnego zaświadczenia",
+        "Może obsługiwać UTB dopiero po uzyskaniu nowego zaświadczenia kwalifikacyjnego",
+        "Składa wniosek o przedłużenie terminu ważności zaświadczenia kwalifikacyjnego"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 72,
+      "question": "Przedłużenie ważności zaświadczenie kwalifikacyjnego następuje:",
+      "image": null,
+      "options": [
+        "Na pisemny wniosek obsługującego",
+        "Automatycznie po upływie terminu ważności zaświadczenia",
+        "Na pisemne zgłoszenie pracodawcy obsługującego",
+        "Po wcześniejszym zgłoszeniu telefonicznym"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 73,
+      "question": "Udźwig UTB to parametr urządzenia bezpośrednio związany z:",
+      "image": null,
+      "options": [
+        "Maksymalną wysokością podnoszonego ładunku",
+        "Maksymalną objętością podnoszonego ładunku",
+        "Maksymalną masą podnoszonego ładunku",
+        "Iloczynem masy i objętości podnoszonego ładunku"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 74,
+      "question": "Masa netto 1000 l wody wynosi ok:",
+      "image": null,
+      "options": [
+        "800 kg",
+        "900 kg",
+        "1000 kg",
+        "1100 kg"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 75,
+      "question": "Masa ładunku składającego się z 40 opakowań po 25 kg każdy wynosi:",
+      "image": null,
+      "options": [
+        "800 kg",
+        "1000 kg",
+        "1100 kg",
+        "900 kg"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 76,
+      "question": "Masa 60 kartonów po 20 kg każdy wynosi:",
+      "image": null,
+      "options": [
+        "800 kg",
+        "1000 kg",
+        "1100 kg",
+        "1200 kg"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 77,
+      "question": "Masę podnoszonego ładunku można określić na podstawie:",
+      "image": null,
+      "options": [
+        "Zawieszki zbiorczej znajdującej się na transportowanym ładunku",
+        "Przeliczając uwzględniając ciężar właściwy i objętość",
+        "Dokumentacji przewozowej i magazynowej",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 78,
+      "question": "Informacja dotycząca udźwigu urządzenia może być zawarta:",
+      "image": null,
+      "options": [
+        "W instrukcji eksploatacji",
+        "Na tabliczce znamionowej",
+        "Na urządzeniu technicznym",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 79,
+      "question": "Prawidłowe określenie jednostki udźwigu to:",
+      "image": null,
+      "options": [
+        "Kg",
+        "Pa",
+        "Mth",
+        "Mm"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 80,
+      "question": "Łącznik suwnicy:",
+      "image": null,
+      "options": [
+        "Powinien znajdować się na moście suwnicy",
+        "Może być zastąpiony łącznikiem awaryjnego zatrzymania „STOP”",
+        "Powinien posiadać możliwość zablokowania w stanie załączonym",
+        "Powinien posiadać możliwość zablokowania w stanie rozłączonym"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 81,
+      "question": "Łapy oporowe to:",
+      "image": null,
+      "options": [
+        "Elementy służące do zabezpieczenia przed dostaniem się pod koła suwnicy obcych przedmiotów",
+        "Elementy zabezpieczające przed skutkami pęknięcia koła jezdnego suwnicy lub jego osi",
+        "Elementy służące do zabezpieczenia suwnicy przed niezamierzonym przemieszczeniem",
+        "Elementy zabezpieczające konstrukcję torowiska"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 82,
+      "question": "Zgarniacze to:",
+      "image": null,
+      "options": [
+        "Elementy służące do zabezpieczenia przed dostaniem się pod koła suwnicy obcych przedmiotów",
+        "Elementy zabezpieczające przed skutkami pęknięcia koła jezdnego suwnicy",
+        "Elementy służące do zabezpieczenia suwnicy przed niezamierzonym przemieszczeniem",
+        "Elementy zabezpieczające konstrukcję torowiska"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 83,
+      "question": "Kleszcze szynowe to:",
+      "image": null,
+      "options": [
+        "Elementy służące do zabezpieczenia przed dostaniem się pod koła suwnicy obcych przedmiotów",
+        "Elementy zabezpieczające przed skutkami pęknięcia koła jezdnego suwnicy",
+        "Elementy służące do zabezpieczenia suwnicy przed niezamierzonym przemieszczeniem",
+        "Elementy zabezpieczające konstrukcję torowiska"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 84,
+      "question": "Jakie są różnice między wciągnikiem a wciągarką?",
+      "image": null,
+      "options": [
+        "Wciągnik – zwarta budowa, wciągarka – zabudowana na ramie, widoczne podzespoły",
+        "Wciągnik – zabudowana na ramie widoczne podzespoły, wciągarka – zwarta budowa",
+        "Nie ma żadnej różnicy, to te same urządzenia",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 85,
+      "question": "Zabezpieczeniami elektrycznymi stosowanymi w budowie suwnic są:",
+      "image": null,
+      "options": [
+        "Zgarniacze szynowe",
+        "Łapy oporowe",
+        "Silniki mechanizmów suwnicy",
+        "Łączniki krańcowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 86,
+      "question": "Zabezpieczeniami mechanicznymi stosowanymi w budowie suwnic są:",
+      "image": null,
+      "options": [
+        "Łapy oporowe",
+        "Rezystory rozruchowe",
+        "Łączniki STOP",
+        "Hamulce bezpieczeństwa"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 87,
+      "question": "Jaki element konstrukcji nośnej łączy czołownice?",
+      "image": null,
+      "options": [
+        "Reduktor",
+        "Wciągnik",
+        "Wciągarka",
+        "Dźwigar"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 88,
+      "question": "Gdzie montowane są łapy oporowe?",
+      "image": null,
+      "options": [
+        "Na podeście suwnicy",
+        "Do pasa dolnego czołownicy",
+        "Na końcach torowiska",
+        "Na opornikach/rezystorach rozruchowych"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 89,
+      "question": "Ile elementów dociskających linę powinno być zamontowanych na bębnie linowym?",
+      "image": null,
+      "options": [
+        "Zgodnie z dokumentacją producenta",
+        "Minimum 4",
+        "Więcej niż 3",
+        "4 na odcinku co najmniej 1,5 zwoju liny na bębnie"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 90,
+      "question": "Łącznik główny nie powinien rozłączać obwodów:",
+      "image": null,
+      "options": [
+        "Zasilania silników jazdy",
+        "Sterowania suwnicy",
+        "Zasilania suwnicy",
+        "Oświetlenia suwnicy"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 91,
+      "question": "Głównymi elementami konstrukcji nośnej suwnicy są:",
+      "image": null,
+      "options": [
+        "Czołownice i dźwigary",
+        "Odboje i dźwigary",
+        "Liny nośne oraz zblocze hakowe",
+        "Żadna z powyższych odpowiedzi nie jest poprawna"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 92,
+      "question": "Do czego służy blokada zerowa?",
+      "image": null,
+      "options": [
+        "Uniemożliwia załączenie stycznika głównego, kiedy chociaż jeden z nastawników nie znajduje się w pozycji neutralnej",
+        "Powoduje odcięcie zasilania suwnicy w sytuacji awaryjnej",
+        "Uniemożliwia zmianę położenia dźwigni sterowniczej, kiedy nie jest załączony stycznik główny",
+        "Zapewnia prawidłowe zerowanie stalowej konstrukcji suwnicy"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 93,
+      "question": "W mechanizmach podnoszenia suwnic ogólnego przeznaczenia powinno się stosować hamulce:",
+      "image": null,
+      "options": [
+        "Automatyczne",
+        "Taśmowe",
+        "Trzy hamulce bębnowe",
+        "Minimum dwa hamulce tarczowe"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 94,
+      "question": "Łącznik STOP:",
+      "image": null,
+      "options": [
+        "Rozłącza całkowicie zasilanie suwnicy",
+        "Jest łącznikiem bezpieczeństwa",
+        "Rozłącza obwód chwytnika elektromagnetycznego",
+        "Musi powracać samoczynnie do pozycji wyjściowej po jego zwolnieniu"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 95,
+      "question": "„Łącznik suwnicy” powinien znajdować się:",
+      "image": null,
+      "options": [
+        "Na moście suwnicy",
+        "W kabinie sterowniczej",
+        "W miejscu ogólnie dostępnym, na poziomie roboczym",
+        "W bezpośrednim sąsiedztwie szafy sterowej"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 96,
+      "question": "Elementami zabezpieczającymi typu mechanicznego są:",
+      "image": null,
+      "options": [
+        "Zderzaki, odboje, kleszcze przeciwwiatrowe",
+        "Zderzaki, odboje, zgarniacze szynowe",
+        "Zderzaki, odboje, barierki ochronne",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 97,
+      "question": "Które z wymienionych poniżej elementów są zabezpieczeniami typu mechanicznego?",
+      "image": null,
+      "options": [
+        "Zderzaki, odboje, kleszcze przeciwwiatrowe, łapy oporowe, zabezpieczenie gardzieli haka, ogranicznik udźwigu",
+        "Zderzaki, odboje, kleszcze przeciwwiatrowe, wyłącznik główny, zabezpieczenie gardzieli haka, osłony",
+        "Zderzaki, odboje, kleszcze przeciwwiatrowe, łapy oporowe, zabezpieczenie gardzieli haka, osłony",
+        "Zderzaki, odboje, kleszcze przeciwwiatrowe, łączniki końcowe i krańcowe"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 98,
+      "question": "O ile producent nie określa inaczej, ile wynosi dopuszczalne wytarcie gardzieli haka suwnicy ogólnego przeznaczenia?",
+      "image": null,
+      "options": [
+        "5%",
+        "3%",
+        "10%",
+        "7%"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 99,
+      "question": "O ile producent nie określa inaczej, ile wynosi dopuszczalne rozwarcie gardzieli haka?",
+      "image": null,
+      "options": [
+        "2%",
+        "5%",
+        "7%",
+        "10%"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 100,
+      "question": "Jakie zabezpieczenia mechaniczne znajdują się na czołownicy?",
+      "image": null,
+      "options": [
+        "Zderzaki, kleszcze przeciwwiatrowe, łapy oporowe",
+        "Odboje, kleszcze przeciwwiatrowe, łapy oporowe",
+        "Zderzaki, łapy oporowe, hamulce",
+        "Zderzaki, odboje, łapy oporowe, kleszcze szynowe"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 101,
+      "question": "O ile producent nie określa inaczej, ile wynosi dopuszczalne zmniejszenie średnicy liny ze względu na wytarcie zewnętrznej warstwy drutów?",
+      "image": null,
+      "options": [
+        "Do 3%",
+        "10% ale nie więcej niż 5 mm",
+        "Do 15%",
+        "Do 7%"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 102,
+      "question": "Czy każda suwnica pracująca na zewnątrz powinna być wyposażona w wiatromierz?",
+      "image": null,
+      "options": [
+        "Tak",
+        "Nie",
+        "Zależy od rodzaju sterowania (z kabiny czy z poziomu roboczego)",
+        "Nie, jeśli posiada kleszcze wiatrowe"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 103,
+      "question": "Czy każda suwnica pracująca na zewnątrz powinna być wyposażona w kleszcze przeciwwiatrowe?",
+      "image": null,
+      "options": [
+        "Tak",
+        "Nie",
+        "Tak, jeśli jej rozpiętość przekracza 25 m",
+        "W kleszcze przeciwwiatrowe wyposażone są wyłącznie suwnice bramowe i półbramowe"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 104,
+      "question": "Czy każda suwnica sterowana z kabiny musi posiadać blokadę zerową?",
+      "image": null,
+      "options": [
+        "Zawsze w przypadku stosowania nastawników lub sterowników",
+        "Blokada zerowa nie jest wymagana, gdy po zaniku napięcia stycznik główny rozłącza się automatycznie",
+        "Zawsze w przypadku stosowania nastawników lub sterowników bez sprężyn zwrotnych",
+        "Tylko przy napędzie falownikowym wszystkich mechanizmów suwnicy"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 105,
+      "question": "Łącznik bezpieczeństwa „STOP” służy do:",
+      "image": null,
+      "options": [
+        "Zabezpieczenia suwnicy przed nieuprawnionym użyciem po zakończeniu pracy",
+        "Bezzwłocznego zatrzymania pracy urządzenia w sytuacjach awaryjnych",
+        "W razie awarii hamulca zasadniczego uruchamia hamulce awaryjne",
+        "Wszystkie powyższe odpowiedzi są poprawne"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 106,
+      "question": "Zderzaki suwnicy to:",
+      "image": null,
+      "options": [
+        "Nieruchome elementy bezpieczeństwa znajdujące się na końcu torowiska",
+        "Mechaniczne elementy bezpieczeństwa umieszczone na czołownicy",
+        "Zarówno elementy umieszczone na końcach torowisk, jak i zainstalowane na czołownicach",
+        "Żadna z powyższych odpowiedzi nie jest poprawna"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 107,
+      "question": "Kompletne sprawdzenie hamulca mechanizmu podnoszenia polega na:",
+      "image": null,
+      "options": [
+        "Podniesieniu ładunku o masie nie większej niż nominalny udźwig urządzenia na wysokość 2 m, a następnie jego opuszczeniu w kierunku dół i nagłym zatrzymaniu",
+        "Podniesieniu ładunku o masie nie większej niż nominalny udźwig na niewielką wysokość, tak aby ładunek stracił kontakt z podłożem i obserwacji czy ładunek samoczynnie nie opada, a następnie uniesieniu go, opuszczaniu oraz nagłym zatrzymaniu",
+        "Zasterowaniu mechanizmu opuszczania bez podwieszonego obciążenia w kierunku dół i obserwacji czy dojdzie do zatrzymania zblocza nim dotknie ono poziomu roboczego",
+        "Zasterowaniu mechanizmu opuszczania bez podwieszonego obciążenia w kierunku góra i obserwacji czy dojdzie do zatrzymania zblocza nim dotknie ono poziomu roboczego"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 108,
+      "question": "Zadaniem łapy oporowej jest:",
+      "image": null,
+      "options": [
+        "Zatrzymanie suwnicy w przypadku niezadziałania wyłącznika krańcowego jazdy mostem suwnicy",
+        "Zabezpieczenie suwnicy bramowej przed skutkami podmuchów silnego wiatru",
+        "Zabezpieczenie wciągnika lub wciągarki przed upadkiem w przypadku zerwania liny",
+        "Zabezpieczenie suwnicy przed skutkami pęknięcia koła jezdnego"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 109,
+      "question": "Blokada zerowa suwnic sterowanych z kabiny uniemożliwia:",
+      "image": null,
+      "options": [
+        "Uruchomienie urządzenia przez nieuprawnione osoby",
+        "Samoczynne uruchomienie urządzenia po pojawieniu się napięcia w układzie sterowania",
+        "Wyłączenie układu sterowania suwnicy w przypadku uruchomienia kleszczy przeciwwiatrowych",
+        "Pracę suwnicą w przypadku wykrycia braku zerowania"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 110,
+      "question": "Do czego służą zabezpieczenia przeciwwiatrowe?",
+      "image": null,
+      "options": [
+        "Chronią przed skutkami uderzenia pioruna w konstrukcję suwnicy",
+        "Chronią przed niezamierzonym przemieszczeniem suwnicy",
+        "Do zamierzonego wyhamowania mechanizmu jazdy suwnicy w czasie pracy",
+        "Do unieruchomienia konstrukcji mostu w celu bezpiecznego wykonania pracy suwnicą podczas silnego wiatru"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 111,
+      "question": "Na zdjęciu przedstawiono suwnicę:",
+      "image": "/img/SUWNICE_111.webp",
+      "options": [
+        "Wspornikową",
+        "Bramową",
+        "Natorową z wysięgnicą",
+        "Półbramową"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 112,
+      "question": "Łącznik krańcowy mechanizmu podnoszenia w kierunku „góra”:",
+      "image": null,
+      "options": [
+        "Odpowiada za wyhamowanie ładunku podczas cyklu podnoszenia",
+        "Ułatwia pracę operatora, który nie musi obserwować ładunku w górnym położeniu, ponieważ łącznik krańcowy automatycznie wyłączy podnoszenie w odpowiednim momencie",
+        "Służy do ochrony suwnicy przed uszkodzeniem i zerwaniem liny",
+        "Wszystkie powyższe odpowiedzi są poprawne"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 113,
+      "question": "Co oznacza napis na moście suwnicy Q = 10 t + 10 t?",
+      "image": null,
+      "options": [
+        "Suwnica posiada udźwig nominalny 10 t",
+        "Suwnica posiada masę 10 t oraz udźwig nominalny również 10 t",
+        "Suwnica posiada dwa mechanizmy podnoszenia",
+        "Udźwig suwnicy w zależności od ilości pasm liny nośnej wynosi 10 t lub 20 t"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 114,
+      "question": "Co to jest blokada krzyżowa w kasecie sterującej?",
+      "image": null,
+      "options": [
+        "Blokada ta uniemożliwia jednoczesne uruchomienie przeciwnych kierunków ruchu mechanizmu",
+        "Blokada ta oznacza, że przed uruchomieniem kasety należy wcisnąć przycisk „X”",
+        "Blokada uniemożliwiająca sterowanie suwnicą z dwóch miejsc jednocześnie",
+        "Blokada krzyżowa w kasecie sterującej to odpowiednik blokady zerowej w suwnicy kabinowej"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 115,
+      "question": "Nastawniki to elementy suwnicy służące do:",
+      "image": null,
+      "options": [
+        "Ustawiania suwnicy równolegle na torowisku",
+        "Sterowania zdalnego mechanizmami suwnicy",
+        "Sterowania pośredniego mechanizmami suwnicy",
+        "Sterowania bezpośredniego mechanizmami suwnicy"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 116,
+      "question": "Mechanicznym ogranicznikiem jazdy suwnicy montowanym na torze jezdnym jest:",
+      "image": null,
+      "options": [
+        "Łapa oporowa",
+        "Łącznik krańcowy",
+        "Odbój",
+        "Zderzak"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 117,
+      "question": "Ile wynosi udźwig nominalny suwnicy o oznaczeniu Q=10/3,2 t?",
+      "image": null,
+      "options": [
+        "10 t",
+        "13,2 t",
+        "3,2 t",
+        "Przy połączeniu w gwiazdę 10 t natomiast w trójkąt 3,2 t"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 118,
+      "question": "Zadziałanie ogranicznika udźwigu spowoduje:",
+      "image": null,
+      "options": [
+        "Wyłączenie wszystkich mechanizmów suwnicy",
+        "Wyłączenie mechanizmu podnoszenia w obu kierunkach",
+        "Wyłączenie ruchu mechanizmu podnoszenia w kierunku „góra”",
+        "Żadna z powyższych odpowiedzi nie jest poprawna"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 119,
+      "question": "Czołownica to element:",
+      "image": null,
+      "options": [
+        "Suwnicy",
+        "Wciągnika",
+        "Wciągarki",
+        "Zblocza hakowego"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 120,
+      "question": "O ile producent nie określił inaczej, łączniki krańcowe mechanizmu jazdy suwnicy mają za zadanie:",
+      "image": null,
+      "options": [
+        "Zatrzymać suwnicę przed najechaniem na przeszkodę lub inną suwnicę",
+        "Zapobiec przeciążeniu suwnicy",
+        "Nie dopuścić do najechania na odboje z prędkością nie większą niż 1,5 m/s",
+        "Uniemożliwić uderzenie suwnicy w odbój z prędkością nominalną"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 121,
+      "question": "Łącznik STOP na stanowisku operatora suwnicy służy do:",
+      "image": null,
+      "options": [
+        "Wyłączenia ruchów suwnicy w położeniach krańcowych",
+        "Wyłączenia suwnicy przy pracach konserwacyjnych suwnicy",
+        "Natychmiastowego zatrzymania suwnicy w sytuacjach niebezpiecznych",
+        "Aktywowaniu hamulca awaryjnego"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 122,
+      "question": "W przypadku pracy dwóch lub kilku suwnic na jednym torowisku, zabezpieczenia elektryczne zapobiegające najechaniu suwnic na siebie to:",
+      "image": null,
+      "options": [
+        "Łączniki krańcowe",
+        "Układ antykolizyjny",
+        "Ograniczniki obciążeniowe",
+        "Ograniczniki zwalniania ruchów"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 123,
+      "question": "Kierunki jazdy w suwnicy sterowanej radiowo powinny być oznaczone:",
+      "image": null,
+      "options": [
+        "Na konstrukcji suwnicy w miejscu widocznym dla operatora i na pilocie sterowania radiowego",
+        "W kabinie suwnicy",
+        "Przed wejściem na halę, w której pracuje suwnica",
+        "Na każdym widocznym słupie podporowym torowiska"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 124,
+      "question": "Skrót GNP oznacza:",
+      "image": null,
+      "options": [
+        "Graniczna Nominalna Prędkość",
+        "Ang. Dopuszczalne Obciążenie Robocze",
+        "Gniazdo Niskiego Prądu",
+        "Grupa Natężenia Pracy"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 125,
+      "question": "Zabezpieczeniem przed wypadnięciem ładunku z gardzieli haka jest:",
+      "image": null,
+      "options": [
+        "Przywiązywanie zawiesi do haka",
+        "Zapadka zabezpieczająca",
+        "Przy dobrym ułożeniu zawiesi w gardzieli nie wymaga się zabezpieczenia",
+        "Zawiesie sztywne czyli trawersa"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 126,
+      "question": "Jakim kolorem powinien być oznaczony łącznik bezzwłocznego zatrzymania STOP?",
+      "image": null,
+      "options": [
+        "Żółtym",
+        "Dowolnym",
+        "Czerwonym",
+        "Czarno-żółtym"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 127,
+      "question": "Dźwigar suwnicy to:",
+      "image": null,
+      "options": [
+        "Maksymalna masa ładunku, jaką może podnieść suwnica",
+        "Belka, będąca elementem ustroju nośnego suwnicy",
+        "Zestaw dźwigni do sterowania mechanizmem podnoszenia w suwnicy bramowej",
+        "Element podporowy podtorza lub torowiska"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 128,
+      "question": "Jakiego typu haki można stosować w zblocach?",
+      "image": null,
+      "options": [
+        "Haki mogą być wykonane z tworzywa sztucznego",
+        "Haki powinny być wykonane jako kute lub płytowe",
+        "Haki mogą być wykonane z dowolnego tworzywa",
+        "Haki dźwignicowe powinny być stalowymi odlewami"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 129,
+      "question": "W jakich suwnicach nie jest wymagane zastosowanie łącznika krańcowego mechanizmu podnoszenia w kierunku góra?",
+      "image": null,
+      "options": [
+        "W suwnicach z wciągarką linową",
+        "W suwnicach z wciągnikiem łańcuchowym, w których zastosowano sprzęgło cierne",
+        "Łącznik krańcowy mechanizmu podnoszenia powinien być bezwzględnie zastosowany we wszystkich suwnicach",
+        "We wciągnikach linowych i łańcuchowych o udźwigu do 1000 kg"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 130,
+      "question": "O ile wytwórca nie określi inaczej, minimalna odległość w jakiej musi zatrzymać się zblocze hakowe, licząc od najniżej położonych elementów suwnicy wynosi:",
+      "image": null,
+      "options": [
+        "5 cm",
+        "10 cm",
+        "20 cm",
+        "15 cm"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 131,
+      "question": "Zderzaki suwnicy montowane są:",
+      "image": null,
+      "options": [
+        "Na końcu toru jezdnego",
+        "Na czołownicach",
+        "Na dźwigarach",
+        "Na podłużnicach"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 132,
+      "question": "Jaka jest dopuszczalną liczba widocznych pęknięć haka suwnicy?",
+      "image": null,
+      "options": [
+        "0",
+        "1",
+        "2",
+        "10%"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 133,
+      "question": "Elementem bezpieczeństwa montowanym w mechanizmie podnoszenia suwnic może być:",
+      "image": null,
+      "options": [
+        "Ogranicznik udźwigu",
+        "Łącznik krańcowy mechanizmu podnoszenia",
+        "Sprzęgło cierne przeciążeniowe",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 134,
+      "question": "Oznaczenie udźwigu suwnicy 8t+8t informuje o tym, że:",
+      "image": null,
+      "options": [
+        "Suwnicą można podnieść ładunek o masie 16 t na jednym z dwóch mechanizmów podnoszenia",
+        "Suwnicą można podnieść ładunek o masie nie przekraczającej 16 t przy założeniu, że wykorzystujemy jednocześnie oba mechanizmy podnoszenia, a żaden z nich nie jest przeciążony",
+        "Każdym z mechanizmów podnoszenia suwnicy można podnieść ładunek o masie 16 t",
+        "Udźwig nominalny suwnicy wynosi 8 t"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 135,
+      "question": "Do podstawowych parametrów wciągnika należy:",
+      "image": null,
+      "options": [
+        "Udźwig",
+        "Wysokość podnoszenia",
+        "Prędkość ruchów roboczych",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 136,
+      "question": "Sprawdzenie blokady zerowej:",
+      "image": null,
+      "options": [
+        "Przeprowadza się przy wciśniętym przycisku STOP",
+        "Przeprowadza się z obciążeniem znamionowym",
+        "Nie wymaga przestawiania dźwigni sterowania – blokada jest sprawdzana w pozycji neutralnej dźwigni",
+        "Wymaga przestawiania wszystkich nastawników we wszystkich kierunkach"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 137,
+      "question": "Podczas sprawdzenia blokady zerowej:",
+      "image": null,
+      "options": [
+        "Łącznik główny suwnicy musi być załączony",
+        "Przycisk załącz w kabinie musi być wciśnięty i zablokowany",
+        "Ładunek jest podnoszony powyżej poziomu roboczego",
+        "Musi być wciśnięty przycisk STOP"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 138,
+      "question": "Czy obsługującemu wolno w pewnych sytuacjach przeciążać suwnicę podczas pracy?",
+      "image": null,
+      "options": [
+        "Tak, podczas prób przed rozpoczęciem pracy",
+        "Tak, na pisemne polecenie przełożonego",
+        "Tak, ale sporadycznie",
+        "Nie, jest to zabronione"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 139,
+      "question": "Czy zawiesie można zaczepić na końcu haka (na rogu haka)?",
+      "image": null,
+      "options": [
+        "Tak, po upewnieniu się że zawiesie nie wypadnie",
+        "Nie, nigdy",
+        "Tak, gdy nie stwarza to niebezpieczeństwa",
+        "Tylko w przypadku haków z zabezpieczeniem w postaci zapadki"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 140,
+      "question": "Podnoszenie ładunków przez otwór w stropie z niżej położonej kondygnacji:",
+      "image": null,
+      "options": [
+        "Jest dopuszczalne po spełnieniu odpowiednich warunków",
+        "Jest absolutnie niedopuszczalne",
+        "Jest dopuszczalne wyłącznie w odniesieniu do suwnic o udźwigu poniżej 250 kg",
+        "Nie zapewnia ciągłości kinematycznej, więc jest niedozwolone"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 141,
+      "question": "Podczas załadunku samochodu ciężarowego za pomocą suwnicy kierowca pojazdu powinien znajdować się:",
+      "image": null,
+      "options": [
+        "W kabinie pojazdu",
+        "Na podstawie ładunkowej pojazdu",
+        "W dowolnym miejscu zakładu pracy",
+        "Poza strefą pracy suwnicy"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 142,
+      "question": "W przypadku rozkołysania ładunku należy:",
+      "image": null,
+      "options": [
+        "Zaczekać aż ładunek przestanie się kołysać ostrzegając osoby znajdujące się w pobliżu o zagrożeniu uderzeniem",
+        "Za wszelką cenę zatrzymać ładunek ręcznie, jeżeli jest to ładunek o dużych gabarytach należy poprosić o pomoc innych pracowników",
+        "Wygasić rozkołysanie ładunku poprzez właściwy ruch suwnicą lub wciągnikiem",
+        "Odłożyć go natychmiast na podłoże"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 143,
+      "question": "Metr sześcienny stali w przybliżeniu waży:",
+      "image": null,
+      "options": [
+        "1000 kg",
+        "4,5 – 5,0 t",
+        "1,0 t",
+        "7,5 – 7,9 t"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 144,
+      "question": "Ładunek blach stalowych o objętości 0,5 metra sześciennego:",
+      "image": null,
+      "options": [
+        "Podniesiemy suwnicą o udźwigu co najmniej 0,5 t",
+        "Podniesiemy suwnicą o udźwigu nie mniejszym niż 4 tony",
+        "Należy użyć suwnicy specjalnego przeznaczenia o dowolnym udźwigu",
+        "Żadna z powyższych odpowiedzi nie jest prawidłowa"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 145,
+      "question": "W przypadku podnoszenia dużego ładunku i obecności przy tej czynności kilku hakowych wydających polecenia operatorowi suwnicy należy:",
+      "image": null,
+      "options": [
+        "Nie jest dopuszczalny udział więcej niż jednego hakowego podczas operacji podnoszenia ładunku",
+        "Wykonywać polecenia jednego, wyznaczonego wcześniej hakowego, z wyjątkiem sygnału STOP, który może wydać każdy z hakowych",
+        "Wykonywać polecenia wszystkich hakowych, z wyjątkiem sygnału STÓJ, który może wydać tylko jeden wyznaczonych wcześniej hakowy",
+        "Wykonywać polecenia według kolejności ich wydania"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 146,
+      "question": "Ładunki wolno składować:",
+      "image": null,
+      "options": [
+        "W dowolnym miejscu, pod warunkiem, że gabaryty ładunku na to pozwalają",
+        "Na drogach transportowych",
+        "Tylko w miejscach do tego przeznaczonych",
+        "W miejscach wyznaczonych przez inspektora UDT"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 147,
+      "question": "Suwnica z chwytnikiem pneumatycznym może służyć do podnoszenia:",
+      "image": null,
+      "options": [
+        "Tylko blach ferromagnetycznych",
+        "Tylko tafli szkła",
+        "Blach z dowolnego materiału jak i tafli szkła",
+        "Wyłącznie tworzyw sztucznych o gładkiej strukturze powierzchni zewnętrznej"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 148,
+      "question": "Próba hamulca mechanizmu podnoszenia jest negatywna jeśli:",
+      "image": null,
+      "options": [
+        "Szczęki hamulcowe oraz tarcza hamulcowa nie są nasmarowane",
+        "Po zluzowaniu hamulca odległość między okładzinami ciernymi a tarczą hamulcową jest jednakowa i nie większa niż podana w dokumentacji",
+        "Przy zaciśniętych szczękach hamulcowych skok zwory luzownika jest wykorzystywany w 80%",
+        "Ładunek o masie równej udźwigowi lub mniejszej nie jest utrzymywany na zadanej wysokości"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 149,
+      "question": "O ile producent nie przewidział inaczej, łącznik krańcowy mechanizmu podnoszenia w kierunku „dół” powinien być tak ustawiony aby:",
+      "image": null,
+      "options": [
+        "Na bębnie pozostało co najmniej 1,5 m liny",
+        "Na bębnie pozostało co najmniej 2,5 m liny razem z odcinkiem wykorzystanym do jej zamocowania",
+        "Na bębnie pozostało co najmniej 1,5 zwoju liny nie licząc odcinka wykorzystanego do jej zamocowania",
+        "Na bębnie pozostało co najmniej połowa długości liny"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 150,
+      "question": "Istotnym kryterium zużycia haka jest:",
+      "image": null,
+      "options": [
+        "Pęknięcie",
+        "Rozwarcie gardzieli haka",
+        "Zmniejszenie przekroju w części chwytnej",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 151,
+      "question": "Sprawdzenie łącznika krańcowego mechanizmu podnoszenia w kierunku „góra” wykonujesz:",
+      "image": null,
+      "options": [
+        "Z obciążeniem nominalnym",
+        "Bez obciążenia",
+        "Z obciążeniem 110%",
+        "Z największym dostępnym w danym momencie ładunkiem nieprzekraczającym udźwigu suwnicy"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 152,
+      "question": "Pęknięta splotka liny nośnej suwnicy powoduje, że:",
+      "image": null,
+      "options": [
+        "Można pracować do końca bieżącego załadunku/rozładunku lub do końca zmiany",
+        "Można pracować tylko do czasu wymiany liny na nową",
+        "Można pracować tylko pod warunkiem, że pozostałe splotki oraz rdzeń nie zostały uszkodzone",
+        "Należy natychmiast zakończyć pracę"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 153,
+      "question": "Poniższy rysunek przedstawia cechę:",
+      "image": "/img/SUWNICE_153.webp",
+      "options": [
+        "Zawiesia łańcuchowego",
+        "Zawiesia linowego",
+        "Zawiesia pasowego",
+        "Trawersy specjalistycznej"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 154,
+      "question": "Poniższy rysunek przedstawia cechę:",
+      "image": "/img/SUWNICE_154.webp",
+      "options": [
+        "Zawiesia łańcuchowego",
+        "Zawiesia linowego",
+        "Zawiesia pasowego",
+        "Trawersy specjalistycznej"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 155,
+      "question": "Poniższy rysunek przedstawia cechę:",
+      "image": "/img/SUWNICE_155.webp",
+      "options": [
+        "Zawiesia łańcuchowego",
+        "Zawiesia linowego",
+        "Zawiesia pasowego",
+        "Trawersy specjalistycznej"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 156,
+      "question": "Trawersa służy do:",
+      "image": null,
+      "options": [
+        "Podnoszenia ładunków specjalnych np. arkuszy blachy",
+        "Podnoszenia długich ładunków, przy których użycie zwykłych zawiesi jest niemożliwe lub utrudnione",
+        "Podnoszenia ładunków przekraczających udźwig nominalny urządzenia",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 157,
+      "question": "Minimalny udźwig urządzenia dźwignicowego podnoszącego ładunek o masie 24 t przy użyciu przedstawionej trawersy wynosi:",
+      "image": "/img/SUWNICE_157.webp",
+      "options": [
+        "20,0 t",
+        "25,2 t",
+        "30,0 t",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 158,
+      "question": "Skrót DOR oznacza:",
+      "image": null,
+      "options": [
+        "Dopuszczalne obciążenie robocze",
+        "Dopuszczalne obciążenie robocze cięgna przy kącie wierzchołkowym alfa 120°",
+        "Dozwolona obsługa ręczna",
+        "Dokumentacja techniczno-ruchowa"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 159,
+      "question": "Ładunek na haku dwurożnym należy zawiesić:",
+      "image": null,
+      "options": [
+        "Tak, aby oba rogi były jednakowo obciążone",
+        "Tak, aby różnica w obciążeniu poszczególnych rogów haka nie była większa niż 30 %",
+        "Wyłącznie przy użyciu specjalnego zawiesia do haka dwurożnego",
+        "Tylko przy użyciu zawiesi łańcuchowych"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 160,
+      "question": "Na redukcję DOR zawiesia wielocięgnowego wpływa:",
+      "image": null,
+      "options": [
+        "Ilość wykorzystanych cięgien",
+        "Dodatkowe obostrzenia eksploatacyjne zawarte w instrukcji zawiesia",
+        "Kąt rozwarcia cięgien",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 161,
+      "question": "W oparciu o przedstawiony rysunek wskaż wartość A dla zawiesia linowego:",
+      "image": "/img/SUWNICE_161.webp",
+      "options": [
+        "6,0 t",
+        "5,0 t",
+        "7,0 t",
+        "3,5 t"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 162,
+      "question": "W oparciu o przedstawiony rysunek wskaż wartość A dla zawiesia linowego:",
+      "image": "/img/SUWNICE_162.webp",
+      "options": [
+        "2,0 t",
+        "5,0 t",
+        "7,0 t",
+        "10,0 t"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 163,
+      "question": "Na rysunku pokazana jest:",
+      "image": "/img/SUWNICE_163.webp",
+      "options": [
+        "Tabliczka znamionowa zawiesia łańcuchowego dwucięgnowego",
+        "Tabliczka znamionowa zawiesia łańcuchowego, o udźwigu maksymalnym 2 500 kg",
+        "Tabliczka znamionowa zawiesia łańcuchowego, o udźwigu maksymalnym 3 550 kg",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 164,
+      "question": "W oparciu o przedstawiony rysunek wskaż wartość A (kąt α) dla zawiesia dwucięgnowego:",
+      "image": "/img/SUWNICE_164.webp",
+      "options": [
+        "100°",
+        "90°",
+        "70°",
+        "50°"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 165,
+      "question": "W oparciu o przedstawiony rysunek wskaż wartość A (kąt α) dla zawiesia dwucięgnowego:",
+      "image": "/img/SUWNICE_165.webp",
+      "options": [
+        "120°",
+        "90°",
+        "70°",
+        "50°"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 166,
+      "question": "W oparciu o przedstawiony rysunek wskaż wartość A (DOR w oparciu o kąt α) dla zawiesia dwucięgnowego:",
+      "image": "/img/SUWNICE_166.webp",
+      "options": [
+        "70%",
+        "90%",
+        "110%",
+        "50%"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 167,
+      "question": "W oparciu o przedstawiony rysunek wskaż wartość A (DOR w oparciu o kąt α) dla zawiesia dwucięgnowego:",
+      "image": "/img/SUWNICE_167.webp",
+      "options": [
+        "70%",
+        "90%",
+        "110%",
+        "50%"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 168,
+      "question": "W oparciu o przedstawiony rysunek wskaż wartość A (DOR w oparciu o sposób zawieszenia) dla zawiesia pasowego:",
+      "image": "/img/SUWNICE_168.webp",
+      "options": [
+        "1",
+        "1,4",
+        "0,8",
+        "2"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 169,
+      "question": "W oparciu o przedstawiony rysunek wskaż wartość A (DOR w oparciu o sposób zawieszenia) dla zawiesia pasowego:",
+      "image": "/img/SUWNICE_169.webp",
+      "options": [
+        "1",
+        "1,4",
+        "0,8",
+        "2"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 170,
+      "question": "W oparciu o przedstawiony rysunek wskaż wartość A (DOR w oparciu o sposób zawieszenia) dla zawiesia pasowego:",
+      "image": "/img/SUWNICE_170.webp",
+      "options": [
+        "1",
+        "1,4",
+        "0,8",
+        "2"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 171,
+      "question": "Wskaż, który ze sposobów podwieszenia ładunku jest prawidłowy:",
+      "image": "/img/SUWNICE_171.webp",
+      "options": [
+        "Rys A",
+        "Rys B",
+        "Obydwa sposoby są poprawne",
+        "Obydwa sposoby są niepoprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 172,
+      "question": "Wskaż, który ze sposobów podwieszenia ładunku przy pomocy zawiesia linowego jest prawidłowy:",
+      "image": "/img/SUWNICE_172.webp",
+      "options": [
+        "Rys A",
+        "Rys B",
+        "Obydwa sposoby są poprawne",
+        "Obydwa sposoby są niepoprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 173,
+      "question": "Poniższy rysunek przedstawia:",
+      "image": "/img/SUWNICE_173.webp",
+      "options": [
+        "Osprzęt wymienny montowany do głowic urządzeń dźwignicowych",
+        "Element układu podnoszenia wózków jezdniowych podnośnikowych",
+        "Zawiesie specjalistyczne do transportu ładunków umieszczonych na paletach transportowych",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 174,
+      "question": "Poniższy rysunek przedstawia:",
+      "image": "/img/SUWNICE_174.webp",
+      "options": [
+        "Zawiesie specjalistyczne do transportu rur stalowych i betonowych",
+        "Chwytak kleszczowy do przeładunku złomu",
+        "Zawiesie specjalistyczne do transportu ładunków umieszczonych na paletach transportowych",
+        "Element kleszczy szynowych"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 175,
+      "question": "Przedstawione na rysunku zawiesie specjalistyczne służy do:",
+      "image": "/img/SUWNICE_175.webp",
+      "options": [
+        "Podnoszenia arkuszy blach stalowych",
+        "Podnoszenia prętów stalowych",
+        "Podnoszenia elementów betonowych",
+        "Podnoszenia elementów z tworzywa sztucznego"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 176,
+      "question": "Przedstawione na rysunku zawiesie specjalistyczne służy do:",
+      "image": "/img/SUWNICE_176.webp",
+      "options": [
+        "Podnoszenia elementów betonowych",
+        "Podnoszenia elementów z tworzywa sztucznego",
+        "Podnoszenia arkuszy blach stalowych",
+        "Podnoszenia prętów stalowych"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 177,
+      "question": "Za prawidłowy dobór zawiesia odpowiada:",
+      "image": null,
+      "options": [
+        "Hakowy",
+        "Obsługujący (dotyczy sytuacji, gdy obsługujący jest odpowiedzialny za podhaczenie ładunku)",
+        "Zakładowe służby BHP",
+        "Odpowiedź a i b jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 178,
+      "question": "Zawiesia podlegają przeglądom okresowym w terminach:",
+      "image": null,
+      "options": [
+        "Co 30 dni",
+        "Co 2 miesiące",
+        "Nie podlegają przeglądom okresowym",
+        "Zgodnych z zapisami instrukcji eksploatacji zawiesi"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 179,
+      "question": "Wybór rodzaju zastosowanego zawiesia zależy od:",
+      "image": null,
+      "options": [
+        "Rodzaju przenoszonego materiału",
+        "Dostępności zawiesia i odległości pomiędzy miejscem pracy, a miejscem jego składowania",
+        "Warunków środowiskowych miejsca pracy zawiesia np. temperatury, promieniowania UV, wilgotności powietrza",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 180,
+      "question": "Przed rozpoczęciem pracy obsługujący ma obowiązek:",
+      "image": null,
+      "options": [
+        "W oparciu o masę podnoszonych ładunków dobrać zawiesie z odpowiednim DOR",
+        "W oparciu o rodzaj podnoszonych ładunków dobrać zawiesie o właściwej budowie",
+        "Dokonać oceny stanu technicznego zawiesia pod kątem jego zużycia",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 181,
+      "question": "Zawiesie to:",
+      "image": null,
+      "options": [
+        "Element umożliwiający transportowanie ładunku",
+        "Element umieszczony pomiędzy dźwignicą a ładunkiem",
+        "Element, którego masę należy uwzględnić przy podnoszeniu ładunku",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 182,
+      "question": "Zawiesia możemy podzielić:",
+      "image": null,
+      "options": [
+        "Ze względu na materiał, z którego zostały wykonane",
+        "Ze względu na ilość cięgien nośnych",
+        "Ze względu na rodzaj cięgien",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 183,
+      "question": "DOR zawiesia pasowego można określić:",
+      "image": null,
+      "options": [
+        "Testując wytrzymałość ciężarem próbnym",
+        "Mierząc grubość pasa",
+        "Sprawdzając informację na identyfikatorze/etykiecie",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 184,
+      "question": "Praca z zawiesiem bez tabliczki znamionowej:",
+      "image": null,
+      "options": [
+        "Jest zabroniona",
+        "Jest dopuszczalna pod warunkiem zachowania szczególnej ostrożności",
+        "Jest dopuszczalna pod warunkiem określenia udźwigu zawiesi na podstawie nr haka",
+        "Jest dopuszczalna za zgodą konserwatora"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 185,
+      "question": "Zawiesia łańcuchowe:",
+      "image": null,
+      "options": [
+        "Mogą być zakończone wyłącznie hakiem",
+        "Mogą mieć inne zakończenia niż hak, np. szeklę",
+        "Mogą być stosowane w każdej temperaturze otoczenia",
+        "Nie wymagają konserwacji"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 186,
+      "question": "Maksymalny dopuszczalny kąt wierzchołkowy α stosowany w zawiesiu może wynieść:",
+      "image": null,
+      "options": [
+        "120°",
+        "100°",
+        "Nie ma ograniczeń, ponieważ wystarczy zmniejszać dopuszczalne obciążenie robocze zawiesia",
+        "90°"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 187,
+      "question": "Maksymalny kąt β w zawiesiu może wynieść:",
+      "image": null,
+      "options": [
+        "120°",
+        "60°",
+        "Uwzględnia się wyłącznie kąt α",
+        "Nie ma ograniczeń, ponieważ wystarczy zmniejszać dopuszczalne obciążenie robocze zawiesia"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 188,
+      "question": "Wskaż, który ze sposobów podwieszenia ładunku przy pomocy zawiesia linowego jest nieprawidłowy:",
+      "image": "/img/SUWNICE_188.webp",
+      "options": [
+        "Rys A",
+        "Rys B",
+        "Rys C",
+        "Rys D"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 189,
+      "question": "Wskaż, który ze sposobów zamocowania haka jest prawidłowy:",
+      "image": "/img/SUWNICE_189.webp",
+      "options": [
+        "Rys A",
+        "Rys B",
+        "Rys C",
+        "Rys D"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 190,
+      "question": "Wskaż, który ze sposobów zamocowania haka jest nieprawidłowy:",
+      "image": "/img/SUWNICE_190.webp",
+      "options": [
+        "Rys A, B, C",
+        "Rys A, B, D",
+        "Rys A, C, D",
+        "Rys A, B, C, D"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 191,
+      "question": "W oparciu o przedstawiony rysunek wskaż wartość A dla zawiesia dwucięgnowego:",
+      "image": "/img/SUWNICE_191.webp",
+      "options": [
+        "120%",
+        "90%",
+        "70%",
+        "10%"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 192,
+      "question": "W oparciu o przedstawiony rysunek wskaż wartość A dla zawiesia dwucięgnowego:",
+      "image": "/img/SUWNICE_192.webp",
+      "options": [
+        "120%",
+        "90%",
+        "70%",
+        "50%"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 193,
+      "question": "O ile wytwórca nie określi inaczej dopuszczalne kryteria zużycia haków przy zawiesiach to:",
+      "image": null,
+      "options": [
+        "Rozwarcie o 5% i wytarcie gardzieli o 10%",
+        "Rozwarcie o 20% i wytarcie gardzieli o 10%",
+        "Rozwarcie i wytarcie gardzieli o 1%",
+        "Wymiary haka nie zmieniają się w trakcie eksploatacji"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 194,
+      "question": "O ile wytwórca nie określi inaczej dopuszczalna ilość pęknięć drutów w zawiesiu linowym wynosi:",
+      "image": null,
+      "options": [
+        "1% drutów w splotce na długości 6 średnic i 10% na długości 30 średnic",
+        "5 drutów w splotce na długości 6 średnic i 10 na długości 30 średnic",
+        "10 % splotek",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 195,
+      "question": "Które z poniższych uszkodzeń dyskwalifikują zawiesie linowe z dalszej eksploatacji?",
+      "image": null,
+      "options": [
+        "Pęknięcie splotki w linie",
+        "Miejscowe zmniejszenie średnicy na skutek przerwania rdzenia liny",
+        "Deformacja w kształcie koszyka",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 196,
+      "question": "Wraz ze wzrostem kąta wierzchołkowego α:",
+      "image": null,
+      "options": [
+        "Dopuszczalne obciążenie robocze rośnie",
+        "Dopuszczalne obciążenie robocze maleje",
+        "Dopuszczalne obciążenie robocze pozostaje bez zmian, ponieważ kąt wpływa tylko na udźwig dźwignicy",
+        "Kąt wierzchołkowy ma tylko znaczenie przy wartości alfa=120 stopni"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 197,
+      "question": "Kąty α i β w odniesieniu do zawiesi:",
+      "image": null,
+      "options": [
+        "Są sobie zawsze równe",
+        "Kąt α stanowi połowę kąta β",
+        "Kąt β stanowi połowę kąta α",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 198,
+      "question": "Podnosząc elementy posiadające ostre krawędzie za pomocą zawiesia pasowego należy:",
+      "image": null,
+      "options": [
+        "Stosować specjalne przekładki zabezpieczające zawiesie przed ostrymi krawędziami",
+        "Nie wolno stosować zawiesi pasowych",
+        "Należy podwójnie opasać ładunek, aby nie doszło do przetarcia pasa",
+        "Stosować tylko zawiesi pasowe poliestrowe"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 199,
+      "question": "Wartość DOR zawiesia wielocięgnowego jest:",
+      "image": null,
+      "options": [
+        "Wartością zależną od udźwigu dźwignicy",
+        "Wartością zmienną i zależy od kąta pomiędzy cięgnami zawiesia",
+        "Zależna od masy transportowanego ładunku",
+        "Wartością stałą"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 200,
+      "question": "Używanie zawiesi w temperaturze powyżej 100°C jest:",
+      "image": null,
+      "options": [
+        "Dopuszczalne ale w krótkim czasie",
+        "Jest dopuszczalne o ile zezwala na to instrukcja zawiesia",
+        "Zabronione",
+        "Dopuszczalne tylko przy stosowaniu zawiesi łańcuchowych"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 201,
+      "question": "Poniższy rysunek przedstawia:",
+      "image": "/img/SUWNICE_201.webp",
+      "options": [
+        "Cecha zawiesia łańcuchowego czterocięgnowego",
+        "Cecha zawiesia linowego o długości cięgien 10 m",
+        "Cecha zawiesia specjalnego",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 202,
+      "question": "Maksymalny DOR zawiesia wynosi:",
+      "image": null,
+      "options": [
+        "8,4 t",
+        "6,0 t",
+        "10,0 t",
+        "8,0 t"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 203,
+      "question": "Maksymalny DOR zawiesia przy kącie wierzchołkowym β 60° wynosi:",
+      "image": null,
+      "options": [
+        "10,0 t",
+        "8,4 t",
+        "6,0 t",
+        "4,0 t"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 204,
+      "question": "Maksymalny DOR zawiesia przy kącie wierzchołkowym β 45° wynosi:",
+      "image": null,
+      "options": [
+        "8,4 t",
+        "8,0 t",
+        "6,0 t",
+        "4,0 t"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 205,
+      "question": "W oparciu o przedstawiony rysunek wskaż poprawny sposób zamocowania haka:",
+      "image": "/img/SUWNICE_205.webp",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 206,
+      "question": "Maksymalna masa podnoszonego ładunku przy kącie β wynoszącym 55° nie może przekraczać:",
+      "image": "/img/SUWNICE_206-209.webp",
+      "options": [
+        "12000 kg",
+        "9000 kg",
+        "6000 kg",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 207,
+      "question": "Maksymalna masa podnoszonego ładunku przy kącie β wynoszącym 40° nie może przekraczać:",
+      "image": "/img/SUWNICE_206-209.webp",
+      "options": [
+        "12000 kg",
+        "9000 kg",
+        "6000 kg",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 208,
+      "question": "Maksymalna masa podnoszonego ładunku przy kącie β wynoszącym 50° nie może przekraczać:",
+      "image": "/img/SUWNICE_206-209.webp",
+      "options": [
+        "12000 kg",
+        "9000 kg",
+        "6000 kg",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 209,
+      "question": "Maksymalna masa podnoszonego ładunku przy kącie β wynoszącym 65° nie może przekraczać:",
+      "image": "/img/SUWNICE_206-209.webp",
+      "options": [
+        "12000 kg",
+        "9000 kg",
+        "6000 kg",
+        "Nie wolno podnosić"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 210,
+      "question": "W oparciu o przedstawiony rysunek określ maksymalną masę ładunku jaką można podnieść przy pomocy zawiesia 4 cięgnowego:",
+      "image": "/img/SUWNICE_210.webp",
+      "options": [
+        "6 t",
+        "8,4 t",
+        "12 t",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 211,
+      "question": "W oparciu o przedstawiony rysunek określ maksymalną masę ładunku jaką można podnieść przy pomocy zawiesia 4 cięgnowego:",
+      "image": "/img/SUWNICE_211.webp",
+      "options": [
+        "6 t",
+        "8,4 t",
+        "12 t",
+        "Odpowiedź a i b jest prawidłowa"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 212,
+      "question": "W oparciu o przedstawiony rysunek określ maksymalną masę ładunku jaką można podnieść przy pomocy zawiesia 4 cięgnowego:",
+      "image": "/img/SUWNICE_212.webp",
+      "options": [
+        "7 t",
+        "8,4 t",
+        "12 t",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 213,
+      "question": "Które z przedstawionych zawiesi specjalnych można wykorzystać do podnoszenia blach w pozycji pionowej:",
+      "image": "/img/SUWNICE_213-214.webp",
+      "options": [
+        "RYS. 1",
+        "RYS. 2",
+        "RYS. 3",
+        "RYS. 4"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 214,
+      "question": "Które z przedstawionego osprzętu do podnoszenia można wykorzystać do podnoszenia blach w pozycji poziomej:",
+      "image": "/img/SUWNICE_213-214.webp",
+      "options": [
+        "RYS. 1",
+        "RYS. 2",
+        "RYS. 3",
+        "RYS. 4"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 215,
+      "question": "Które z przedstawionego osprzętu do podnoszenia można wykorzystać do podnoszenia dwuteowych dźwigarów stalowych:",
+      "image": "/img/SUWNICE_215-216.webp",
+      "options": [
+        "RYS. 1",
+        "RYS. 2",
+        "RYS. 3",
+        "RYS. 4"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 216,
+      "question": "Które z przedstawionego osprzętu do podnoszenia można wykorzystać do podnoszenia prętów stalowych o znacznej długości:",
+      "image": "/img/SUWNICE_215-216.webp",
+      "options": [
+        "RYS. 1",
+        "RYS. 2",
+        "RYS. 3",
+        "RYS. 4"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 217,
+      "question": "Które z przedstawionego osprzętu do podnoszenia można wykorzystać do podnoszenia ładunków składowanych na paletach transportowych:",
+      "image": "/img/SUWNICE_217-218.webp",
+      "options": [
+        "RYS. 1",
+        "RYS. 2",
+        "RYS. 3",
+        "RYS. 4"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 218,
+      "question": "Które z przedstawionego osprzętu do podnoszenia można wykorzystać do podnoszenia arkusza blachy w pozycji poziomej:",
+      "image": "/img/SUWNICE_217-218.webp",
+      "options": [
+        "RYS. 1 i RYS. 2",
+        "RYS. 2 i RYS. 3",
+        "RYS. 3 i RYS. 4",
+        "RYS. 4 i RYS. 1"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 219,
+      "question": "Na zdjęciu poniżej symbol α oznacza:",
+      "image": "/img/SUWNICE_219-220.webp",
+      "options": [
+        "Kąt rozwarcia cięgien zawiesia",
+        "Maksymalny kąt wierzchołkowy",
+        "Wartość określającą udźwig zawiesia",
+        "DOR zawiesia"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 220,
+      "question": "Na zdjęciu poniżej symbol β oznacza:",
+      "image": "/img/SUWNICE_219-220.webp",
+      "options": [
+        "Długość zawiesia",
+        "Kąt odchylenia cięgien od pionu",
+        "Zawiesie łańcuchowe dwucięgnowe",
+        "Wszystkie odpowiedzi są nieprawidłowe"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 221,
+      "question": "Które z poniższych warunków musi bezwzględnie spełniać zawiesie do przemieszczania ładunku:",
+      "image": null,
+      "options": [
+        "Udźwig zawiesia nie może być mniejszy od masy podnoszonego ładunku",
+        "Długość zawiesia musi zapewnić aby kąt rozwarcia zawiesia nie był większy niż 120°",
+        "Zawiesie musi posiadać czytelną cechę znamionową",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 222,
+      "question": "Obsługujący przed rozpoczęciem pracy suwnicą powinien:",
+      "image": null,
+      "options": [
+        "przeprowadzić próbę dynamiczną z obciążeniem 110% udźwigu",
+        "sprawdzić skok luzownika hamulca",
+        "zmierzyć rozwarcie gardzieli haka",
+        "sprawdzić działanie hamulców z ładunkiem jaki będzie transportował"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 223,
+      "question": "W przypadku awarii suwnicy z ładunkiem na haku obsługujący powinien wykonać następujące czynności:",
+      "image": null,
+      "options": [
+        "zabezpieczyć teren",
+        "powiadomić przełożonego",
+        "wyłączyć zasilanie suwnicy",
+        "wszystkie powyższe odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 224,
+      "question": "Obsługującemu zabrania się:",
+      "image": null,
+      "options": [
+        "wykorzystywania maksymalnej prędkości jazdy suwnicy",
+        "przenoszenia ładunków nad ludźmi",
+        "pracy w trakcie opadów deszczu",
+        "kojarzenia ruchów roboczych przewidzianego instrukcją"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 225,
+      "question": "Sprawdzanie działania łączników krańcowych:",
+      "image": null,
+      "options": [
+        "należy wyłącznie do obowiązków konserwatora",
+        "należy przeprowadzić tylko na największych stopniach jazdy",
+        "przeprowadza się tylko podczas kontroli UDT",
+        "należy przeprowadzić przed przystąpieniem do pracy"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 226,
+      "question": "Próbę hamulca przeprowadza się:",
+      "image": null,
+      "options": [
+        "przed rozpoczęciem pracy suwnicą",
+        "tylko przy badaniach przeprowadzanych przez UDT",
+        "tylko po wymianie liny",
+        "tylko w obecności konserwatora"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 227,
+      "question": "W przypadku gdy splotka w linie zostanie wyciśnięta:",
+      "image": null,
+      "options": [
+        "należy niezwłocznie wstrzymać pracę suwnicą",
+        "linę można zabezpieczyć dodatkowymi elementami",
+        "można ją używać, lecz nie należy wykonywać gwałtownych ruchów",
+        "można ją eksploatować z ograniczonym do połowy udźwigiem"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 228,
+      "question": "Gdy suwnica ulegnie uszkodzeniu:",
+      "image": null,
+      "options": [
+        "należy przerwać pracę",
+        "można kontynuować pracę z zachowaniem szczególnej ostrożności",
+        "można kontynuować pracę ale należy zmniejszyć udźwig o połowę",
+        "można ją eksploatować na pisemne polecenie przełożonego"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 229,
+      "question": "Próbę łącznika krańcowego mechanizmu podnoszenia w kierunku góra wykonuje się:",
+      "image": null,
+      "options": [
+        "z ładunkiem równym 50% udźwigu nominalnego",
+        "z ładunkiem równym 100% udźwigu nominalnego",
+        "bez ciężaru",
+        "z największym dostępnym aktualnie ciężarem nieprzekraczającym udźwigu"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 230,
+      "question": "Ogranicznikiem ruchów roboczych mechanizmów suwnicy jest:",
+      "image": null,
+      "options": [
+        "ogranicznik udźwigu",
+        "łącznik awaryjnego zatrzymania „STOP\"",
+        "łapa oporowa",
+        "łącznik krańcowy"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 231,
+      "question": "Po zakończonej pracy, zblocze hakowe:",
+      "image": null,
+      "options": [
+        "pozostawiamy w górnym skrajnym położeniu",
+        "pozostawiamy bez ładunku i zawiesi na haku, na bezpiecznej wysokości",
+        "możemy pozostawić z zawiesiami zawieszonymi na haku",
+        "podwieszamy na dedykowanym wieszaku w miejscu postoju suwnicy"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 232,
+      "question": "Co oznacza informacja 20/5 t umieszczona na suwnicy?",
+      "image": null,
+      "options": [
+        "udźwig suwnicy wynosi 5 t, a wysokość podnoszenia 20 m",
+        "udźwig suwnicy wynosi 20 t z możliwością krótkotrwałego jej przeciążenia o 5t",
+        "udźwig suwnicy wynosi łącznie 25 t",
+        "żadna z powyższych odpowiedzi nie jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 233,
+      "question": "Co oznacza napis na suwnicy 25 t + 5 t?",
+      "image": null,
+      "options": [
+        "suwnica posiada dwa mechanizmy podnoszenia, jeden o udźwigu 25 t, drugi 5 t i można pracować nimi jednocześnie",
+        "suwnica posiada jeden mechanizm podnoszenia o udźwigu 25 t, który można maksymalnie przeciążyć o 5t",
+        "suwnica posiada dwa mechanizmy podnoszenia, jeden o udźwigu 25 t, drugi 5 t i nie można nimi pracować jednocześnie",
+        "żadna z powyższych odpowiedzi nie jest prawidłowa"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 234,
+      "question": "Na jakiej wysokości nad osobami można przewieźć ładunek przy użyciu suwnicy?",
+      "image": null,
+      "options": [
+        "do 1,0 m pod warunkiem, że osoba ma kask na głowie",
+        "jest to niedopuszczalne",
+        "jak najwyżej, tak aby nie zahaczyć o głowę osoby znajdującej się pod ładunkiem",
+        "w zależności od zapisów instrukcji obsługi urządzenia"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 235,
+      "question": "Na jakiej wysokości nad przeszkodami (np. maszynami) zaleca się przewieźć ładunek przy użyciu suwnicy?",
+      "image": null,
+      "options": [
+        "na bezpiecznej wysokości, pod warunkiem, że na trasie przejazdu nie znajdują się ludzie",
+        "jest to niedopuszczalne",
+        "200 cm",
+        "w każdym przypadku na maksymalnej wysokości podnoszenia"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 236,
+      "question": "W jakim celu stosuje się blokadę zerową nastawników?",
+      "image": null,
+      "options": [
+        "blokada zerowa zabezpiecza suwnicę przed nieautoryzowanym użyciem",
+        "blokadę zerową stosuje się w celu zabezpieczenia suwnicy przed przeciążeniem",
+        "blokada zerowa zabezpiecza suwnicę przed zbyt silnym wiatrem",
+        "zabezpiecza przed samoczynnym rozruchem mechanizmów w wyniku pojawienia się napięcia, gdy dźwignie sterownicze nie znajdują się w położeniu zerowym, po uprzednim jego zaniku"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 237,
+      "question": "Jak należy zapobiegać wahaniom dużych gabarytowo ładunków?",
+      "image": null,
+      "options": [
+        "hakowy trzyma ładunek ręką",
+        "operator trzyma ładunek ręką",
+        "przy pomocy linki asekuracyjnej przymocowanej do ładunku",
+        "wszystkie powyższe odpowiedzi są prawidłowe"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 238,
+      "question": "Kiedy powinno stosować się trawersę?",
+      "image": null,
+      "options": [
+        "jeżeli transportujemy bardzo długie ładunki",
+        "jeżeli w przypadku zastosowania zawiesia wielocięgnowego występuje kąt pomiędzy cięgnami zawiesia przekraczający 120°",
+        "jeśli dysponujemy zbyt krótkimi zawiesiami",
+        "wszystkie powyższe odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 239,
+      "question": "Czy wolno podnosić ładunki tkwiące w ziemi lub przymarznięte?",
+      "image": null,
+      "options": [
+        "można, za zgodą kierownika zakładu",
+        "nie wolno",
+        "można, po uzgodnieniu z hakowym",
+        "można, ale w pierwszej kolejności należy ładunek przeciągnąć w poziomie"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 240,
+      "question": "Czy podczas pracy można pozostawić zawieszony ładunek na haku suwnicy bez nadzoru?",
+      "image": null,
+      "options": [
+        "można, bo ładunek nigdy nie spadnie",
+        "można, gdy hakowy wyrazi zgodę i wyznaczy odpowiednią strefę niebezpieczną",
+        "nie wolno",
+        "należy tak postępować w celach ekonomicznie uzasadnionych"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 241,
+      "question": "Czy można podnosić jeden ładunek przez dwie lub więcej suwnic?",
+      "image": null,
+      "options": [
+        "w żadnym przypadku nie wolno podnosić",
+        "można, po opracowaniu przez eksploatującego szczegółowych warunków eksploatacji",
+        "można po uzgodnieniu z operatorem drugiej suwnicy",
+        "można ale wyłącznie z zastosowaniem suwnic specjalnego przeznaczenia"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 242,
+      "question": "Przenoszenie ludzi wraz z ładunkiem:",
+      "image": null,
+      "options": [
+        "jest zabronione",
+        "jest dozwolone za zgodą i na polecenie kierownika zakładu",
+        "jest zabronione, gdy suma ciężaru ładunku i osoby przekracza udźwig suwnicy",
+        "jest dozwolone wyłącznie w przypadku gdy zapas udźwigu przekracza 1 tonę a suwnica posiada dwa niezależne hamulce podnoszenia"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 243,
+      "question": "Sygnał \"STOP\", na który należy bezzwłocznie zareagować może podać:",
+      "image": null,
+      "options": [
+        "wyłącznie hakowy",
+        "wyłącznie sygnalista",
+        "dowolna osoba",
+        "wyłącznie kierownik zakładu lub budowy"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 244,
+      "question": "Jak należy zawieszać ładunek na haku dwurożnym?",
+      "image": null,
+      "options": [
+        "sposób zawieszenia nie ma znaczenia",
+        "tak, aby jedna gardziel była obciążona",
+        "tak, aby żadna z gardzieli nie była obciążona",
+        "tak, aby obie gardziele były równomiernie obciążone"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 245,
+      "question": "Do przeciągnięcia ładunku leżącego poza polem pracy suwnicy można użyć:",
+      "image": null,
+      "options": [
+        "mechanizmu jazdy mostu",
+        "mechanizmu jazdy wózka",
+        "mechanizmu podnoszenia",
+        "żadna z powyższych odpowiedzi nie jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 246,
+      "question": "Operator suwnicy, widząc ludzi na trasie przenoszonego ładunku, powinien:",
+      "image": null,
+      "options": [
+        "podnieść przenoszony ładunek na taką wysokość, żeby nie zahaczyć o osoby postronne ładunkiem podczas jego przenoszenia",
+        "podnieść przenoszony ładunek aż do zadziałania wyłącznika krańcowego \"Góra\" i sprawdzić, czy te osoby mają założone kaski",
+        "ostrzec sygnałem akustycznym osoby znajdujące się w strefie niebezpiecznej i kontynuować pracę",
+        "wstrzymać wykonywaną operację do czasu opuszczenia strefy przez osoby postronne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 247,
+      "question": "W przypadku stwierdzenia niewłaściwego ustawienia łącznika krańcowego mechanizmu podnoszenia w kierunku góra operator powinien:",
+      "image": null,
+      "options": [
+        "zapoznać się z dokumentacją producenta i przeprowadzić regulację",
+        "przerwać pracę i zawiadomić przełożonego o konieczności regulacji",
+        "kontynuować pracę, regulacja zostanie wykonana przy przeglądzie konserwacyjnym",
+        "kontynuować pracę aby zachować ciągłość procesu technologicznego zakładu"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 248,
+      "question": "Po zakończeniu pracy suwnicą należy:",
+      "image": null,
+      "options": [
+        "opuścić hak do zetknięcia się z podłożem",
+        "podnieść hak do zadziałania łącznika krańcowego",
+        "ustawić suwnicę w miejscu jej stałego postoju i podnieść hak na wysokość nie kolidującą z drogami transportowymi poniżej zadziałania łącznika krańcowego",
+        "podnieść zblocze hakowe na wysokość zapewniającą prawidłowe napięcie pasm liny nośnej"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 249,
+      "question": "Jeżeli podczas przenoszenia ładunku suwnicą operator zauważy samoczynne powolne opuszczanie się ładunku, wówczas:",
+      "image": null,
+      "options": [
+        "oznacza to awarię hamulca mechanizmu podnoszenia",
+        "oznacza to chwilową obniżkę napięcia zasilania, która minie samoistnie",
+        "jest to efekt zadziałania ogranicznika obciążenia",
+        "w sterowaniach nastawnikowych jest to sytuacja całkowicie normalna"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 250,
+      "question": "Kojarzenie ruchów suwnicy to:",
+      "image": null,
+      "options": [
+        "próba jednoczesnego uruchomienia podnoszenia i opuszczania haka",
+        "umiejętność wygaszenia rozkołysanego ładunku",
+        "podstawowy błąd początkujących operatorów suwnic",
+        "jednoczesne załączenie ruchu dwóch mechanizmów"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 251,
+      "question": "Chcąc podnieść ładunek o nieznanej masie należy:",
+      "image": null,
+      "options": [
+        "sprawdzić prawidłowość działania ogranicznika udźwigu a następnie podnieść ładunek",
+        "prace transportowe wykonywać z prędkością bezpieczną, przenosząc ładunek jak najbliżej podłoża",
+        "oszacować masę ładunku",
+        "poprosić o pomoc np. operatora wózka widłowego"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 252,
+      "question": "Próbę hamulca mechanizmu podnoszenia wykonujemy:",
+      "image": null,
+      "options": [
+        "tylko po zakończeniu pracy",
+        "przed pierwszym podjęciem ładunku i przy podnoszeniu ładunku większego od poprzedniego",
+        "każdorazowo przy podnoszeniu ładunku",
+        "jednorazowo przed rozpoczęciem danej zmiany"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 253,
+      "question": "Jak należy poprawnie sprawdzić działanie łączników krańcowych w suwnicach dwubiegowych?",
+      "image": null,
+      "options": [
+        "1x z szybką prędkością",
+        "2x, (1x wolno i 1x szybko)",
+        "nie ma potrzeby sprawdzania łączników krańcowych",
+        "suwnice nie są wyposażane w łączniki krańcowe"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 254,
+      "question": "Czy operator suwnicy, wciągnika, wciągarki, po zakończeniu pracy na haku mechanizmu podnoszenia może pozostawić zawiesia:",
+      "image": null,
+      "options": [
+        "tak, ale tylko łańcuchowe bądź pasowe",
+        "nie",
+        "tak, lecz tylko wtedy, gdy zblocze hakowe podniesie dostatecznie wysoko",
+        "w zakładach pracy o ruchu ciągłym jest to zalecane"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 255,
+      "question": "Czy obsługujący może eksploatować urządzenie z uszkodzonym hamulcem mechanizmu podnoszenia:",
+      "image": null,
+      "options": [
+        "tak, ale tylko wtedy, gdy podnoszony ładunek ma nieznaczną masę",
+        "tak, ale tylko wtedy, gdy podnoszony ładunek ma masę nie przekraczającą udźwigu nominalnego urządzenia",
+        "tak, używa wtedy hamulca awaryjnego aktywowanego przyciskiem bezzwłocznego zatrzymania STOP",
+        "nie, nie może"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 256,
+      "question": "Czy obsługujący może podnosić przemieszczany ładunek gdy liny mechanizmu podnoszenia wciągnika, wciągarki, suwnicy nie są w pionie:",
+      "image": null,
+      "options": [
+        "tak, pod warunkiem, że kąt odchylenia lin nie przekracza 45°",
+        "tak, pod warunkiem, że kąt odchylenia lin nie przekracza 60°",
+        "tak, gdyż maksymalny dopuszczalny kąt wynosi 120°",
+        "nie może podnosić ładunku"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 257,
+      "question": "Zabezpieczenia przeciwwiatrowe obsługujący suwnicy zobowiązany jest uruchomić:",
+      "image": null,
+      "options": [
+        "wyłącznie wtedy gdy otrzymał od przełożonego informację o silnych wiatrach lub o nadciągającej burzy",
+        "zawsze przed rozpoczęciem pracy w warunkach silnego wiatru",
+        "nie powinien uruchamiać, ponieważ to należy do obowiązków konserwatora",
+        "zawsze po zakończeniu pracy i/lub opuszczeniu miejsca sterowania"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 258,
+      "question": "Nad kontenerami w których mogą przebywać ludzie:",
+      "image": null,
+      "options": [
+        "wolno przewozić ładunki, pod warunkiem zachowania odległości pionowej 0,5 metra od kontenera",
+        "nie wolno przewozić ładunków",
+        "wolno przewozić ładunki bez zatrzymywania się nad kontenerami i zachowania odległości pionowej 1 metra od kontenera",
+        "żadna z powyższych odpowiedzi nie jest prawidłowa"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 259,
+      "question": "W przypadku ograniczonej widoczności miejsca składowania ładunku należy:",
+      "image": null,
+      "options": [
+        "odmówić wykonania pracy",
+        "skorzystać z pomocy hakowego (sygnalisty)",
+        "najpierw spróbować odłożyć bez pomocy hakowego, dopiero gdy się nie uda poprosić go o pomoc",
+        "oszacować drogę transportową, a następnie samodzielnie odłożyć ładunek"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 260,
+      "question": "Blokada zerowa uniemożliwi załączenie suwnicy w przypadku:",
+      "image": null,
+      "options": [
+        "ustawienia wszystkich nastawników w położeniu zerowym",
+        "ustawienia któregokolwiek nastawnika poza pozycją zerową",
+        "niesprawnej instalacji przeciwporażeniowej",
+        "złego stanu izolacji przewodów elektrycznych"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 261,
+      "question": "Strefa bezpieczeństwa suwnicy będącej w ruchu zależy od?",
+      "image": null,
+      "options": [
+        "wysokości na jakiej transportowany jest ładunek",
+        "prędkości z jaką transportowany jest ładunek",
+        "wysokości i prędkości z jaką transportowany jest ładunek",
+        "wysokość i prędkość transportowanego ładunku nie ma wpływu na strefę bezpieczeństwa"
+      ],
+      "correct": 3
+    }
+  ]
+}

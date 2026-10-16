@@ -1,0 +1,208 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Kto ponosi odpowiedzialność za stan bezpieczeństwa i higieny pracy w zakładzie pracy?",
+      "image": "",
+      "options": [
+        "Pracodawca",
+        "Kierownik zmiany lub brygadzista",
+        "Inspektor Państwowej Inspekcji Pracy",
+        "Społeczny Inspektor Pracy"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 2,
+      "question": "W jakim terminie od zaistnienia wypadku przy pracy zespół powypadkowy powinien sporządzić protokół powypadkowy?",
+      "image": "",
+      "options": [
+        "Nie później niż w terminie 14 dni",
+        "Nie później niż w terminie 7 dni",
+        "Do końca danego miesiąca",
+        "Nie ma określonego terminu"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 3,
+      "question": "Kiedy pracownik ma prawo powstrzymać się od wykonywania pracy?",
+      "image": "",
+      "options": [
+        "Gdy warunki stwarzają bezpośrednie zagrożenie dla zdrowia lub życia",
+        "Gdy temperatura na stanowisku pracy spadnie o 1 stopień",
+        "Gdy nie otrzymał premii regulaminowej",
+        "W dowolnym momencie po uprzedzeniu współpracowników"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 4,
+      "question": "Do kogo należy obowiązek niezwłocznego zgłoszenia zauważonego wypadku lub zagrożenia w zakładzie pracy?",
+      "image": "",
+      "options": [
+        "Do każdego pracownika, który zauważył zdarzenie",
+        "Wyłącznie do poszkodowanego",
+        "Wyłącznie do kierownika działu BHP",
+        "Do lekarza medycyny pracy"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 5,
+      "question": "Kto pokrywa koszty badań profilaktycznych (wstępnych, okresowych i kontrolnych) pracownika?",
+      "image": "",
+      "options": [
+        "Pracodawca",
+        "Pracownik z własnych środków",
+        "Narodowy Fundusz Zdrowia",
+        "Zakład Ubezpieczeń Społecznych"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 6,
+      "question": "Jaki kolor posiada znak bezpieczeństwa informujący o ewakuacji i pierwszej pomocy?",
+      "image": "",
+      "options": [
+        "Zielony",
+        "Czerwony",
+        "Żółty",
+        "Niebieski"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 7,
+      "question": "Jakie jest podstawowe zadanie gaśnicy śniegowej (CO2)?",
+      "image": "",
+      "options": [
+        "Gaszenie pożarów płynów, gazów oraz urządzeń elektrycznych pod napięciem",
+        "Gaszenie wyłącznie ciał stałych (np. drewna, papieru)",
+        "Schładzanie przegrzanych silników spalinowych",
+        "Gaszenie pożarów metali lekkich"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 8,
+      "question": "Co należy zrobić w pierwszej kolejności przy porażeniu prądem elektrycznym?",
+      "image": "",
+      "options": [
+        "Odłączyć źródło prądu (wyłączyć bezpiecznik lub odciągnąć poszkodowanego izolatorem)",
+        "Natychmiast rozpocząć resuscytację bez wyłączania zasilania",
+        "Polać poszkodowanego zimną wodą",
+        "Podać poszkodowanemu płyny do picia"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 9,
+      "question": "Jaki jest ogólnoeuropejski numer alarmowy?",
+      "image": "",
+      "options": [
+        "112",
+        "999",
+        "998",
+        "997"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 10,
+      "question": "Czym charakteryzuje się trójkątny żółty znak bezpieczeństwa z czarnym symbolem?",
+      "image": "",
+      "options": [
+        "Jest to znak ostrzegawczy przed niebezpieczeństwem",
+        "Jest to znak nakazu stosowania ochrony",
+        "Jest to znak informacyjny o drodze ewakuacyjnej",
+        "Jest to znak zakazu wykonywania określonych czynności"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 11,
+      "question": "W jakich proporcjach prowadzi się resuscytację krążeniowo-oddechową (RKO) u osoby dorosłej?",
+      "image": "",
+      "options": [
+        "30 uciśnięć klatki piersiowej na 2 wdechy ratownicze",
+        "15 uciśnięć klatki piersiowej na 2 wdechy ratownicze",
+        "5 uciśnięć klatki piersiowej na 1 wdech ratowniczy",
+        "50 uciśnięć klatki piersiowej na 5 wdechów ratowniczych"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 12,
+      "question": "Czy pracownik może zostać dopuszczony do pracy bez aktualnego orzeczenia lekarskiego?",
+      "image": "",
+      "options": [
+        "Nie, bez ważnego orzeczenia pracodawca nie może dopuścić pracownika do pracy",
+        "Tak, jeśli pracownik podpisze oświadczenie na własną odpowiedzialność",
+        "Tak, przez pierwsze 30 dni zatrudnienia",
+        "Tak, jeśli stanowisko nie jest pracą fizyczną"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 13,
+      "question": "Do czego służą środki ochrony indywidualnej (ŚOI)?",
+      "image": "",
+      "options": [
+        "Do ochrony pracownika przed działaniem niebezpiecznych i szkodliwych czynników",
+        "Do zastępowania odzieży prywatnej pracownika",
+        "Do identyfikacji wizualnej pracowników na terenie firmy",
+        "Do dekoracji stanowiska pracy"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 14,
+      "question": "Co oznacza termin ergonomia w miejscu pracy?",
+      "image": "",
+      "options": [
+        "Dostosowanie warunków i narzędzi pracy do możliwości fizycznych i psychicznych człowieka",
+        "Minimalizowanie kosztów zakupu narzędzi i mebli biurowych",
+        "Zwiększanie tempa pracy w celu maksymalizacji produkcji",
+        "System karania pracowników za nieprzestrzeganie regulaminu"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 15,
+      "question": "Kto dostarcza pracownikowi nieodpłatnie środki ochrony indywidualnej?",
+      "image": "",
+      "options": [
+        "Pracodawca",
+        "Pracownik kupuje sam i otrzymuje zwrot połowy kwoty",
+        "Urząd Pracy",
+        "Związki zawodowe"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 16,
+      "question": "TESTOWE PYTANIE",
+      "image": "/img/images.webp",
+      "options": [
+        "prawidlowa odpowiedz",
+        "zła",
+        "zła",
+        "zła"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 17,
+      "question": "aaaaa",
+      "image": "",
+      "options": [
+        "aaa",
+        "5",
+        "4",
+        "6"
+      ],
+      "correct": 1
+    }
+  ]
+}

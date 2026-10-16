@@ -1,0 +1,2872 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Urządzenie techniczne objęte dozorem technicznym może być eksploatowane na podstawie:",
+      "image": null,
+      "options": [
+        "Zezwolenia ustnego lub pisemnego wydanego przez upoważnionego konserwatora",
+        "Ważnej decyzji zezwalającej na eksploatację wydanej przez organ jednostki dozoru technicznego",
+        "Oznaczenia CE umieszczonego na urządzeniu",
+        "Deklaracji zgodności wystawionej przez wytwórcę"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 2,
+      "question": "Które z wymienionych czynności nie należą do zakresu obowiązków obsługującego UTB:",
+      "image": null,
+      "options": [
+        "Wykonywanie niewielkich napraw urządzenia w ramach posiadanego wykształcenia i umiejętności",
+        "Przestrzeganie instrukcji eksploatacji w zakresie obsługi UTB",
+        "Zapoznanie się z planem pracy i wielkością przenoszonych ładunków",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 3,
+      "question": "Terminy przeglądów konserwacyjnych urządzeń technicznych:",
+      "image": null,
+      "options": [
+        "Są zawarte w instrukcji eksploatacji urządzenia",
+        "Określa konserwator urządzenia",
+        "Określa w protokole inspektor wykonujący badanie",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 4,
+      "question": "Dozorem technicznym nazywamy:",
+      "image": null,
+      "options": [
+        "Określone ustawą działania zmierzające do zapewnienia bezpiecznego funkcjonowania urządzeń technicznych i urządzeń do odzyskiwania par paliwa oraz działania zmierzające do zapewnienia bezpieczeństwa publicznego w tych obszarach",
+        "Instytucje kontrolujące stan techniczny urządzeń",
+        "Urząd Dozoru Technicznego",
+        "UDT, WDT, TDT"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 5,
+      "question": "Dozór techniczny nad urządzeniami technicznymi wykonuje:",
+      "image": null,
+      "options": [
+        "Urząd Dozoru Technicznego oraz specjalistyczne jednostki dozoru technicznego",
+        "Urząd Dozoru Technicznego oraz upoważnione przez UDT organizacje",
+        "Urząd Dozoru Technicznego i zagraniczne jednostki dozoru technicznego",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 6,
+      "question": "Zmiana parametrów technicznych lub zmiana konstrukcji urządzenia traktowana jest jako:",
+      "image": null,
+      "options": [
+        "Modernizacja urządzenia technicznego",
+        "Naprawa urządzenia technicznego",
+        "Usuwanie usterek i innych nieprawidłowości urządzenia technicznego",
+        "Wytworzenie nowego urządzenia"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 7,
+      "question": "Uzgodnioną naprawę lub modernizację urządzeń technicznych może wykonać:",
+      "image": null,
+      "options": [
+        "Naprawiający lub modernizujący, który posiada uprawnienie wydane przez organ właściwej jednostki dozoru technicznego",
+        "Eksploatujący urządzenie techniczne posiadający odpowiednie doświadczenie w zakresie napraw lub modernizacji",
+        "Konserwator posiadający odpowiednie doświadczenie w zakresie napraw lub modernizacji",
+        "W niewielkim zakresie kompetentny operator"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 8,
+      "question": "Ustawa o dozorze technicznym określa następujące formy dozoru technicznego:",
+      "image": null,
+      "options": [
+        "Całkowita, częściowa, ograniczona",
+        "Pełna, ograniczona, uproszczona",
+        "Pełna, cykliczna, sporadyczna",
+        "UDT, WDT, TDT"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 9,
+      "question": "Decyzję zezwalającą na eksploatację urządzenia technicznego wydaje:",
+      "image": null,
+      "options": [
+        "Konserwator po wykonaniu przeglądu z wynikiem pozytywnym",
+        "Organ właściwej jednostki dozoru technicznego lub eksploatujący urządzenie techniczne z upoważnienia organu właściwej jednostki dozoru technicznego",
+        "Organ właściwej jednostki dozoru technicznego lub organ administracji publicznej z upoważnienia organu właściwej jednostki dozoru technicznego",
+        "Organ właściwej jednostki dozoru technicznego"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 10,
+      "question": "Obsługujący urządzenie techniczne może podjąć pracę gdy:",
+      "image": null,
+      "options": [
+        "Urządzenie posiada ważną decyzję zezwalającą na eksploatację jeżeli wymagają tego odpowiednie przepisy",
+        "Posiada zaświadczenie kwalifikacyjne odpowiedniej kategorii",
+        "Urządzenie posiada aktualny pozytywny wynik przeglądu konserwacyjnego",
+        "Wszystkie powyższe warunki muszą być spełnione jednocześnie"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 11,
+      "question": "Obsługujący urządzenie techniczne może podjąć pracę gdy:",
+      "image": null,
+      "options": [
+        "Urządzenie posiada aktualny wpis w dzienniku konserwacji potwierdzający sprawność urządzenia",
+        "Przeszedł odpowiednie szkolenie stanowiskowe",
+        "Urządzenie posiada ważną decyzję zezwalającą na eksploatację",
+        "Wszystkie powyższe warunki muszą być spełnione jednocześnie"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 12,
+      "question": "W przypadku nieprzestrzegania przez eksploatującego przepisów o dozorze technicznym eksploatujący:",
+      "image": null,
+      "options": [
+        "Otrzymuje pisemne upomnienie",
+        "Otrzymuje zalecenia pokontrolne",
+        "Podlega grzywnie lub karze ograniczenia wolności",
+        "Odpowiedź a i b jest prawidłowa"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 13,
+      "question": "W przypadku stwierdzenia zagrożenia dla życia lub zdrowia ludzkiego oraz środowiska inspektor:",
+      "image": null,
+      "options": [
+        "Wydaje decyzję wstrzymującą eksploatację urządzenia technicznego",
+        "Wystawia mandat karny",
+        "Pisemnie poucza eksploatującego",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 14,
+      "question": "W przypadku niebezpiecznego uszkodzenia urządzenia lub nieszczęśliwego wypadku eksploatujący:",
+      "image": null,
+      "options": [
+        "Niezwłocznie powiadamia UDT o zaistniałym zdarzeniu",
+        "Powiadamia producenta urządzenia o przyczynach powstałego zdarzenia",
+        "Niezwłocznie dokonuje naprawy urządzenia i przekazuje do dalszej eksploatacji",
+        "Zgłasza urządzenie do wykonania naprawy"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 15,
+      "question": "Zaświadczenie kwalifikacyjne do obsługi może zostać cofnięte przez:",
+      "image": null,
+      "options": [
+        "Organ właściwej jednostki dozoru technicznego",
+        "Eksploatującego urządzenie techniczne",
+        "Inspektora bhp",
+        "Państwową Inspekcję Pracy"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 16,
+      "question": "Urządzenia techniczne nieobjęte dozorem technicznym to:",
+      "image": null,
+      "options": [
+        "Żurawie o udźwigu do 3,2 t",
+        "Wciągniki i wciągarki oraz suwnice",
+        "Wózki jezdniowe podnośnikowe oraz podesty ruchome",
+        "Zawiesia transportowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 17,
+      "question": "Urządzenia techniczne objęte dozorem technicznym to:",
+      "image": null,
+      "options": [
+        "Przenośniki kabinowe i krzesełkowe",
+        "Układnice magazynowe oraz urządzenia dla osób niepełnosprawnych",
+        "Wyciągi towarowe i wyciągi statków",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 18,
+      "question": "Niebezpieczne uszkodzenie urządzenia technicznego to:",
+      "image": null,
+      "options": [
+        "Każda usterka UTB",
+        "Nieprzewidziane uszkodzenie, w wyniku którego urządzenie nadaje się do częściowej eksploatacji",
+        "Uszkodzenie, w wyniku którego nadaje się do eksploatacji tylko przy obniżonych parametrach",
+        "Nieprzewidziane uszkodzenie, w wyniku którego urządzenie nie nadaje się do eksploatacji lub jego dalsza eksploatacja stanowi zagrożenie"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 19,
+      "question": "Nieszczęśliwy wypadek to:",
+      "image": null,
+      "options": [
+        "Nagłe zdarzenie, które spowodowało obrażenia ciała lub śmierć",
+        "Nagłe zdarzenie, które spowodowało przerwę w pracy",
+        "Nagłe zdarzenie, które skutkuje wyłączeniem urządzenia technicznego z eksploatacji",
+        "Każda usterka UTB spowodowana przyczyną losową"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 20,
+      "question": "Odpowiedzialnym za zapewnienie właściwej obsługi i konserwacji urządzenia technicznego jest:",
+      "image": null,
+      "options": [
+        "Eksploatujący urządzenie techniczne",
+        "Organ właściwej jednostki dozoru technicznego",
+        "Państwowa Inspekcja Pracy",
+        "Inspektor UDT"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 21,
+      "question": "Wymagane przepisami prawa przeglądy konserwacyjne wykonuje:",
+      "image": null,
+      "options": [
+        "Osoba posiadająca zaświadczenie kwalifikacyjne do konserwacji",
+        "Pracownik autoryzowanego serwisu producenta urządzenia (pod warunkiem posiadania zaświadczeń kwalifikacyjnych do konserwacji)",
+        "Zakładowe służby utrzymania ruchu",
+        "Odpowiedź a i b jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 22,
+      "question": "Dziennik konserwacji urządzenia technicznego prowadzi:",
+      "image": null,
+      "options": [
+        "Inspektor UDT w księdze rewizyjnej urządzenia",
+        "Uprawniony operator",
+        "Wyznaczony pracownik eksploatującego",
+        "Konserwator urządzenia technicznego"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 23,
+      "question": "Badania odbiorcze przeprowadza się dla urządzeń technicznych:",
+      "image": null,
+      "options": [
+        "W terminach zgodnych z zapisami rozporządzenia w sprawie warunków technicznych dozoru technicznego",
+        "Przed wydaniem pierwszej decyzji zezwalającej na eksploatacje",
+        "Po naprawie urządzenia technicznego",
+        "Po każdej zmianie eksploatującego"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 24,
+      "question": "Badania okresowe przeprowadza się dla urządzeń technicznych objętych dozorem:",
+      "image": null,
+      "options": [
+        "Ograniczonym",
+        "Pełnym",
+        "Uproszczonym",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 25,
+      "question": "Nieobecność konserwującego na badaniu urządzenia technicznego wymaga min.:",
+      "image": null,
+      "options": [
+        "Wcześniejszego uzgodnienia tego faktu z organem właściwej jednostki dozoru technicznego",
+        "Przedstawienia pisemnego usprawiedliwienia nieobecności konserwatora",
+        "Przedstawienia zwolnienia lekarskiego potwierdzającego niezdolność konserwatora do pracy",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 26,
+      "question": "Kandydat na obsługującego urządzenie techniczne musi:",
+      "image": null,
+      "options": [
+        "Mieć ukończone 18 lat",
+        "Posiadać przynajmniej wykształcenie zawodowe",
+        "Posiadać przynajmniej 1 rok stażu pracy",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 27,
+      "question": "Obsługujący urządzenie techniczne ma obowiązek przerwać pracę gdy:",
+      "image": null,
+      "options": [
+        "Jego stan fizyczny i psychiczny w dniu pracy jest nieodpowiedni",
+        "Stwierdzi, że dalsza praca urządzeniem stwarza zagrożenie",
+        "Urządzenie jest niesprawne",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 28,
+      "question": "Terminy przeglądów konserwacyjnych urządzenia mogą być określone:",
+      "image": null,
+      "options": [
+        "W instrukcji eksploatacji urządzenia",
+        "W ustawie o dozorze technicznym",
+        "W rozporządzeniu określającym warunki techniczne dozoru technicznego",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 29,
+      "question": "Terminy badań okresowych i doraźnych kontrolnych UTB określone są:",
+      "image": null,
+      "options": [
+        "W ustawie o dozorze technicznym",
+        "W rozporządzeniu określającym warunki techniczne dozoru technicznego",
+        "W dokumentacji konstrukcyjnej urządzenia",
+        "W dzienniku konserwacji"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 30,
+      "question": "Obowiązkiem obsługującego urządzenie techniczne jest:",
+      "image": null,
+      "options": [
+        "Przestrzeganie instrukcji eksploatacji w zakresie obsługi urządzenia",
+        "Przestrzeganie instrukcji eksploatacji w zakresie konserwacji urządzenia",
+        "Wykonywanie napraw urządzenia",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 31,
+      "question": "Urządzenie techniczne można eksploatować na podstawie:",
+      "image": null,
+      "options": [
+        "Aktualnej naklejki organu właściwej jednostki dozoru technicznego określającej termin kolejnego badania",
+        "Aktualnego wpisu konserwatora urządzenia w dzienniku konserwacji",
+        "Ważnej decyzji zezwalającej na eksploatację wydanej przez organ właściwej jednostki dozoru technicznego",
+        "Pozytywnego protokołu z badania okresowego lub odbiorczego"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 32,
+      "question": "Po wykonanych czynnościach przy urządzeniu technicznym inspektor sporządza:",
+      "image": null,
+      "options": [
+        "Instrukcję eksploatacji urządzenia",
+        "Decyzję i protokół z wykonanych czynności",
+        "Deklarację zgodności CE",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 33,
+      "question": "Naprawę i modernizację urządzenia technicznego wykonuje:",
+      "image": null,
+      "options": [
+        "Operator w ramach posiadanych umiejętności",
+        "Konserwator",
+        "Zakład uprawniony",
+        "Eksploatujący"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 34,
+      "question": "Bezpośrednio odpowiedzialnym za bezpieczną eksploatację urządzenia technicznego jest:",
+      "image": null,
+      "options": [
+        "Obsługujący urządzenie",
+        "Producent urządzenia",
+        "Zakładowy inspektor BHP",
+        "Inspektor UDT"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 35,
+      "question": "Informacje dotyczące zasad bezpiecznej obsługi urządzenia są zawarte w:",
+      "image": null,
+      "options": [
+        "Instrukcji eksploatacji urządzenia",
+        "Ustawie o dozorze technicznym",
+        "Dzienniku konserwacji",
+        "Protokole z badania wykonanego przez inspektora UDT"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 36,
+      "question": "W ramach czynności przed rozpoczęciem pracy obsługujący:",
+      "image": null,
+      "options": [
+        "Sprawdza stan techniczny urządzenia poprzez oględziny",
+        "Wykonuje próby statyczną i dynamiczną",
+        "Wykonuje próby ruchowe urządzenia",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 37,
+      "question": "Zaświadczenia kwalifikacyjne do obsługi urządzeń technicznych podlegających dozorowi technicznemu wydaje:",
+      "image": null,
+      "options": [
+        "Firma szkoleniowa po pozytywnym wyniku egzaminu sprawdzającego",
+        "Inspektor BHP na podstawie zaświadczenia o ukończeniu kursu",
+        "Pracodawca na podstawie zdanego egzaminu",
+        "Organ właściwej jednostki dozoru technicznego"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 38,
+      "question": "Przeciążanie UTB w trakcie pracy:",
+      "image": null,
+      "options": [
+        "Jest zabronione",
+        "Jest dopuszczalne",
+        "Jest dopuszczalne ale tylko do 125% udźwigu nominalnego",
+        "Jest dopuszczalne ale tylko do 110% udźwigu nominalnego"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 39,
+      "question": "Badania doraźne eksploatacyjne wykonuje się m.in.:",
+      "image": null,
+      "options": [
+        "Po każdym usunięciu usterki przez konserwatora",
+        "Po wymianie cięgien nośnych",
+        "Raz na rok",
+        "Po wypadku na urządzeniu"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 40,
+      "question": "Obowiązki obsługującego określone są:",
+      "image": null,
+      "options": [
+        "W instrukcji eksploatacji urządzenia",
+        "W dzienniku konserwacji",
+        "W ustawie o dozorze technicznym",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 41,
+      "question": "Badania okresowe urządzenia technicznego są wykonywane przez:",
+      "image": null,
+      "options": [
+        "Konserwatora posiadającego odpowiednie zaświadczenie kwalifikacyjne",
+        "Inspektora organu właściwej jednostki dozoru technicznego",
+        "Pracownika serwisu producenta",
+        "Operatora"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 42,
+      "question": "Jednostką dozoru technicznego jest:",
+      "image": null,
+      "options": [
+        "Urząd Dozoru Technicznego",
+        "Wojskowy Dozór techniczny",
+        "Transportowy Dozór Techniczny",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 43,
+      "question": "Zaświadczenia kwalifikacyjne uprawniające do obsługi urządzeń technicznych ważne są na terenie:",
+      "image": null,
+      "options": [
+        "Rzeczypospolitej Polskiej",
+        "Unii Europejskiej",
+        "Nie mają określonego obszaru ważności",
+        "Krajów strefy Schengen"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 44,
+      "question": "Obowiązek stosowania środków ochrony indywidualnej przez operatorów urządzeń wynika z:",
+      "image": null,
+      "options": [
+        "Instrukcji eksploatacji producenta",
+        "Przepisów BHP",
+        "Przepisów wewnątrzzakładowych",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 45,
+      "question": "Zgodnie z rozporządzeniem Rady Ministrów w sprawie rodzajów urządzeń technicznych podlegających dozorowi technicznemu przepisom dozoru technicznego podlegają:",
+      "image": null,
+      "options": [
+        "Dźwigi, żurawie, suwnice, wciągarki i wciągniki",
+        "Wózki jezdniowe podnośnikowe z mechanicznym napędem podnoszenia, podesty ruchome",
+        "Dźwignice linotorowe, przenośniki kabinowe i krzesełkowe",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 46,
+      "question": "Instrukcja eksploatacji może nie zawierać:",
+      "image": null,
+      "options": [
+        "Informacji o terminach i zakresie przeglądów konserwacyjnych UTB",
+        "Podstawowych parametrów i przeznaczenia UTB",
+        "Terminów badań technicznych wykonywanych przez jednostkę inspekcyjną",
+        "Informacji o sposobie obsługi urządzenia"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 47,
+      "question": "Księga rewizyjna urządzenia musi zawierać:",
+      "image": null,
+      "options": [
+        "Zbiór protokołów z badań wykonywanych przez jednostkę inspekcyjną",
+        "Dokument, w którym odnotowywane są przeglądy konserwacyjne",
+        "Treść aktualnych aktów prawnych",
+        "Wykaz uprawnionych operatorów"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 48,
+      "question": "Decyzja wydana przez UDT:",
+      "image": null,
+      "options": [
+        "Nie podlega odwołaniu",
+        "Może zostać zmieniona przez inspektora PIP",
+        "Podlega możliwości odwołania się przez eksploatującego",
+        "Każda odpowiedź jest niepoprawna"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 49,
+      "question": "Do egzaminu sprawdzającego kwalifikacje może przystąpić osoba, która:",
+      "image": null,
+      "options": [
+        "Złożyła wniosek o sprawdzenie kwalifikacji",
+        "Ukończyła 18 lat",
+        "Nie ma przeciwwskazań zdrowotnych do obsługi urządzeń technicznych",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 50,
+      "question": "Po zakończonym badaniu technicznym z wynikiem pozytywnym inspektor UDT:",
+      "image": null,
+      "options": [
+        "Przedłuża ważność świadectwa kwalifikacji operatora",
+        "Oznakowuje urządzenie naklejką, która jest zezwoleniem na użytkowanie urządzenia",
+        "Informuje użytkownika pisemnie w dzienniku konserwacji, że wyraża zgodę na eksploatację urządzenia",
+        "Sporządza protokół z wykonanych czynności i wydaje decyzję administracyjną zezwalającą na eksploatację"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 51,
+      "question": "Zaświadczenia kwalifikacyjne:",
+      "image": null,
+      "options": [
+        "Są ważne bezterminowo",
+        "Są terminowe z okresem ważności uzależnionym od ilości uzyskanych punktów na egzaminie",
+        "Są terminowe z okresem zgodnym z zapisami rozporządzenia w sprawie trybu sprawdzenia kwalifikacji",
+        "Są ważne przez okres 15 lat"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 52,
+      "question": "Dokonujący przeróbek urządzenia technicznego bez uzgodnienia z organem właściwej jednostki dozoru technicznego:",
+      "image": null,
+      "options": [
+        "Podlega karze grzywny lub ograniczenia wolności",
+        "Podlega ukaraniu mandatem karnym",
+        "Nie podlega karze",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 53,
+      "question": "Kto dopuszcza do eksploatacji urządzenie techniczne bez ważnej decyzji zezwalającej na eksploatację:",
+      "image": null,
+      "options": [
+        "Podlega karze grzywny lub ograniczenia wolności",
+        "Nie podlega karze, jeżeli nie dojdzie do wypadku",
+        "Podlega wyłącznie karze grzywny",
+        "Podlega karze więzienia"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 54,
+      "question": "Instrukcja eksploatacji to:",
+      "image": null,
+      "options": [
+        "Zbiór informacji niezbędnych do bezpiecznej eksploatacji urządzenia udostępniany przez producenta",
+        "Zbiór zaleceń wydawanych przez Urząd Dozoru Technicznego",
+        "Instrukcja, którą musi stworzyć użytkownik urządzenia",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 55,
+      "question": "Zaświadczeń kwalifikacyjnych do obsługi nie wymaga się:",
+      "image": null,
+      "options": [
+        "Jeżeli urządzenie jest obsługiwane przez jego właściciela",
+        "Jeżeli wszystkie mechanizmy urządzenia mają napęd ręczny",
+        "Jeśli urządzenie jest wykorzystywane do celów prywatnych, nie zarobkowych",
+        "Od osób po 60 roku życia"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 56,
+      "question": "Osoba posiadająca zaświadczenia kwalifikacyjne może obsługiwać:",
+      "image": null,
+      "options": [
+        "Tylko urządzenia wymienione w zakresie uprawnienia",
+        "Wszystkie urządzenia podlegające dozorowi technicznemu",
+        "Inne urządzenia podlegające dozorowi technicznemu za zgoda pracodawcy",
+        "Wszystkie UTB o udźwigu do 3,2 t"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 57,
+      "question": "Obowiązkiem obsługującego urządzenie techniczne jest:",
+      "image": null,
+      "options": [
+        "Odmówić obsługi urządzenia, jeżeli wygasła decyzja zezwalająca na eksploatację tego urządzenia",
+        "Zawsze stosować się do poleceń przełożonego nakazujących eksploatację urządzenia",
+        "Stosować się do zapisów zawartych w instrukcji eksploatacji",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 58,
+      "question": "Zaświadczenie kwalifikacyjne do obsługi urządzeń technicznych są:",
+      "image": null,
+      "options": [
+        "Ważne na terenie Unii Europejskiej",
+        "Ważne z dowodem tożsamości",
+        "Bezterminowe",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 59,
+      "question": "Obsługujący który jest świadkiem wypadku ma obowiązek:",
+      "image": null,
+      "options": [
+        "Udzielić pomocy ofierze (lub ofiarom) wypadku",
+        "Zabezpieczyć miejsce zdarzenia",
+        "Powiadomić przełożonego",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 60,
+      "question": "Formami dozoru technicznego są:",
+      "image": null,
+      "options": [
+        "Dozór pełny, dozór uproszczony, dozór ograniczony",
+        "Badanie odbiorcze, badanie okresowe i badanie doraźne",
+        "UDT, TDT, WDT",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 61,
+      "question": "Zaświadczenia kwalifikacyjne do obsługi urządzeń technicznych podlegających dozorowi technicznemu wydaje:",
+      "image": null,
+      "options": [
+        "Właściciel urządzenia",
+        "UDT, TDT, WDT",
+        "PIP",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 62,
+      "question": "Komisja egzaminacyjna powiadamia osobę zainteresowaną o wyniku egzaminu:",
+      "image": null,
+      "options": [
+        "W ciągu 7 dni po egzaminie w formie pisemnej",
+        "Bezpośrednio po egzaminie",
+        "W ciągu 14 dni po egzaminie w formie elektronicznej",
+        "Listem poleconym lub pocztą elektroniczną po upływie 30 dni roboczych od daty egzaminu"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 63,
+      "question": "Dziennik konserwacji powinien być prowadzony:",
+      "image": null,
+      "options": [
+        "Tylko w formie papierowej",
+        "W formie elektronicznej lub papierowej",
+        "Tylko w formie elektronicznej",
+        "Przez obsługującego"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 64,
+      "question": "Instrukcja stanowiskowa:",
+      "image": null,
+      "options": [
+        "Jest zawsze dostarczana wraz z instrukcją obsługi przez producenta urządzenia",
+        "Stanowi niepisany zbiór zwyczajów przyjętych w zakładzie pracy",
+        "Jest wydawana przez pracodawcę i zawiera szczegółowe wskazówki dotyczące bhp na stanowisku pracy",
+        "Nie dotyczy operatorów urządzeń mobilnych"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 65,
+      "question": "Po upływie terminu ważności zaświadczenia kwalifikacyjnego do obsługi urządzenia obsługujący:",
+      "image": null,
+      "options": [
+        "Może obsługiwać UTB o ile kontynuuje pracę u tego samego pracodawcy",
+        "Może obsługiwać UTB o ile złoży wniosek o wydanie kolejnego zaświadczenia",
+        "Może obsługiwać UTB dopiero po uzyskaniu nowego zaświadczenia kwalifikacyjnego",
+        "Składa wniosek o przedłużenie terminu ważności zaświadczenia kwalifikacyjnego"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 66,
+      "question": "Przedłużenie ważności zaświadczenie kwalifikacyjnego następuje:",
+      "image": null,
+      "options": [
+        "Na pisemny wniosek obsługującego",
+        "Automatycznie po upływie terminu ważności zaświadczenia",
+        "Na pisemne zgłoszenie pracodawcy obsługującego",
+        "Po wcześniejszym zgłoszeniu telefonicznym"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 67,
+      "question": "Udźwig UTB to parametr urządzenia bezpośrednio związany z:",
+      "image": null,
+      "options": [
+        "Maksymalną wysokością podnoszonego ładunku",
+        "Maksymalną objętością podnoszonego ładunku",
+        "Maksymalną masą podnoszonego ładunku",
+        "Iloczynem masy i objętości podnoszonego ładunku"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 68,
+      "question": "Informacja dotycząca udźwigu urządzenia może być zawarta:",
+      "image": null,
+      "options": [
+        "W instrukcji eksploatacji",
+        "Na tabliczce znamionowej",
+        "Na urządzeniu technicznym",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 69,
+      "question": "Prawidłowe określenie jednostki udźwigu to:",
+      "image": null,
+      "options": [
+        "Kg",
+        "Pa",
+        "Mth",
+        "Mm"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 70,
+      "question": "Wysięg podestu to:",
+      "image": null,
+      "options": [
+        "Odległość pozioma od osi obrotu do krawędzi kosza",
+        "Odległość pionowa od osi obrotu do krawędzi kosza",
+        "Odległość od krawędzi kół jezdnych podestu do kosza",
+        "Element konstrukcyjny podestu"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 71,
+      "question": "Składnikiem wykresu pola pracy podestu nie jest:",
+      "image": null,
+      "options": [
+        "Wysokość podnoszenia",
+        "Udźwig podestu ruchomego",
+        "Prędkość ruchów roboczych",
+        "Wysięg"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 72,
+      "question": "O ile wytwórca nie określi inaczej przeglądy konserwacyjne podestów przejezdnych powinny być wykonywane nie rzadziej niż:",
+      "image": null,
+      "options": [
+        "Co 30 dni",
+        "Co 180 dni",
+        "Co 1 rok",
+        "Co 2 lata"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 73,
+      "question": "Badania okresowe podestów przejezdnych wykonywane są:",
+      "image": null,
+      "options": [
+        "Co 30 dni",
+        "Po zgłoszeniu przez operatora",
+        "Co 1 rok",
+        "Co 2 lata"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 74,
+      "question": "Operatorem podestu ruchomego sterowanego z platformy roboczej może być osoba która:",
+      "image": null,
+      "options": [
+        "Posiada przynajmniej średnie wykształcenie techniczne",
+        "Posiada ważne badania lekarskie zezwalające na pracę na wysokości",
+        "Ukończyła 18 lat",
+        "Odpowiedź b i c jest prawidłowa"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 75,
+      "question": "W przypadku podestów gdzie dopuszczalna ilość osób mogących przebywać na platformie roboczej jest większa niż 2, zaświadczenie kwalifikacyjne do obsługi musi posiadać:",
+      "image": null,
+      "options": [
+        "Minimum 1 osoba",
+        "Minimum 2 osoby (osoba druga jako rezerwa)",
+        "Każda osoba znajdująca się na podeście",
+        "Żadna z osób nie musi posiadać zaświadczenia kwalifikacyjnego"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 76,
+      "question": "W oparciu o przedstawiony rysunek określ maksymalny udźwig podestu:",
+      "image": "/img/PODESTY_76.webp",
+      "options": [
+        "165 kg",
+        "225 kg",
+        "565 kg",
+        "450 kg"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 77,
+      "question": "W oparciu o rysunek określ maksymalną ilość osób, które mogą przebywać na platformie:",
+      "image": null,
+      "options": [
+        "Zawsze 6 osób",
+        "Zawsze 5 osób",
+        "6 osób ale tylko na platformie z niewysuniętymi pomostami roboczymi",
+        "7 osób (7 x 80 kg - 560 kg)"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 78,
+      "question": "W oparciu o rysunek określ poprawne parametry pracy podestu:",
+      "image": null,
+      "options": [
+        "Udźwig maksymalny 225 kg",
+        "Dopuszczalna ilość osób na podeście z rozłożonymi pomostami - 5",
+        "Udźwig maksymalny 565 kg",
+        "Odpowiedź b i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 79,
+      "question": "Przedstawiony rysunek określa:",
+      "image": "/img/PODESTY_79.webp",
+      "options": [
+        "Ilość osób mogących pracować na platformie roboczej",
+        "Miejsce zaczepu szelek bezpieczeństwa",
+        "Miejsce uchwytu operatora podczas wejścia na platformę roboczą",
+        "Obowiązek utrzymania przez operatora prostej postawy podczas obsługi podestu"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 80,
+      "question": "Przedstawiony rysunek określa:",
+      "image": "/img/PODESTY_80.webp",
+      "options": [
+        "Maksymalny udźwig podestu wyrażona w niutonach",
+        "Maksymalną prędkość podestu",
+        "Maksymalną dopuszczalną siłę poziomą z jaką operator może oddziaływać na powierzchnię zewnętrzną podczas wykonywanych prac",
+        "Maksymalna dopuszczalną siłę wiatru"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 81,
+      "question": "Przedstawiony rysunek określa:",
+      "image": "/img/PODESTY_81.webp",
+      "options": [
+        "Maksymalny udźwig podestu wyrażona w niutonach",
+        "Maksymalna dopuszczalną siłę wiatru",
+        "Maksymalny wysięg boczny",
+        "Maksymalną dopuszczalną siłę poziomą z jaką operator może oddziaływać na powierzchnię zewnętrzną podczas wykonywanych prac"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 82,
+      "question": "Paląca się lampka ostrzegawcza przy pokazanym symbolu graficznym występującym w niektórych podestach oznacza:",
+      "image": "/img/PODESTY_82.webp",
+      "options": [
+        "Wystąpienie awarii sterowania",
+        "Przekroczenie dopuszczalnego udźwigu podestu",
+        "Utratę masy balastu podestu",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 83,
+      "question": "Podest oznaczony przedstawionym rysunkiem jest:",
+      "image": "/img/PODESTY_83.webp",
+      "options": [
+        "Przeznaczony do pracy w dowolnym miejscu",
+        "Przeznaczony do pracy wyłącznie wewnątrz pomieszczeń",
+        "Przeznaczony do pracy na zewnątrz ale w warunkach bezwietrznych",
+        "Wyposażony w urządzenie do pomiaru prędkości wiatru"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 84,
+      "question": "Przedstawiony rysunek określa:",
+      "image": "/img/PODESTY_84.webp",
+      "options": [
+        "Maksymalną prędkość jazdy podestu",
+        "Maksymalne dopuszczalne nachylenie podłoża na którym pracuje podest",
+        "Maksymalną dopuszczalną prędkość wiatru",
+        "Maksymalną dopuszczalną siłę poziomą z jaką operator może oddziaływać na powierzchnię zewnętrzną podczas wykonywanych prac"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 85,
+      "question": "Wybór pozycji A w przedstawionym rysunku oznacza:",
+      "image": "/img/PODESTY_85.webp",
+      "options": [
+        "Załączenie mechanizmu podnoszenia",
+        "Załączenie mechanizmu jazdy",
+        "Załączenie pulpitu sterującego znajdującego się na platformie roboczej",
+        "Załączenie zapłonu w podestach z silnikiem spalinowym"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 86,
+      "question": "Załączenie mechanizmu jazdy podestu nożycowego realizowane jest poprzez wychylenie dźwigni sterującej po wcześniejszym wciśnięciu przycisku oznaczonego literą:",
+      "image": "/img/PODESTY_86-87.webp",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 87,
+      "question": "Załączenie mechanizmu podnoszenia podestu nożycowego realizowane jest poprzez wychylenie dźwigni sterującej po wcześniejszym wciśnięciu przycisku oznaczonego literą:",
+      "image": "/img/PODESTY_86-87.webp",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 88,
+      "question": "Który z oznaczonych piktogramów oznacza funkcję skrętu kół jezdnych podestu:",
+      "image": "/img/PODESTY_86-87.webp",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 89,
+      "question": "Na maksymalny udźwig podestu z przedstawionego rysunku składa się:",
+      "image": "/img/PODESTY_89.webp",
+      "options": [
+        "80 kg plus 1 osoba",
+        "250 kg w tym 2 osoby",
+        "250 kg plus 2 osoby",
+        "250 kg do wysokości nie większej niż 12 m"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 90,
+      "question": "Przedstawiony rysunek określa:",
+      "image": "/img/PODESTY_90.webp",
+      "options": [
+        "Środek ciężkości platformy roboczej",
+        "Poszczególne prędkości ruchów roboczych w skali od 1 do 5",
+        "Aktualne wskazanie wypoziomowania podestu",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 91,
+      "question": "Wychylenie dźwigni sterującej w kierunku A powoduje:",
+      "image": "/img/PODESTY_91-92-93.webp",
+      "options": [
+        "Załączenie mechanizmu obrotu platformy roboczej",
+        "Załączenie mechanizmu skrętu kół jezdnych",
+        "Załączenie mechanizmu obrotu podestu",
+        "Załączenie mechanizmu jazdy podestu"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 92,
+      "question": "Wychylenie dźwigni sterującej w kierunku B powoduje:",
+      "image": "/img/PODESTY_91-92-93.webp",
+      "options": [
+        "Załączenie mechanizmu podnoszenia wysięgnika pomocniczego",
+        "Załączenie mechanizmu podnoszenia wysięgnika głównego",
+        "Załączenie mechanizmu obrotu podestu",
+        "Załączenie mechanizmu jazdy podestu"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 93,
+      "question": "Wciśnięcie przycisków oznaczonych literą C znajdujących się na dźwigni sterującej powoduje:",
+      "image": "/img/PODESTY_91-92-93.webp",
+      "options": [
+        "Załączenie mechanizmu podnoszenia wysięgnika głównego",
+        "Załączenie mechanizmu teleskopowania",
+        "Załączenie mechanizmu obrotu podestu",
+        "Załączenie mechanizmu jazdy podestu"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 94,
+      "question": "Przedstawiony symbol określa:",
+      "image": "/img/PODESTY_94.webp",
+      "options": [
+        "Przycisk załączający mechanizm jazdy",
+        "Przycisk załączający mechanizm podnoszenia",
+        "Maksymalną wysokość podnoszenia",
+        "Zakaz poruszania się podestem przy podniesionej platformie"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 95,
+      "question": "Mechaniczny element bezpieczeństwa zabezpieczający podest nożycowy przed skutkami uszkodzenia kół jezdnych podczas jazdy z uniesioną platformą to oznaczony na rysunku element:",
+      "image": "/img/PODESTY_95.webp",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 96,
+      "question": "Mechaniczny element bezpieczeństwa zabezpieczający podest nożycowy przed skutkami uszkodzenia kół jezdnych podczas jazdy z uniesioną platformą to:",
+      "image": null,
+      "options": [
+        "Płozy podestu",
+        "Podpory podestu",
+        "Barierki bezpieczeństwa",
+        "Kliny serwisowe"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 97,
+      "question": "Akumulatory podestów przejezdnych elektrycznych:",
+      "image": null,
+      "options": [
+        "Są źródłem zasilania układów",
+        "Zapewniają stateczność podestu",
+        "Decydują o prędkości ruchów roboczych",
+        "Odpowiedź a i b jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 98,
+      "question": "Parametry podane przez producenta na tabliczce znamionowej akumulatorów to:",
+      "image": null,
+      "options": [
+        "Napięcie znamionowe [V]",
+        "Pojemność [Ah]",
+        "Masa własna [kg]",
+        "Wszystkie odpowiedzi sa poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 99,
+      "question": "Wyłącznik bezpieczeństwa STOP jest:",
+      "image": null,
+      "options": [
+        "Zabezpieczony przed użyciem przez osobę inną niż operator",
+        "Umieszczony na każdym panelu sterującym",
+        "Koloru czerwonego",
+        "Odpowiedź b i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 100,
+      "question": "Wyłącznik bezpieczeństwa STOP:",
+      "image": null,
+      "options": [
+        "Jest koloru czerwonego i jego odblokowanie powinno przebiegać w sposób zamierzony",
+        "Jest dowolnego koloru",
+        "Z chwilą zwolnienia nacisku przycisk powraca do położenia pierwotnego",
+        "Nie powinien wystawać poza swoją obudowę"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 101,
+      "question": "Wyłącznik bezpieczeństwa STOP:",
+      "image": null,
+      "options": [
+        "Wyłącza działanie mechanizmów jazdy",
+        "Wyłącza działanie mechanizmów podnoszenia",
+        "Uruchamia ogranicznik udźwigu",
+        "Odpowiedź a i b jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 102,
+      "question": "Jednym ze sposobów zabezpieczenia podestu przed przypadkowym uruchomieniem dźwigni sterujących jest:",
+      "image": null,
+      "options": [
+        "Wyposażenie dźwigni sterujących w czuwaki ręczne",
+        "Jednoczesne załączenie dwóch elementów sterowych",
+        "Wyposażenie platformy w czuwaki nożne",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 103,
+      "question": "Prędkość jazdy podestu ruchomego przejezdnego wolnobieżnego:",
+      "image": null,
+      "options": [
+        "Jest stała",
+        "Jest zmienna a jej prędkość wybiera operator",
+        "Nie ma wpływu na bezpieczeństwo pracy",
+        "Zależy od masy obciążonej platformy"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 104,
+      "question": "Na wartość prędkości jazdy podestu ruchomego wolnobieżnego ma wpływ:",
+      "image": null,
+      "options": [
+        "Masa obciążonej platformy",
+        "Wysokość na jakiej znajduje się platforma robocza",
+        "Umiejętności operatora",
+        "Kąt nachylenia wzniesienia"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 105,
+      "question": "Podpory podestów ruchomych mają za zadanie:",
+      "image": null,
+      "options": [
+        "Zwiększyć stateczność",
+        "Wypoziomować podest",
+        "Zwiększyć wysokość podnoszenia podestu",
+        "Odpowiedź a i b jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 106,
+      "question": "Kolumna obrotowa podestu:",
+      "image": null,
+      "options": [
+        "Służy do zmiany wysięgu",
+        "Ogranicza pole pracy podestu",
+        "Służy do podnoszenia ładunków",
+        "Umożliwia obracanie wysięgnika względem osi pionowej"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 107,
+      "question": "Jaka jest różnica pomiędzy wysięgiem a wysięgnikiem?",
+      "image": null,
+      "options": [
+        "Wysięg to parametr techniczny a wysięgnik to element konstrukcji",
+        "Wysięg i wysięgnik określają to samo",
+        "Wysięg to element bezpieczeństwa a wysięgnik to element konstrukcji",
+        "Wysięgnik jest blachownicowy a wysięg kratownicowy"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 108,
+      "question": "Zmiana wysięgu może być realizowane przez:",
+      "image": null,
+      "options": [
+        "Mechanizm podnoszenia i opuszczania wysięgnika",
+        "Mechanizm obrotu",
+        "Mechanizm teleskopowania",
+        "Odpowiedzi a i c są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 109,
+      "question": "Wysięgnik teleskopowy podestu:",
+      "image": null,
+      "options": [
+        "Posiada mechaniczny układ zmiany wysięgu",
+        "Składa się z kilku członów",
+        "Umożliwia bezpieczną pracę przy liniach elektroenergetycznych",
+        "Odpowiedź a i b jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 110,
+      "question": "Zawór zwrotny sterowany (zamek hydrauliczny) w układzie hydraulicznym podestu zapewnia ochronę przed:",
+      "image": null,
+      "options": [
+        "Nadmiernym wzrostem ciśnienia w układzie hydraulicznym",
+        "Skutkami pęknięcia przewodu hydraulicznego",
+        "Nadmiernym dławieniem strumienia",
+        "Dzieleniem strumienia na poszczególne obwody układu hydraulicznego"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 111,
+      "question": "Jaki zawór zabezpieczający znajduje się w układzie hydraulicznym podpór?",
+      "image": null,
+      "options": [
+        "Zawór zwrotny sterowany (zamek hydrauliczny)",
+        "Zawór powrotny",
+        "Zawór upustowy",
+        "Zawór bezpieczeństwa"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 112,
+      "question": "Zawory zwrotne (zamki hydrauliczne) montuje się w układach:",
+      "image": null,
+      "options": [
+        "Mechanizmu podpór",
+        "Mechanizmu podnoszenia",
+        "Mechanizmu zmiany wysięgu",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 113,
+      "question": "Elementem wytwarzającym ciśnienie w układzie hydraulicznym podestu jest:",
+      "image": null,
+      "options": [
+        "Silnik hydrauliczny",
+        "Pompa hydrauliczna",
+        "Kompresor",
+        "Sprężarka"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 114,
+      "question": "Zawór przelewowy instalowany w układzie hydraulicznym podestu:",
+      "image": null,
+      "options": [
+        "Zabezpiecza przed nadmiernym wzrostem ciśnienia",
+        "Utrzymuje siłownik w stałej pozycji",
+        "Zabezpiecza układ podnoszenia przed opadaniem",
+        "Jest elementem zasilającym układ hydrauliczny"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 115,
+      "question": "Hydrauliczne elementy bezpieczeństwa to:",
+      "image": null,
+      "options": [
+        "Zawór przelewowy, zawory zwrotno - dławiące",
+        "Pompa, rozdzielacz, siłownik teleskopowania",
+        "Silnik obrotu, blokada zerowa, zawór kulowy",
+        "Rozdzielacz, zawory kulowe, odboje"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 116,
+      "question": "Zawór bezpieczeństwa w układzie hydraulicznym zabezpiecza:",
+      "image": null,
+      "options": [
+        "Układ hydrauliczny oraz pompę przed uszkodzeniem za skutek wzrostu ciśnienia",
+        "Przed przekroczeniem udźwigu nominalnego",
+        "Przed utratą stateczności",
+        "Przed niekontrolowanym ruchem podestu"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 117,
+      "question": "Zamki hydrauliczne instalowane w układach hydraulicznych podestów:",
+      "image": null,
+      "options": [
+        "Zabezpieczają układ przed skutkami nadmiernego wzrostu ciśnienia oleju w obwodach hydraulicznych",
+        "Zabezpieczają przed nieuprawnioną obsługą - zamykają dostęp do rozdzielacza ruchów roboczych",
+        "Zabezpieczają siłowniki przed skutkami pęknięcia przewodu hydraulicznego",
+        "Zamykają dostęp do pulpitu sterującego"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 118,
+      "question": "Rozdzielacz hydrauliczny instalowany jest w układzie w celu:",
+      "image": null,
+      "options": [
+        "Dławienia ciśnienia w poszczególnych obwodach",
+        "Zabezpieczenia układu przed nadmiernym wzrostem ciśnienia",
+        "Kierowania przepływu czynnika roboczego do poszczególnych obwodów",
+        "Wszystkie odpowiedzi są nieprawidłowe"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 119,
+      "question": "Elementem wykonawczym w układzie hydraulicznym podestu jest:",
+      "image": null,
+      "options": [
+        "Siłownik mechanizmu podnoszenia",
+        "Silnik hydrauliczny",
+        "Siłownik mechanizmu teleskopowania",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 120,
+      "question": "Elementem chroniącym układ hydrauliczny przed nadmiernym wzrostem ciśnienia jest:",
+      "image": null,
+      "options": [
+        "Zawór zwrotny sterowany",
+        "Zawór dławiący",
+        "Rozdzielacz hydrauliczny",
+        "Zawór przelewowy"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 121,
+      "question": "Sterowanie rozdzielaczem w układzie hydraulicznym podestu może być realizowane w sposób:",
+      "image": null,
+      "options": [
+        "Pośredni",
+        "Bezpośredni",
+        "Mieszany",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 122,
+      "question": "Zawór przelewowy w układzie hydraulicznym podestu podczas nadmiernego wzrostu ciśnienia kieruje olej:",
+      "image": null,
+      "options": [
+        "Do zbiornika oleju",
+        "Na zewnątrz układu hydraulicznego",
+        "Do wolnej sekcji rozdzielacza",
+        "Do akumulatora hydraulicznego"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 123,
+      "question": "W którym miejscu montowane są zawory zwrotne sterowane (tzw. zamki hydrauliczne)?",
+      "image": null,
+      "options": [
+        "Na siłownikach",
+        "W pulpicie sterującym pracą podpór",
+        "Bezpośrednio za pompą hydrauliczną",
+        "Na rozdzielaczu hydraulicznym"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 124,
+      "question": "Kryteria i warunki poprawnego wykonania prób układu hydraulicznego ustala:",
+      "image": null,
+      "options": [
+        "Wytwórca urządzenia",
+        "Konserwator",
+        "Operator",
+        "Eksploatujący"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 125,
+      "question": "Gęstość oleju hydraulicznego w temperaturze ujemnej:",
+      "image": null,
+      "options": [
+        "Maleje",
+        "Wzrasta",
+        "Temperatura nie ma wpływu na gęstość oleju",
+        "Pozostaje bez zmian"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 126,
+      "question": "Co to jest \"krawędź wywrotu\"?",
+      "image": null,
+      "options": [
+        "Element konstrukcyjny wyznaczony przez projektanta podestu",
+        "Skrajna krawędź podstawy podestu",
+        "Element zabezpieczający przed skutkami wywrotu",
+        "Linia wyznaczona przez punkty podparcia podestu"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 127,
+      "question": "Dopuszczalna prędkość wiatru podczas pracy podestem wynosi:",
+      "image": null,
+      "options": [
+        "Zawsze 10 m/s",
+        "Zawsze 12,5 m/s",
+        "Tyle, ile poda producent w instrukcji obsługi",
+        "Dowolną wartość, ponieważ nie ma wpływu na stateczność podestu"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 128,
+      "question": "Podesty ruchome są przeznaczone do:",
+      "image": null,
+      "options": [
+        "Wykonywania prac na wysokości",
+        "Przenoszenia ładunków",
+        "Transportu poziomego ludzi i ładunku",
+        "Tylko do transportu ładunków"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 129,
+      "question": "Zabezpieczenia typu mechanicznego spotykane w podestach ruchomych przejezdnych to:",
+      "image": null,
+      "options": [
+        "Czujnik przechyłu, wyłącznik STOP, sygnał dźwiękowy",
+        "Zapadki, zgarniacze, kleszcze szynowe",
+        "Barierki, krawężniki, osłony",
+        "Łapy oporowe, sprzęgła, reduktory"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 130,
+      "question": "Zabezpieczenia typu elektrycznego spotykane w podestach ruchomych przejezdnych to:",
+      "image": null,
+      "options": [
+        "Stacyjka, łączniki STOP, łączniki krańcowe",
+        "Zapadki, zgarniacze, kleszcze szynowe",
+        "Kondensatory, wzmacniacze, rezystory",
+        "Falowniki, przekaźniki, styczniki"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 131,
+      "question": "Korekty rozstawienia podpór można dokonać:",
+      "image": null,
+      "options": [
+        "W czasie pracy, gdy występuje taka konieczność bez potrzeby opuszczenia platformy roboczej",
+        "Gdy prędkość wiatru nie przekracza połowy wartości dopuszczalnej",
+        "Tylko w pozycji, kiedy wszystkie elementy wysięgnika kosza są całkowicie złożone",
+        "Kiedy pracownik w koszu, na wysokości, nie wykonuje pracy"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 132,
+      "question": "Awaryjne opuszczanie w podestach wolnobieżnych nożycowych realizowane jest najczęściej:",
+      "image": null,
+      "options": [
+        "Poprzez zastosowanie drugiego podestu o podobnych parametrach",
+        "Bezpośredniego przesterowania zaworu awaryjnego opuszczania za pomocą cięgna",
+        "Poprzez zastosowanie dodatkowej pompy hydraulicznej",
+        "Producenci podestów nożycowych nie przewidują konieczności opuszczania awaryjnego"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 133,
+      "question": "Czujnik złożenia wysięgnika podestu montowanego na pojeździe w pozycję transportową zabezpiecza przed:",
+      "image": null,
+      "options": [
+        "Ruchem mechanizmu obrotu gdy wysięgnik jest w pozycji rozłożonej",
+        "Ruchem mechanizmu rozkładania podpór gdy wysięgnik jest w pozycji rozłożonej",
+        "Nadmiernym naciskiem wysięgnika na kozioł transportowy",
+        "Rozłączeniem napędu pompy głównej podestu"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 134,
+      "question": "Kontakty poprawnego rozłożenia podpór w kierunku dół w podeście przejezdnym:",
+      "image": null,
+      "options": [
+        "Uniemożliwiają rozłożenie wysięgnika, gdy jedna z podpór nie została poprawnie rozłożona",
+        "Załączają światła ostrzegawcze",
+        "Dokonują ciągłego pomiaru ciśnienia w układzie podpór",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 135,
+      "question": "Narzędzia i elementy znajdujące się na platformie roboczej:",
+      "image": null,
+      "options": [
+        "Muszą być zabezpieczone przed spadnięciem",
+        "Muszą być równomiernie rozłożone",
+        "Muszą być zabezpieczone przed przesunięciem",
+        "Wszystkie odpowiedzi sa prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 136,
+      "question": "Na platformie roboczej mogą znajdować się:",
+      "image": null,
+      "options": [
+        "Wszystkie narzędzia, które są na wyposażeniu osoby wykonującej pracę",
+        "Tylko te narzędzia które są niezbędne do wykonania pracy",
+        "Elementy o masie przekraczającej udźwig podestu",
+        "Elementy o gabarytach przekraczających powierzchnię platformy"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 137,
+      "question": "Która z czynności jest szczególnie niebezpieczna podczas wykonywania prac na max wysokości?",
+      "image": null,
+      "options": [
+        "Wiercenie otworów w suficie",
+        "Wiercenie otworów w ścianie",
+        "Montowanie elementów o dużej powierzchni",
+        "Odpowiedź b i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 138,
+      "question": "Która z czynności jest szczególnie niebezpieczna podczas wykonywania prac na max wysięgu?",
+      "image": null,
+      "options": [
+        "Wiercenie otworów w suficie",
+        "Wiercenie otworów w ścianie",
+        "Kucie w ścianie",
+        "Odpowiedź b i c jest prawidłowa"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 139,
+      "question": "Bezpieczna odległość rozstawienia podestu od krawędzi wykopu zależy od:",
+      "image": null,
+      "options": [
+        "Głębokości wykopu",
+        "Siły wiatru",
+        "Odpowiedniej widoczności",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 140,
+      "question": "Bezpieczna odległość rozstawienia podestu od krawędzi wykopu zależy od:",
+      "image": null,
+      "options": [
+        "Rodzaju podłoża",
+        "Warunków atmosferycznych",
+        "Głębokości wykopu",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 141,
+      "question": "Rozstawienie podestu przy krawędzi wykopu:",
+      "image": null,
+      "options": [
+        "Jest możliwe za zgodą konserwatora",
+        "Jest możliwe przy słabym wietrze",
+        "Nie wpływa na bezpieczną pracę podestu",
+        "Jest dopuszczalne pod warunkiem zachowania bezpiecznej odległości"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 142,
+      "question": "W oparciu o przedstawiony rysunek wskaż poprawny pomiar bezpiecznej odległości podestu od krawędzi wykopu:",
+      "image": "/img/PODESTY_142.webp",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 143,
+      "question": "Bezpieczna odległość pracy podestu od linii elektroenergetycznej:",
+      "image": null,
+      "options": [
+        "Jest stała i wynosi 20 m",
+        "Zależy od napięcia linii",
+        "Maleje przy wysokich słupach",
+        "Zależy od wilgotności powietrza"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 144,
+      "question": "Bezpieczna odległość podestu od skrajnych przewodów linii elektroenergetycznych o napięciu znamionowym od 1 do 15 kV wynosi:",
+      "image": null,
+      "options": [
+        "3m",
+        "15m",
+        "5m",
+        "20m"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 145,
+      "question": "Bezpieczna odległość podestu od skrajnych przewodów linii elektroenergetycznych o napięciu znamionowym od 30 do 110 kV wynosi:",
+      "image": null,
+      "options": [
+        "3m",
+        "15m",
+        "10m",
+        "30m"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 146,
+      "question": "Bezpieczna odległość podestu od skrajnych przewodów linii elektroenergetycznych o napięciu znamionowym od 15 do 30 kV wynosi:",
+      "image": null,
+      "options": [
+        "10m",
+        "15m",
+        "5m",
+        "20m"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 147,
+      "question": "W oparciu o przedstawiony rysunek wskaż prawidłowy pomiar minimalnej odległości od linii elektroenergetycznych:",
+      "image": "/img/PODESTY_147.webp",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 148,
+      "question": "Praca podestu w pobliżu linii elektroenergetycznej w odległości mniejszej od wartości dopuszczalnej jest:",
+      "image": null,
+      "options": [
+        "Zabroniona",
+        "Dozwolona pod warunkiem uzgodnienia jej szczegółowych warunków pracy z właścicielem linii",
+        "Dozwolona pod warunkiem uzgodnienia jej szczegółowych warunków pracy z UDT",
+        "Dozwolona pod warunkiem operowaniem podestem ze zmniejszonymi prędkościami pracy"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 149,
+      "question": "Wchodzenie lub schodzenie na/z platformy roboczej możliwe jest:",
+      "image": null,
+      "options": [
+        "Gdy platforma robocza znajduje się w dolnym położeniu spoczynkowym",
+        "Gdy platforma robocza znajduje się w dowolnym położeniu",
+        "Gdy platforma robocza znajduje się na dowolnej wysokości w położeniu umożliwiającym swobodne opuszczenie platformy",
+        "Gdy operator uzna, że wykonanie tej czynności nie stwarza zagrożenia"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 150,
+      "question": "W oparciu o przedstawiony rysunek określ prawidłowe parametry podestu:",
+      "image": "/img/PODESTY_150-151.webp",
+      "options": [
+        "Maksymalny udźwig podestu przy maksymalnym dopuszczalnym pochyleniu 80 kg",
+        "Maksymalna wysokość robocza 12 m",
+        "Podest przeznaczony do pracy na zewnątrz",
+        "Maksymalna prędkość podestu 12 m/s"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 151,
+      "question": "W oparciu o rysunek określ prawidłowe parametry podestu:",
+      "image": "/img/PODESTY_150-151.webp",
+      "options": [
+        "Maksymalny udźwig 250 kg plus 2 osoby",
+        "Dopuszczalna ilość osób - 2",
+        "Maksymalny udźwig podestu przy maksymalnym dopuszczalnym pochyleniu 80 kg",
+        "Maksymalna wysokość robocza 12 m"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 152,
+      "question": "Zapewnienie odpowiedniego poziomu elektrolitu w akumulatorach podestów przejezdnych elektrycznych należy do obowiązku:",
+      "image": null,
+      "options": [
+        "Konserwatora",
+        "Eksploatującego",
+        "Operatora",
+        "Mechanika zakładowego"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 153,
+      "question": "W ramach obsługi codziennej i oceny akumulatorów podestów elektrycznych operator sprawdza:",
+      "image": null,
+      "options": [
+        "Poziom elektrolitu",
+        "Stopień naładowania",
+        "Sposób zamocowania",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 154,
+      "question": "Operator po zauważeniu podczas jazdy palącej się lampki kontrolnej ciśnienia oleju silnika powinien:",
+      "image": null,
+      "options": [
+        "Zjechać w bezpieczne miejsce, opuścić ładunek, wyłączyć silnik",
+        "Może kontynuować jazdę jeśli stan oleju jest prawidłowy",
+        "Nie musi podejmować żadnych działań",
+        "Odpowiedź a i b jest prawidłowa"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 155,
+      "question": "Świecąca się lub migająca lampka serwisowa oznacza że:",
+      "image": null,
+      "options": [
+        "Dalsza praca podestem może stanowić zagrożenie, należy sprawdzić zapisy w instrukcji producenta",
+        "Można obsługiwać podest ze zmniejszonymi prędkościami",
+        "Operator nie musi podejmować żadnych działań",
+        "Odpowiedź a i b jest prawidłowa"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 156,
+      "question": "Sprawne dźwignie sterujące:",
+      "image": null,
+      "options": [
+        "Po zwolnieniu nacisku powinny wracać do pozycji neutralnych samoczynnie",
+        "Mogą nie mieć oznaczeń gdy operator wie do czego służą",
+        "Powinny realizować kierunki ruchów zgodne z oznaczeniami",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 157,
+      "question": "W przypadku podestów wyposażonych w dwa lub więcej miejsc do sterowania:",
+      "image": null,
+      "options": [
+        "Możliwe jest sterowania z wszystkich miejsc jednocześnie",
+        "Możliwe jest sterowanie tylko z jednego miejsca w tym samym czasie",
+        "Łącznik STOP może być aktywowany w każdym miejscu sterowania",
+        "Odpowiedź b i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 158,
+      "question": "W ramach obsługi codziennej operator sprawdza czy:",
+      "image": null,
+      "options": [
+        "Funkcje zmiany prędkości żółw/zając działają prawidłowo",
+        "Sposób wychylenia dźwigni sterującej wpływa na zwiększenie/zmniejszenie prędkości jazdy",
+        "Następuje automatyczne zmniejszenie prędkości jazdy gdy platforma zostanie uniesiona na określoną w dokumentacji wysokości",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 159,
+      "question": "Sprawny układ bezpieczeństwa z chwilą rozłożenia podpór w podestach nożycowych powinien:",
+      "image": null,
+      "options": [
+        "Załączyć ogranicznik udźwigu",
+        "Wyłączyć mechanizm podnoszenia podestu",
+        "Wyłączyć mechanizm jazdy podestu",
+        "Wszystkie odpowiedzi są nieprawidłowe"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 160,
+      "question": "Bezpieczny sposób sprawdzenia działania zaworu przelewowego w podestach przeprowadza się:",
+      "image": null,
+      "options": [
+        "Z obciążeniem nominalnym na wysokości około 1/2 wysokości podnoszenia",
+        "Z wyłączoną pompą hydrauliczną, bez obciążenia",
+        "Z załączoną pompą, bez obciążenia wychylając i przytrzymując dźwignię jednego z mechanizmu znajdującego się w skrajnym położeniu",
+        "Odpowiedz b i c jest prawidłowa"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 161,
+      "question": "O ile wytwórca nie określi inaczej maksymalna wartośc opadania platformy roboczej wynosi:",
+      "image": null,
+      "options": [
+        "0 cm, czyli platforma nie może opadać",
+        "10 cm w czasie 1 godziny",
+        "100 cm w czasie 1 godziny",
+        "Nie jest określona, ponieważ szczelność nie jest kryterium wpływającym na bezpieczeństwo eksploatacji podestu ruchomego"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 162,
+      "question": "Podczas pracy mechanizmem obrotu stateczność podestu:",
+      "image": null,
+      "options": [
+        "Jest niezmienna ponieważ stateczność podestu zależy wyłącznie od masy znajdującej się w koszu",
+        "Jest niezmienna ponieważ współczynnik stateczności zależy wyłącznie od wysięgu podestu",
+        "Jest zmienia ponieważ zmienia się odległość usytuowania układu wysięgnikowego i platformy od krawędzi wywrotu",
+        "Jest niezmienna ponieważ stateczność podestu zależy wyłącznie od jego masy"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 163,
+      "question": "Niebezpieczne ruchy podestu wysięgnikowego które są wyłączane w przypadku przeciążenia to:",
+      "image": null,
+      "options": [
+        "Podnoszenie wysięgnika",
+        "Teleskopowanie - wysuwanie wysięgnika",
+        "Obrót kosza",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 164,
+      "question": "Podczas oceny stanu technicznego pulpitu sterującego podestu operator sprawdza m.in.:",
+      "image": null,
+      "options": [
+        "Poprawność oznaczeń dźwigni i przycisków sterujących",
+        "Wartość nastaw sprężyn dźwigni sterujących",
+        "Wartość natężenia oświetlenia pulpitu sterującego",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 165,
+      "question": "Wyciek zewnętrzny oleju w układzie hydraulicznym podestu będzie dyskwalifikował urządzenie z bezpiecznej eksploatacji gdy:",
+      "image": null,
+      "options": [
+        "Widoczne elementy układu hydraulicznego będą wykazywały objaw pocenia się",
+        "Będą widoczne odrywające się krople z któregokolwiek elementu hydraulicznego",
+        "Na skutek przecieków wewnętrznych składowa wielkość opadania kosza przekroczy wartości określone w instrukcji eksploatacji",
+        "Odpowiedz a i b jest prawidłowa"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 166,
+      "question": "Nieszczelność w układzie hydraulicznym podestów może się objawiać:",
+      "image": null,
+      "options": [
+        "Przeciekiem wewnętrznym i niekontrolowanym opadaniem platformy",
+        "Zwiększoną prędkością ruchów roboczych",
+        "Brak jednoznacznych kryteriów szczelności",
+        "Odpowiedz a i b jest prawidłowa"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 167,
+      "question": "Podczas oceny stanu technicznego podestu przed rozpoczęciem pracy operator:",
+      "image": null,
+      "options": [
+        "Dokonuje oceny stanu w zakresie zgodnym z zapisami instrukcji eksploatacji",
+        "Wykonuje próby z przeciążeniem 125%",
+        "W przypadku negatywnej oceny stanu technicznego odmawia rozpoczęcia pracy",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 168,
+      "question": "Podczas oceny stanu technicznego podestu przed rozpoczęciem pracy operator:",
+      "image": null,
+      "options": [
+        "Sprawdza stan wyposażenia podestu",
+        "Dokonuje oceny wizualnej stanu technicznego podestu",
+        "Wykonuje próby ruchowe bez obciążenia i z obciążeniem nominalnym",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 169,
+      "question": "Podczas oceny stanu technicznego układu hydraulicznego operator:",
+      "image": null,
+      "options": [
+        "Wykonuję próbę działania zaworu przelewowego",
+        "Sprawdza stan lepkości oleju hydraulicznego",
+        "Sprawdza szczelność wewnętrzną i zewnętrzną układu",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 170,
+      "question": "\"Skokowy\" ruch mechanizmu podnoszenia może być spowodowany:",
+      "image": null,
+      "options": [
+        "Zbyt niskim poziomem oleju w układzie hydraulicznym",
+        "Nadmierną korozja gładzi tłoków",
+        "Uszkodzoną sekcją rozdzielacz sterującego",
+        "Uszkodzonym wężem hydraulicznym zasilającym siłownik podnoszenia"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 171,
+      "question": "Stan poziomu oleju w układzie hydraulicznym operator sprawdza:",
+      "image": null,
+      "options": [
+        "Zawsze przed rozpoczęciem pracy",
+        "1 raz w miesiącu",
+        "Zgodnie z zaleceniami zawartymi w instrukcji eksploatacji",
+        "Zgodnie z zaleceniami zawartymi w protokole z badań okresowych"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 172,
+      "question": "O ile wytwórca nie określi inaczej maksymalna dopuszczalna wartość wsunięcia się podpory podczas próby szczelności wynosi:",
+      "image": null,
+      "options": [
+        "10 mm",
+        "4 mm",
+        "2% maksymalnego wysięgu podestu",
+        "4% udźwigu nominalnego wyrażone w mm"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 173,
+      "question": "Podczas uwalniania uwięzionej osoby z platformy roboczej należy:",
+      "image": null,
+      "options": [
+        "Jak najszybciej opuścić platformę roboczą na ziemię",
+        "Opuścić platformę w oparciu o instrukcję awaryjnego opuszczania dołączoną do podestu",
+        "Postępować zgodnie z wolą przełożonego",
+        "Ewakuować obsługę za pomocą innego podestu"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 174,
+      "question": "Zwiększanie przez operatora wysokości roboczej podestu nożycowego:",
+      "image": null,
+      "options": [
+        "Jest dopuszczalne przy użyciu palety EURO odpowiednio zamocowanej do barierek podestu",
+        "Jest dopuszczalne przy użyciu dodatkowej drabiny o wysokości nieprzekraczającej 3m",
+        "Jest dopuszczalne przy użyciu atestowanego rusztowania pod warunkiem, że zajmuje ono max 75% powierzchni platformy",
+        "Jest zabronione"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 175,
+      "question": "Układanie podkładów pod podpory podestu:",
+      "image": null,
+      "options": [
+        "Zwiększa bezpieczeństwo pracy podestu",
+        "Nie ma wpływu na bezpieczeństwo pracy podestu",
+        "Zwiększa powierzchnię nacisku wywieranego przez podpory na podłożę",
+        "Odpowiedź a i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 176,
+      "question": "Przed rozstawieniem podestu w nowym miejscu pracy operator powinien:",
+      "image": null,
+      "options": [
+        "Zapoznać się rodzajem podłoża na którym ma pracować podest",
+        "Sprawdzić nośność podłoża",
+        "Sprawdzić miejsce pracy pod kątem możliwości wystąpienia studzienek i kanałów ściekowych",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 177,
+      "question": "O ile wytwórca nie określi inaczej próbę zamków hydraulicznych w podestach ze sterowaniem bezpośrednim należy wykonać:",
+      "image": null,
+      "options": [
+        "Przy rozłożonym układzie wyposażonym w zamek hydrauliczny i wyłączonej pompie hydraulicznej po wysterowaniu rozdzielacza siłownik nie powinien się składać",
+        "Podczas pracy siłownika obserwując pracę zaworu",
+        "Sprawdzając czy przy maksymalnym wysunięciu siłownika możemy sterować podnoszeniem i opuszczaniem platformy",
+        "Obserwując, czy podczas opuszczania i podnoszenia ciśnienie w układzie hydraulicznym jest takie samo"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 178,
+      "question": "Próbę zamków hydraulicznych w podestach ze sterowaniem pośrednim wykonuje się:",
+      "image": null,
+      "options": [
+        "Przy obciążonym siłowniku i wyłączonej pompie hydraulicznej po wychyleniu dźwigni sterujących siłownik nie powinien się składać",
+        "Podczas pracy siłownika obserwujemy pracę zaworu",
+        "Zgodnie z wytycznymi zawartymi w instrukcji eksploatacji",
+        "Obserwujemy, czy podczas opuszczania i podnoszenia ciśnienie w układzie hydraulicznym jest takie samo"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 179,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
+      "image": "/img/PODESTY_179-186.webp",
+      "options": [
+        "Maksymalna wysokość podnoszenia 20,5 m",
+        "Maksymalna wysokość robocza 22,5 m",
+        "Maksymalny udźwig podestu 200 kg",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 180,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
+      "image": "/img/PODESTY_179-186.webp",
+      "options": [
+        "Maksymalny wysięg podestu obciążonego ładunkiem 200 kg - 13 m",
+        "Maksymalna wysokość podnoszenia 23 m",
+        "Praca w pełnym zakresie obrotu",
+        "Dopuszczalna ilość osób na platformie roboczej - 3"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 181,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
+      "image": "/img/PODESTY_179-186.webp",
+      "options": [
+        "Maksymalny zakres obrotu 280°",
+        "Maksymalny wysięg podestu obciążonego ładunkiem 80 kg - 13, 5 m",
+        "Maksymalny wysięg podestu obciążonego ładunkiem 200 kg - 10 m",
+        "Odpowiedź b i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 182,
+      "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 15 m i wysięgu 11 m:",
+      "image": "/img/PODESTY_179-186.webp",
+      "options": [
+        "360 kg",
+        "280 kg",
+        "200 kg",
+        "80 kg"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 183,
+      "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 15 m i wysięgu 7 m:",
+      "image": "/img/PODESTY_179-186.webp",
+      "options": [
+        "360 kg",
+        "280 kg",
+        "200 kg",
+        "80 kg"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 184,
+      "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 22 m i wysięgu 4m:",
+      "image": "/img/PODESTY_179-186.webp",
+      "options": [
+        "360 kg",
+        "280 kg",
+        "200 kg",
+        "80 kg"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 185,
+      "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 22 m i wysięgu 9m:",
+      "image": "/img/PODESTY_179-186.webp",
+      "options": [
+        "360 kg",
+        "280 kg",
+        "200 kg",
+        "Praca niedozwolona ze względu na przekroczenia dopuszczalnych parametrów pracy"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 186,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż maksymalny wysięg platformy roboczej obciążonej masą 200 kg:",
+      "image": "/img/PODESTY_179-186.webp",
+      "options": [
+        "9 m",
+        "10 m",
+        "11 m",
+        "12 m"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 187,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
+      "image": "/img/PODESTY_187-197.webp",
+      "options": [
+        "Maksymalna wysokość podnoszenia 25 m",
+        "Maksymalny wysięg podstawy obciążonej masą 230 kg - 11 m",
+        "Maksymalny udźwig podestu na wysięgu 13 m - 100 kg",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 188,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
+      "image": "/img/PODESTY_187-197.webp",
+      "options": [
+        "Maksymalny wysięg podestu obciążonego ładunkiem 220 kg - 13 m",
+        "Praca podestu bez podpór",
+        "Maksymalna wysokość robocza 27 m",
+        "Dopuszczalna ilość osób na platformie roboczej - 4"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 189,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
+      "image": "/img/PODESTY_187-197.webp",
+      "options": [
+        "Maksymalny udźwig podestu 230 kg",
+        "Maksymalny wysięg podestu obciążonego ładunkiem 80 kg - 13 m",
+        "Maksymalna wysokość robocza podestu obciążonego ładunkiem 200 kg - 20 m",
+        "Odpowiedź b i c jest prawidłowa"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 190,
+      "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 17 m i wysięgu 11 m:",
+      "image": "/img/PODESTY_187-197.webp",
+      "options": [
+        "230 kg",
+        "200 kg",
+        "100 kg",
+        "Praca niedozwolona ze względu na przekroczenia dopuszczalnych parametrów pracy"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 191,
+      "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 18 m i wysięgu 8 m :",
+      "image": "/img/PODESTY_187-197.webp",
+      "options": [
+        "Praca niedozwolona ze względu na przekroczenia dopuszczalnych parametrów pracy",
+        "230 kg",
+        "200 kg",
+        "80 kg"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 192,
+      "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 22 m i wysięgu 4m:",
+      "image": "/img/PODESTY_187-197.webp",
+      "options": [
+        "Praca niedozwolona ze względu na przekroczenia dopuszczalnych parametrów pracy",
+        "230 kg",
+        "200 kg",
+        "80 kg"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 193,
+      "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 26 m i wysięgu 7m:",
+      "image": "/img/PODESTY_187-197.webp",
+      "options": [
+        "100 kg",
+        "200 kg",
+        "230 kg",
+        "Praca niedozwolona ze względu na przekroczenia dopuszczalnych parametrów pracy"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 194,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż maksymalny wysięg platformy roboczej obciążonej masą 200 kg uniesionej na wysokość 22 m:",
+      "image": "/img/PODESTY_187-197.webp",
+      "options": [
+        "4.7 m",
+        "6,7 m",
+        "8,7 m",
+        "10,7 m"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 195,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż maksymalny wysięg platformy roboczej obciążonej masą 230 kg uniesionej na wysokość 17 m:",
+      "image": "/img/PODESTY_187-197.webp",
+      "options": [
+        "4 m",
+        "6 m",
+        "8 m",
+        "10 m"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 196,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż maksymalny wysięg platformy roboczej obciążonej masą 100 kg uniesionej na wysokość 14 m:",
+      "image": "/img/PODESTY_187-197.webp",
+      "options": [
+        "6 m",
+        "7 m",
+        "9 m",
+        "13 m"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 197,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż maksymalny wysięg platformy roboczej obciążonej masą 100 kg uniesionej na wysokość 18 m:",
+      "image": "/img/PODESTY_187-197.webp",
+      "options": [
+        "6 m",
+        "8 m",
+        "10 m",
+        "12 m"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 198,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
+      "image": "/img/PODESTY_198-208.webp",
+      "options": [
+        "Maksymalna wysokość podnoszenia 21 m",
+        "Maksymalny wysięg podstawy obciążonej masą 215 kg - 8,2 m",
+        "Maksymalny udźwig podestu na wysięgu 11 m - 80 kg",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 199,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
+      "image": "/img/PODESTY_198-208.webp",
+      "options": [
+        "Maksymalny wysięg podestu obciążonego ładunkiem 115 kg - 11,8 m",
+        "Maksymalny udźwig podestu 80 kg",
+        "Praca na podporach",
+        "Maksymalna wysokość robocza 19,2 m"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 200,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
+      "image": "/img/PODESTY_198-208.webp",
+      "options": [
+        "Maksymalny udźwig podestu 215 kg",
+        "Maksymalny wysięg podestu obciążonego ładunkiem 215 kg - 11,8 m",
+        "Maksymalna wysokość robocza podestu obciążonego ładunkiem 215 kg - 21,2 m",
+        "Odpowiedź b i c jest prawidłowa"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 201,
+      "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 21 m i wysięgu 11 m:",
+      "image": "/img/PODESTY_198-208.webp",
+      "options": [
+        "215 kg",
+        "115 kg",
+        "80 kg",
+        "Praca niedozwolona ze względu na przekroczenia dopuszczalnych parametrów pracy"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 202,
+      "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 18 m i wysięgu 8m:",
+      "image": "/img/PODESTY_198-208.webp",
+      "options": [
+        "Praca niedozwolona ze względu na przekroczenia dopuszczalnych parametrów pracy",
+        "215 kg",
+        "115 kg",
+        "80 kg"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 203,
+      "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 20 m i wysięgu 10 m:",
+      "image": "/img/PODESTY_198-208.webp",
+      "options": [
+        "Praca niedozwolona ze względu na przekroczenia dopuszczalnych parametrów pracy",
+        "215 kg",
+        "115 kg",
+        "80 kg"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 204,
+      "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 19 m i wysięgu 11 m:",
+      "image": "/img/PODESTY_198-208.webp",
+      "options": [
+        "215 kg",
+        "115 kg",
+        "80 kg",
+        "Praca niedozwolona ze względu na przekroczenia dopuszczalnych parametrów pracy"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 205,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż maksymalny wysięg platformy roboczej obciążonej masą 215kg uniesionej na wysokość 22 m:",
+      "image": "/img/PODESTY_198-208.webp",
+      "options": [
+        "7 m",
+        "6 m",
+        "8 m",
+        "10 m"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 206,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż maksymalny wysięg platformy roboczej obciążonej masą 215 kg uniesionej na wysokość 17 m:",
+      "image": "/img/PODESTY_198-208.webp",
+      "options": [
+        "10,2 m",
+        "11,2 m",
+        "9,2 m",
+        "8,2 m"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 207,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż maksymalny wysięg platformy roboczej obciążonej masą 115 kg uniesionej na wysokość 14 m:",
+      "image": "/img/PODESTY_198-208.webp",
+      "options": [
+        "6 m",
+        "9,4 m",
+        "10,7 m",
+        "13 m"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 208,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż maksymalny wysięg platformy roboczej obciążonej masą 80 kg uniesionej na wysokość 18 m:",
+      "image": "/img/PODESTY_198-208.webp",
+      "options": [
+        "8,6 m",
+        "11,8 m",
+        "10,2 m",
+        "12,4 m"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 209,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
+      "image": "/img/PODESTY_209-212.webp",
+      "options": [
+        "Maksymalna wysokość podnoszenia 19,8 m",
+        "Maksymalna wysokość robocza 19,8 m",
+        "Maksymalny wysięg 10 m",
+        "Wszystkie odpowiedzi sa prawidłowe"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 210,
+      "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 16 m i wysięgu 8 m:",
+      "image": "/img/PODESTY_209-212.webp",
+      "options": [
+        "360 kg",
+        "280 kg",
+        "200 kg",
+        "80 kg"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 211,
+      "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 15 m i wysięgu 10 m:",
+      "image": "/img/PODESTY_209-212.webp",
+      "options": [
+        "300 kg",
+        "280 kg",
+        "200 kg",
+        "Praca niedozwolona ze względu na przekroczenia dopuszczalnych parametrów pracy"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 212,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż maksymalny wysięg platformy roboczej obciążonej masą 200 kg:",
+      "image": "/img/PODESTY_209-212.webp",
+      "options": [
+        "9,5 m",
+        "8,5 m",
+        "7,5 m",
+        "10 m"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 213,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
+      "image": "/img/PODESTY_213-219.webp",
+      "options": [
+        "Maksymalna wysokość podnoszenia 14,5 m",
+        "Maksymalna wysokość robocza 14,5 m",
+        "Maksymalny udźwig podestu 200 kg",
+        "Odpowiedź b i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 214,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
+      "image": "/img/PODESTY_213-219.webp",
+      "options": [
+        "Maksymalny wysięg podestu obciążonego ładunkiem 80 kg - 6 m",
+        "Maksymalna wysokość podnoszenia 14,5 m",
+        "Maksymalny wysięg platformy obciążonej masa 200 kg - 6 m",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 215,
+      "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 12 m i wysięgu 4m:",
+      "image": "/img/PODESTY_213-219.webp",
+      "options": [
+        "Praca niedozwolona ze względu na przekroczenia dopuszczalnych parametrów pracy",
+        "280 kg",
+        "200 kg",
+        "80 kg"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 216,
+      "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 8 m i wysięgu 6 m:",
+      "image": "/img/PODESTY_213-219.webp",
+      "options": [
+        "Praca niedozwolona ze względu na przekroczenia dopuszczalnych parametrów pracy",
+        "280 kg",
+        "200 kg",
+        "80 kg"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 217,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż maksymalny wysięg platformy roboczej obciążonej masą 200 kg:",
+      "image": "/img/PODESTY_213-219.webp",
+      "options": [
+        "5 m",
+        "6 m",
+        "7 m",
+        "8 m"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 218,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż maksymalny wysięg platformy roboczej obciążonej masą 80 kg:",
+      "image": "/img/PODESTY_213-219.webp",
+      "options": [
+        "5,5 m",
+        "6,6 m",
+        "7,7 m",
+        "8,8 m"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 219,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż maksymalny wysięg platformy roboczej obciążonej masą 240 kg:",
+      "image": "/img/PODESTY_213-219.webp",
+      "options": [
+        "5 m",
+        "6 m",
+        "7 m",
+        "Praca niedozwolona ze względu na przekroczenia dopuszczalnych parametrów pracy"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 220,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
+      "image": "/img/PODESTY_220-228.webp",
+      "options": [
+        "Maksymalna wysokość podnoszenia 23 m",
+        "Maksymalna wysokość robocza 25,5 m",
+        "Maksymalny udźwig podestu 200 kg",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 221,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
+      "image": "/img/PODESTY_220-228.webp",
+      "options": [
+        "Maksymalny wysięg podestu obciążonego ładunkiem 80 kg - 13 m",
+        "Maksymalny wysięg platformy obciążonej masą 200 kg - 12 m",
+        "Praca na podporach",
+        "Dopuszczalna ilość osób na platformie roboczej - 3"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 222,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
+      "image": null,
+      "options": [
+        "Maksymalna wysokość robocza 26 m",
+        "Dopuszczalna maksymalna ilość osób na platformie - 2",
+        "Maksymalny wysięg podestu obciążonego ładunkiem 200 kg - 9 m",
+        "Odpowiedź b i c jest prawidłowa"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 223,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
+      "image": "/img/PODESTY_220-228.webp",
+      "options": [
+        "Maksymalna wysokość podnoszenia z dwiema osobami 23 m",
+        "Dopuszczalna ilość osób na platformie - 2",
+        "Maksymalny wysięg podestu z jedna osobą na platformie 12 m",
+        "Wszystkie odpowiedzi są poprawne"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 224,
+      "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 23 m i wysięgu 6m:",
+      "image": "/img/PODESTY_220-228.webp",
+      "options": [
+        "Praca niedozwolona ze względu na przekroczenie dopuszczalnych parametrów pracy",
+        "280 kg",
+        "200 kg",
+        "80 kg"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 225,
+      "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 22 m i wysięgu 9m:",
+      "image": "/img/PODESTY_220-228.webp",
+      "options": [
+        "Praca niedozwolona ze względu na przekroczenie dopuszczalnych parametrów pracy",
+        "280 kg",
+        "200 kg",
+        "80 kg"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 226,
+      "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalną dopuszczalną ilość osób jaką można podnieść na wysokość 24 m",
+      "image": "/img/PODESTY_220-228.webp",
+      "options": [
+        "3",
+        "2",
+        "1",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 227,
+      "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalną dopuszczalną ilość osób jaką można podnieść na wysokość 18 m przy wysięgu 10m",
+      "image": "/img/PODESTY_220-228.webp",
+      "options": [
+        "3",
+        "2",
+        "1",
+        "Wszystkie odpowiedzi są niepoprawne"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 228,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż maksymalny wysięg platformy roboczej obciążonej masą 200 kg:",
+      "image": "/img/PODESTY_220-228.webp",
+      "options": [
+        "9 m",
+        "10 m",
+        "11 m",
+        "12 m"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 229,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
+      "image": "/img/PODESTY_229-235.webp",
+      "options": [
+        "Maksymalny wysięg boczny po stronie prawej 13 m",
+        "Maksymalny wysięg z tyłu pojazdu 16,2",
+        "Maksymalny udźwig podestu 200 kg",
+        "Wszystkie odpowiedzi są prawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 230,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
+      "image": "/img/PODESTY_229-235.webp",
+      "options": [
+        "Maksymalny zakres obrotu 280°",
+        "Maksymalny wysięg podestu obciążonego ładunkiem 120 kg z tyłu pojazdu - 13,0 m",
+        "Maksymalny wysięg podestu obciążonego ładunkiem 200 kg - z lewej strony pojazdu - 12 m",
+        "Odpowiedź b i c jest prawidłowa"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 231,
+      "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej po lewej stronie pojazdu w odległości 6 m od osi obrotu:",
+      "image": "/img/PODESTY_229-235.webp",
+      "options": [
+        "Praca niedozwolona ze względu na przekroczenie dopuszczalnych parametrów pracy",
+        "200 kg",
+        "120 kg",
+        "80 kg"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 232,
+      "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej po lewej stronie pojazdu w odległości 8 m od osi obrotu:",
+      "image": "/img/PODESTY_229-235.webp",
+      "options": [
+        "Praca niedozwolona ze względu na przekroczenie dopuszczalnych parametrów pracy",
+        "200 kg",
+        "120 kg",
+        "80 kg"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 233,
+      "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalny wysięg podestu z obciążeniem 200 kg",
+      "image": "/img/PODESTY_229-235.webp",
+      "options": [
+        "8 m z lewej strony pojazdu",
+        "13 m z prawej strony pojazdu",
+        "16 m z tyłu pojazdu",
+        "Wszystkie odpowiedzi są nieprawidłowe"
+      ],
+      "correct": 4
+    },
+    {
+      "id": 234,
+      "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalny wysięg podestu z obciążeniem 120 kg",
+      "image": "/img/PODESTY_229-235.webp",
+      "options": [
+        "13 m z lewej strony pojazdu",
+        "13 m z prawej strony pojazdu",
+        "13 m z tyłu pojazdu",
+        "Wszystkie odpowiedzi są nieprawidłowe"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 235,
+      "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalny wysięg podestu z obciążeniem 80 kg",
+      "image": "/img/PODESTY_229-235.webp",
+      "options": [
+        "8 m z lewej strony pojazdu",
+        "10 m z prawej strony pojazdu",
+        "13 m z tyłu pojazdu",
+        "Odpowiedź b i c jest prawidłowa"
+      ],
+      "correct": 1
+    },
+    {
+      "id": 236,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
+      "image": "/img/PODESTY_236-238.webp",
+      "options": [
+        "Maksymalna wysokość podnoszenia 12,0 m",
+        "Maksymalna wysokość robocza 12,0 m",
+        "Maksymalny wysięg boczny 7 m",
+        "Wszystkie odpowiedzi sa prawidłowe"
+      ],
+      "correct": 2
+    },
+    {
+      "id": 237,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
+      "image": "/img/PODESTY_236-238.webp",
+      "options": [
+        "Maksymalny wysięg podestu obciążonego ładunkiem 200 kg - 13 m",
+        "Praca wyłącznie na podporach",
+        "Praca w pełnym zakresie obrotu",
+        "Dopuszczalna ilość osób na platformie roboczej - 3"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 238,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż, która z pozycji uniesienia platformy jest niemożliwa:",
+      "image": "/img/PODESTY_236-238.webp",
+      "options": [
+        "Wysokość robocza 8 m, wysięg 4m",
+        "Wysokość robocza 10m, wysięg 4m",
+        "Wysokość robocza 12m, wysięg 5m",
+        "Wysokość robocza 6m, wysięg 6m"
+      ],
+      "correct": 3
+    },
+    {
+      "id": 239,
+      "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
+      "image": "/img/PODESTY_239.webp",
+      "options": [
+        "Maksymalna wysokość podnoszenia 9 m",
+        "Maksymalna wysokość robocza 10,5 m",
+        "Maksymalny wysięg roboczy 10,5 m",
+        "Wszystkie odpowiedzi sa prawidłowe"
+      ],
+      "correct": 2
+    }
+  ]
+}
