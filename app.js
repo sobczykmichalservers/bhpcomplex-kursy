@@ -4,7 +4,7 @@
    ============================================================ */
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
-import { getFirestore, doc, getDoc, onSnapshot, addDoc, collection, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+import { getFirestore, doc, getDoc, onSnapshot, addDoc, collection, serverTimestamp, query, where, getDocs, deleteDoc } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCOTQ5adgdw7DF9AWuNb0owaRsB9OvN1EU",
@@ -567,8 +567,18 @@ function startAuthListener() {}
 async function verifyAuth(grp, cat, login, pass) {
   if (grp === 'bhp' || isBhpCat(cat)) {
     const dSnap = await getDoc(doc(db, "konta-bhp", login));
-    if (dSnap.exists() && dSnap.data().haslo === pass && dSnap.data().kurs === cat) {
-      return true;
+    if (dSnap.exists()) {
+      const d = dSnap.data();
+      if (d.wygasa) {
+        const expMs = typeof d.wygasa.toMillis === 'function' ? d.wygasa.toMillis() : new Date(d.wygasa).getTime();
+        if (expMs && expMs < Date.now()) {
+          deleteDoc(doc(db, "konta-bhp", login)).catch(() => {});
+          return false;
+        }
+      }
+      if (d.haslo === pass && (d.kurs === cat || d.kurs === 'wszystkie')) {
+        return true;
+      }
     }
     return false;
   } else {
@@ -1664,8 +1674,8 @@ function vResult() {
 
   async function saveBhpResult(login, signature, dateObj, sc, tot, pct) {
   try {
-    const expireDate = new Date();
-    expireDate.setDate(expireDate.getDate() + 30);
+    const now = new Date();
+    const expireDate = new Date(now.getTime() + 30 * 24 * 60 * 60 * 1000);
 
     await addDoc(collection(db, "wyniki-bhp"), {
       login: login || 'nieznany',
@@ -1679,6 +1689,13 @@ function vResult() {
       wygasa: expireDate
     });
     console.log("Zapisano wynik do bazy!");
+
+    // Automatyczne usuwanie wyników starszych niż 30 dni (wygasa < teraz)
+    try {
+      const expQ = query(collection(db, "wyniki-bhp"), where("wygasa", "<", now));
+      const snap = await getDocs(expQ);
+      snap.forEach(d => deleteDoc(doc(db, "wyniki-bhp", d.id)).catch(() => {}));
+    } catch (_) {}
   } catch(e) {
     console.error("Błąd zapisu:", e);
   }

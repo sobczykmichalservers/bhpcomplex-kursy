@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel Instruktora — UDT & BHP</title>
+  <style>
+    :root {
+      --bg: #0f1218;
+      --card: #171c26;
+      --card-2: #1e2533;
+      --border: #2a3346;
+      --txt: #f1f5f9;
+      --muted: #94a3b8;
+      --acc: #f59e0b;
+      --acc-hover: #d97706;
+      --ok: #10b981;
+      --danger: #ef4444;
+      --blue: #3b82f6;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--txt);
+      line-height: 1.5;
+      min-height: 100vh;
+      padding-bottom: 60px;
+    }
+    .topbar {
+      background: rgba(23, 28, 38, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .topbar__brand {
+      font-size: 1.15rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .topbar__brand span { color: var(--acc); }
+    .topbar__actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .wrap {
+      max-width: 1020px;
+      margin: 28px auto;
+      padding: 0 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.28);
+    }
+    .card__hdr {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    .card__title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .card__sub {
+      font-size: 0.86rem;
+      color: var(--muted);
+      margin-top: 3px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border: 1px solid var(--border);
+      background: var(--card-2);
+      color: var(--txt);
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .btn:hover { filter: brightness(1.12); }
+    .btn:disabled { opacity: 0.55; cursor: not-allowed; }
+    .btn--acc {
+      background: var(--acc);
+      color: #111827;
+      border-color: var(--acc);
+      font-weight: 700;
+    }
+    .btn--blue {
+      background: rgba(59, 130, 246, 0.16);
+      color: #60a5fa;
+      border-color: rgba(59, 130, 246, 0.35);
+    }
+    .btn--ok {
+      background: rgba(16, 185, 129, 0.16);
+      color: #34d399;
+      border-color: rgba(16, 185, 129, 0.35);
+    }
+    .btn--danger {
+      background: rgba(239, 68, 68, 0.14);
+      color: #f87171;
+      border-color: rgba(239, 68, 68, 0.3);
+    }
+    .btn--sm {
+      padding: 6px 11px;
+      font-size: 0.8rem;
+      border-radius: 8px;
+    }
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+      align-items: end;
+    }
+    .fld {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .fld label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+    }
+    .fld input, .fld select {
+      width: 100%;
+      padding: 10px 13px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--txt);
+      font-size: 0.95rem;
+      outline: none;
+    }
+    .fld input:focus, .fld select:focus {
+      border-color: var(--acc);
+    }
+    .input-row {
+      display: flex;
+      gap: 8px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 3px 9px;
+      border-radius: 999px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      background: rgba(245, 158, 11, 0.16);
+      color: var(--acc);
+    }
+    .badge--ok {
+      background: rgba(16, 185, 129, 0.16);
+      color: #34d399;
+    }
+    .badge--blue {
+      background: rgba(59, 130, 246, 0.16);
+      color: #60a5fa;
+    }
+    .table-wrap {
+      overflow-x: auto;
+      margin-top: 18px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+    th, td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border);
+    }
+    th {
+      background: var(--card-2);
+      color: var(--muted);
+      font-size: 0.76rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: rgba(255, 255, 255, 0.02); }
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      background: rgba(255, 255, 255, 0.06);
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+    .toast {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #10b981;
+      color: #052e16;
+      font-weight: 700;
+      padding: 12px 18px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.25s ease;
+      z-index: 999;
+    }
+    .toast.on {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    .login-box {
+      max-width: 420px;
+      margin: 70px auto;
+      padding: 28px;
+    }
+    .empty {
+      text-align: center;
+      padding: 26px 16px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .cms-banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.14), rgba(59, 130, 246, 0.1));
+      border: 1px solid rgba(245, 158, 11, 0.35);
+    }
+    @media (max-width: 640px) {
+      .card { padding: 16px; }
+      th, td { padding: 10px; font-size: 0.83rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PASEK GÓRNY -->
+  <header class="topbar">
+    <div class="topbar__brand">
+      🛠️ Panel <span>Instruktora</span>
+    </div>
+    <div class="topbar__actions" id="top-actions" style="display:none">
+      <a href="./admin/" target="_blank" class="btn btn--blue btn--sm">📝 Edytuj pytania i materiały (CMS)</a>
+      <button type="button" class="btn btn--sm" id="btn-change-admin">🔐 Hasło panelu</button>
+      <a href="./" class="btn btn--sm">🏠 Strona kursów</a>
+      <button type="button" class="btn btn--danger btn--sm" id="btn-logout">Wyloguj</button>
+    </div>
+  </header>
+
+  <!-- WIDOK LOGOWANIA DO PANELU -->
+  <div id="login-view" class="wrap">
+    <div class="card login-box">
+      <div class="card__title" style="margin-bottom:6px">🔒 Logowanie Instruktora</div>
+      <p class="card__sub" style="margin-bottom:18px">
+        Wpisz hasło instruktora, aby zarządzać hasłem UDT, kontami kursantów BHP i wynikami egzaminów.
+      </p>
+      <form id="admin-login-form">
+        <div class="fld" style="margin-bottom:14px">
+          <label for="admin-pw">Hasło instruktora</label>
+          <input type="password" id="admin-pw" placeholder="Wpisz hasło..." required />
+        </div>
+        <div id="login-err" style="color:#f87171;font-size:0.85rem;margin-bottom:12px;display:none"></div>
+        <button type="submit" class="btn btn--acc" style="width:100%" id="admin-login-btn">Zaloguj do panelu</button>
+      </form>
+      <p style="font-size:0.78rem;color:var(--muted);margin-top:14px;text-align:center">
+        Domyślne hasło przy pierwszym uruchomieniu: <span class="mono">admin123</span> (zmienisz je po zalogowaniu przyciskiem „🔐 Hasło panelu").
+      </p>
+    </div>
+  </div>
+
+  <!-- WIDOK GŁÓWNY PANELU -->
+  <main id="panel-view" class="wrap" style="display:none">
+
+    <!-- SKRÓT DO CMS -->
+    <section class="card cms-banner">
+      <div>
+        <div class="card__title">📚 Baza pytań, Obsługa techniczna i Materiały szkoleniowe</div>
+        <div class="card__sub">Dodawanie i edycja pytań egzaminacyjnych, zdjęć oraz tekstów (jak w Wordzie) odbywa się w panelu CMS.</div>
+      </div>
+      <a href="./admin/" target="_blank" class="btn btn--acc">📝 Otwórz edytor pytań (CMS) &rarr;</a>
+    </section>
+
+    <!-- 1. HASŁO DO KURSÓW UDT -->
+    <section class="card">
+      <div class="card__hdr">
+        <div>
+          <div class="card__title">🔑 Hasło do kursów UDT (wszystkie 6 urządzeń)</div>
+          <div class="card__sub">Jedno wspólne hasło dla wszystkich kursów UDT (Wózki, Podesty, Żurawie, Suwnice).</div>
+        </div>
+        <div>
+          Aktualne hasło: <span class="mono" id="current-udt-pw">Ładowanie...</span>
+          <button type="button" class="btn btn--sm" id="copy-udt-pw" style="margin-left:6px">📋 Kopiuj</button>
+        </div>
+      </div>
+
+      <form id="udt-pw-form" class="form-grid">
+        <div class="fld">
+          <label for="new-udt-pw">Nowe hasło UDT</label>
+          <div class="input-row">
+            <input type="text" id="new-udt-pw" placeholder="np. szkolenie2026" required />
+            <button type="button" class="btn" id="rand-udt-pw" title="Wylosuj proste hasło">🎲 Losuj</button>
+          </div>
+        </div>
+        <div>
+          <button type="submit" class="btn btn--acc" id="save-udt-btn" style="width:100%">💾 Zapisz nowe hasło UDT</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- 2. KONTA KURSANTÓW BHP -->
+    <section class="card">
+      <div class="card__hdr">
+        <div>
+          <div class="card__title">🦺 Konta kursantów BHP</div>
+          <div class="card__sub">Twórz loginy i hasła dla kursantów BHP jednym kliknięciem.</div>
+        </div>
+        <span class="badge badge--blue" id="bhp-accounts-count">0 kont</span>
+      </div>
+
+      <form id="bhp-account-form" class="form-grid">
+        <div class="fld">
+          <label for="bhp-login">Login kursanta</label>
+          <input type="text" id="bhp-login" placeholder="np. jan.kowalski" required />
+        </div>
+        <div class="fld">
+          <label for="bhp-pw">Hasło kursanta</label>
+          <div class="input-row">
+            <input type="text" id="bhp-pw" placeholder="np. bhp123" required />
+            <button type="button" class="btn" id="rand-bhp-pw" title="Wylosuj hasło">🎲</button>
+          </div>
+        </div>
+        <div class="fld">
+          <label for="bhp-course">Przypisane szkolenie BHP</label>
+          <select id="bhp-course">
+            <option value="bhp-1">BHP Moduł 1</option>
+            <option value="bhp-2">BHP Moduł 2</option>
+            <option value="bhp-3">BHP Moduł 3</option>
+            <option value="bhp-4">BHP Moduł 4</option>
+            <option value="wszystkie">Wszystkie moduły BHP (1–4)</option>
+          </select>
+        </div>
+        <div class="fld">
+          <label for="bhp-exp">Ważność konta</label>
+          <select id="bhp-exp">
+            <option value="30">30 dni (auto-usuwanie)</option>
+            <option value="0">Bezterminowo</option>
+          </select>
+        </div>
+        <div>
+          <button type="submit" class="btn btn--acc" id="save-bhp-btn" style="width:100%">➕ Utwórz / Zapisz konto</button>
+        </div>
+      </form>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Login</th>
+              <th>Hasło</th>
+              <th>Szkolenie</th>
+              <th>Ważność</th>
+              <th style="text-align:right">Akcje</th>
+            </tr>
+          </thead>
+          <tbody id="bhp-accounts-tbody">
+            <tr><td colspan="5" class="empty">Ładowanie kont...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 3. WYNIKI EGZAMINÓW BHP -->
+    <section class="card">
+      <div class="card__hdr">
+        <div>
+          <div class="card__title">🏆 Wyniki egzaminów BHP</div>
+          <div class="card__sub">Zaliczone egzaminy BHP. Wyniki starsze niż 30 dni są usuwane automatycznie.</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px">
+          <span class="badge badge--ok" id="bhp-results-count">0 wyników</span>
+          <button type="button" class="btn btn--sm" id="refresh-results-btn">🔄 Odśwież</button>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Kursant (Podpis / Login)</th>
+              <th>Szkolenie</th>
+              <th>Wynik</th>
+              <th>Data egzaminu</th>
+              <th>Auto-usunięcie</th>
+              <th style="text-align:right">Akcje</th>
+            </tr>
+          </thead>
+          <tbody id="bhp-results-tbody">
+            <tr><td colspan="6" class="empty">Ładowanie wyników...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="toast" id="toast">Zapisano!</div>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+    import {
+      getFirestore, doc, getDoc, setDoc, deleteDoc,
+      collection, getDocs, query, where, serverTimestamp
+    } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCOTQ5adgdw7DF9AWuNb0owaRsB9OvN1EU",
+      authDomain: "bhpcomplex-kursy.firebaseapp.com",
+      projectId: "bhpcomplex-kursy",
+      storageBucket: "bhpcomplex-kursy.firebasestorage.app",
+      messagingSenderId: "841216785179",
+      appId: "1:841216785179:web:ce09cfc61b525cf231f1be"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    const COURSE_LABELS = {
+      'bhp-1': 'BHP Moduł 1',
+      'bhp-2': 'BHP Moduł 2',
+      'bhp-3': 'BHP Moduł 3',
+      'bhp-4': 'BHP Moduł 4',
+      'wszystkie': 'Wszystkie moduły BHP (1–4)'
+    };
+
+    const $ = id => document.getElementById(id);
+
+    function showToast(msg) {
+      const t = $('toast');
+      t.textContent = msg;
+      t.classList.add('on');
+      setTimeout(() => t.classList.remove('on'), 2600);
+    }
+
+    function randomPass(prefix = '') {
+      const chars = 'abcdefghjkmnpqrstuvwxyz23456789';
+      let out = prefix;
+      for (let i = 0; i < (prefix ? 4 : 6); i++) {
+        out += chars[Math.floor(Math.random() * chars.length)];
+      }
+      return out;
+    }
+
+    // ─── LOGOWANIE INSTRUKTORA ───────────────────────────────
+    const SS_KEY = 'udt_panel_admin_ok';
+
+    async function checkAdminPass(inputPw) {
+      const ref = doc(db, "kursy-udt", "admin-haslo");
+      const snap = await getDoc(ref);
+      if (!snap.exists()) {
+        // Pierwsze uruchomienie — utwórz domyślne hasło admin123
+        await setDoc(ref, { haslo: "admin123" });
+        return inputPw === "admin123";
+      }
+      return snap.data().haslo === inputPw;
+    }
+
+    async function unlockPanel() {
+      $('login-view').style.display = 'none';
+      $('panel-view').style.display = 'flex';
+      $('top-actions').style.display = 'flex';
+      await Promise.all([
+        loadUdtPassword(),
+        loadBhpAccounts(),
+        loadBhpResults()
+      ]);
+    }
+
+    $('admin-login-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const pw = $('admin-pw').value.trim();
+      const btn = $('admin-login-btn');
+      const err = $('login-err');
+      err.style.display = 'none';
+      btn.disabled = true;
+      btn.textContent = 'Sprawdzanie...';
+      try {
+        const ok = await checkAdminPass(pw);
+        if (ok) {
+          sessionStorage.setItem(SS_KEY, '1');
+          await unlockPanel();
+        } else {
+          err.textContent = 'Nieprawidłowe hasło instruktora.';
+          err.style.display = 'block';
+        }
+      } catch (ex) {
+        err.textContent = 'Błąd połączenia z bazą Firestore. Upewnij się, że reguły Firestore są opublikowane.';
+        err.style.display = 'block';
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Zaloguj do panelu';
+      }
+    });
+
+    $('btn-logout').addEventListener('click', () => {
+      sessionStorage.removeItem(SS_KEY);
+      location.reload();
+    });
+
+    $('btn-change-admin').addEventListener('click', async () => {
+      const newPw = prompt('Podaj nowe hasło do Panelu Instruktora (min. 4 znaki):');
+      if (!newPw || newPw.trim().length < 4) return;
+      try {
+        await setDoc(doc(db, "kursy-udt", "admin-haslo"), { haslo: newPw.trim() });
+        showToast('Zmieniono hasło do Panelu Instruktora!');
+      } catch (e) {
+        alert('Błąd zapisu hasła: ' + e.message);
+      }
+    });
+
+    // ─── 1. HASŁO UDT ────────────────────────────────────────
+    async function loadUdtPassword() {
+      try {
+        const snap = await getDoc(doc(db, "kursy-udt", "udt-haslo"));
+        if (snap.exists() && snap.data().haslo) {
+          $('current-udt-pw').textContent = snap.data().haslo;
+          $('new-udt-pw').value = snap.data().haslo;
+        } else {
+          $('current-udt-pw').textContent = '(nie ustawiono)';
+        }
+      } catch (e) {
+        $('current-udt-pw').textContent = 'Błąd odczytu';
+      }
+    }
+
+    $('rand-udt-pw').addEventListener('click', () => {
+      $('new-udt-pw').value = randomPass('udt');
+    });
+
+    $('copy-udt-pw').addEventListener('click', () => {
+      const txt = $('current-udt-pw').textContent;
+      navigator.clipboard.writeText(txt);
+      showToast('Skopiowano hasło UDT!');
+    });
+
+    $('udt-pw-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const val = $('new-udt-pw').value.trim();
+      if (!val) return;
+      const btn = $('save-udt-btn');
+      btn.disabled = true;
+      try {
+        await setDoc(doc(db, "kursy-udt", "udt-haslo"), { haslo: val });
+        $('current-udt-pw').textContent = val;
+        showToast('✅ Zapisano nowe hasło UDT!');
+      } catch (err) {
+        alert('Błąd zapisu: ' + err.message);
+      } finally {
+        btn.disabled = false;
+      }
+    });
+
+    // ─── 2. KONTA KURSANTÓW BHP ──────────────────────────────
+    $('rand-bhp-pw').addEventListener('click', () => {
+      $('bhp-pw').value = randomPass('bhp');
+    });
+
+    async function loadBhpAccounts() {
+      const tbody = $('bhp-accounts-tbody');
+      try {
+        const now = new Date();
+        const snap = await getDocs(collection(db, "konta-bhp"));
+        const rows = [];
+        const expiredDeletes = [];
+
+        snap.forEach(d => {
+          const data = d.data();
+          let expDate = null;
+          if (data.wygasa) {
+            expDate = typeof data.wygasa.toDate === 'function' ? data.wygasa.toDate() : new Date(data.wygasa);
+          }
+          if (expDate && expDate < now) {
+            expiredDeletes.push(deleteDoc(doc(db, "konta-bhp", d.id)).catch(() => {}));
+          } else {
+            rows.push({ id: d.id, ...data, expDate });
+          }
+        });
+
+        if (expiredDeletes.length > 0) await Promise.allSettled(expiredDeletes);
+
+        $('bhp-accounts-count').textContent = `${rows.length} kont`;
+
+        if (rows.length === 0) {
+          tbody.innerHTML = `<tr><td colspan="5" class="empty">Brak utworzonych kont BHP. Dodaj pierwsze konto powyżej.</td></tr>`;
+          return;
+        }
+
+        rows.sort((a, b) => a.id.localeCompare(b.id));
+        tbody.innerHTML = rows.map(r => {
+          const courseName = COURSE_LABELS[r.kurs] || r.kurs || '—';
+          let expLabel = 'Bezterminowo';
+          if (r.expDate) {
+            const daysLeft = Math.max(1, Math.ceil((r.expDate - now) / (1000 * 60 * 60 * 24)));
+            expLabel = `za ${daysLeft} dni`;
+          }
+          return `
+            <tr>
+              <td><span class="mono">${r.id}</span></td>
+              <td><span class="mono">${r.haslo || ''}</span></td>
+              <td><span class="badge badge--blue">${courseName}</span></td>
+              <td style="color:var(--muted);font-size:0.83rem">${expLabel}</td>
+              <td style="text-align:right">
+                <button type="button" class="btn btn--sm" data-copy-login="${r.id}" data-copy-pw="${r.haslo || ''}" data-copy-course="${courseName}">📋 Kopiuj</button>
+                <button type="button" class="btn btn--danger btn--sm" data-del-acc="${r.id}">🗑️ Usuń</button>
+              </td>
+            </tr>
+          `;
+        }).join('');
+
+        tbody.querySelectorAll('[data-copy-login]').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const msg = `Szkolenie: ${btn.dataset.copyCourse}\nLogin: ${btn.dataset.copyLogin}\nHasło: ${btn.dataset.copyPw}`;
+            navigator.clipboard.writeText(msg);
+            showToast('📋 Skopiowano dane logowania dla kursanta!');
+          });
+        });
+
+        tbody.querySelectorAll('[data-del-acc]').forEach(btn => {
+          btn.addEventListener('click', async () => {
+            const id = btn.dataset.delAcc;
+            if (!confirm(`Usunąć konto kursanta "${id}"?`)) return;
+            await deleteDoc(doc(db, "konta-bhp", id));
+            showToast(`Usunięto konto ${id}`);
+            loadBhpAccounts();
+          });
+        });
+      } catch (e) {
+        tbody.innerHTML = `<tr><td colspan="5" class="empty">Błąd ładowania kont: ${e.message}</td></tr>`;
+      }
+    }
+
+    $('bhp-account-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const login = $('bhp-login').value.trim();
+      const haslo = $('bhp-pw').value.trim();
+      const kurs = $('bhp-course').value;
+      const expDays = parseInt($('bhp-exp').value, 10);
+      if (!login || !haslo) return;
+
+      const btn = $('save-bhp-btn');
+      btn.disabled = true;
+      try {
+        const payload = {
+          haslo,
+          kurs,
+          utworzono: serverTimestamp()
+        };
+        if (expDays > 0) {
+          payload.wygasa = new Date(Date.now() + expDays * 24 * 60 * 60 * 1000);
+        }
+        await setDoc(doc(db, "konta-bhp", login), payload);
+        $('bhp-login').value = '';
+        $('bhp-pw').value = randomPass('bhp');
+        showToast(`✅ Zapisano konto: ${login}`);
+        await loadBhpAccounts();
+      } catch (err) {
+        alert('Błąd zapisu konta: ' + err.message);
+      } finally {
+        btn.disabled = false;
+      }
+    });
+
+    // ─── 3. WYNIKI EGZAMINÓW BHP (Z AUTO-USUWANIEM PO 30 DNIACH) ───
+    async function loadBhpResults() {
+      const tbody = $('bhp-results-tbody');
+      try {
+        const now = new Date();
+        const snap = await getDocs(collection(db, "wyniki-bhp"));
+        const active = [];
+        const expiredDeletes = [];
+
+        snap.forEach(d => {
+          const data = d.data();
+          let expDate = null;
+          if (data.wygasa) {
+            expDate = typeof data.wygasa.toDate === 'function' ? data.wygasa.toDate() : new Date(data.wygasa);
+          }
+          if (expDate && expDate < now) {
+            expiredDeletes.push(deleteDoc(doc(db, "wyniki-bhp", d.id)).catch(() => {}));
+          } else {
+            active.push({ id: d.id, ...data, expDate });
+          }
+        });
+
+        if (expiredDeletes.length > 0) {
+          await Promise.allSettled(expiredDeletes);
+        }
+
+        $('bhp-results-count').textContent = `${active.length} wyników`;
+
+        if (active.length === 0) {
+          tbody.innerHTML = `<tr><td colspan="6" class="empty">Brak zapisanych wyników egzaminów BHP z ostatnich 30 dni.</td></tr>`;
+          return;
+        }
+
+        active.sort((a, b) => {
+          const tA = a.expDate ? a.expDate.getTime() : 0;
+          const tB = b.expDate ? b.expDate.getTime() : 0;
+          return tB - tA;
+        });
+
+        tbody.innerHTML = active.map(r => {
+          const daysLeft = r.expDate
+            ? Math.max(1, Math.ceil((r.expDate - now) / (1000 * 60 * 60 * 24)))
+            : 30;
+          return `
+            <tr>
+              <td>
+                <strong>${r.podpis || '—'}</strong>
+                <div style="font-size:0.78rem;color:var(--muted)">Login: ${r.login || '—'}</div>
+              </td>
+              <td>${r.kurs || r.kurs_id || '—'}</td>
+              <td><span class="badge badge--ok">${r.wynik || ''} (${r.procent || 0}%)</span></td>
+              <td style="font-size:0.84rem">${r.data_egzaminu || '—'}</td>
+              <td style="font-size:0.82rem;color:var(--muted)">za ${daysLeft} dni</td>
+              <td style="text-align:right">
+                <button type="button" class="btn btn--danger btn--sm" data-del-res="${r.id}">🗑️ Usuń</button>
+              </td>
+            </tr>
+          `;
+        }).join('');
+
+        tbody.querySelectorAll('[data-del-res]').forEach(btn => {
+          btn.addEventListener('click', async () => {
+            const id = btn.dataset.delRes;
+            if (!confirm('Usunąć ten wynik egzaminu?')) return;
+            await deleteDoc(doc(db, "wyniki-bhp", id));
+            showToast('Usunięto wynik egzaminu');
+            loadBhpResults();
+          });
+        });
+      } catch (e) {
+        tbody.innerHTML = `<tr><td colspan="6" class="empty">Błąd ładowania wyników: ${e.message}</td></tr>`;
+      }
+    }
+
+    $('refresh-results-btn').addEventListener('click', loadBhpResults);
+
+    // Wygeneruj od razu losowe hasło w formularzu nowego konta dla wygody
+    $('bhp-pw').value = randomPass('bhp');
+
+    if (sessionStorage.getItem(SS_KEY) === '1') {
+      unlockPanel();
+    }
+  </script>
+</body>
+</html>

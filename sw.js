@@ -5,14 +5,14 @@
    Zmień CACHE_VER przy każdym deployu kodu, aby wymusić odświeżenie.
    ═══════════════════════════════════════════════════════════════ */
 
-const CACHE_VER = 'udt-v58';
+const CACHE_VER = 'udt-v59';
 
 // Pliki do precache przy instalacji (ładowane od razu, 0 opóźnień)
 const PRECACHE = [
   './',
   './index.html',
-  './style.css?v=58',
-  './app.js?v=58',
+  './style.css?v=59',
+  './app.js?v=59',
   './img/bhp-icon.png',
   './icons/wozki-podnosnikowe.svg',
   './icons/wozki-specjalizowane.svg',
@@ -44,10 +44,11 @@ self.addEventListener('activate', (e) => {
 self.addEventListener('fetch', (e) => {
   const url = new URL(e.request.url);
 
-  // NIE cachuj: panelu CMS (/admin), Firebase, Firestore, Telegram, metod innych niż GET
+  // NIE cachuj: panelu CMS (/admin), panelu instruktora (/panel), Firebase, Firestore, Telegram, metod innych niż GET
   if (
     e.request.method !== 'GET' ||
     url.pathname.includes('/admin') ||
+    url.pathname.includes('/panel') ||
     url.hostname.includes('firebaseio') ||
     url.hostname.includes('googleapis') ||
     url.hostname.includes('gstatic') ||
