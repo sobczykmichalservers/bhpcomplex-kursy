@@ -3,8 +3,10 @@
     {
       "id": 1,
       "question": "Księga rewizyjna urządzenia UDT",
-      "answer": "Podstawowy dokument techniczny wydawany przez Urząd Dozoru Technicznego dla zarejestrowanego urządzenia. Zawiera decyzję zezwalającą na eksploatację, protokoły z badań okresowych i doraźnych inspektora UDT oraz wpisy konserwatora.",
-      "image": ""
+      "answer": "**Podstawowy dokument techniczny wydawany** przez Urząd Dozoru _Technicznego_ dla zarejestrowanego urządzenia. Zawiera decyzję zezwalającą na eksploatację, protokoły z badań okresowych i doraźnych inspektora UDT oraz wpisy konserwatora.",
+      "image": "",
+      "file": "/img/pdf-test.pdf",
+      "link": "https://www.youtube.com/watch?v=UDxAQrUF22Q"
     }
   ]
 }
