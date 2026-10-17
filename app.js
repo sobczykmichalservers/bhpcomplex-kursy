@@ -213,9 +213,11 @@ const $ = id => document.getElementById(id);
 const appEl = $('app');
 
 // ═══════════════════════════════════════════════════════════
-// LIGHT / DARK MODE
+// LIGHT / DARK MODE & POWIĘKSZANIE TEKSTU (Aa / Aa+ / Aa++)
 // ═══════════════════════════════════════════════════════════
 const themeBtn = $('theme-toggle');
+const fontBtn = $('font-toggle');
+const LS_FONT = 'udt_font_scale';
 
 /** Ustawia motyw i aktualizuje ikonę przycisku */
 function applyTheme(theme) {
@@ -228,9 +230,30 @@ function applyTheme(theme) {
   }
 }
 
+/** Ustawia stopień powiększenia tekstu: 0 (100%), 1 (+12%), 2 (+22%) */
+function applyFontScale(lvl) {
+  const step = (lvl === 1 || lvl === 2) ? lvl : 0;
+  if (step > 0) {
+    document.documentElement.setAttribute('data-font', String(step));
+  } else {
+    document.documentElement.removeAttribute('data-font');
+  }
+  if (fontBtn) {
+    fontBtn.classList.toggle('font-toggle--1', step === 1);
+    fontBtn.classList.toggle('font-toggle--2', step === 2);
+    fontBtn.innerHTML = step === 0
+      ? `<span class="ft-a">A</span><span class="ft-sm">a</span>`
+      : step === 1
+      ? `<span class="ft-a">A</span><span class="ft-sm">a</span><span class="ft-plus">+</span>`
+      : `<span class="ft-a">A</span><span class="ft-sm">a</span><span class="ft-plus">++</span>`;
+  }
+}
+
 function initTheme() {
   const saved = localStorage.getItem(LS_THEME);
   applyTheme(saved === 'light' ? 'light' : 'dark');
+  const savedFont = parseInt(localStorage.getItem(LS_FONT) || '0', 10);
+  applyFontScale(savedFont);
 }
 
 themeBtn.addEventListener('click', () => {
@@ -239,6 +262,15 @@ themeBtn.addEventListener('click', () => {
   localStorage.setItem(LS_THEME, next);
   applyTheme(next);
 });
+
+if (fontBtn) {
+  fontBtn.addEventListener('click', () => {
+    const cur = parseInt(document.documentElement.getAttribute('data-font') || '0', 10);
+    const next = (cur + 1) % 3; // 0 -> 1 -> 2 -> 0
+    localStorage.setItem(LS_FONT, String(next));
+    applyFontScale(next);
+  });
+}
 
 // ─── LIGHTBOX (Natywne gesty: Pinch, Pan, Double-Tap, Wheel) ─
 const lb = $('lb'), lbi = $('lb-img'), lbx = $('lb-x');
