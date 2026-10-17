@@ -1868,6 +1868,19 @@ function normMediaPath(u) {
   return ghUrl(u);
 }
 
+function getFileDisplayName(fileUrl) {
+  if (!fileUrl) return 'plik';
+  try {
+    const cleanUrl = String(fileUrl).split('?')[0].split('#')[0];
+    const base = decodeURIComponent(cleanUrl.substring(cleanUrl.lastIndexOf('/') + 1));
+    const noExt = base.replace(/\.[a-z0-9]{2,5}$/i, '').trim();
+    return noExt || base || 'plik';
+  } catch (_) {
+    const parts = String(fileUrl).split('/');
+    return (parts[parts.length - 1] || 'plik').replace(/\.pdf$/i, '');
+  }
+}
+
 function formatInlineRich(line) {
   let s = String(line);
   const tags = [];
@@ -1877,9 +1890,14 @@ function formatInlineRich(line) {
     return token;
   };
 
-  // Obrazy Markdown: ![alt](url)
+  // Obrazy Markdown: ![alt](url) — jeśli wstawiono PDF jako media, wyświetl przycisk "Otwórz <nazwa>"
   s = s.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (_, alt, rawUrl) => {
-    const src = normMediaPath(rawUrl.replace(/^["']|["']$/g, '').split(/\s+/)[0]);
+    const cleanRaw = rawUrl.replace(/^["']|["']$/g, '').split(/\s+/)[0];
+    const src = normMediaPath(cleanRaw);
+    if (/\.pdf(\?.*)?$/i.test(cleanRaw)) {
+      const fName = getFileDisplayName(alt && !/^ilustracja$/i.test(alt.trim()) ? alt : cleanRaw);
+      return stash(`<a href="${src}" data-pdf-url="${src}" target="_blank" rel="noopener" class="btn btn--o btn--s" style="margin-top:8px;display:inline-flex;text-decoration:none">📄 Otwórz ${fName}</a>`);
+    }
     const cleanAlt = (alt || 'Ilustracja').replace(/"/g, '&quot;');
     return stash(`<img src="${src}" alt="${cleanAlt}" class="q-img rich-img" data-src="${src}" loading="lazy" onerror="this.style.display='none'"/>`);
   });
@@ -1888,9 +1906,13 @@ function formatInlineRich(line) {
     const src = normMediaPath(rawUrl);
     return stash(`<img src="${src}" alt="Ilustracja" class="q-img rich-img" data-src="${src}" loading="lazy" onerror="this.style.display='none'"/>`);
   });
-  // Linki Markdown: [tekst](url)
+  // Linki Markdown: [tekst](url) — jeśli link prowadzi do PDF, wyświetl przycisk "Otwórz <nazwa>"
   s = s.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+|\/[^\s)]+)\)/g, (_, label, url) => {
     const href = normMediaPath(url);
+    if (/\.pdf(\?.*)?$/i.test(url)) {
+      const fName = getFileDisplayName(label || url);
+      return stash(`<a href="${href}" data-pdf-url="${href}" target="_blank" rel="noopener" class="btn btn--o btn--s" style="margin-top:8px;display:inline-flex;text-decoration:none">📄 Otwórz ${fName}</a>`);
+    }
     return stash(`<a href="${href}" target="_blank" rel="noopener" class="rich-link">${label}</a>`);
   });
 
@@ -1982,7 +2004,7 @@ function renderRichText(raw) {
     if (trimmed.startsWith('|') && trimmed.endsWith('|') && trimmed.length > 2) {
       if (/^\|[\s\-:|]+\|$/.test(trimmed)) continue; // separator wiersza nagłówka
       if (inUl) { html += '</ul>'; inUl = false; }
-      if (inOl) { html += '</ol>'; inUl = false; }
+      if (inOl) { html += '</ol>'; inOl = false; }
       const cells = trimmed.slice(1, -1).split('|').map(c => formatInlineRich(c.trim()));
       if (!inTable) {
         html += `<div class="rich-table-wrap"><table class="rich-table"><thead><tr>${cells.map(c => `<th>${c}</th>`).join('')}</tr></thead><tbody>`;
@@ -2010,7 +2032,8 @@ function renderList(title, data, subtitle, itemPrefix = 'Pytanie') {
     </div>` :
     data.map((q, idx) => {
       const hasAnswer = q.answer && String(q.answer).trim().length > 0;
-      const fileBtn = q.file ? `<a href="${q.file}" data-pdf-url="${q.file}" target="_blank" rel="noopener" class="btn btn--o btn--s" style="margin-top:10px;text-decoration:none">📄 Otwórz plik (PDF)</a>` : '';
+      const pdfName = q.file ? getFileDisplayName(q.file) : '';
+      const fileBtn = q.file ? `<a href="${q.file}" data-pdf-url="${q.file}" target="_blank" rel="noopener" class="btn btn--o btn--s" style="margin-top:10px;text-decoration:none">📄 Otwórz ${pdfName}</a>` : '';
       const linkBtn = q.link ? `<a href="${q.link}" target="_blank" rel="noopener" class="btn btn--a btn--s" style="margin-top:10px;text-decoration:none">🔗 Otwórz materiał / wideo</a>` : '';
       const extras = (fileBtn || linkBtn) ? `<div style="display:flex;flex-wrap:wrap;gap:8px">${fileBtn}${linkBtn}</div>` : '';
 
