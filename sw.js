@@ -5,14 +5,14 @@
    Zmień CACHE_VER przy każdym deployu kodu, aby wymusić odświeżenie.
    ═══════════════════════════════════════════════════════════════ */
 
-const CACHE_VER = 'udt-v62';
+const CACHE_VER = 'udt-v63';
 
 // Pliki powłoki aplikacji (HTML/CSS/JS) z Firebase; wszystkie treści (JSON, zdjęcia, ikony, PDF) idą bezpośrednio z GitHub
 const PRECACHE = [
   './',
   './index.html',
-  './style.css?v=62',
-  './app.js?v=62'
+  './style.css?v=63',
+  './app.js?v=63'
 ];
 
 // ─── INSTALL: Precache kluczowych plików ────────────────────
@@ -54,12 +54,12 @@ self.addEventListener('fetch', (e) => {
     return;
   }
 
-  // Pliki JSON z danymi (pytania, obsługa techniczna, materiały szkoleniowe)
-  // Network-First z fallbackiem do cache offline (zawsze świeże dane po zmianie w CMS!)
+  // Pliki JSON z danymi z GitHub (pytania, obsługa techniczna, materiały szkoleniowe)
+  // Network-First (bez niestandardowych nagłówków wywołujących błąd 403 CORS na GitHub Raw!) z fallbackiem do cache offline
   if (url.pathname.endsWith('.json')) {
     e.respondWith(
       caches.open(CACHE_VER).then(cache =>
-        fetch(e.request, { cache: 'no-cache' })
+        fetch(e.request)
           .then(res => {
             if (res && res.ok) {
               cache.put(e.request, res.clone());

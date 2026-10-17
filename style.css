@@ -2515,6 +2515,16 @@ body,
   font-size: .9rem;
 }
 
+.rich-content em,
+.rich-content i {
+  font-style: italic !important;
+}
+
+.rich-content strong,
+.rich-content b {
+  font-weight: 800 !important;
+}
+
 .rich-content .rich-p {
   margin: 0 0 10px 0;
 }

@@ -6,6 +6,16 @@ backend:
 media_folder: "img"
 public_folder: "/img"
 
+media_libraries:
+  default:
+    config:
+      transformations:
+        raster_image:
+          format: webp
+          quality: 85
+          width: 1600
+          height: 1600
+
 collections:
   # ==========================================
   # WSPÓLNE MATERIAŁY SZKOLENIOWE (UDT)
