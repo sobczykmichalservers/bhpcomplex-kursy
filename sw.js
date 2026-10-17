@@ -5,32 +5,40 @@
    Zmień CACHE_VER przy każdym deployu kodu, aby wymusić odświeżenie.
    ═══════════════════════════════════════════════════════════════ */
 
-const CACHE_VER = 'udt-v64';
+const CACHE_VER = 'udt-v65';
 
 // Pliki powłoki aplikacji (HTML/CSS/JS) z Firebase; wszystkie treści (JSON, zdjęcia, ikony, PDF) idą bezpośrednio z GitHub
 const PRECACHE = [
   './',
   './index.html',
-  './style.css?v=64',
-  './app.js?v=64'
+  './style.css?v=65',
+  './app.js?v=65'
 ];
 
 // ─── INSTALL: Precache kluczowych plików ────────────────────
 self.addEventListener('install', (e) => {
+  self.skipWaiting();
   e.waitUntil(
     caches.open(CACHE_VER).then(cache => cache.addAll(PRECACHE))
   );
-  self.skipWaiting();
 });
 
-// ─── ACTIVATE: Usuń stare wersje cache ──────────────────────
+// ─── ACTIVATE: Usuń stare wersje cache i odśwież otwarte karty ─
 self.addEventListener('activate', (e) => {
-  e.waitUntil(
-    caches.keys().then(keys =>
-      Promise.all(keys.filter(k => k !== CACHE_VER).map(k => caches.delete(k)))
-    )
-  );
-  self.clients.claim();
+  e.waitUntil((async () => {
+    const keys = await caches.keys();
+    const oldKeys = keys.filter(k => k !== CACHE_VER);
+    await Promise.all(oldKeys.map(k => caches.delete(k)));
+    await self.clients.claim();
+    if (oldKeys.length > 0) {
+      const windowClients = await self.clients.matchAll({ type: 'window' });
+      windowClients.forEach(client => {
+        if ('navigate' in client) {
+          client.navigate(client.url).catch(() => {});
+        }
+      });
+    }
+  })());
 });
 
 // ─── FETCH: Strategia cachowania ────────────────────────────
@@ -54,25 +62,41 @@ self.addEventListener('fetch', (e) => {
     return;
   }
 
-  // Pliki JSON z danymi z GitHub (pytania, obsługa techniczna, materiały szkoleniowe)
-  // Network-First (bez niestandardowych nagłówków wywołujących błąd 403 CORS na GitHub Raw!) z fallbackiem do cache offline
-  if (url.pathname.endsWith('.json')) {
+  // Nawigacja HTML (index.html) — Network-First z ominięciem cache przeglądarki i fallbackiem do cache offline
+  if (e.request.mode === 'navigate' || url.pathname === '/' || url.pathname.endsWith('/index.html')) {
     e.respondWith(
       caches.open(CACHE_VER).then(cache =>
-        fetch(e.request)
+        fetch(e.request, { cache: 'no-store' })
           .then(res => {
-            if (res && res.ok) {
-              cache.put(e.request, res.clone());
-            }
+            if (res && res.ok) cache.put('./index.html', res.clone());
             return res;
           })
-          .catch(() => cache.match(e.request))
+          .catch(() => cache.match('./index.html') || cache.match('./'))
       )
     );
     return;
   }
 
-  // Wszystkie pozostałe zasoby statyczne (HTML, CSS, JS, ikony SVG, zdjęcia WebP/PNG) — Cache-First
+  // Pliki JSON z danymi z GitHub (pytania, obsługa techniczna, materiały szkoleniowe)
+  // Network-First z zapisem pod czystym kluczem URL (bez ?t=...) dla pełnego wsparcia offline
+  if (url.pathname.endsWith('.json')) {
+    const cleanKey = url.origin + url.pathname;
+    e.respondWith(
+      caches.open(CACHE_VER).then(cache =>
+        fetch(e.request)
+          .then(res => {
+            if (res && res.ok) {
+              cache.put(cleanKey, res.clone());
+            }
+            return res;
+          })
+          .catch(() => cache.match(cleanKey))
+      )
+    );
+    return;
+  }
+
+  // Wszystkie pozostałe zasoby statyczne (CSS, JS, ikony SVG, zdjęcia WebP/PNG) — Cache-First (0 ms)
   e.respondWith(
     caches.match(e.request).then(cached => {
       if (cached) return cached;

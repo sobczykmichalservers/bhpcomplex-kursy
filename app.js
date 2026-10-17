@@ -646,20 +646,21 @@ async function getQs(c) {
   }
 
   const bhp = isBhpCat(c);
+  const cb = `?t=${Math.floor(Date.now() / 30000)}`;
   // Wspólna kolekcja "Materiały szkoleniowe" dla wszystkich kursów UDT (data/udt_materialy.json z GitHub)
   const udtMatPromise = bhp
     ? Promise.resolve({ items: [] })
     : (SHARED_UDT_MAT_CACHE
         ? Promise.resolve({ items: SHARED_UDT_MAT_CACHE })
-        : fetch(ghUrl('data/udt_materialy.json')).then(r => r.ok ? r.json() : { items: [] }));
+        : fetch(ghUrl('data/udt_materialy.json') + cb).then(r => r.ok ? r.json() : { items: [] }));
 
   // Równoległe pobieranie plików naraz bezpośrednio z GitHub (0 zużycia transferu Firebase!)
   const [qRes, opRes, wiRes, matRes, setRes] = await Promise.allSettled([
-    fetch(ghUrl(`data/${c}.json`)).then(r => r.ok ? r.json() : []),
-    bhp ? Promise.resolve({ items: [] }) : fetch(ghUrl(`data/${c}_opisy.json`)).then(r => r.ok ? r.json() : { items: [] }),
+    fetch(ghUrl(`data/${c}.json`) + cb).then(r => r.ok ? r.json() : []),
+    bhp ? Promise.resolve({ items: [] }) : fetch(ghUrl(`data/${c}_opisy.json`) + cb).then(r => r.ok ? r.json() : { items: [] }),
     udtMatPromise,
-    bhp ? fetch(ghUrl(`data/${c}_materialy.json`)).then(r => r.ok ? r.json() : { items: [] }) : Promise.resolve({ items: [] }),
-    fetch(ghUrl(`data/${c}_ustawienia.json`)).then(r => r.ok ? r.json() : { rules: [] })
+    bhp ? fetch(ghUrl(`data/${c}_materialy.json`) + cb).then(r => r.ok ? r.json() : { items: [] }) : Promise.resolve({ items: [] }),
+    fetch(ghUrl(`data/${c}_ustawienia.json`) + cb).then(r => r.ok ? r.json() : { rules: [] })
   ]);
 
   const data = qRes.status === 'fulfilled' ? qRes.value : [];
@@ -2131,9 +2132,19 @@ window.addEventListener('popstate', () => {
   go(S.group ? 'subcats' : 'home');
 });
 
-// ─── SERVICE WORKER (Cachowanie zasobów) ────────────────────────
+// ─── SERVICE WORKER (Automatyczna aktualizacja bez Ctrl+F5) ─────
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js').catch(() => {});
+  const hadController = !!navigator.serviceWorker.controller;
+  let refreshing = false;
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (hadController && !refreshing) {
+      refreshing = true;
+      window.location.reload();
+    }
+  });
+  navigator.serviceWorker.register('sw.js').then(reg => {
+    reg.update().catch(() => {});
+  }).catch(() => {});
 }
 
 // ─── POLITYKA PRYWATNOŚCI (Zamykanie Modala) ───────────────────
