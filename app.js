@@ -1744,13 +1744,13 @@ function vResult() {
   }
 }
 
-// ─── INTERAKTYWNY SPIS TREŚCI (TOC) ─────────────────────────
-function renderToc(data) {
+/// ─── INTERAKTYWNY SPIS TREŚCI (TOC) ─────────────────────────
+function renderToc(data, itemPrefix = 'Pytanie') {
   if (!data || data.length === 0) return '';
   const items = data.map((q, idx) => `
     <button type="button" class="toc-item ${idx === 0 ? 'active' : ''}" data-idx="${idx}">
       <span class="toc-item__num">${idx + 1}.</span>
-      <span class="toc-item__txt">${q.question || ('Pytanie ' + (idx + 1))}</span>
+      <span class="toc-item__txt">${q.question || (itemPrefix + ' ' + (idx + 1))}</span>
     </button>
   `).join('');
 
@@ -1982,7 +1982,7 @@ function renderRichText(raw) {
     if (trimmed.startsWith('|') && trimmed.endsWith('|') && trimmed.length > 2) {
       if (/^\|[\s\-:|]+\|$/.test(trimmed)) continue; // separator wiersza nagłówka
       if (inUl) { html += '</ul>'; inUl = false; }
-      if (inOl) { html += '</ol>'; inOl = false; }
+      if (inOl) { html += '</ol>'; inUl = false; }
       const cells = trimmed.slice(1, -1).split('|').map(c => formatInlineRich(c.trim()));
       if (!inTable) {
         html += `<div class="rich-table-wrap"><table class="rich-table"><thead><tr>${cells.map(c => `<th>${c}</th>`).join('')}</tr></thead><tbody>`;
@@ -2001,10 +2001,11 @@ function renderRichText(raw) {
   return html;
 }
 
-function renderList(title, data, subtitle) {
+function renderList(title, data, subtitle, itemPrefix = 'Pytanie') {
+  const isTemat = itemPrefix === 'Temat';
   let content = (!data || data.length === 0) ? `<div class="clip-empty">
       <div class="clip-empty__ic">${I.file}</div>
-      <h2>Brak pytań w tej zakładce</h2>
+      <h2>${isTemat ? 'Brak tematów w tej zakładce' : 'Brak pytań w tej zakładce'}</h2>
       <p>W tej kategorii nie dodano jeszcze żadnych pozycji.<br/>Dodaj je w panelu CMS (<strong>/admin</strong>), aby się tu pojawiły.</p>
     </div>` :
     data.map((q, idx) => {
@@ -2018,7 +2019,7 @@ function renderList(title, data, subtitle) {
         <div class="clip-card__top">
           <div class="clip-card__q">
             <div class="clip-card__hdr-row">
-              <span class="clip-card__num" style="margin-bottom:0">Pytanie ${idx + 1}</span>
+              <span class="clip-card__num" style="margin-bottom:0">${itemPrefix} ${idx + 1}</span>
               <button type="button" class="clip-card__top-link" title="Wróć do spisu treści">↑ Spis treści</button>
             </div>
             ${q.question}
@@ -2035,7 +2036,7 @@ function renderList(title, data, subtitle) {
     `;
     }).join('');
 
-  const tocHtml = (data && data.length > 0) ? renderToc(data) : '';
+  const tocHtml = (data && data.length > 0) ? renderToc(data, itemPrefix) : '';
 
   appEl.innerHTML = `<div>
     <header class="hdr"><h1 style="font-size:1.3rem">${title}</h1>
@@ -2073,15 +2074,15 @@ function renderList(title, data, subtitle) {
 }
 
 function vOpisyList() {
-  renderList("Obsługa techniczna codzienna", S.opisy, CATS[S.cat].label);
+  renderList("Obsługa techniczna codzienna", S.opisy, CATS[S.cat].label, "Pytanie");
 }
 
 function vWiedzaList() {
-  renderList("Materiały szkoleniowe", S.wiedza, CATS[S.cat].label);
+  renderList("Materiały szkoleniowe", S.wiedza, CATS[S.cat].label, "Temat");
 }
 
 function vMaterialyList() {
-  renderList("Materiały szkoleniowe", S.materialy, CATS[S.cat].label);
+  renderList("Materiały szkoleniowe", S.materialy, CATS[S.cat].label, "Temat");
 }
 
 // ═════════════════════════════════════════════════════════════
