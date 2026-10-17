@@ -5,21 +5,14 @@
    Zmień CACHE_VER przy każdym deployu kodu, aby wymusić odświeżenie.
    ═══════════════════════════════════════════════════════════════ */
 
-const CACHE_VER = 'udt-v61';
+const CACHE_VER = 'udt-v62';
 
-// Pliki do precache przy instalacji (ładowane od razu, 0 opóźnień)
+// Pliki powłoki aplikacji (HTML/CSS/JS) z Firebase; wszystkie treści (JSON, zdjęcia, ikony, PDF) idą bezpośrednio z GitHub
 const PRECACHE = [
   './',
   './index.html',
-  './style.css?v=61',
-  './app.js?v=61',
-  './img/bhp-icon.png',
-  './icons/wozki-podnosnikowe.svg',
-  './icons/wozki-specjalizowane.svg',
-  './icons/podesty.svg',
-  './icons/zurawie-przenosne.svg',
-  './icons/zurawie-samojezdne.svg',
-  './icons/suwnice.svg'
+  './style.css?v=62',
+  './app.js?v=62'
 ];
 
 // ─── INSTALL: Precache kluczowych plików ────────────────────

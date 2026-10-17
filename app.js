@@ -29,14 +29,22 @@ const IC_FILES = {
   bridge: 'suwnice.svg'
 };
 
-const GITHUB_RAW = 'https://raw.githubusercontent.com/bhpcomplexwloszczowa/zdjecia-udt/main';
-const LS_SVG_CACHE = 'udt_svg_v2';
+const GITHUB_RAW = 'https://raw.githubusercontent.com/sobczykmichalservers/bhpcomplex-kursy/main';
+const LS_SVG_CACHE = 'udt_svg_v3';
+
+function ghUrl(p) {
+  if (!p) return '';
+  const s = String(p).trim();
+  if (/^https?:\/\//i.test(s)) return s;
+  const clean = s.startsWith('/') ? s.substring(1) : s;
+  return `${GITHUB_RAW}/${clean}`;
+}
 
 async function loadSvg(el, name) {
   if (I[name]) { if (el) el.innerHTML = I[name]; return; }
   try {
-    let r = await fetch('icons/' + IC_FILES[name]);
-    if (!r.ok) r = await fetch(GITHUB_RAW + '/icons/' + IC_FILES[name]);
+    const r = await fetch(ghUrl('icons/' + IC_FILES[name]));
+    if (!r.ok) return;
     let svg = await r.text();
     svg = svg.replace(/<\?xml.*?\?>\s*/i, '')
       .replace(/fill="#[A-Fa-f0-9]{6}"/gi, 'fill="currentColor"')
@@ -85,7 +93,7 @@ const I = {
 
   // Ikony grup i podkategorii
   shield: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>`,
-  helmet: `<img src="img/bhp-icon.png" alt="Szkolenia BHP" class="bhp-ic-img" />`,
+  helmet: `<img src="${GITHUB_RAW}/img/bhp-icon.png" alt="Szkolenia BHP" class="bhp-ic-img" />`,
   file: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>`,
   users: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
 };
@@ -606,20 +614,20 @@ async function getQs(c) {
   }
 
   const bhp = isBhpCat(c);
-  // Wspólna kolekcja "Materiały szkoleniowe" dla wszystkich kursów UDT (data/udt_materialy.json)
+  // Wspólna kolekcja "Materiały szkoleniowe" dla wszystkich kursów UDT (data/udt_materialy.json z GitHub)
   const udtMatPromise = bhp
     ? Promise.resolve({ items: [] })
     : (SHARED_UDT_MAT_CACHE
         ? Promise.resolve({ items: SHARED_UDT_MAT_CACHE })
-        : fetch(`data/udt_materialy.json`).then(r => r.ok ? r.json() : { items: [] }));
+        : fetch(ghUrl('data/udt_materialy.json')).then(r => r.ok ? r.json() : { items: [] }));
 
-  // Równoległe pobieranie plików naraz (Promise.allSettled)
+  // Równoległe pobieranie plików naraz bezpośrednio z GitHub (0 zużycia transferu Firebase!)
   const [qRes, opRes, wiRes, matRes, setRes] = await Promise.allSettled([
-    fetch(`data/${c}.json`).then(r => r.ok ? r.json() : []),
-    bhp ? Promise.resolve({ items: [] }) : fetch(`data/${c}_opisy.json`).then(r => r.ok ? r.json() : { items: [] }),
+    fetch(ghUrl(`data/${c}.json`)).then(r => r.ok ? r.json() : []),
+    bhp ? Promise.resolve({ items: [] }) : fetch(ghUrl(`data/${c}_opisy.json`)).then(r => r.ok ? r.json() : { items: [] }),
     udtMatPromise,
-    bhp ? fetch(`data/${c}_materialy.json`).then(r => r.ok ? r.json() : { items: [] }) : Promise.resolve({ items: [] }),
-    fetch(`data/${c}_ustawienia.json`).then(r => r.ok ? r.json() : { rules: [] })
+    bhp ? fetch(ghUrl(`data/${c}_materialy.json`)).then(r => r.ok ? r.json() : { items: [] }) : Promise.resolve({ items: [] }),
+    fetch(ghUrl(`data/${c}_ustawienia.json`)).then(r => r.ok ? r.json() : { rules: [] })
   ]);
 
   const data = qRes.status === 'fulfilled' ? qRes.value : [];
@@ -633,14 +641,14 @@ async function getQs(c) {
     const item = { ...q };
     const v = parseInt(item.correct, 10);
     if (v >= 1) item.correct = v - 1;
-    if (item.image && item.image.startsWith('/img/')) item.image = item.image.substring(1);
+    if (item.image) item.image = ghUrl(item.image);
     return item;
   });
 
   const normItems = (arr) => (arr || []).map(q => {
     const item = { ...q };
-    if (item.image && item.image.startsWith('/img/')) item.image = item.image.substring(1);
-    if (item.file && item.file.startsWith('/img/')) item.file = item.file.substring(1);
+    if (item.image) item.image = ghUrl(item.image);
+    if (item.file) item.file = ghUrl(item.file);
     return item;
   });
 
@@ -782,14 +790,13 @@ function vHome() {
 
     // Render ikon
     if (grp.icons) {
-      // Grupa z wieloma ikonkami (np. UDT) — ładowane lokalnie z ./icons/ (0ms z cache)
+      // Grupa z wieloma ikonkami (np. UDT) — ładowane z GitHub (0 zużycia Firebase + cache w SW)
       const icEl = d.querySelector('.crd__ic');
       icEl.classList.add('crd__ic--multi');
       icEl.innerHTML = '';
       grp.icons.forEach(file => {
         const img = document.createElement('img');
-        img.src = 'icons/' + file;
-        img.onerror = () => { img.onerror = null; img.src = GITHUB_RAW + '/icons/' + file; };
+        img.src = ghUrl('icons/' + file);
         img.alt = '';
         img.className = 'crd__ic-img';
         icEl.appendChild(img);
@@ -1825,9 +1832,7 @@ function bindToc(parentScrollEl, prefix = 'clip-') {
 
 // ─── FORMATOWANIE TEKSTU BOGATEGO (Markdown / Rich Text z CMS) ───
 function normMediaPath(u) {
-  if (!u) return '';
-  const s = String(u).trim();
-  return s.startsWith('/img/') ? s.substring(1) : s;
+  return ghUrl(u);
 }
 
 function formatInlineRich(line) {
@@ -1971,7 +1976,7 @@ function renderList(title, data, subtitle) {
     </div>` :
     data.map((q, idx) => {
       const hasAnswer = q.answer && String(q.answer).trim().length > 0;
-      const fileBtn = q.file ? `<a href="${q.file}" target="_blank" rel="noopener" class="btn btn--o btn--s" style="margin-top:10px;text-decoration:none">📄 Otwórz plik (PDF)</a>` : '';
+      const fileBtn = q.file ? `<a href="${q.file}" data-pdf-url="${q.file}" target="_blank" rel="noopener" class="btn btn--o btn--s" style="margin-top:10px;text-decoration:none">📄 Otwórz plik (PDF)</a>` : '';
       const linkBtn = q.link ? `<a href="${q.link}" target="_blank" rel="noopener" class="btn btn--a btn--s" style="margin-top:10px;text-decoration:none">🔗 Otwórz materiał / wideo</a>` : '';
       const extras = (fileBtn || linkBtn) ? `<div style="display:flex;flex-wrap:wrap;gap:8px">${fileBtn}${linkBtn}</div>` : '';
 
@@ -2010,6 +2015,24 @@ function renderList(title, data, subtitle) {
   </div>`;
 
   bindImgs(appEl);
+  appEl.querySelectorAll('[data-pdf-url]').forEach(a => {
+    a.onclick = async (e) => {
+      const url = a.dataset.pdfUrl;
+      if (!url || !url.toLowerCase().endsWith('.pdf')) return;
+      e.preventDefault();
+      const win = window.open('', '_blank');
+      try {
+        const res = await fetch(url);
+        const buf = await res.arrayBuffer();
+        const blob = new Blob([buf], { type: 'application/pdf' });
+        const blobUrl = URL.createObjectURL(blob);
+        if (win) win.location.href = blobUrl;
+        else window.open(blobUrl, '_blank');
+      } catch (_) {
+        if (win) win.location.href = url;
+      }
+    };
+  });
   if (data && data.length > 0) {
     bindToc(appEl.firstElementChild, 'clip-');
   }
