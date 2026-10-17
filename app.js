@@ -1832,34 +1832,46 @@ function normMediaPath(u) {
 
 function formatInlineRich(line) {
   let s = String(line);
+  const tags = [];
+  const stash = (html) => {
+    const token = `\x00TAG${tags.length}\x00`;
+    tags.push(html);
+    return token;
+  };
+
   // Obrazy Markdown: ![alt](url)
   s = s.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (_, alt, rawUrl) => {
     const src = normMediaPath(rawUrl.replace(/^["']|["']$/g, '').split(/\s+/)[0]);
     const cleanAlt = (alt || 'Ilustracja').replace(/"/g, '&quot;');
-    return `<img src="${src}" alt="${cleanAlt}" class="q-img rich-img" data-src="${src}" loading="lazy" onerror="this.style.display='none'"/>`;
+    return stash(`<img src="${src}" alt="${cleanAlt}" class="q-img rich-img" data-src="${src}" loading="lazy" onerror="this.style.display='none'"/>`);
   });
   // Obrazy HTML: <img ... src="..." ...>
   s = s.replace(/<img\s+[^>]*src=["']([^"']+)["'][^>]*>/gi, (_, rawUrl) => {
     const src = normMediaPath(rawUrl);
-    return `<img src="${src}" alt="Ilustracja" class="q-img rich-img" data-src="${src}" loading="lazy" onerror="this.style.display='none'"/>`;
+    return stash(`<img src="${src}" alt="Ilustracja" class="q-img rich-img" data-src="${src}" loading="lazy" onerror="this.style.display='none'"/>`);
   });
   // Linki Markdown: [tekst](url)
   s = s.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+|\/[^\s)]+)\)/g, (_, label, url) => {
     const href = normMediaPath(url);
-    return `<a href="${href}" target="_blank" rel="noopener" class="rich-link">${label}</a>`;
+    return stash(`<a href="${href}" target="_blank" rel="noopener" class="rich-link">${label}</a>`);
   });
-  // Pogrubienie + kursywa: ***tekst***
+
+  // Pogrubienie + kursywa: ***tekst***, **_tekst_**, _**tekst**_
   s = s.replace(/\*\*\*([^*]+)\*\*\*/g, '<strong><em>$1</em></strong>');
+  s = s.replace(/\*\*_([^_]+)_\*\*/g, '<strong><em>$1</em></strong>');
+  s = s.replace(/_\*\*([^*]+)\*\*_/g, '<strong><em>$1</em></strong>');
   // Pogrubienie: **tekst** lub __tekst__
   s = s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
   s = s.replace(/__([^_]+)__/g, '<strong>$1</strong>');
-  // Kursywa: *tekst*
+  // Kursywa: *tekst* lub _tekst_
   s = s.replace(/(^|[^*])\*([^*\n]+)\*(?!\*)/g, '$1<em>$2</em>');
+  s = s.replace(/(^|[^_])_([^_\n]+)_(?!_)/g, '$1<em>$2</em>');
   // Przekreślenie: ~~tekst~~
   s = s.replace(/~~([^~]+)~~/g, '<del>$1</del>');
   // Kod inline: `tekst`
   s = s.replace(/`([^`]+)`/g, '<code class="rich-code">$1</code>');
-  return s;
+
+  return s.replace(/\x00TAG(\d+)\x00/g, (_, idx) => tags[Number(idx)] || '');
 }
 
 function renderRichText(raw) {

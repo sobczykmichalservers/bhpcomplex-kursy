@@ -5,14 +5,14 @@
    Zmień CACHE_VER przy każdym deployu kodu, aby wymusić odświeżenie.
    ═══════════════════════════════════════════════════════════════ */
 
-const CACHE_VER = 'udt-v60';
+const CACHE_VER = 'udt-v61';
 
 // Pliki do precache przy instalacji (ładowane od razu, 0 opóźnień)
 const PRECACHE = [
   './',
   './index.html',
-  './style.css?v=60',
-  './app.js?v=60',
+  './style.css?v=61',
+  './app.js?v=61',
   './img/bhp-icon.png',
   './icons/wozki-podnosnikowe.svg',
   './icons/wozki-specjalizowane.svg',
@@ -61,22 +61,19 @@ self.addEventListener('fetch', (e) => {
     return;
   }
 
-  // Pliki JSON z danymi (pytania, obsługa techniczna, baza wiedzy, materiały)
-  // Stale-While-Revalidate: jeśli są w cache -> zwróć NATYCHMIAST (0 ms!), a w tle odśwież cache
+  // Pliki JSON z danymi (pytania, obsługa techniczna, materiały szkoleniowe)
+  // Network-First z fallbackiem do cache offline (zawsze świeże dane po zmianie w CMS!)
   if (url.pathname.endsWith('.json')) {
     e.respondWith(
       caches.open(CACHE_VER).then(cache =>
-        cache.match(e.request).then(cached => {
-          const networkFetch = fetch(e.request)
-            .then(res => {
-              if (res && res.ok) {
-                cache.put(e.request, res.clone());
-              }
-              return res;
-            })
-            .catch(() => cached);
-          return cached || networkFetch;
-        })
+        fetch(e.request, { cache: 'no-cache' })
+          .then(res => {
+            if (res && res.ok) {
+              cache.put(e.request, res.clone());
+            }
+            return res;
+          })
+          .catch(() => cache.match(e.request))
       )
     );
     return;
