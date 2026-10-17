@@ -592,7 +592,7 @@ async function verifyAuth(grp, cat, login, pass) {
 
 const Q_CACHE = {};
 const SESSION_AUTH_OK = {};
-let SHARED_OTC_CACHE = null;
+let SHARED_UDT_MAT_CACHE = null;
 
 async function getQs(c) {
   if (Q_CACHE[c]) {
@@ -606,18 +606,18 @@ async function getQs(c) {
   }
 
   const bhp = isBhpCat(c);
-  // Wspólna kolekcja "Obsługa techniczna codzienna" dla wszystkich kursów UDT (data/udt_obsluga.json)
-  const otcPromise = bhp
+  // Wspólna kolekcja "Materiały szkoleniowe" dla wszystkich kursów UDT (data/udt_materialy.json)
+  const udtMatPromise = bhp
     ? Promise.resolve({ items: [] })
-    : (SHARED_OTC_CACHE
-        ? Promise.resolve({ items: SHARED_OTC_CACHE })
-        : fetch(`data/udt_obsluga.json`).then(r => r.ok ? r.json() : { items: [] }));
+    : (SHARED_UDT_MAT_CACHE
+        ? Promise.resolve({ items: SHARED_UDT_MAT_CACHE })
+        : fetch(`data/udt_materialy.json`).then(r => r.ok ? r.json() : { items: [] }));
 
   // Równoległe pobieranie plików naraz (Promise.allSettled)
   const [qRes, opRes, wiRes, matRes, setRes] = await Promise.allSettled([
     fetch(`data/${c}.json`).then(r => r.ok ? r.json() : []),
-    otcPromise,
-    bhp ? Promise.resolve({ items: [] }) : fetch(`data/${c}_wiedza.json`).then(r => r.ok ? r.json() : { items: [] }),
+    bhp ? Promise.resolve({ items: [] }) : fetch(`data/${c}_opisy.json`).then(r => r.ok ? r.json() : { items: [] }),
+    udtMatPromise,
     bhp ? fetch(`data/${c}_materialy.json`).then(r => r.ok ? r.json() : { items: [] }) : Promise.resolve({ items: [] }),
     fetch(`data/${c}_ustawienia.json`).then(r => r.ok ? r.json() : { rules: [] })
   ]);
@@ -645,8 +645,8 @@ async function getQs(c) {
   });
 
   const opisy = normItems(dOp.items);
-  if (!bhp && opisy.length > 0) SHARED_OTC_CACHE = opisy;
   const wiedza = normItems(dWi.items);
+  if (!bhp && wiedza.length > 0) SHARED_UDT_MAT_CACHE = wiedza;
   const materialy = normItems(dMat.items);
 
   const rules = {
@@ -1086,8 +1086,8 @@ function vMenu() {
       <button class="mbtn" id="mg">
         <div class="mbtn__ic mbtn__ic--b">${I.file}</div>
         <div class="mbtn__body">
-          <div class="mbtn__t">Baza wiedzy</div>
-          <div class="mbtn__d">${S.wiedza && S.wiedza.length ? S.wiedza.length + ' pytań w bazie' : 'Dodatkowe pytania i zagadnienia'}</div>
+          <div class="mbtn__t">Materiały szkoleniowe</div>
+          <div class="mbtn__d">${S.wiedza && S.wiedza.length ? S.wiedza.length + ' zagadnień w bazie' : 'Materiały i zagadnienia szkoleniowe'}</div>
         </div>
       </button>
       <button class="mbtn mbtn--hard" id="md">
@@ -2009,7 +2009,7 @@ function vOpisyList() {
 }
 
 function vWiedzaList() {
-  renderList("Baza wiedzy", S.wiedza, CATS[S.cat].label);
+  renderList("Materiały szkoleniowe", S.wiedza, CATS[S.cat].label);
 }
 
 function vMaterialyList() {

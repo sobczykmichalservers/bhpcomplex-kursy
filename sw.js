@@ -5,14 +5,14 @@
    Zmień CACHE_VER przy każdym deployu kodu, aby wymusić odświeżenie.
    ═══════════════════════════════════════════════════════════════ */
 
-const CACHE_VER = 'udt-v59';
+const CACHE_VER = 'udt-v60';
 
 // Pliki do precache przy instalacji (ładowane od razu, 0 opóźnień)
 const PRECACHE = [
   './',
   './index.html',
-  './style.css?v=59',
-  './app.js?v=59',
+  './style.css?v=60',
+  './app.js?v=60',
   './img/bhp-icon.png',
   './icons/wozki-podnosnikowe.svg',
   './icons/wozki-specjalizowane.svg',

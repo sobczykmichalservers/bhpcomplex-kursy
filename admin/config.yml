@@ -8,16 +8,16 @@ public_folder: "/img"
 
 collections:
   # ==========================================
-  # WSPÓLNA OBSŁUGA TECHNICZNA CODZIENNA (UDT)
+  # WSPÓLNE MATERIAŁY SZKOLENIOWE (UDT)
   # ==========================================
-  - name: "udt-obsluga"
-    label: "🛠️ UDT: Obsługa techniczna codzienna (Wspólna)"
+  - name: "udt-materialy"
+    label: "📚 UDT: Materiały szkoleniowe (Wspólne)"
     files:
-      - name: "otc"
-        label: "Obsługa techniczna codzienna (wszystkie kursy UDT)"
-        file: "data/udt_obsluga.json"
+      - name: "materialy"
+        label: "Materiały szkoleniowe (wszystkie kursy UDT)"
+        file: "data/udt_materialy.json"
         fields:
-          - label: "Lista pytań i zagadnień (wyświetlana w każdym kursie UDT)"
+          - label: "Lista zagadnień (wyświetlana w każdym kursie UDT)"
             name: "items"
             widget: "list"
             summary: "Pytanie: {{fields.question}}"
@@ -52,11 +52,11 @@ collections:
                 widget: "list"
                 field: { label: "Odpowiedź", name: "option", widget: "string" }
               - { label: "Poprawna odpowiedź (1=A, 2=B, 3=C, 4=D)", name: "correct", widget: "number", min: 1, max: 4 }
-      - name: "wiedza"
-        label: "Baza wiedzy"
-        file: "data/wozki-podnosnikowe_wiedza.json"
+      - name: "opisy"
+        label: "Obsługa techniczna codzienna"
+        file: "data/wozki-podnosnikowe_opisy.json"
         fields:
-          - label: "Lista pytań (Baza wiedzy)"
+          - label: "Lista pytań (Obsługa techniczna codzienna)"
             name: "items"
             widget: "list"
             summary: "Pytanie: {{fields.question}}"
@@ -65,6 +65,8 @@ collections:
               - { label: "Pytanie / Zagadnienie", name: "question", widget: "string" }
               - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false }
               - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false }
+              - { label: "Link do wideo / strony (opcjonalnie)", name: "link", widget: "string", required: false }
       - name: "exam"
         label: "Ustawienia Egzaminu"
         file: "data/wozki-podnosnikowe_ustawienia.json"
@@ -97,11 +99,11 @@ collections:
                 widget: "list"
                 field: { label: "Odpowiedź", name: "option", widget: "string" }
               - { label: "Poprawna odpowiedź (1=A, 2=B, 3=C, 4=D)", name: "correct", widget: "number", min: 1, max: 4 }
-      - name: "wiedza"
-        label: "Baza wiedzy"
-        file: "data/wozki-specjalizowane_wiedza.json"
+      - name: "opisy"
+        label: "Obsługa techniczna codzienna"
+        file: "data/wozki-specjalizowane_opisy.json"
         fields:
-          - label: "Lista pytań (Baza wiedzy)"
+          - label: "Lista pytań (Obsługa techniczna codzienna)"
             name: "items"
             widget: "list"
             summary: "Pytanie: {{fields.question}}"
@@ -110,6 +112,8 @@ collections:
               - { label: "Pytanie / Zagadnienie", name: "question", widget: "string" }
               - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false }
               - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false }
+              - { label: "Link do wideo / strony (opcjonalnie)", name: "link", widget: "string", required: false }
       - name: "exam"
         label: "Ustawienia Egzaminu"
         file: "data/wozki-specjalizowane_ustawienia.json"
@@ -142,11 +146,11 @@ collections:
                 widget: "list"
                 field: { label: "Odpowiedź", name: "option", widget: "string" }
               - { label: "Poprawna odpowiedź (1=A, 2=B, 3=C, 4=D)", name: "correct", widget: "number", min: 1, max: 4 }
-      - name: "wiedza"
-        label: "Baza wiedzy"
-        file: "data/podesty_wiedza.json"
+      - name: "opisy"
+        label: "Obsługa techniczna codzienna"
+        file: "data/podesty_opisy.json"
         fields:
-          - label: "Lista pytań (Baza wiedzy)"
+          - label: "Lista pytań (Obsługa techniczna codzienna)"
             name: "items"
             widget: "list"
             summary: "Pytanie: {{fields.question}}"
@@ -155,6 +159,8 @@ collections:
               - { label: "Pytanie / Zagadnienie", name: "question", widget: "string" }
               - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false }
               - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false }
+              - { label: "Link do wideo / strony (opcjonalnie)", name: "link", widget: "string", required: false }
       - name: "exam"
         label: "Ustawienia Egzaminu"
         file: "data/podesty_ustawienia.json"
@@ -187,11 +193,11 @@ collections:
                 widget: "list"
                 field: { label: "Odpowiedź", name: "option", widget: "string" }
               - { label: "Poprawna odpowiedź (1=A, 2=B, 3=C, 4=D)", name: "correct", widget: "number", min: 1, max: 4 }
-      - name: "wiedza"
-        label: "Baza wiedzy"
-        file: "data/suwnice_wiedza.json"
+      - name: "opisy"
+        label: "Obsługa techniczna codzienna"
+        file: "data/suwnice_opisy.json"
         fields:
-          - label: "Lista pytań (Baza wiedzy)"
+          - label: "Lista pytań (Obsługa techniczna codzienna)"
             name: "items"
             widget: "list"
             summary: "Pytanie: {{fields.question}}"
@@ -200,6 +206,8 @@ collections:
               - { label: "Pytanie / Zagadnienie", name: "question", widget: "string" }
               - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false }
               - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false }
+              - { label: "Link do wideo / strony (opcjonalnie)", name: "link", widget: "string", required: false }
       - name: "exam"
         label: "Ustawienia Egzaminu"
         file: "data/suwnice_ustawienia.json"
@@ -232,11 +240,11 @@ collections:
                 widget: "list"
                 field: { label: "Odpowiedź", name: "option", widget: "string" }
               - { label: "Poprawna odpowiedź (1=A, 2=B, 3=C, 4=D)", name: "correct", widget: "number", min: 1, max: 4 }
-      - name: "wiedza"
-        label: "Baza wiedzy"
-        file: "data/zurawie-przenosne_wiedza.json"
+      - name: "opisy"
+        label: "Obsługa techniczna codzienna"
+        file: "data/zurawie-przenosne_opisy.json"
         fields:
-          - label: "Lista pytań (Baza wiedzy)"
+          - label: "Lista pytań (Obsługa techniczna codzienna)"
             name: "items"
             widget: "list"
             summary: "Pytanie: {{fields.question}}"
@@ -245,6 +253,8 @@ collections:
               - { label: "Pytanie / Zagadnienie", name: "question", widget: "string" }
               - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false }
               - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false }
+              - { label: "Link do wideo / strony (opcjonalnie)", name: "link", widget: "string", required: false }
       - name: "exam"
         label: "Ustawienia Egzaminu"
         file: "data/zurawie-przenosne_ustawienia.json"
@@ -277,11 +287,11 @@ collections:
                 widget: "list"
                 field: { label: "Odpowiedź", name: "option", widget: "string" }
               - { label: "Poprawna odpowiedź (1=A, 2=B, 3=C, 4=D)", name: "correct", widget: "number", min: 1, max: 4 }
-      - name: "wiedza"
-        label: "Baza wiedzy"
-        file: "data/zurawie-samojezdne_wiedza.json"
+      - name: "opisy"
+        label: "Obsługa techniczna codzienna"
+        file: "data/zurawie-samojezdne_opisy.json"
         fields:
-          - label: "Lista pytań (Baza wiedzy)"
+          - label: "Lista pytań (Obsługa techniczna codzienna)"
             name: "items"
             widget: "list"
             summary: "Pytanie: {{fields.question}}"
@@ -290,6 +300,8 @@ collections:
               - { label: "Pytanie / Zagadnienie", name: "question", widget: "string" }
               - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false }
               - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false }
+              - { label: "Link do wideo / strony (opcjonalnie)", name: "link", widget: "string", required: false }
       - name: "exam"
         label: "Ustawienia Egzaminu"
         file: "data/zurawie-samojezdne_ustawienia.json"
