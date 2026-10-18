@@ -3,7 +3,7 @@
     {
       "id": 1,
       "question": "Sprawdzenie dokumentacji pod kątem możliwości eksploatacji urządzenia.",
-      "answer": "Sprawdzamy decyzję wydaną przez UDT. Powinna być:\n\n- aktualna (zwróć uwagę do kiedy jest ważna),\n- pozytywna - zezwalająca na eksploatację,\n- powinna dotyczyć urządzenia, które chcemy obsługiwać (sprawdź nr fabryczny podany na decyzji z numerem fabrycznym na tabliczce znamionowej urządzenia)\n![Decyzja wydana przez inspektora UDT](/img/Decyzja%20pozytywna%20UDT.webp \"Decyzja wydana przez inspektora UDT\")",
+      "answer": "Sprawdzamy decyzję wydaną przez UDT. Powinna być:\n\n- aktualna (zwróć uwagę do kiedy jest ważna),\n- pozytywna - zezwalająca na eksploatację,\n- powinna dotyczyć urządzenia, które chcemy obsługiwać (sprawdź nr fabryczny podany na decyzji z numerem fabrycznym na tabliczce znamionowej urządzenia)\n![](/img/Decyzja%20pozytywna%20UDT.webp)\n\nSprawdzamy dziennik konserwacji prowadzony przez uprawnionego konserwatora:\n\n-",
       "image": "",
       "file": "",
       "link": ""
