@@ -23,6 +23,22 @@
       "image": "",
       "file": "",
       "link": ""
+    },
+    {
+      "id": 5,
+      "question": "Ocena stanu technicznego układu jezdnego.",
+      "answer": "Sprawdzić koła jezdne, zamocowanie, kompletność śrub, stan ogumienia, ewentualne ciśnienie, sprawdzić mechanizm jazdy i skrętu (ruchy na panelu sterowania muszą odpowiadać rzeczywistym ruchom)",
+      "image": "",
+      "file": "",
+      "link": ""
+    },
+    {
+      "id": 5,
+      "question": "Sprawdzenie prawidłowości działania dolnego pulpitu sterowniczego.",
+      "answer": "Sprawdzenie prawidłowości działania dolnego pulpitu sterowniczego. \n\n\n- Sprawdzić stan obudowy (pęknięcia), \n- Kontrola przełącznika podnoszenia, po zwolnieniu powinien wrócić do pozycji 0, kontrola wyłącznika awaryjnego, , \n- stacyjka zabezpiecza przed dostępem osób niepowołanych, pozwala na zmianę sterowania góra lub dół – może działać tylko jeden pulpit (tzn. blokada krzyżowa)",
+      "image": "",
+      "file": "",
+      "link": ""
     }
   ]
 }
