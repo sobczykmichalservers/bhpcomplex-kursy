@@ -10,9 +10,17 @@
     },
     {
       "id": 2,
-      "question": "testowe nowe",
-      "answer": "testowe 2",
+      "question": "Sprawdzenie zgodności oznakowania urządzenia, omówienie znaczenia wskazanych  piktogramów i oznakowania",
+      "answer": "Omawiamy piktogramy znajdujące się na podeście:\n\n- tabliczka znamionowa (piktogram identyfikacyjny)\n\n![](/img/tablicza_podest_JLG.webp)",
       "image": "/img/bhp-icon.png",
+      "file": "",
+      "link": ""
+    },
+    {
+      "id": null,
+      "question": "Ocena stanu technicznego konstrukcji nośnej podestu oraz kompletności wyposażenia platformy roboczej",
+      "answer": "Sprawdzić czy nie ma widocznych uszkodzeń, pęknięć, czy sworznie mają zabezpieczenia przed przesunięciem (segery) , połączenia spawane, śrubowe, kontrola konstrukcji barierek na platformie, kontrola zamocowania kół",
+      "image": "",
       "file": "",
       "link": ""
     }
