@@ -11,7 +11,7 @@
     {
       "id": 2,
       "question": "Sprawdzenie zgodności oznakowania urządzenia, omówienie znaczenia wskazanych piktogramów i oznakowań.",
-      "answer": "Omawiamy piktogramy znajdujące się na podeście:\n\n- **tabliczka znamionowa (piktogram identyfikacyjny)**\n\n![](/img/jlg%20tabliczka%20znamionowa.webp)\n\n- **awaryjne opuszczanie**\n\n![](/img/jlg%20awaryjne%20opuszcz.webp)\n\n- **ryzyko zmiażdżenia przez mechanizm nożycowy**\n\n![](/img/jlg%20piktogram%20gilotyna.webp)\n\n- **ryzyko porażenia prądem, zachowanie bezpiecznej odległości od linii energetycznych**\n\n![](/img/bhp-icon.png)\n\n- **warunki pracy (piktogram na platformie roboczej)**\n\n![](/img/jlg%20piktogram%20na%20pode%C5%9Bcie.webp)",
+      "answer": "Omawiamy piktogramy znajdujące się na podeście:\n\n- **tabliczka znamionowa (piktogram identyfikacyjny zlokalizowany obok czerwonej dźwigni awaryjnego opuszczania)**\n\n![](/img/jlg%20tabliczka%20znamionowa.webp)\n\n- **awaryjne opuszczanie**\n\n![](/img/jlg%20awaryjne%20opuszcz.webp)\n\n- **ryzyko zmiażdżenia przez mechanizm nożycowy**\n\n![](/img/jlg%20piktogram%20gilotyna.webp)\n\n- **ryzyko porażenia prądem, zachowanie bezpiecznej odległości od linii energetycznych**\n\n![](/img/bhp-icon.png)\n\n- **warunki pracy (piktogram na platformie roboczej)**\n\n![](/img/jlg%20piktogram%20na%20pode%C5%9Bcie.webp)",
       "image": "",
       "file": "",
       "link": ""
@@ -44,6 +44,14 @@
       "id": 6,
       "question": "Sprawdzenie poprawności działania górnego pulpitu sterowniczego.",
       "answer": "Sprawdzić stan obudowy (pęknięcia), Sprawdzić oznaczenia na pulpicie – muszą odpowiadać rzeczywistym ruchom urządzenia, joistik powinien wracać po zwolnieniu do pozycji zero, jeżeli nie przytrzymamy przełącznika spustowego joistik nie powinien zadziałać.",
+      "image": "",
+      "file": "",
+      "link": ""
+    },
+    {
+      "id": 7,
+      "question": "Sprawdzenie prawidłowości działania układu awaryjnego opuszczania platformy roboczej.",
+      "answer": "- Pociągnąć za linkę awaryjnego opuszczania (czerwona na dole podestu obok tabliczki znamionowej),\n\n![](/img/jlg%20awaryjne%20opuszcz.webp)\n\n- Przed awaryjnym opuszczeniem sprawdzić czy nie ma nikogo dookoła podestu, z\n- Zwrócić szczególną uwaga na możliwość zmiażdżenia drugiej ręki.",
       "image": "",
       "file": "",
       "link": ""
