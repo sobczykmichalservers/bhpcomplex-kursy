@@ -756,6 +756,7 @@ function buildRoutePath(v) {
 function go(v, pushHistory = true) {
   if (S.eInt && v !== 'exam') { clearInterval(S.eInt); S.eInt = null; }
   if (v !== 'cheat') S.cheatSeqAudio = false;
+  stopSharedAudio();
   appEl.querySelectorAll('audio').forEach(a => { try { a.pause(); } catch (_) {} });
   S.view = v;
 
@@ -2064,6 +2065,43 @@ function renderRichText(raw) {
   return html;
 }
 
+// ─── WSPÓŁDZIELONY SILNIK AUDIO (0 znaczników <audio> w DOM = 0 obciążenia telefonu!) ───
+let SHARED_AUDIO = null;
+const IC_AUD = {
+  play: `<svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>`,
+  pause: `<svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>`,
+  stop: `<svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><rect x="5" y="5" width="14" height="14" rx="2"/></svg>`,
+  prev: `<svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><polygon points="19 20 9 12 19 4 19 20"/><rect x="5" y="4" width="2.5" height="16" rx="1"/></svg>`,
+  next: `<svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><polygon points="5 4 15 12 5 20 5 4"/><rect x="16.5" y="4" width="2.5" height="16" rx="1"/></svg>`,
+  spk: `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>`
+};
+
+function getSharedAudio() {
+  if (!SHARED_AUDIO) {
+    SHARED_AUDIO = new Audio();
+    SHARED_AUDIO.preload = 'none';
+  }
+  return SHARED_AUDIO;
+}
+
+function stopSharedAudio() {
+  if (SHARED_AUDIO) {
+    try {
+      SHARED_AUDIO.pause();
+      SHARED_AUDIO.onended = null;
+      SHARED_AUDIO.ontimeupdate = null;
+      SHARED_AUDIO.onplay = null;
+      SHARED_AUDIO.onpause = null;
+    } catch (_) {}
+  }
+}
+
+function fmtAudioTime(sec) {
+  if (!isFinite(sec) || sec < 0) return '0:00';
+  const s = Math.floor(sec);
+  return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+}
+
 function renderList(title, data, subtitle, itemPrefix = 'Pytanie', allowAudio = false) {
   const isTemat = itemPrefix === 'Temat';
   const audioEntries = allowAudio ? (data || [])
@@ -2078,13 +2116,9 @@ function renderList(title, data, subtitle, itemPrefix = 'Pytanie', allowAudio = 
     data.map((q, idx) => {
       const hasAnswer = q.answer && String(q.answer).trim().length > 0;
       const hasAudio = allowAudio && q.audio && String(q.audio).trim().length > 0;
-      const audioHtml = hasAudio ? `<div class="q-audio-box">
-          <div class="q-audio-top">
-            <button type="button" class="btn btn--a btn--s q-audio-single-btn" data-single-audio-idx="${idx}">▶️ Odsłuchaj pytanie</button>
-            <span class="q-audio-lbl">🎧 ${getFileDisplayName(q.audio)}</span>
-          </div>
-          <audio controls preload="none" class="q-audio-el" data-card-idx="${idx}" src="${q.audio}"></audio>
-        </div>` : '';
+      const singleAudioPill = hasAudio ? `<button type="button" class="q-audio-pill" data-single-audio-idx="${idx}" data-audio-src="${q.audio}" title="Odsłuchaj to pytanie">
+          ${IC_AUD.play} <span class="q-audio-pill__txt">Odsłuchaj</span>
+        </button>` : '';
       const pdfName = q.file ? getFileDisplayName(q.file) : '';
       const fileBtn = q.file ? `<a href="${q.file}" data-pdf-url="${q.file}" target="_blank" rel="noopener" class="btn btn--o btn--s" style="margin-top:10px;text-decoration:none">📄 Otwórz ${pdfName}</a>` : '';
       const linkBtn = q.link ? `<a href="${q.link}" target="_blank" rel="noopener" class="btn btn--a btn--s" style="margin-top:10px;text-decoration:none">🔗 Otwórz materiał / wideo</a>` : '';
@@ -2095,14 +2129,16 @@ function renderList(title, data, subtitle, itemPrefix = 'Pytanie', allowAudio = 
         <div class="clip-card__top">
           <div class="clip-card__q">
             <div class="clip-card__hdr-row">
-              <span class="clip-card__num" style="margin-bottom:0">${itemPrefix} ${idx + 1}</span>
+              <div class="clip-card__hdr-left">
+                <span class="clip-card__num" style="margin-bottom:0">${itemPrefix} ${idx + 1}</span>
+                ${singleAudioPill}
+              </div>
               <button type="button" class="clip-card__top-link" title="Wróć do spisu treści">↑ Spis treści</button>
             </div>
             ${q.question}
           </div>
         </div>
         ${q.image ? `<img src="${q.image}" alt="Ilustracja" class="q-img" data-src="${q.image}" onerror="this.style.display='none'"/>` : ''}
-        ${audioHtml}
         ${hasAnswer ? `<div class="odp-lista">
           <div class="odp-btn odp-btn--ok rich-ans-box" style="cursor:default;align-items:flex-start">
             <div class="odp-btn__t rich-content">${renderRichText(q.answer)}</div>
@@ -2113,20 +2149,23 @@ function renderList(title, data, subtitle, itemPrefix = 'Pytanie', allowAudio = 
     `;
     }).join('');
 
-  // Panel obsługi nagrań wyświetla się WYŁĄCZNIE wtedy, gdy w Obsłudze technicznej codziennej dodano choć 1 plik audio!
+  // Kompaktowy pasek pomiędzy Spisem treści a pytaniami (wyłącznie gdy jest choć 1 nagranie)
   const playlistHtml = audioEntries.length > 0 ? `
-    <div class="audio-playlist" id="audio-playlist">
-      <div class="audio-playlist__row">
-        <button type="button" class="btn btn--a btn--s audio-playlist__btn" id="ap-toggle">
-          ▶️ Odtwórz wszystkie po kolei (${audioEntries.length})
-        </button>
-        <div class="audio-playlist__ctrls" id="ap-ctrls" style="display:none">
-          <button type="button" class="btn btn--o btn--s" id="ap-prev" title="Poprzednie nagranie">⏮️</button>
-          <button type="button" class="btn btn--o btn--s" id="ap-next" title="Następne nagranie">⏭️</button>
-          <button type="button" class="btn btn--d btn--s" id="ap-stop" title="Zatrzymaj">⏹️ Stop</button>
-        </div>
+    <div class="audio-bar" id="audio-playlist">
+      <div class="audio-bar__left">
+        <span class="audio-bar__ic">${IC_AUD.spk}</span>
+        <span class="audio-bar__lbl" id="ap-status">Odsłuchaj wszystkie po kolei <span class="audio-bar__cnt">(${audioEntries.length})</span></span>
       </div>
-      <div class="audio-playlist__status" id="ap-status" style="display:none"></div>
+      <div class="audio-bar__right">
+        <div class="audio-bar__ctrls" id="ap-ctrls" style="display:none">
+          <button type="button" class="audio-bar__ibtn" id="ap-prev" title="Poprzednie">${IC_AUD.prev}</button>
+          <button type="button" class="audio-bar__ibtn" id="ap-next" title="Następne">${IC_AUD.next}</button>
+          <button type="button" class="audio-bar__ibtn audio-bar__ibtn--stop" id="ap-stop" title="Zatrzymaj">${IC_AUD.stop}</button>
+        </div>
+        <button type="button" class="audio-bar__play" id="ap-toggle">
+          ${IC_AUD.play} <span>Odtwórz wszystkie</span>
+        </button>
+      </div>
     </div>
   ` : '';
 
@@ -2145,119 +2184,160 @@ function renderList(title, data, subtitle, itemPrefix = 'Pytanie', allowAudio = 
 
   bindImgs(appEl);
 
-  // Obsługa pojedynczych odtwarzaczy oraz playlisty "Odtwórz wszystkie po kolei"
-  const allAudioEls = Array.from(appEl.querySelectorAll('audio.q-audio-el'));
-  allAudioEls.forEach(a => {
-    const idx = a.dataset.cardIdx;
-    const singleBtn = appEl.querySelector(`.q-audio-single-btn[data-single-audio-idx="${idx}"]`);
-    a.addEventListener('play', () => {
-      allAudioEls.forEach(other => {
-        if (other !== a && !other.paused) other.pause();
-      });
-      if (singleBtn) singleBtn.innerHTML = '⏸️ Wstrzymaj pytanie';
-    });
-    a.addEventListener('pause', () => {
-      if (singleBtn) singleBtn.innerHTML = '▶️ Odsłuchaj pytanie';
-    });
-    a.addEventListener('ended', () => {
-      if (singleBtn) singleBtn.innerHTML = '▶️ Odsłuchaj pytanie';
-    });
-    if (singleBtn) {
-      singleBtn.onclick = () => {
-        if (a.paused) {
-          a.play().catch(() => {});
-        } else {
-          a.pause();
-        }
-      };
-    }
-  });
-
   if (audioEntries.length > 0) {
+    let activeCardIdx = null;
+    let apMode = false; // true = odtwarzanie po kolei, false = pojedyncze pytanie
     let apPos = 0;
-    let apActive = false;
+
     const apToggle = $('ap-toggle');
     const apCtrls = $('ap-ctrls');
     const apPrev = $('ap-prev');
     const apNext = $('ap-next');
     const apStop = $('ap-stop');
     const apStatus = $('ap-status');
+    const pills = Array.from(appEl.querySelectorAll('.q-audio-pill'));
 
-    function clearPlayingHighlight() {
-      appEl.querySelectorAll('.clip-card--playing').forEach(el => el.classList.remove('clip-card--playing'));
+    function resetAllPillsAndCards() {
+      pills.forEach(p => {
+        p.classList.remove('is-playing');
+        p.innerHTML = `${IC_AUD.play} <span class="q-audio-pill__txt">Odsłuchaj</span>`;
+      });
+      appEl.querySelectorAll('.clip-card--playing').forEach(c => c.classList.remove('clip-card--playing'));
     }
 
-    function stopPlaylist() {
-      apActive = false;
-      allAudioEls.forEach(a => { try { a.pause(); a.currentTime = 0; } catch (_) {} });
-      clearPlayingHighlight();
-      if (apToggle) apToggle.innerHTML = `▶️ Odtwórz wszystkie po kolei (${audioEntries.length})`;
+    function updateBarIdle() {
+      if (apToggle) {
+        apToggle.classList.remove('is-playing');
+        apToggle.innerHTML = `${IC_AUD.play} <span>Odtwórz wszystkie</span>`;
+      }
       if (apCtrls) apCtrls.style.display = 'none';
-      if (apStatus) apStatus.style.display = 'none';
+      if (apStatus) apStatus.innerHTML = `Odsłuchaj wszystkie po kolei <span class="audio-bar__cnt">(${audioEntries.length})</span>`;
     }
 
-    function playAt(pos) {
-      if (pos < 0 || pos >= audioEntries.length) {
-        stopPlaylist();
-        return;
+    function stopAll() {
+      apMode = false;
+      activeCardIdx = null;
+      stopSharedAudio();
+      resetAllPillsAndCards();
+      updateBarIdle();
+    }
+
+    function startCardAudio(cardIdx, src, isPlaylist, scrollCard) {
+      const aud = getSharedAudio();
+      activeCardIdx = cardIdx;
+      apMode = isPlaylist;
+
+      resetAllPillsAndCards();
+      const card = document.getElementById('clip-' + cardIdx);
+      const pill = appEl.querySelector(`.q-audio-pill[data-single-audio-idx="${cardIdx}"]`);
+      if (card) {
+        card.classList.add('clip-card--playing');
+        if (scrollCard) card.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
-      apPos = pos;
-      apActive = true;
-      const entry = audioEntries[apPos];
-      const card = document.getElementById('clip-' + entry.idx);
-      const audioEl = card ? card.querySelector('audio.q-audio-el') : null;
-      if (!audioEl) {
-        stopPlaylist();
-        return;
+      if (pill) {
+        pill.classList.add('is-playing');
+        pill.innerHTML = `${IC_AUD.pause} <span class="q-audio-pill__txt">Zatrzymaj</span>`;
       }
 
-      clearPlayingHighlight();
-      card.classList.add('clip-card--playing');
-      card.scrollIntoView({ behavior: 'smooth', block: 'center' });
-
-      if (apCtrls) apCtrls.style.display = 'flex';
-      if (apStatus) {
-        apStatus.style.display = 'block';
-        apStatus.textContent = `🎧 Odtwarzanie (${apPos + 1}/${audioEntries.length}): ${itemPrefix} ${entry.idx + 1} — ${entry.q.question || ''}`;
+      if (isPlaylist) {
+        if (apCtrls) apCtrls.style.display = 'inline-flex';
+        if (apToggle) {
+          apToggle.classList.add('is-playing');
+          apToggle.innerHTML = `${IC_AUD.pause} <span>Wstrzymaj</span>`;
+        }
+        if (apStatus) {
+          apStatus.innerHTML = `${itemPrefix} ${cardIdx + 1} <span class="audio-bar__cnt">(${apPos + 1}/${audioEntries.length})</span>`;
+        }
+      } else {
+        updateBarIdle();
       }
-      if (apToggle) apToggle.innerHTML = '⏸️ Wstrzymaj';
 
-      audioEl.currentTime = 0;
-      audioEl.play().catch(() => {});
+      if (aud.src !== src) {
+        aud.src = src;
+      }
+      aud.currentTime = 0;
 
-      audioEl.onended = () => {
-        if (!apActive) return;
-        if (apPos + 1 < audioEntries.length) {
-          playAt(apPos + 1);
-        } else {
-          stopPlaylist();
+      aud.ontimeupdate = () => {
+        if (activeCardIdx !== cardIdx) return;
+        const cur = fmtAudioTime(aud.currentTime);
+        const dur = aud.duration ? ' / ' + fmtAudioTime(aud.duration) : '';
+        if (pill && !aud.paused) {
+          const txtEl = pill.querySelector('.q-audio-pill__txt');
+          if (txtEl) txtEl.textContent = `${cur}${dur}`;
         }
       };
+
+      aud.onended = () => {
+        if (apMode && apPos + 1 < audioEntries.length) {
+          apPos++;
+          const nextEntry = audioEntries[apPos];
+          startCardAudio(nextEntry.idx, nextEntry.q.audio, true, true);
+        } else {
+          stopAll();
+        }
+      };
+
+      aud.play().catch(() => {});
     }
 
+    // Kliknięcie przycisku "Odsłuchaj" na pojedynczym pytaniu
+    pills.forEach(pill => {
+      pill.onclick = () => {
+        const idx = parseInt(pill.dataset.singleAudioIdx, 10);
+        const src = pill.dataset.audioSrc;
+        const aud = getSharedAudio();
+        if (activeCardIdx === idx && !apMode) {
+          if (aud.paused) {
+            aud.play().catch(() => {});
+            pill.classList.add('is-playing');
+            pill.innerHTML = `${IC_AUD.pause} <span class="q-audio-pill__txt">Wznów</span>`;
+          } else {
+            stopAll();
+          }
+        } else {
+          startCardAudio(idx, src, false, false);
+        }
+      };
+    });
+
+    // Obsługa paska "Odtwórz wszystkie po kolei"
     if (apToggle) {
       apToggle.onclick = () => {
-        if (!apActive) {
-          playAt(apPos);
+        const aud = getSharedAudio();
+        if (!apMode) {
+          apPos = 0;
+          const first = audioEntries[0];
+          startCardAudio(first.idx, first.q.audio, true, true);
         } else {
-          const entry = audioEntries[apPos];
-          const card = document.getElementById('clip-' + entry.idx);
-          const audioEl = card ? card.querySelector('audio.q-audio-el') : null;
-          if (audioEl) {
-            if (audioEl.paused) {
-              audioEl.play().catch(() => {});
-              apToggle.innerHTML = '⏸️ Wstrzymaj';
-            } else {
-              audioEl.pause();
-              apToggle.innerHTML = '▶️ Wznów';
-            }
+          if (aud.paused) {
+            aud.play().catch(() => {});
+            apToggle.innerHTML = `${IC_AUD.pause} <span>Wstrzymaj</span>`;
+          } else {
+            aud.pause();
+            apToggle.innerHTML = `${IC_AUD.play} <span>Wznów</span>`;
           }
         }
       };
     }
-    if (apPrev) apPrev.onclick = () => playAt(Math.max(0, apPos - 1));
-    if (apNext) apNext.onclick = () => playAt(apPos + 1);
-    if (apStop) apStop.onclick = stopPlaylist;
+    if (apPrev) {
+      apPrev.onclick = () => {
+        apPos = Math.max(0, apPos - 1);
+        const e = audioEntries[apPos];
+        startCardAudio(e.idx, e.q.audio, true, true);
+      };
+    }
+    if (apNext) {
+      apNext.onclick = () => {
+        if (apPos + 1 < audioEntries.length) {
+          apPos++;
+          const e = audioEntries[apPos];
+          startCardAudio(e.idx, e.q.audio, true, true);
+        } else {
+          stopAll();
+        }
+      };
+    }
+    if (apStop) apStop.onclick = stopAll;
   }
 
   appEl.querySelectorAll('[data-pdf-url]').forEach(a => {
