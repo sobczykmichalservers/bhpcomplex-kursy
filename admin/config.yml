@@ -37,7 +37,6 @@ collections:
               - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false }
               - { label: "Zdjęcie główne pod pytaniem (opcjonalnie)", name: "image", widget: "image", required: false }
               - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false }
-              - { label: "Plik dźwiękowy MP3 / Audio (opcjonalnie)", name: "audio", widget: "file", required: false }
               - { label: "Link do wideo / strony (opcjonalnie)", name: "link", widget: "string", required: false }
 
   # ==========================================
@@ -58,7 +57,6 @@ collections:
               - { label: "ID pytania (Numer)", name: "id", widget: "number" }
               - { label: "Treść pytania", name: "question", widget: "text" }
               - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
-              - { label: "Plik dźwiękowy MP3 / Audio (opcjonalnie)", name: "audio", widget: "file", required: false }
               - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
                 name: "options"
                 widget: "list"
@@ -107,7 +105,6 @@ collections:
               - { label: "ID pytania (Numer)", name: "id", widget: "number" }
               - { label: "Treść pytania", name: "question", widget: "text" }
               - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
-              - { label: "Plik dźwiękowy MP3 / Audio (opcjonalnie)", name: "audio", widget: "file", required: false }
               - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
                 name: "options"
                 widget: "list"
@@ -156,7 +153,6 @@ collections:
               - { label: "ID pytania (Numer)", name: "id", widget: "number" }
               - { label: "Treść pytania", name: "question", widget: "text" }
               - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
-              - { label: "Plik dźwiękowy MP3 / Audio (opcjonalnie)", name: "audio", widget: "file", required: false }
               - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
                 name: "options"
                 widget: "list"
@@ -205,7 +201,6 @@ collections:
               - { label: "ID pytania (Numer)", name: "id", widget: "number" }
               - { label: "Treść pytania", name: "question", widget: "text" }
               - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
-              - { label: "Plik dźwiękowy MP3 / Audio (opcjonalnie)", name: "audio", widget: "file", required: false }
               - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
                 name: "options"
                 widget: "list"
@@ -254,7 +249,6 @@ collections:
               - { label: "ID pytania (Numer)", name: "id", widget: "number" }
               - { label: "Treść pytania", name: "question", widget: "text" }
               - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
-              - { label: "Plik dźwiękowy MP3 / Audio (opcjonalnie)", name: "audio", widget: "file", required: false }
               - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
                 name: "options"
                 widget: "list"
@@ -303,7 +297,6 @@ collections:
               - { label: "ID pytania (Numer)", name: "id", widget: "number" }
               - { label: "Treść pytania", name: "question", widget: "text" }
               - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
-              - { label: "Plik dźwiękowy MP3 / Audio (opcjonalnie)", name: "audio", widget: "file", required: false }
               - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
                 name: "options"
                 widget: "list"
@@ -355,7 +348,6 @@ collections:
               - { label: "ID pytania (Numer)", name: "id", widget: "number" }
               - { label: "Treść pytania", name: "question", widget: "text" }
               - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
-              - { label: "Plik dźwiękowy MP3 / Audio (opcjonalnie)", name: "audio", widget: "file", required: false }
               - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
                 name: "options"
                 widget: "list"
@@ -375,7 +367,6 @@ collections:
               - { label: "Treść / Odpowiedź (formatowanie jak w Wordzie, zdjęcia, listy)", name: "answer", widget: "markdown", required: false }
               - { label: "Zdjęcie / Ilustracja (opcjonalnie)", name: "image", widget: "image", required: false }
               - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false }
-              - { label: "Plik dźwiękowy MP3 / Audio (opcjonalnie)", name: "audio", widget: "file", required: false }
               - { label: "Link do wideo / prezentacji (opcjonalnie)", name: "link", widget: "string", required: false }
       - name: "exam"
         label: "Ustawienia Egzaminu"
@@ -399,7 +390,6 @@ collections:
               - { label: "ID pytania (Numer)", name: "id", widget: "number" }
               - { label: "Treść pytania", name: "question", widget: "text" }
               - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
-              - { label: "Plik dźwiękowy MP3 / Audio (opcjonalnie)", name: "audio", widget: "file", required: false }
               - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
                 name: "options"
                 widget: "list"
@@ -419,7 +409,6 @@ collections:
               - { label: "Treść / Odpowiedź (formatowanie jak w Wordzie, zdjęcia, listy)", name: "answer", widget: "markdown", required: false }
               - { label: "Zdjęcie / Ilustracja (opcjonalnie)", name: "image", widget: "image", required: false }
               - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false }
-              - { label: "Plik dźwiękowy MP3 / Audio (opcjonalnie)", name: "audio", widget: "file", required: false }
               - { label: "Link do wideo / prezentacji (opcjonalnie)", name: "link", widget: "string", required: false }
       - name: "exam"
         label: "Ustawienia Egzaminu"
@@ -443,7 +432,6 @@ collections:
               - { label: "ID pytania (Numer)", name: "id", widget: "number" }
               - { label: "Treść pytania", name: "question", widget: "text" }
               - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
-              - { label: "Plik dźwiękowy MP3 / Audio (opcjonalnie)", name: "audio", widget: "file", required: false }
               - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
                 name: "options"
                 widget: "list"
@@ -463,7 +451,6 @@ collections:
               - { label: "Treść / Odpowiedź (formatowanie jak w Wordzie, zdjęcia, listy)", name: "answer", widget: "markdown", required: false }
               - { label: "Zdjęcie / Ilustracja (opcjonalnie)", name: "image", widget: "image", required: false }
               - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false }
-              - { label: "Plik dźwiękowy MP3 / Audio (opcjonalnie)", name: "audio", widget: "file", required: false }
               - { label: "Link do wideo / prezentacji (opcjonalnie)", name: "link", widget: "string", required: false }
       - name: "exam"
         label: "Ustawienia Egzaminu"
@@ -487,7 +474,6 @@ collections:
               - { label: "ID pytania (Numer)", name: "id", widget: "number" }
               - { label: "Treść pytania", name: "question", widget: "text" }
               - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
-              - { label: "Plik dźwiękowy MP3 / Audio (opcjonalnie)", name: "audio", widget: "file", required: false }
               - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
                 name: "options"
                 widget: "list"
@@ -507,7 +493,6 @@ collections:
               - { label: "Treść / Odpowiedź (formatowanie jak w Wordzie, zdjęcia, listy)", name: "answer", widget: "markdown", required: false }
               - { label: "Zdjęcie / Ilustracja (opcjonalnie)", name: "image", widget: "image", required: false }
               - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false }
-              - { label: "Plik dźwiękowy MP3 / Audio (opcjonalnie)", name: "audio", widget: "file", required: false }
               - { label: "Link do wideo / prezentacji (opcjonalnie)", name: "link", widget: "string", required: false }
       - name: "exam"
         label: "Ustawienia Egzaminu"

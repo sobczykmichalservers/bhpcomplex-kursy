@@ -5,14 +5,14 @@
    Zmień CACHE_VER przy każdym deployu kodu, aby wymusić odświeżenie.
    ═══════════════════════════════════════════════════════════════ */
 
-const CACHE_VER = 'udt-v68';
+const CACHE_VER = 'udt-v69';
 
 // Pliki powłoki aplikacji (HTML/CSS/JS) z Firebase; wszystkie treści (JSON, zdjęcia, ikony, PDF) idą bezpośrednio z GitHub
 const PRECACHE = [
   './',
   './index.html',
-  './style.css?v=68',
-  './app.js?v=68'
+  './style.css?v=69',
+  './app.js?v=69'
 ];
 
 // ─── INSTALL: Precache kluczowych plików ────────────────────
