@@ -5,14 +5,14 @@
    Zmień CACHE_VER przy każdym deployu kodu, aby wymusić odświeżenie.
    ═══════════════════════════════════════════════════════════════ */
 
-const CACHE_VER = 'udt-v69';
+const CACHE_VER = 'udt-v70';
 
 // Pliki powłoki aplikacji (HTML/CSS/JS) z Firebase; wszystkie treści (JSON, zdjęcia, ikony, PDF) idą bezpośrednio z GitHub
 const PRECACHE = [
-  './',
-  './index.html',
-  './style.css?v=69',
-  './app.js?v=69'
+  '/',
+  '/index.html',
+  '/style.css?v=70',
+  '/app.js?v=70'
 ];
 
 // ─── INSTALL: Precache kluczowych plików ────────────────────
@@ -63,16 +63,16 @@ self.addEventListener('fetch', (e) => {
     return;
   }
 
-  // Nawigacja HTML (index.html) — Network-First z ominięciem cache przeglądarki i fallbackiem do cache offline
+  // Nawigacja HTML (SPA — dowolna podstrona np. /udt, /bhp, /udt/wozki-podnosnikowe) — Network-First z fallbackiem do /index.html offline
   if (e.request.mode === 'navigate' || url.pathname === '/' || url.pathname.endsWith('/index.html')) {
     e.respondWith(
       caches.open(CACHE_VER).then(cache =>
-        fetch(e.request, { cache: 'no-store' })
+        fetch('/index.html', { cache: 'no-store' })
           .then(res => {
-            if (res && res.ok) cache.put('./index.html', res.clone());
+            if (res && res.ok) cache.put('/index.html', res.clone());
             return res;
           })
-          .catch(() => cache.match('./index.html') || cache.match('./'))
+          .catch(() => cache.match('/index.html') || cache.match('/'))
       )
     );
     return;

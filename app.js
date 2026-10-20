@@ -712,16 +712,61 @@ async function getQs(c) {
   return S.qs;
 }
 
-// ─── NAWIGACJA WIDOKÓW I ZARZĄDZANIE MAIN-HEADER ────────────
+// ─── NAWIGACJA WIDOKÓW, URL ROUTING I ZARZĄDZANIE MAIN-HEADER ───
 const topBk = $('top-bk');
 const topLo = $('top-lo');
 const topTitle = $('top-title');
 
-function go(v) {
+const VIEW_TO_SLUG = {
+  cheat: 'baza',
+  train: 'trening',
+  resume: 'wznow',
+  exam: 'egzamin',
+  opisyList: 'obsluga',
+  wiedzaList: 'materialy',
+  materialyList: 'materialy',
+  clipboard: 'schowek',
+  signature: 'wynik',
+  result: 'wynik'
+};
+
+const SLUG_TO_VIEW_UDT = {
+  baza: 'cheat',
+  trening: 'train',
+  wznow: 'resume',
+  obsluga: 'opisyList',
+  materialy: 'wiedzaList',
+  schowek: 'clipboard'
+};
+
+const SLUG_TO_VIEW_BHP = {
+  materialy: 'materialyList'
+};
+
+function buildRoutePath(v) {
+  if (v === 'home' || (!S.group && !S.cat)) return '/';
+  const grp = S.group || (S.cat ? (isBhpCat(S.cat) ? 'bhp' : 'udt') : null);
+  if (v === 'subcats' || !S.cat) return grp ? `/${grp}` : '/';
+  const base = `/${grp}/${S.cat}`;
+  if (v === 'menu' || v === 'login') return base;
+  const slug = VIEW_TO_SLUG[v];
+  return slug ? `${base}/${slug}` : base;
+}
+
+function go(v, pushHistory = true) {
   if (S.eInt && v !== 'exam') { clearInterval(S.eInt); S.eInt = null; }
   if (v !== 'cheat') S.cheatSeqAudio = false;
   appEl.querySelectorAll('audio').forEach(a => { try { a.pause(); } catch (_) {} });
   S.view = v;
+
+  const targetPath = buildRoutePath(v);
+  if (window.location.pathname !== targetPath) {
+    if (pushHistory) {
+      history.pushState({ view: v, group: S.group, cat: S.cat }, '', targetPath);
+    } else {
+      history.replaceState({ view: v, group: S.group, cat: S.cat }, '', targetPath);
+    }
+  }
 
   // Title logic
   if (S.cat && !['home', 'subcats'].includes(v)) {
@@ -738,11 +783,10 @@ function go(v) {
   } else {
     topBk.style.display = '';
     topBk.onclick = () => {
-      if (v === 'subcats') { S.group = null; go('home'); }
+      if (v === 'subcats') { S.group = null; S.cat = null; go('home'); }
       else if (v === 'login' || v === 'menu') { 
         S.cat = null; 
-        if (S.group === 'bhp') { S.group = null; go('home'); }
-        else go('subcats');
+        go('subcats');
       }
       else {
         if (v === 'exam') {
@@ -762,9 +806,7 @@ function go(v) {
       if (S.eInt) { clearInterval(S.eInt); S.eInt = null; }
       delAuth(S.cat);
       S.cat = null;
-      history.replaceState(null, "", window.location.pathname);
-      if (S.group === 'bhp') { S.group = null; go('home'); }
-      else go('subcats');
+      go('subcats');
     };
   } else {
     topLo.style.display = 'none';
@@ -883,8 +925,19 @@ function vSubcats() {
   }
 }
 
-async function pickCat(k) {
+function applyRestoredSubstate(k, targetView) {
+  if (targetView === 'cheat') {
+    const savedBi = parseInt(sessionStorage.getItem('udt_bi_' + k) || '0', 10);
+    S.bi = clamp(isNaN(savedBi) ? 0 : savedBi, 0, Math.max(0, S.qs.length - 1));
+  } else if (targetView === 'train') {
+    S.ti = clamp(getSaved(k), 0, Math.max(0, S.qs.length - 1));
+    S.tAns = false;
+  }
+}
+
+async function pickCat(k, targetView = 'menu', pushHistory = true) {
   S.cat = k;
+  S.group = isBhpCat(k) ? 'bhp' : 'udt';
   const sv = getAuth(k);
   if (sv) {
     try {
@@ -898,8 +951,8 @@ async function pickCat(k) {
           if (authOk) {
             markAuthVerified(k, sv);
             S.studentLogin = lgn;
-            history.pushState({ testActive: true }, "Testy", "#test");
-            go('menu');
+            applyRestoredSubstate(k, targetView);
+            go(targetView, pushHistory);
             return;
           }
         }
@@ -910,8 +963,8 @@ async function pickCat(k) {
         const [authOk] = await Promise.all([authPromise, getQs(k)]);
         if (authOk) {
           markAuthVerified(k, sv);
-          history.pushState({ testActive: true }, "Testy", "#test");
-          go('menu');
+          applyRestoredSubstate(k, targetView);
+          go(targetView, pushHistory);
           return;
         }
       }
@@ -922,13 +975,14 @@ async function pickCat(k) {
         const [lgn] = sv.split('::');
         S.studentLogin = lgn;
       }
-      history.pushState({ testActive: true }, "Testy", "#test");
-      go('menu');
+      applyRestoredSubstate(k, targetView);
+      go(targetView, pushHistory);
       return;
     }
     delAuth(k);
   }
-  go('login');
+  S.pendingView = targetView !== 'menu' ? targetView : null;
+  go('login', pushHistory);
 }
 
 // ═════════════════════════════════════════════════════════════
@@ -1019,8 +1073,11 @@ function vLogin() {
           markAuthVerified(S.cat, authKey);
         }
         if (isBhp) S.studentLogin = lVal;
-        history.pushState({ testActive: true }, "Testy", "#test");
-        await getQs(S.cat); go('menu');
+        await getQs(S.cat);
+        const dest = S.pendingView || 'menu';
+        S.pendingView = null;
+        applyRestoredSubstate(S.cat, dest);
+        go(dest);
       } else {
         pw.classList.add('has-error');
         sErr(er, isBhp ? 'Nieprawidłowy login, hasło lub brak dostępu' : 'Nieprawidłowe hasło');
@@ -1180,6 +1237,7 @@ function vResume() {
 // ═════════════════════════════════════════════════════════════
 function vCheat() {
   const q = S.qs[S.bi], tot = S.qs.length, pct = ((S.bi + 1) / tot) * 100;
+  try { sessionStorage.setItem('udt_bi_' + S.cat, String(S.bi)); } catch (_) {}
   if (q && q.id != null) markViewed(S.cat, q.id);
   appEl.innerHTML = `<div>
     <div class="prog"><div class="prog__top">
@@ -2252,38 +2310,69 @@ function bindImgs(el) {
   });
 }
 
-// ─── START ──────────────────────────────────────────────────
+// ─── START & URL ROUTING (Obsługa F5 i bezpośrednich linków np. /udt, /bhp, /udt/wozki-podnosnikowe) ───
+async function restoreRouteFromUrl() {
+  const segs = window.location.pathname.split('/').filter(Boolean);
+  if (segs.length === 0 || segs[0] === 'index.html') {
+    S.group = null;
+    S.cat = null;
+    go('home', false);
+    return;
+  }
+
+  let grp = null;
+  let cat = null;
+  let subSlug = '';
+
+  if (segs[0] === 'udt' || segs[0] === 'bhp') {
+    grp = segs[0];
+    cat = segs[1] || null;
+    subSlug = segs[2] || '';
+  } else if (CATS[segs[0]]) {
+    cat = segs[0];
+    grp = isBhpCat(cat) ? 'bhp' : 'udt';
+    subSlug = segs[1] || '';
+  } else {
+    S.group = null;
+    S.cat = null;
+    go('home', false);
+    return;
+  }
+
+  S.group = grp;
+  if (!cat || !CATS[cat] || CATS[cat].locked) {
+    S.cat = null;
+    go('subcats', false);
+    return;
+  }
+
+  const targetView = grp === 'bhp'
+    ? (SLUG_TO_VIEW_BHP[subSlug] || 'menu')
+    : (SLUG_TO_VIEW_UDT[subSlug] || 'menu');
+
+  await pickCat(cat, targetView, false);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   $('top-bk').innerHTML = `${I.aL} <span class="nav-txt">Wróć</span>`;
   $('top-lo').innerHTML = `${I.out} <span class="nav-txt">Wyloguj</span>`;
   initTheme();
-  go('home');
+  restoreRouteFromUrl();
 });
 
 window.addEventListener('popstate', () => {
-  if (!S.cat) return;
   // W trakcie egzaminu pytaj o potwierdzenie
   if (S.view === 'exam') {
     const c = confirm("Czy na pewno chcesz przerwać egzamin i wrócić do menu?");
     if (c) {
       if (S.eInt) { clearInterval(S.eInt); S.eInt = null; }
-      history.pushState({ testActive: true }, "Testy UDT", "#test");
-      go('menu');
+      go('menu', false);
     } else {
-      history.pushState({ testActive: true }, "Testy UDT", "#test");
+      history.pushState({ view: 'exam', group: S.group, cat: S.cat }, '', buildRoutePath('exam'));
     }
     return;
   }
-  // W podwidoku kursu (Baza pytań, Trening, Obsługa techniczna, Baza wiedzy, Schowek, Wynik) -> wróć do menu kursu BEZ kasowania hasła!
-  if (S.view && !['menu', 'login', 'subcats', 'home'].includes(S.view)) {
-    history.pushState({ testActive: true }, "Testy UDT", "#test");
-    go('menu');
-    return;
-  }
-  // W menu kursu -> wyjdź do listy kategorii BEZ kasowania zapamiętanego hasła!
-  S.cat = null;
-  history.replaceState(null, "", window.location.pathname);
-  go(S.group ? 'subcats' : 'home');
+  restoreRouteFromUrl();
 });
 
 // ─── SERVICE WORKER (Automatyczna aktualizacja bez Ctrl+F5) ─────
@@ -2296,7 +2385,7 @@ if ('serviceWorker' in navigator) {
       window.location.reload();
     }
   });
-  navigator.serviceWorker.register('sw.js').then(reg => {
+  navigator.serviceWorker.register('/sw.js').then(reg => {
     reg.update().catch(() => {});
   }).catch(() => {});
 }
