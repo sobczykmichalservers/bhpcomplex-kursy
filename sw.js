@@ -5,14 +5,14 @@
    Zmień CACHE_VER przy każdym deployu kodu, aby wymusić odświeżenie.
    ═══════════════════════════════════════════════════════════════ */
 
-const CACHE_VER = 'udt-v67';
+const CACHE_VER = 'udt-v68';
 
 // Pliki powłoki aplikacji (HTML/CSS/JS) z Firebase; wszystkie treści (JSON, zdjęcia, ikony, PDF) idą bezpośrednio z GitHub
 const PRECACHE = [
   './',
   './index.html',
-  './style.css?v=67',
-  './app.js?v=67'
+  './style.css?v=68',
+  './app.js?v=68'
 ];
 
 // ─── INSTALL: Precache kluczowych plików ────────────────────
@@ -45,9 +45,10 @@ self.addEventListener('activate', (e) => {
 self.addEventListener('fetch', (e) => {
   const url = new URL(e.request.url);
 
-  // NIE cachuj: panelu CMS (/admin), panelu instruktora (/panel), Firebase, Firestore, Telegram, metod innych niż GET
+  // NIE cachuj: panelu CMS (/admin), panelu instruktora (/panel), zapytań Range (audio/video), Firebase, Firestore, Telegram, metod innych niż GET
   if (
     e.request.method !== 'GET' ||
+    e.request.headers.has('range') ||
     url.pathname.includes('/admin') ||
     url.pathname.includes('/panel') ||
     url.hostname.includes('firebaseio') ||
