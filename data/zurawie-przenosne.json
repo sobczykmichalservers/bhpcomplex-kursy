@@ -1347,7 +1347,7 @@
     {
       "id": 113,
       "question": "Przedstawiony rysunek pokazuje:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_113.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_113.webp",
       "options": [
         "Stan poziomu paliwa w zbiorniku",
         "Prędkość obrotową silnika",
@@ -1359,7 +1359,7 @@
     {
       "id": 114,
       "question": "Przedstawiony rysunek określa wskazania dla:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_114.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_114.webp",
       "options": [
         "Wysięgnika żurawia z ręcznym układem teleskopowania",
         "Wysokości podnoszenia",
@@ -1371,7 +1371,7 @@
     {
       "id": 115,
       "question": "Przedstawiony rysunek określa wskazania:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_115.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_115.webp",
       "options": [
         "Określające długość wysięgnika",
         "Wartość osiągniętego wysięgu",
@@ -1383,7 +1383,7 @@
     {
       "id": 116,
       "question": "Przedstawiony rysunek informuje obsługującego o:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_116.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_116.webp",
       "options": [
         "2 pozycji wychylenia dźwigni sterującej z 4 stopniowej skali",
         "Ilość pasm lin zblocza hakowego",
@@ -1395,7 +1395,7 @@
     {
       "id": 117,
       "question": "Przedstawiony symbol graficzny dotyczy:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_117.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_117.webp",
       "options": [
         "Zewnętrznej temperatury powietrza",
         "Wartości obciążenia przeciwwagi żurawia",
@@ -1407,7 +1407,7 @@
     {
       "id": 118,
       "question": "Wychylenie dźwigni w kierunku C zgodnie z rysunkiem powoduje:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_118.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_118.webp",
       "options": [
         "Załączenie mechanizmu podnoszenia wysięgnika",
         "Załączenie mechanizmu teleskopowania w kierunku \"zwiększenia wysięgu\"",
@@ -1419,7 +1419,7 @@
     {
       "id": 119,
       "question": "Wychylenie dźwigni w kierunku B zgodnie z rysunkiem powoduje:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_119.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_119.webp",
       "options": [
         "Załączenie mechanizmu podnoszenia wysięgnika teleskopowego",
         "Załączenie mechanizmu teleskopowania w kierunku \"zwiększenia wysięgu\"",
@@ -1431,7 +1431,7 @@
     {
       "id": 120,
       "question": "Wychylenie dźwigni w kierunku C zgodnie z rysunkiem powoduje:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_120.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_120.webp",
       "options": [
         "Załączenie mechanizmu podnoszenia w kierunku \"góra\"",
         "Załączenie mechanizmu obrotu w kierunku \"w prawo\"",
@@ -1443,7 +1443,7 @@
     {
       "id": 121,
       "question": "Przedstawiony symbol graficzny dotyczy:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_121.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_121.webp",
       "options": [
         "Opisu dźwigni sterującej mechanizmu podnoszenia wysięgnika teleskopowego",
         "Opisu dźwigni sterującej mechanizmu obrotu",
@@ -1455,7 +1455,7 @@
     {
       "id": 122,
       "question": "Przedstawiony symbol graficzny dotyczy:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_122.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_122.webp",
       "options": [
         "Opisu dźwigni sterującej mechanizmu podnoszenia wysięgnika teleskopowego",
         "Opisu dźwigni sterującej mechanizmu teleskopowania",
@@ -1467,7 +1467,7 @@
     {
       "id": 123,
       "question": "Przedstawiony rysunek informuje obsługującego o:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_123.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_123.webp",
       "options": [
         "Aktualnym wypoziomowaniu żurawia",
         "Dokładności odkładania ładunku",
@@ -1731,7 +1731,7 @@
     {
       "id": 145,
       "question": "Zgodnie z przedstawionym diagramem wysięgnik teleskopowy żurawia składa się z:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_145.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_145.webp",
       "options": [
         "2 sekcji",
         "3 sekcji",
@@ -1767,7 +1767,7 @@
     {
       "id": 148,
       "question": "W oparciu o przedstawiony rysunek określ jakie ruchy niebezpieczne zostaną odłączone w przypadku zadziałania ogranicznika obciążenia:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_148.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_148.webp",
       "options": [
         "E, F",
         "A, D",
@@ -1779,7 +1779,7 @@
     {
       "id": 149,
       "question": "W oparciu o przedstawiony rysunek określ jakie ruchy niebezpieczne zostaną odłączone w przypadku zadziałania ogranicznika obciążenia:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_149.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_149.webp",
       "options": [
         "F, D, B",
         "A, B, C",
@@ -2055,7 +2055,7 @@
     {
       "id": 172,
       "question": "W oparciu o przedstawiony diagram określ po przekroczeniu jakiego wysięgu zadziała ogranicznik udźwigu żurawia o oznaczeniu 600 T z podwieszonym ładunkiem o masie 700 kg:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_172.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_172.webp",
       "options": [
         "8 m",
         "9 m",
@@ -2067,7 +2067,7 @@
     {
       "id": 173,
       "question": "W oparciu o przedstawiony diagram określ na jakim wysięgu zadziała ogranicznik udźwigu żurawia z podwieszonym ładunkiem o masie 3320 kg:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_173.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_173.webp",
       "options": [
         "8,5 m",
         "9,5 m",
@@ -2199,7 +2199,7 @@
     {
       "id": 184,
       "question": "W oparciu o przedstawiony rysunek wskaż prawidłowy pomiar minimalnej odległości od wykopu:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_184.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_184.webp",
       "options": [
         "A",
         "B",
@@ -2283,7 +2283,7 @@
     {
       "id": 191,
       "question": "W oparciu o przedstawiony rysunek wskaż prawidłowy pomiar minimalnej odległości od linii elektroenergetycznych:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_191.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_191.webp",
       "options": [
         "A",
         "B",
@@ -2415,7 +2415,7 @@
     {
       "id": 202,
       "question": "Korzystając z przedstawionego diagramu wskaż odpowiednią wartość wysięgu i ładunku próbnego podczas przeprowadzenia próby szczelności wewnętrznej żurawia:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_202.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_202.webp",
       "options": [
         "6600 kg i 9,1 m",
         "6600 kg i 5,2 m",
@@ -2511,7 +2511,7 @@
     {
       "id": 210,
       "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną wysokość można bezpiecznie podnieść ładunek o masie 3,4t:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_210.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_210.webp",
       "options": [
         "17 m",
         "24,5 m",
@@ -2523,7 +2523,7 @@
     {
       "id": 211,
       "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną odległość można bezpiecznie podać ładunek o masie 3,4t:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_211.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_211.webp",
       "options": [
         "17 m",
         "14 m",
@@ -2535,7 +2535,7 @@
     {
       "id": 212,
       "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_212.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_212.webp",
       "options": [
         "Maksymalny udźwig 13000 kg",
         "Maksymalny wysięg 23 m",
@@ -2547,7 +2547,7 @@
     {
       "id": 213,
       "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_213.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_213.webp",
       "options": [
         "Maksymalny udźwig 17,5 t",
         "Maksymalny wysięg 26 m",
@@ -2559,7 +2559,7 @@
     {
       "id": 214,
       "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 10 m:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_214.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_214.webp",
       "options": [
         "4100 kg",
         "6900 kg",
@@ -2571,7 +2571,7 @@
     {
       "id": 215,
       "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 20 m:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_215.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_215.webp",
       "options": [
         "5,2 t",
         "2,8 t",
@@ -2583,7 +2583,7 @@
     {
       "id": 216,
       "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną wysokość można bezpiecznie podać ładunek o masie 3,32 t:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_216.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_216.webp",
       "options": [
         "17 m",
         "24,5 m",
@@ -2595,7 +2595,7 @@
     {
       "id": 217,
       "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną odległość można bezpiecznie podać ładunek o masie 3,32 t:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_217.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_217.webp",
       "options": [
         "7,0 m",
         "10,2 m",
@@ -2607,7 +2607,7 @@
     {
       "id": 218,
       "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_218.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_218.webp",
       "options": [
         "Maksymalny udźwig 6200 kg",
         "Maksymalny wysięg 15 m",
@@ -2619,7 +2619,7 @@
     {
       "id": 219,
       "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_219.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_219.webp",
       "options": [
         "Maksymalna wysokość podnoszenia 13 m",
         "Maksymalny wysięg 15 m",
@@ -2631,7 +2631,7 @@
     {
       "id": 220,
       "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 4 m:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_220.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_220.webp",
       "options": [
         "4100 kg",
         "6200 kg",
@@ -2643,7 +2643,7 @@
     {
       "id": 221,
       "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 13 m:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_221.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_221.webp",
       "options": [
         "2,1 t",
         "2,8 t",
@@ -2655,7 +2655,7 @@
     {
       "id": 222,
       "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną wysokość można bezpiecznie podać ładunek o masie 890 kg:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_222.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_222.webp",
       "options": [
         "7 m",
         "5,5 m",
@@ -2667,7 +2667,7 @@
     {
       "id": 223,
       "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną odległość można bezpiecznie podać ładunek o masie 620 kg:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_223.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_223.webp",
       "options": [
         "5,5 m",
         "4,5 m",
@@ -2679,7 +2679,7 @@
     {
       "id": 224,
       "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_224.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_224.webp",
       "options": [
         "Maksymalny udźwig 620 kg",
         "Maksymalny wysięg 6,1 m",
@@ -2691,7 +2691,7 @@
     {
       "id": 225,
       "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_225.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_225.webp",
       "options": [
         "Maksymalna wysokość podnoszenia 7 m",
         "Maksymalny wysięg 7 m",
@@ -2703,7 +2703,7 @@
     {
       "id": 226,
       "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 4 m, przy wysokości 5,8 m:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_226.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_226.webp",
       "options": [
         "620 kg",
         "450 kg",
@@ -2715,7 +2715,7 @@
     {
       "id": 227,
       "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 1,8 m, przy wysokości 4 m:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_227.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_227.webp",
       "options": [
         "0,45 t",
         "0,62 t",
@@ -2727,7 +2727,7 @@
     {
       "id": 228,
       "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną odległość można bezpiecznie podać ładunek o masie 3980 kg:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_228.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_228.webp",
       "options": [
         "5,3 m",
         "4,5 m",
@@ -2739,7 +2739,7 @@
     {
       "id": 229,
       "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_229.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_229.webp",
       "options": [
         "Maksymalny udźwig 3,98 t",
         "Maksymalny wysięg 11,1 m",
@@ -2751,7 +2751,7 @@
     {
       "id": 230,
       "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_230.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_230.webp",
       "options": [
         "Maksymalna wysokość podnoszenia 11,1 m",
         "Maksymalny wysięg żurawia z ładunkiem 2,82 t to 7,2 m",
@@ -2763,7 +2763,7 @@
     {
       "id": 231,
       "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 7,2 m:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_231.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_231.webp",
       "options": [
         "5,20 t",
         "2,82 t",
@@ -2775,7 +2775,7 @@
     {
       "id": 232,
       "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną odległość można bezpiecznie podać ładunek o masie 3790 kg:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_232.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_232.webp",
       "options": [
         "7 m",
         "5,5 m",
@@ -2787,7 +2787,7 @@
     {
       "id": 233,
       "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną wysokość można bezpiecznie podać ładunek o masie 3790 kg:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_233.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_233.webp",
       "options": [
         "18,5 m",
         "16 m",
@@ -2799,7 +2799,7 @@
     {
       "id": 234,
       "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_234.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_234.webp",
       "options": [
         "Maksymalny udźwig wynosi 9200 kg",
         "Maksymalny wysięg żurawia z wysięgnikiem o ręcznym wysuwie wynosi 18,65 m",
@@ -2811,7 +2811,7 @@
     {
       "id": 235,
       "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_235.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_235.webp",
       "options": [
         "Praca z wysuniętymi podporami",
         "Maksymalny wysięg 16 m",
@@ -2823,7 +2823,7 @@
     {
       "id": 236,
       "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 12,25 m:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_236.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_236.webp",
       "options": [
         "6,34 t",
         "1,76 t",
@@ -2835,7 +2835,7 @@
     {
       "id": 237,
       "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 17 m:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_237.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_237.webp",
       "options": [
         "1350 kg",
         "1050 kg",
@@ -2847,7 +2847,7 @@
     {
       "id": 238,
       "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_238.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_238.webp",
       "options": [
         "Maksymalny udźwig żurawia 510 kg",
         "Maksymalny udźwig żurawia 610 kg",
@@ -2859,7 +2859,7 @@
     {
       "id": 239,
       "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną odległość można bezpiecznie podać ładunek o masie 1300 kg żurawiem oznaczonym symbolem 700T:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_239.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_239.webp",
       "options": [
         "7 m",
         "6 m",
@@ -2871,7 +2871,7 @@
     {
       "id": 240,
       "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną odległość można bezpiecznie podać ładunek o masie 1350 kg żurawiem oznaczonym symbolem 600T:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_240.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_240.webp",
       "options": [
         "2 m",
         "4 m",
@@ -2883,7 +2883,7 @@
     {
       "id": 241,
       "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawi:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_241.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_241.webp",
       "options": [
         "Maksymalny udźwig żurawia 700 t",
         "Maksymalny wysięg żurawia z wysięgnikiem o ręcznym wysuwie 14,35 m",
@@ -2895,7 +2895,7 @@
     {
       "id": 242,
       "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_242.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_242.webp",
       "options": [
         "Diagram dotyczy dwóch rodzajów żurawi",
         "Maksymalny wysięg wynosi 10 m",
@@ -2907,7 +2907,7 @@
     {
       "id": 243,
       "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 10 m, żurawiem oznaczonym symbolem 600T:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_243.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_243.webp",
       "options": [
         "630 kg",
         "450 kg",
@@ -2919,7 +2919,7 @@
     {
       "id": 244,
       "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 8 m żurawiem oznaczonym symbolem 600T:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_244.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_244.webp",
       "options": [
         "700 kg",
         "800 kg",
@@ -2931,7 +2931,7 @@
     {
       "id": 245,
       "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną odległość można bezpiecznie podać ładunek o masie 1290 kg:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_245.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_245.webp",
       "options": [
         "7 m",
         "5,5 m",
@@ -2943,7 +2943,7 @@
     {
       "id": 246,
       "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną wysokość można bezpiecznie podać ładunek o masie 1290 kg:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_246.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_246.webp",
       "options": [
         "14,5 m",
         "20,7 m",
@@ -2955,7 +2955,7 @@
     {
       "id": 247,
       "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_247.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_247.webp",
       "options": [
         "Maksymalny udźwig 2000 kg",
         "Maksymalny wysięg żurawia realizowany mechanicznie wynosi 14,35 m",
@@ -2967,7 +2967,7 @@
     {
       "id": 248,
       "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_248.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_248.webp",
       "options": [
         "Praca na maksymalnym wysuwie podpór",
         "Maksymalny wysięg 22 m",
@@ -2979,7 +2979,7 @@
     {
       "id": 249,
       "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 12,35 m:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_249.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_249.webp",
       "options": [
         "0,995 t",
         "2,23 t",
@@ -2991,7 +2991,7 @@
     {
       "id": 250,
       "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 6,35 m:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_250.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_250.webp",
       "options": [
         "1350 kg",
         "1050 kg",
@@ -3003,7 +3003,7 @@
     {
       "id": 251,
       "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną odległość można bezpiecznie podać ładunek o masie 6470 kg:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_251.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_251.webp",
       "options": [
         "7 m",
         "9,65 m",
@@ -3015,7 +3015,7 @@
     {
       "id": 252,
       "question": "W oparciu o przedstawiony diagram określ na jaką maksymalną wysokość można bezpiecznie podać ładunek o masie 6470 kg:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_252.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_252.webp",
       "options": [
         "14,5 m",
         "20,0 m",
@@ -3027,7 +3027,7 @@
     {
       "id": 253,
       "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_253.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_253.webp",
       "options": [
         "Maksymalny udźwig 21500 kg",
         "Maksymalny wysięg żurawia z wysięgnikiem o mechanicznym wysuwie 23,55 m",
@@ -3039,7 +3039,7 @@
     {
       "id": 254,
       "question": "W oparciu o przedstawiony diagram wskaż poprawne parametry pracy żurawia:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_254.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_254.webp",
       "options": [
         "Praca na minimalnym wysuwie podpór",
         "Maksymalny wysięg wysięgnika z mechanicznym wysuwem 16,15 m",
@@ -3051,7 +3051,7 @@
     {
       "id": 255,
       "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 13,9 m:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_255.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_255.webp",
       "options": [
         "5,520 t",
         "3,655 t",
@@ -3063,7 +3063,7 @@
     {
       "id": 256,
       "question": "W oparciu o przedstawiony diagram wskaż maksymalną masę ładunku, jaką można podać na odległość 6,95 m:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_256.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_256.webp",
       "options": [
         "8255 kg",
         "10050 kg",
@@ -3075,7 +3075,7 @@
     {
       "id": 257,
       "question": "Poniższy rysunek przedstawia cechę:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_257.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_257.webp",
       "options": [
         "Zawiesia łańcuchowego",
         "Zawiesia linowego",
@@ -3087,7 +3087,7 @@
     {
       "id": 258,
       "question": "Poniższy rysunek przedstawia cechę:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_258.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_258.webp",
       "options": [
         "Zawiesia łańcuchowego",
         "Zawiesia linowego",
@@ -3099,7 +3099,7 @@
     {
       "id": 259,
       "question": "Poniższy rysunek przedstawia cechę:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_259.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_259.webp",
       "options": [
         "Zawiesia łańcuchowego",
         "Zawiesia linowego",
@@ -3123,7 +3123,7 @@
     {
       "id": 261,
       "question": "Minimalny udźwig urządzenia dźwignicowego podnoszącego ładunek o masie 24 t przy użyciu przedstawionej trawersy wynosi:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_261.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_261.webp",
       "options": [
         "20,0 t",
         "25,2 t",
@@ -3171,7 +3171,7 @@
     {
       "id": 265,
       "question": "W oparciu o przedstawiony rysunek wskaż wartość A dla zawiesia linowego:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_265.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_265.webp",
       "options": [
         "6,0 t",
         "5,0 t",
@@ -3183,7 +3183,7 @@
     {
       "id": 266,
       "question": "W oparciu o przedstawiony rysunek wskaż wartość A dla zawiesia linowego:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_266.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_266.webp",
       "options": [
         "2,0 t",
         "5,0 t",
@@ -3195,7 +3195,7 @@
     {
       "id": 267,
       "question": "Na rysunku pokazana jest:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_267.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_267.webp",
       "options": [
         "Tabliczka znamionowa zawiesia łańcuchowego dwucięgnowego",
         "Tabliczka znamionowa zawiesia łańcuchowego, o udźwigu maksymalnym 2 500 kg",
@@ -3207,7 +3207,7 @@
     {
       "id": 268,
       "question": "W oparciu o przedstawiony rysunek wskaż wartość A (kąt α) dla zawiesia dwucięgnowego:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_268.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_268.webp",
       "options": [
         "100°",
         "90°",
@@ -3219,7 +3219,7 @@
     {
       "id": 269,
       "question": "W oparciu o przedstawiony rysunek wskaż wartość A (kąt α) dla zawiesia dwucięgnowego:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_269.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_269.webp",
       "options": [
         "120°",
         "90°",
@@ -3231,7 +3231,7 @@
     {
       "id": 270,
       "question": "W oparciu o przedstawiony rysunek wskaż wartość A (DOR w oparciu o kąt α) dla zawiesia dwucięgnowego:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_270.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_270.webp",
       "options": [
         "70%",
         "90%",
@@ -3243,7 +3243,7 @@
     {
       "id": 271,
       "question": "W oparciu o przedstawiony rysunek wskaż wartość A (DOR w oparciu o kąt α) dla zawiesia dwucięgnowego:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_271.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_271.webp",
       "options": [
         "70%",
         "90%",
@@ -3255,7 +3255,7 @@
     {
       "id": 272,
       "question": "W oparciu o przedstawiony rysunek wskaż wartość A (DOR w oparciu o sposób zawieszenia) dla zawiesia pasowego:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_272.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_272.webp",
       "options": [
         "1",
         "1,4",
@@ -3267,7 +3267,7 @@
     {
       "id": 273,
       "question": "W oparciu o przedstawiony rysunek wskaż wartość A (DOR w oparciu o sposób zawieszenia) dla zawiesia pasowego:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_273.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_273.webp",
       "options": [
         "1",
         "1,4",
@@ -3279,7 +3279,7 @@
     {
       "id": 274,
       "question": "W oparciu o przedstawiony rysunek wskaż wartość A (DOR w oparciu o sposób zawieszenia) dla zawiesia pasowego:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_274.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_274.webp",
       "options": [
         "1",
         "1,4",
@@ -3291,7 +3291,7 @@
     {
       "id": 275,
       "question": "Wskaż, który ze sposobów podwieszenia ładunku jest prawidłowy:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_275.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_275.webp",
       "options": [
         "Rys A",
         "Rys B",
@@ -3303,7 +3303,7 @@
     {
       "id": 276,
       "question": "Wskaż, który ze sposobów podwieszenia ładunku przy pomocy zawiesia linowego jest prawidłowy:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_276.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_276.webp",
       "options": [
         "Rys A",
         "Rys B",
@@ -3315,7 +3315,7 @@
     {
       "id": 277,
       "question": "Poniższy rysunek przedstawia:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_277.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_277.webp",
       "options": [
         "Osprzęt wymienny montowany do głowic urządzeń dźwignicowych",
         "Element układu podnoszenia wózków jezdniowych podnośnikowych",
@@ -3327,7 +3327,7 @@
     {
       "id": 278,
       "question": "Poniższy rysunek przedstawia:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_278.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_278.webp",
       "options": [
         "Zawiesie specjalistyczne do transportu rur stalowych i betonowych",
         "Chwytak kleszczowy do przeładunku złomu",
@@ -3339,7 +3339,7 @@
     {
       "id": 279,
       "question": "Przedstawione na rysunku zawiesie specjalistyczne służy do:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_279.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_279.webp",
       "options": [
         "Podnoszenia arkuszy blach stalowych",
         "Podnoszenia prętów stalowych",
@@ -3351,7 +3351,7 @@
     {
       "id": 280,
       "question": "Przedstawione na rysunku zawiesie specjalistyczne służy do:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_280.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_280.webp",
       "options": [
         "Podnoszenia elementów betonowych",
         "Podnoszenia elementów z tworzywa sztucznego",
@@ -3495,7 +3495,7 @@
     {
       "id": 292,
       "question": "Wskaż, który ze sposobów podwieszenia ładunku przy pomocy zawiesia linowego jest nieprawidłowy:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_292.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_292.webp",
       "options": [
         "Rys A",
         "Rys B",
@@ -3507,7 +3507,7 @@
     {
       "id": 293,
       "question": "Wskaż, który ze sposobów zamocowania haka jest prawidłowy:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_293.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_293.webp",
       "options": [
         "Rys A",
         "Rys B",
@@ -3519,7 +3519,7 @@
     {
       "id": 294,
       "question": "Wskaż, który ze sposobów zamocowania haka jest nieprawidłowy:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_294.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_294.webp",
       "options": [
         "Rys A, B, C",
         "Rys A, B, D",
@@ -3531,7 +3531,7 @@
     {
       "id": 295,
       "question": "W oparciu o przedstawiony rysunek wskaż wartość A dla zawiesia dwucięgnowego:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_295.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_295.webp",
       "options": [
         "120%",
         "90%",
@@ -3543,7 +3543,7 @@
     {
       "id": 296,
       "question": "W oparciu o przedstawiony rysunek wskaż wartość A dla zawiesia dwucięgnowego:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_296.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_296.webp",
       "options": [
         "120%",
         "90%",
@@ -3651,7 +3651,7 @@
     {
       "id": 305,
       "question": "Poniższy rysunek przedstawia:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_305.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_305.webp",
       "options": [
         "Cecha zawiesia łańcuchowego czterocięgnowego",
         "Cecha zawiesia linowego o długości cięgien 10 m",
@@ -3663,7 +3663,7 @@
     {
       "id": 306,
       "question": "Maksymalny DOR przedstawionego zawiesia wynosi:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_306.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_306.webp",
       "options": [
         "8,4 t",
         "6,0 t",
@@ -3675,7 +3675,7 @@
     {
       "id": 307,
       "question": "Maksymalny DOR przedstawionego zawiesia przy kącie wierzchołkowym β 60° wynosi:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_307.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_307.webp",
       "options": [
         "10,0 t",
         "8,4 t",
@@ -3687,7 +3687,7 @@
     {
       "id": 308,
       "question": "Maksymalny DOR przedstawionego zawiesia przy kącie wierzchołkowym β 45° wynosi:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_308.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_308.webp",
       "options": [
         "8,4 t",
         "8,0 t",
@@ -3699,7 +3699,7 @@
     {
       "id": 309,
       "question": "W oparciu o przedstawiony rysunek wskaż poprawny sposób zamocowania haka:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_309.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_309.webp",
       "options": [
         "A",
         "B",
@@ -3711,7 +3711,7 @@
     {
       "id": 310,
       "question": "Maksymalna masa podnoszonego ładunku przy kącie β wynoszącym 55° nie może przekraczać:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_310.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_310.webp",
       "options": [
         "12000 kg",
         "9000 kg",
@@ -3723,7 +3723,7 @@
     {
       "id": 311,
       "question": "Maksymalna masa podnoszonego ładunku przy kącie β wynoszącym 40° nie może przekraczać:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_311.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_311.webp",
       "options": [
         "12000 kg",
         "9000 kg",
@@ -3735,7 +3735,7 @@
     {
       "id": 312,
       "question": "Maksymalna masa podnoszonego ładunku przy kącie β wynoszącym 50° nie może przekraczać:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_312.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_312.webp",
       "options": [
         "12000 kg",
         "9000 kg",
@@ -3747,7 +3747,7 @@
     {
       "id": 313,
       "question": "Maksymalna masa podnoszonego ładunku przy kącie β wynoszącym 65° nie może przekraczać:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_313.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_313.webp",
       "options": [
         "12000 kg",
         "9000 kg",
@@ -3759,7 +3759,7 @@
     {
       "id": 314,
       "question": "W oparciu o przedstawiony rysunek określ maksymalną masę ładunku jaką można podnieść przy pomocy zawiesia 4 cięgnowego:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_314.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_314.webp",
       "options": [
         "6 t",
         "8,4 t",
@@ -3771,7 +3771,7 @@
     {
       "id": 315,
       "question": "W oparciu o przedstawiony rysunek określ maksymalną masę ładunku jaką można podnieść przy pomocy zawiesia 4 cięgnowego:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_315.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_315.webp",
       "options": [
         "6 t",
         "8,4 t",
@@ -3783,7 +3783,7 @@
     {
       "id": 316,
       "question": "W oparciu o przedstawiony rysunek określ maksymalną masę ładunku jaką można podnieść przy pomocy zawiesia 4 cięgnowego:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_316.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_316.webp",
       "options": [
         "7 t",
         "8,4 t",
@@ -3795,7 +3795,7 @@
     {
       "id": 317,
       "question": "Które z przedstawionych zawiesi specjalnych można wykorzystać do podnoszenia blach w pozycji pionowej:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_317.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_317.webp",
       "options": [
         "Rys. 1",
         "Rys. 2",
@@ -3807,7 +3807,7 @@
     {
       "id": 318,
       "question": "Które z przedstawionego osprzętu do podnoszenia można wykorzystać do podnoszenia blach w pozycji poziomej:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_318.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_318.webp",
       "options": [
         "Rys. 1",
         "Rys. 2",
@@ -3819,7 +3819,7 @@
     {
       "id": 319,
       "question": "Które z przedstawionego osprzętu do podnoszenia można wykorzystać do podnoszenia dwuteowych dźwigarów stalowych:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_319.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_319.webp",
       "options": [
         "Rys. 1",
         "Rys. 2",
@@ -3831,7 +3831,7 @@
     {
       "id": 320,
       "question": "Które z przedstawionego osprzętu do podnoszenia można wykorzystać do podnoszenia prętów stalowych o znacznej długości:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_320.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_320.webp",
       "options": [
         "Rys. 1",
         "Rys. 2",
@@ -3843,7 +3843,7 @@
     {
       "id": 321,
       "question": "Które z przedstawionego osprzętu do podnoszenia można wykorzystać do podnoszenia ładunków składowanych na paletach transportowych:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_321.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_321.webp",
       "options": [
         "Rys. 1",
         "Rys. 2",
@@ -3855,7 +3855,7 @@
     {
       "id": 322,
       "question": "Które z przedstawionego osprzętu do podnoszenia można wykorzystać do podnoszenia arkusza blachy w pozycji poziomej:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_322.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_322.webp",
       "options": [
         "Rys. 1 i Rys. 2",
         "Rys. 2 i Rys. 3",
@@ -3867,7 +3867,7 @@
     {
       "id": 323,
       "question": "Na zdjęciu poniżej symbol α oznacza:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_323.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_323.webp",
       "options": [
         "Kąt rozwarcia cięgien zawiesia",
         "Maksymalny kąt wierzchołkowy",
@@ -3879,7 +3879,7 @@
     {
       "id": 324,
       "question": "Na zdjęciu poniżej symbol β oznacza:",
-      "image": "/img/zurawie-przenosne/zdjecia/ZURAWIE-PRZENOSNE_324.webp",
+      "image": "/img/zurawie-przenosne/ZURAWIE-PRZENOSNE_324.webp",
       "options": [
         "Długość zawiesia",
         "Kąt odchylenia cięgien od pionu",

@@ -22,14 +22,12 @@ collections:
   # ==========================================
   - name: "udt-materialy"
     label: "📚 UDT: Materiały szkoleniowe (Wspólne)"
-    media_folder: "/img/udt-materialy/zdjecia"
-    public_folder: "/img/udt-materialy/zdjecia"
+    media_folder: "/img/udt-materialy"
+    public_folder: "/img/udt-materialy"
     files:
       - name: "materialy"
         label: "Materiały szkoleniowe (wszystkie kursy UDT)"
         file: "data/udt_materialy.json"
-        media_folder: "/img/udt-materialy/zdjecia"
-        public_folder: "/img/udt-materialy/zdjecia"
         fields:
           - label: "Lista zagadnień (wyświetlana w każdym kursie UDT)"
             name: "items"
@@ -38,9 +36,9 @@ collections:
             fields:
               - { label: "ID (opcjonalnie)", name: "id", widget: "number", required: false }
               - { label: "Pytanie / Zagadnienie", name: "question", widget: "string" }
-              - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false, media_folder: "/img/udt-materialy/zdjecia", public_folder: "/img/udt-materialy/zdjecia" }
-              - { label: "Zdjęcie główne pod pytaniem (opcjonalnie)", name: "image", widget: "image", required: false, media_folder: "/img/udt-materialy/zdjecia", public_folder: "/img/udt-materialy/zdjecia" }
-              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false, media_folder: "/img/udt-materialy/pdf", public_folder: "/img/udt-materialy/pdf" }
+              - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false }
+              - { label: "Zdjęcie główne pod pytaniem (opcjonalnie)", name: "image", widget: "image", required: false }
+              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false, accept: ".pdf,application/pdf" }
               - { label: "Link do wideo / strony (opcjonalnie)", name: "link", widget: "string", required: false }
 
   # ==========================================
@@ -48,14 +46,12 @@ collections:
   # ==========================================
   - name: "wozki-podnosnikowe"
     label: "🚜 UDT: Wózki widłowe podnośnikowe"
-    media_folder: "/img/wozki-podnosnikowe/zdjecia"
-    public_folder: "/img/wozki-podnosnikowe/zdjecia"
+    media_folder: "/img/wozki-podnosnikowe"
+    public_folder: "/img/wozki-podnosnikowe"
     files:
       - name: "questions"
         label: "Pytania Egzaminacyjne"
         file: "data/wozki-podnosnikowe.json"
-        media_folder: "/img/wozki-podnosnikowe/zdjecia"
-        public_folder: "/img/wozki-podnosnikowe/zdjecia"
         fields:
           - label: "Lista pytań"
             name: "questions"
@@ -64,7 +60,7 @@ collections:
             fields:
               - { label: "ID pytania (Numer)", name: "id", widget: "number" }
               - { label: "Treść pytania", name: "question", widget: "text" }
-              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false, media_folder: "/img/wozki-podnosnikowe/zdjecia", public_folder: "/img/wozki-podnosnikowe/zdjecia" }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
               - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
                 name: "options"
                 widget: "list"
@@ -73,8 +69,6 @@ collections:
       - name: "opisy"
         label: "Obsługa techniczna codzienna"
         file: "data/wozki-podnosnikowe_opisy.json"
-        media_folder: "/img/wozki-podnosnikowe/zdjecia"
-        public_folder: "/img/wozki-podnosnikowe/zdjecia"
         fields:
           - label: "Lista pytań (Obsługa techniczna codzienna)"
             name: "items"
@@ -83,10 +77,10 @@ collections:
             fields:
               - { label: "ID (opcjonalnie)", name: "id", widget: "number", required: false }
               - { label: "Pytanie / Zagadnienie", name: "question", widget: "string" }
-              - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false, media_folder: "/img/wozki-podnosnikowe/zdjecia", public_folder: "/img/wozki-podnosnikowe/zdjecia" }
-              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false, media_folder: "/img/wozki-podnosnikowe/zdjecia", public_folder: "/img/wozki-podnosnikowe/zdjecia" }
-              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false, media_folder: "/img/wozki-podnosnikowe/pdf", public_folder: "/img/wozki-podnosnikowe/pdf" }
-              - { label: "Nagranie lektora (opcjonalnie) — dowolny format audio, automatycznie zmniejszane do lekkiego MP3", name: "audio", widget: "file", required: false, media_folder: "/img/wozki-podnosnikowe/audio", public_folder: "/img/wozki-podnosnikowe/audio" }
+              - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false, accept: ".pdf,application/pdf" }
+              - { label: "Nagranie lektora (opcjonalnie) — dowolny format audio, automatycznie zmniejszane do lekkiego MP3", name: "audio", widget: "file", required: false, accept: "audio/*" }
               - { label: "Link do wideo / strony (opcjonalnie)", name: "link", widget: "string", required: false }
       - name: "exam"
         label: "Ustawienia Egzaminu"
@@ -102,14 +96,12 @@ collections:
 
   - name: "wozki-specjalizowane"
     label: "🚜 UDT: Wózki widłowe specjalizowane"
-    media_folder: "/img/wozki-specjalizowane/zdjecia"
-    public_folder: "/img/wozki-specjalizowane/zdjecia"
+    media_folder: "/img/wozki-specjalizowane"
+    public_folder: "/img/wozki-specjalizowane"
     files:
       - name: "questions"
         label: "Pytania Egzaminacyjne"
         file: "data/wozki-specjalizowane.json"
-        media_folder: "/img/wozki-specjalizowane/zdjecia"
-        public_folder: "/img/wozki-specjalizowane/zdjecia"
         fields:
           - label: "Lista pytań"
             name: "questions"
@@ -118,7 +110,7 @@ collections:
             fields:
               - { label: "ID pytania (Numer)", name: "id", widget: "number" }
               - { label: "Treść pytania", name: "question", widget: "text" }
-              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false, media_folder: "/img/wozki-specjalizowane/zdjecia", public_folder: "/img/wozki-specjalizowane/zdjecia" }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
               - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
                 name: "options"
                 widget: "list"
@@ -127,8 +119,6 @@ collections:
       - name: "opisy"
         label: "Obsługa techniczna codzienna"
         file: "data/wozki-specjalizowane_opisy.json"
-        media_folder: "/img/wozki-specjalizowane/zdjecia"
-        public_folder: "/img/wozki-specjalizowane/zdjecia"
         fields:
           - label: "Lista pytań (Obsługa techniczna codzienna)"
             name: "items"
@@ -137,10 +127,10 @@ collections:
             fields:
               - { label: "ID (opcjonalnie)", name: "id", widget: "number", required: false }
               - { label: "Pytanie / Zagadnienie", name: "question", widget: "string" }
-              - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false, media_folder: "/img/wozki-specjalizowane/zdjecia", public_folder: "/img/wozki-specjalizowane/zdjecia" }
-              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false, media_folder: "/img/wozki-specjalizowane/zdjecia", public_folder: "/img/wozki-specjalizowane/zdjecia" }
-              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false, media_folder: "/img/wozki-specjalizowane/pdf", public_folder: "/img/wozki-specjalizowane/pdf" }
-              - { label: "Nagranie lektora (opcjonalnie) — dowolny format audio, automatycznie zmniejszane do lekkiego MP3", name: "audio", widget: "file", required: false, media_folder: "/img/wozki-specjalizowane/audio", public_folder: "/img/wozki-specjalizowane/audio" }
+              - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false, accept: ".pdf,application/pdf" }
+              - { label: "Nagranie lektora (opcjonalnie) — dowolny format audio, automatycznie zmniejszane do lekkiego MP3", name: "audio", widget: "file", required: false, accept: "audio/*" }
               - { label: "Link do wideo / strony (opcjonalnie)", name: "link", widget: "string", required: false }
       - name: "exam"
         label: "Ustawienia Egzaminu"
@@ -156,14 +146,12 @@ collections:
 
   - name: "podesty"
     label: "🏗️ UDT: Podesty ruchome"
-    media_folder: "/img/podesty/zdjecia"
-    public_folder: "/img/podesty/zdjecia"
+    media_folder: "/img/podesty"
+    public_folder: "/img/podesty"
     files:
       - name: "questions"
         label: "Pytania Egzaminacyjne"
         file: "data/podesty.json"
-        media_folder: "/img/podesty/zdjecia"
-        public_folder: "/img/podesty/zdjecia"
         fields:
           - label: "Lista pytań"
             name: "questions"
@@ -172,7 +160,7 @@ collections:
             fields:
               - { label: "ID pytania (Numer)", name: "id", widget: "number" }
               - { label: "Treść pytania", name: "question", widget: "text" }
-              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false, media_folder: "/img/podesty/zdjecia", public_folder: "/img/podesty/zdjecia" }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
               - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
                 name: "options"
                 widget: "list"
@@ -181,8 +169,6 @@ collections:
       - name: "opisy"
         label: "Obsługa techniczna codzienna"
         file: "data/podesty_opisy.json"
-        media_folder: "/img/podesty/zdjecia"
-        public_folder: "/img/podesty/zdjecia"
         fields:
           - label: "Lista pytań (Obsługa techniczna codzienna)"
             name: "items"
@@ -191,10 +177,10 @@ collections:
             fields:
               - { label: "ID (opcjonalnie)", name: "id", widget: "number", required: false }
               - { label: "Pytanie / Zagadnienie", name: "question", widget: "string" }
-              - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false, media_folder: "/img/podesty/zdjecia", public_folder: "/img/podesty/zdjecia" }
-              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false, media_folder: "/img/podesty/zdjecia", public_folder: "/img/podesty/zdjecia" }
-              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false, media_folder: "/img/podesty/pdf", public_folder: "/img/podesty/pdf" }
-              - { label: "Nagranie lektora (opcjonalnie) — dowolny format audio, automatycznie zmniejszane do lekkiego MP3", name: "audio", widget: "file", required: false, media_folder: "/img/podesty/audio", public_folder: "/img/podesty/audio" }
+              - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false, accept: ".pdf,application/pdf" }
+              - { label: "Nagranie lektora (opcjonalnie) — dowolny format audio, automatycznie zmniejszane do lekkiego MP3", name: "audio", widget: "file", required: false, accept: "audio/*" }
               - { label: "Link do wideo / strony (opcjonalnie)", name: "link", widget: "string", required: false }
       - name: "exam"
         label: "Ustawienia Egzaminu"
@@ -210,14 +196,12 @@ collections:
 
   - name: "suwnice"
     label: "🏗️ UDT: Suwnice"
-    media_folder: "/img/suwnice/zdjecia"
-    public_folder: "/img/suwnice/zdjecia"
+    media_folder: "/img/suwnice"
+    public_folder: "/img/suwnice"
     files:
       - name: "questions"
         label: "Pytania Egzaminacyjne"
         file: "data/suwnice.json"
-        media_folder: "/img/suwnice/zdjecia"
-        public_folder: "/img/suwnice/zdjecia"
         fields:
           - label: "Lista pytań"
             name: "questions"
@@ -226,7 +210,7 @@ collections:
             fields:
               - { label: "ID pytania (Numer)", name: "id", widget: "number" }
               - { label: "Treść pytania", name: "question", widget: "text" }
-              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false, media_folder: "/img/suwnice/zdjecia", public_folder: "/img/suwnice/zdjecia" }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
               - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
                 name: "options"
                 widget: "list"
@@ -235,8 +219,6 @@ collections:
       - name: "opisy"
         label: "Obsługa techniczna codzienna"
         file: "data/suwnice_opisy.json"
-        media_folder: "/img/suwnice/zdjecia"
-        public_folder: "/img/suwnice/zdjecia"
         fields:
           - label: "Lista pytań (Obsługa techniczna codzienna)"
             name: "items"
@@ -245,10 +227,10 @@ collections:
             fields:
               - { label: "ID (opcjonalnie)", name: "id", widget: "number", required: false }
               - { label: "Pytanie / Zagadnienie", name: "question", widget: "string" }
-              - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false, media_folder: "/img/suwnice/zdjecia", public_folder: "/img/suwnice/zdjecia" }
-              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false, media_folder: "/img/suwnice/zdjecia", public_folder: "/img/suwnice/zdjecia" }
-              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false, media_folder: "/img/suwnice/pdf", public_folder: "/img/suwnice/pdf" }
-              - { label: "Nagranie lektora (opcjonalnie) — dowolny format audio, automatycznie zmniejszane do lekkiego MP3", name: "audio", widget: "file", required: false, media_folder: "/img/suwnice/audio", public_folder: "/img/suwnice/audio" }
+              - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false, accept: ".pdf,application/pdf" }
+              - { label: "Nagranie lektora (opcjonalnie) — dowolny format audio, automatycznie zmniejszane do lekkiego MP3", name: "audio", widget: "file", required: false, accept: "audio/*" }
               - { label: "Link do wideo / strony (opcjonalnie)", name: "link", widget: "string", required: false }
       - name: "exam"
         label: "Ustawienia Egzaminu"
@@ -264,14 +246,12 @@ collections:
 
   - name: "zurawie-przenosne"
     label: "🏗️ UDT: Żurawie przenośne"
-    media_folder: "/img/zurawie-przenosne/zdjecia"
-    public_folder: "/img/zurawie-przenosne/zdjecia"
+    media_folder: "/img/zurawie-przenosne"
+    public_folder: "/img/zurawie-przenosne"
     files:
       - name: "questions"
         label: "Pytania Egzaminacyjne"
         file: "data/zurawie-przenosne.json"
-        media_folder: "/img/zurawie-przenosne/zdjecia"
-        public_folder: "/img/zurawie-przenosne/zdjecia"
         fields:
           - label: "Lista pytań"
             name: "questions"
@@ -280,7 +260,7 @@ collections:
             fields:
               - { label: "ID pytania (Numer)", name: "id", widget: "number" }
               - { label: "Treść pytania", name: "question", widget: "text" }
-              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false, media_folder: "/img/zurawie-przenosne/zdjecia", public_folder: "/img/zurawie-przenosne/zdjecia" }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
               - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
                 name: "options"
                 widget: "list"
@@ -289,8 +269,6 @@ collections:
       - name: "opisy"
         label: "Obsługa techniczna codzienna"
         file: "data/zurawie-przenosne_opisy.json"
-        media_folder: "/img/zurawie-przenosne/zdjecia"
-        public_folder: "/img/zurawie-przenosne/zdjecia"
         fields:
           - label: "Lista pytań (Obsługa techniczna codzienna)"
             name: "items"
@@ -299,10 +277,10 @@ collections:
             fields:
               - { label: "ID (opcjonalnie)", name: "id", widget: "number", required: false }
               - { label: "Pytanie / Zagadnienie", name: "question", widget: "string" }
-              - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false, media_folder: "/img/zurawie-przenosne/zdjecia", public_folder: "/img/zurawie-przenosne/zdjecia" }
-              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false, media_folder: "/img/zurawie-przenosne/zdjecia", public_folder: "/img/zurawie-przenosne/zdjecia" }
-              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false, media_folder: "/img/zurawie-przenosne/pdf", public_folder: "/img/zurawie-przenosne/pdf" }
-              - { label: "Nagranie lektora (opcjonalnie) — dowolny format audio, automatycznie zmniejszane do lekkiego MP3", name: "audio", widget: "file", required: false, media_folder: "/img/zurawie-przenosne/audio", public_folder: "/img/zurawie-przenosne/audio" }
+              - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false, accept: ".pdf,application/pdf" }
+              - { label: "Nagranie lektora (opcjonalnie) — dowolny format audio, automatycznie zmniejszane do lekkiego MP3", name: "audio", widget: "file", required: false, accept: "audio/*" }
               - { label: "Link do wideo / strony (opcjonalnie)", name: "link", widget: "string", required: false }
       - name: "exam"
         label: "Ustawienia Egzaminu"
@@ -318,14 +296,12 @@ collections:
 
   - name: "zurawie-samojezdne"
     label: "🏗️ UDT: Żurawie samojezdne"
-    media_folder: "/img/zurawie-samojezdne/zdjecia"
-    public_folder: "/img/zurawie-samojezdne/zdjecia"
+    media_folder: "/img/zurawie-samojezdne"
+    public_folder: "/img/zurawie-samojezdne"
     files:
       - name: "questions"
         label: "Pytania Egzaminacyjne"
         file: "data/zurawie-samojezdne.json"
-        media_folder: "/img/zurawie-samojezdne/zdjecia"
-        public_folder: "/img/zurawie-samojezdne/zdjecia"
         fields:
           - label: "Lista pytań"
             name: "questions"
@@ -334,7 +310,7 @@ collections:
             fields:
               - { label: "ID pytania (Numer)", name: "id", widget: "number" }
               - { label: "Treść pytania", name: "question", widget: "text" }
-              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false, media_folder: "/img/zurawie-samojezdne/zdjecia", public_folder: "/img/zurawie-samojezdne/zdjecia" }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
               - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
                 name: "options"
                 widget: "list"
@@ -343,8 +319,6 @@ collections:
       - name: "opisy"
         label: "Obsługa techniczna codzienna"
         file: "data/zurawie-samojezdne_opisy.json"
-        media_folder: "/img/zurawie-samojezdne/zdjecia"
-        public_folder: "/img/zurawie-samojezdne/zdjecia"
         fields:
           - label: "Lista pytań (Obsługa techniczna codzienna)"
             name: "items"
@@ -353,10 +327,10 @@ collections:
             fields:
               - { label: "ID (opcjonalnie)", name: "id", widget: "number", required: false }
               - { label: "Pytanie / Zagadnienie", name: "question", widget: "string" }
-              - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false, media_folder: "/img/zurawie-samojezdne/zdjecia", public_folder: "/img/zurawie-samojezdne/zdjecia" }
-              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false, media_folder: "/img/zurawie-samojezdne/zdjecia", public_folder: "/img/zurawie-samojezdne/zdjecia" }
-              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false, media_folder: "/img/zurawie-samojezdne/pdf", public_folder: "/img/zurawie-samojezdne/pdf" }
-              - { label: "Nagranie lektora (opcjonalnie) — dowolny format audio, automatycznie zmniejszane do lekkiego MP3", name: "audio", widget: "file", required: false, media_folder: "/img/zurawie-samojezdne/audio", public_folder: "/img/zurawie-samojezdne/audio" }
+              - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false, accept: ".pdf,application/pdf" }
+              - { label: "Nagranie lektora (opcjonalnie) — dowolny format audio, automatycznie zmniejszane do lekkiego MP3", name: "audio", widget: "file", required: false, accept: "audio/*" }
               - { label: "Link do wideo / strony (opcjonalnie)", name: "link", widget: "string", required: false }
       - name: "exam"
         label: "Ustawienia Egzaminu"
@@ -375,14 +349,12 @@ collections:
   # ==========================================
   - name: "bhp-1"
     label: "🦺 BHP: Moduł 1"
-    media_folder: "/img/bhp-1/zdjecia"
-    public_folder: "/img/bhp-1/zdjecia"
+    media_folder: "/img/bhp-1"
+    public_folder: "/img/bhp-1"
     files:
       - name: "questions"
         label: "Pytania Egzaminacyjne (ukryte w menu, używane w egzaminie)"
         file: "data/bhp-1.json"
-        media_folder: "/img/bhp-1/zdjecia"
-        public_folder: "/img/bhp-1/zdjecia"
         fields:
           - label: "Lista pytań"
             name: "questions"
@@ -391,7 +363,7 @@ collections:
             fields:
               - { label: "ID pytania (Numer)", name: "id", widget: "number" }
               - { label: "Treść pytania", name: "question", widget: "text" }
-              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false, media_folder: "/img/bhp-1/zdjecia", public_folder: "/img/bhp-1/zdjecia" }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
               - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
                 name: "options"
                 widget: "list"
@@ -400,8 +372,6 @@ collections:
       - name: "materialy"
         label: "Materiały szkoleniowe"
         file: "data/bhp-1_materialy.json"
-        media_folder: "/img/bhp-1/zdjecia"
-        public_folder: "/img/bhp-1/zdjecia"
         fields:
           - label: "Materiały szkoleniowe (Pytania / Zagadnienia)"
             name: "items"
@@ -410,9 +380,9 @@ collections:
             fields:
               - { label: "ID (opcjonalnie)", name: "id", widget: "number", required: false }
               - { label: "Pytanie / Tytuł zagadnienia", name: "question", widget: "string" }
-              - { label: "Treść / Odpowiedź (formatowanie jak w Wordzie, zdjęcia, listy)", name: "answer", widget: "markdown", required: false, media_folder: "/img/bhp-1/zdjecia", public_folder: "/img/bhp-1/zdjecia" }
-              - { label: "Zdjęcie / Ilustracja (opcjonalnie)", name: "image", widget: "image", required: false, media_folder: "/img/bhp-1/zdjecia", public_folder: "/img/bhp-1/zdjecia" }
-              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false, media_folder: "/img/bhp-1/pdf", public_folder: "/img/bhp-1/pdf" }
+              - { label: "Treść / Odpowiedź (formatowanie jak w Wordzie, zdjęcia, listy)", name: "answer", widget: "markdown", required: false }
+              - { label: "Zdjęcie / Ilustracja (opcjonalnie)", name: "image", widget: "image", required: false }
+              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false, accept: ".pdf,application/pdf" }
               - { label: "Link do wideo / prezentacji (opcjonalnie)", name: "link", widget: "string", required: false }
       - name: "exam"
         label: "Ustawienia Egzaminu"
@@ -423,14 +393,12 @@ collections:
 
   - name: "bhp-2"
     label: "🦺 BHP: Moduł 2"
-    media_folder: "/img/bhp-2/zdjecia"
-    public_folder: "/img/bhp-2/zdjecia"
+    media_folder: "/img/bhp-2"
+    public_folder: "/img/bhp-2"
     files:
       - name: "questions"
         label: "Pytania Egzaminacyjne (ukryte w menu, używane w egzaminie)"
         file: "data/bhp-2.json"
-        media_folder: "/img/bhp-2/zdjecia"
-        public_folder: "/img/bhp-2/zdjecia"
         fields:
           - label: "Lista pytań"
             name: "questions"
@@ -439,7 +407,7 @@ collections:
             fields:
               - { label: "ID pytania (Numer)", name: "id", widget: "number" }
               - { label: "Treść pytania", name: "question", widget: "text" }
-              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false, media_folder: "/img/bhp-2/zdjecia", public_folder: "/img/bhp-2/zdjecia" }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
               - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
                 name: "options"
                 widget: "list"
@@ -448,8 +416,6 @@ collections:
       - name: "materialy"
         label: "Materiały szkoleniowe"
         file: "data/bhp-2_materialy.json"
-        media_folder: "/img/bhp-2/zdjecia"
-        public_folder: "/img/bhp-2/zdjecia"
         fields:
           - label: "Materiały szkoleniowe (Pytania / Zagadnienia)"
             name: "items"
@@ -458,9 +424,9 @@ collections:
             fields:
               - { label: "ID (opcjonalnie)", name: "id", widget: "number", required: false }
               - { label: "Pytanie / Tytuł zagadnienia", name: "question", widget: "string" }
-              - { label: "Treść / Odpowiedź (formatowanie jak w Wordzie, zdjęcia, listy)", name: "answer", widget: "markdown", required: false, media_folder: "/img/bhp-2/zdjecia", public_folder: "/img/bhp-2/zdjecia" }
-              - { label: "Zdjęcie / Ilustracja (opcjonalnie)", name: "image", widget: "image", required: false, media_folder: "/img/bhp-2/zdjecia", public_folder: "/img/bhp-2/zdjecia" }
-              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false, media_folder: "/img/bhp-2/pdf", public_folder: "/img/bhp-2/pdf" }
+              - { label: "Treść / Odpowiedź (formatowanie jak w Wordzie, zdjęcia, listy)", name: "answer", widget: "markdown", required: false }
+              - { label: "Zdjęcie / Ilustracja (opcjonalnie)", name: "image", widget: "image", required: false }
+              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false, accept: ".pdf,application/pdf" }
               - { label: "Link do wideo / prezentacji (opcjonalnie)", name: "link", widget: "string", required: false }
       - name: "exam"
         label: "Ustawienia Egzaminu"
@@ -471,14 +437,12 @@ collections:
 
   - name: "bhp-3"
     label: "🦺 BHP: Moduł 3"
-    media_folder: "/img/bhp-3/zdjecia"
-    public_folder: "/img/bhp-3/zdjecia"
+    media_folder: "/img/bhp-3"
+    public_folder: "/img/bhp-3"
     files:
       - name: "questions"
         label: "Pytania Egzaminacyjne (ukryte w menu, używane w egzaminie)"
         file: "data/bhp-3.json"
-        media_folder: "/img/bhp-3/zdjecia"
-        public_folder: "/img/bhp-3/zdjecia"
         fields:
           - label: "Lista pytań"
             name: "questions"
@@ -487,7 +451,7 @@ collections:
             fields:
               - { label: "ID pytania (Numer)", name: "id", widget: "number" }
               - { label: "Treść pytania", name: "question", widget: "text" }
-              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false, media_folder: "/img/bhp-3/zdjecia", public_folder: "/img/bhp-3/zdjecia" }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
               - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
                 name: "options"
                 widget: "list"
@@ -496,8 +460,6 @@ collections:
       - name: "materialy"
         label: "Materiały szkoleniowe"
         file: "data/bhp-3_materialy.json"
-        media_folder: "/img/bhp-3/zdjecia"
-        public_folder: "/img/bhp-3/zdjecia"
         fields:
           - label: "Materiały szkoleniowe (Pytania / Zagadnienia)"
             name: "items"
@@ -506,9 +468,9 @@ collections:
             fields:
               - { label: "ID (opcjonalnie)", name: "id", widget: "number", required: false }
               - { label: "Pytanie / Tytuł zagadnienia", name: "question", widget: "string" }
-              - { label: "Treść / Odpowiedź (formatowanie jak w Wordzie, zdjęcia, listy)", name: "answer", widget: "markdown", required: false, media_folder: "/img/bhp-3/zdjecia", public_folder: "/img/bhp-3/zdjecia" }
-              - { label: "Zdjęcie / Ilustracja (opcjonalnie)", name: "image", widget: "image", required: false, media_folder: "/img/bhp-3/zdjecia", public_folder: "/img/bhp-3/zdjecia" }
-              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false, media_folder: "/img/bhp-3/pdf", public_folder: "/img/bhp-3/pdf" }
+              - { label: "Treść / Odpowiedź (formatowanie jak w Wordzie, zdjęcia, listy)", name: "answer", widget: "markdown", required: false }
+              - { label: "Zdjęcie / Ilustracja (opcjonalnie)", name: "image", widget: "image", required: false }
+              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false, accept: ".pdf,application/pdf" }
               - { label: "Link do wideo / prezentacji (opcjonalnie)", name: "link", widget: "string", required: false }
       - name: "exam"
         label: "Ustawienia Egzaminu"
@@ -519,14 +481,12 @@ collections:
 
   - name: "bhp-4"
     label: "🦺 BHP: Moduł 4"
-    media_folder: "/img/bhp-4/zdjecia"
-    public_folder: "/img/bhp-4/zdjecia"
+    media_folder: "/img/bhp-4"
+    public_folder: "/img/bhp-4"
     files:
       - name: "questions"
         label: "Pytania Egzaminacyjne (ukryte w menu, używane w egzaminie)"
         file: "data/bhp-4.json"
-        media_folder: "/img/bhp-4/zdjecia"
-        public_folder: "/img/bhp-4/zdjecia"
         fields:
           - label: "Lista pytań"
             name: "questions"
@@ -535,7 +495,7 @@ collections:
             fields:
               - { label: "ID pytania (Numer)", name: "id", widget: "number" }
               - { label: "Treść pytania", name: "question", widget: "text" }
-              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false, media_folder: "/img/bhp-4/zdjecia", public_folder: "/img/bhp-4/zdjecia" }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
               - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
                 name: "options"
                 widget: "list"
@@ -544,8 +504,6 @@ collections:
       - name: "materialy"
         label: "Materiały szkoleniowe"
         file: "data/bhp-4_materialy.json"
-        media_folder: "/img/bhp-4/zdjecia"
-        public_folder: "/img/bhp-4/zdjecia"
         fields:
           - label: "Materiały szkoleniowe (Pytania / Zagadnienia)"
             name: "items"
@@ -554,9 +512,9 @@ collections:
             fields:
               - { label: "ID (opcjonalnie)", name: "id", widget: "number", required: false }
               - { label: "Pytanie / Tytuł zagadnienia", name: "question", widget: "string" }
-              - { label: "Treść / Odpowiedź (formatowanie jak w Wordzie, zdjęcia, listy)", name: "answer", widget: "markdown", required: false, media_folder: "/img/bhp-4/zdjecia", public_folder: "/img/bhp-4/zdjecia" }
-              - { label: "Zdjęcie / Ilustracja (opcjonalnie)", name: "image", widget: "image", required: false, media_folder: "/img/bhp-4/zdjecia", public_folder: "/img/bhp-4/zdjecia" }
-              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false, media_folder: "/img/bhp-4/pdf", public_folder: "/img/bhp-4/pdf" }
+              - { label: "Treść / Odpowiedź (formatowanie jak w Wordzie, zdjęcia, listy)", name: "answer", widget: "markdown", required: false }
+              - { label: "Zdjęcie / Ilustracja (opcjonalnie)", name: "image", widget: "image", required: false }
+              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false, accept: ".pdf,application/pdf" }
               - { label: "Link do wideo / prezentacji (opcjonalnie)", name: "link", widget: "string", required: false }
       - name: "exam"
         label: "Ustawienia Egzaminu"

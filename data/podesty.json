@@ -903,7 +903,7 @@
     {
       "id": 76,
       "question": "W oparciu o przedstawiony rysunek określ maksymalny udźwig podestu:",
-      "image": "/img/podesty/zdjecia/PODESTY_76.webp",
+      "image": "/img/podesty/PODESTY_76.webp",
       "options": [
         "165 kg",
         "225 kg",
@@ -939,7 +939,7 @@
     {
       "id": 79,
       "question": "Przedstawiony rysunek określa:",
-      "image": "/img/podesty/zdjecia/PODESTY_79.webp",
+      "image": "/img/podesty/PODESTY_79.webp",
       "options": [
         "Ilość osób mogących pracować na platformie roboczej",
         "Miejsce zaczepu szelek bezpieczeństwa",
@@ -951,7 +951,7 @@
     {
       "id": 80,
       "question": "Przedstawiony rysunek określa:",
-      "image": "/img/podesty/zdjecia/PODESTY_80.webp",
+      "image": "/img/podesty/PODESTY_80.webp",
       "options": [
         "Maksymalny udźwig podestu wyrażona w niutonach",
         "Maksymalną prędkość podestu",
@@ -963,7 +963,7 @@
     {
       "id": 81,
       "question": "Przedstawiony rysunek określa:",
-      "image": "/img/podesty/zdjecia/PODESTY_81.webp",
+      "image": "/img/podesty/PODESTY_81.webp",
       "options": [
         "Maksymalny udźwig podestu wyrażona w niutonach",
         "Maksymalna dopuszczalną siłę wiatru",
@@ -975,7 +975,7 @@
     {
       "id": 82,
       "question": "Paląca się lampka ostrzegawcza przy pokazanym symbolu graficznym występującym w niektórych podestach oznacza:",
-      "image": "/img/podesty/zdjecia/PODESTY_82.webp",
+      "image": "/img/podesty/PODESTY_82.webp",
       "options": [
         "Wystąpienie awarii sterowania",
         "Przekroczenie dopuszczalnego udźwigu podestu",
@@ -987,7 +987,7 @@
     {
       "id": 83,
       "question": "Podest oznaczony przedstawionym rysunkiem jest:",
-      "image": "/img/podesty/zdjecia/PODESTY_83.webp",
+      "image": "/img/podesty/PODESTY_83.webp",
       "options": [
         "Przeznaczony do pracy w dowolnym miejscu",
         "Przeznaczony do pracy wyłącznie wewnątrz pomieszczeń",
@@ -999,7 +999,7 @@
     {
       "id": 84,
       "question": "Przedstawiony rysunek określa:",
-      "image": "/img/podesty/zdjecia/PODESTY_84.webp",
+      "image": "/img/podesty/PODESTY_84.webp",
       "options": [
         "Maksymalną prędkość jazdy podestu",
         "Maksymalne dopuszczalne nachylenie podłoża na którym pracuje podest",
@@ -1011,7 +1011,7 @@
     {
       "id": 85,
       "question": "Wybór pozycji A w przedstawionym rysunku oznacza:",
-      "image": "/img/podesty/zdjecia/PODESTY_85.webp",
+      "image": "/img/podesty/PODESTY_85.webp",
       "options": [
         "Załączenie mechanizmu podnoszenia",
         "Załączenie mechanizmu jazdy",
@@ -1023,7 +1023,7 @@
     {
       "id": 86,
       "question": "Załączenie mechanizmu jazdy podestu nożycowego realizowane jest poprzez wychylenie dźwigni sterującej po wcześniejszym wciśnięciu przycisku oznaczonego literą:",
-      "image": "/img/podesty/zdjecia/PODESTY_86-87.webp",
+      "image": "/img/podesty/PODESTY_86-87.webp",
       "options": [
         "A",
         "B",
@@ -1035,7 +1035,7 @@
     {
       "id": 87,
       "question": "Załączenie mechanizmu podnoszenia podestu nożycowego realizowane jest poprzez wychylenie dźwigni sterującej po wcześniejszym wciśnięciu przycisku oznaczonego literą:",
-      "image": "/img/podesty/zdjecia/PODESTY_86-87.webp",
+      "image": "/img/podesty/PODESTY_86-87.webp",
       "options": [
         "A",
         "B",
@@ -1047,7 +1047,7 @@
     {
       "id": 88,
       "question": "Który z oznaczonych piktogramów oznacza funkcję skrętu kół jezdnych podestu:",
-      "image": "/img/podesty/zdjecia/PODESTY_86-87.webp",
+      "image": "/img/podesty/PODESTY_86-87.webp",
       "options": [
         "A",
         "B",
@@ -1059,7 +1059,7 @@
     {
       "id": 89,
       "question": "Na maksymalny udźwig podestu z przedstawionego rysunku składa się:",
-      "image": "/img/podesty/zdjecia/PODESTY_89.webp",
+      "image": "/img/podesty/PODESTY_89.webp",
       "options": [
         "80 kg plus 1 osoba",
         "250 kg w tym 2 osoby",
@@ -1071,7 +1071,7 @@
     {
       "id": 90,
       "question": "Przedstawiony rysunek określa:",
-      "image": "/img/podesty/zdjecia/PODESTY_90.webp",
+      "image": "/img/podesty/PODESTY_90.webp",
       "options": [
         "Środek ciężkości platformy roboczej",
         "Poszczególne prędkości ruchów roboczych w skali od 1 do 5",
@@ -1083,7 +1083,7 @@
     {
       "id": 91,
       "question": "Wychylenie dźwigni sterującej w kierunku A powoduje:",
-      "image": "/img/podesty/zdjecia/PODESTY_91-92-93.webp",
+      "image": "/img/podesty/PODESTY_91-92-93.webp",
       "options": [
         "Załączenie mechanizmu obrotu platformy roboczej",
         "Załączenie mechanizmu skrętu kół jezdnych",
@@ -1095,7 +1095,7 @@
     {
       "id": 92,
       "question": "Wychylenie dźwigni sterującej w kierunku B powoduje:",
-      "image": "/img/podesty/zdjecia/PODESTY_91-92-93.webp",
+      "image": "/img/podesty/PODESTY_91-92-93.webp",
       "options": [
         "Załączenie mechanizmu podnoszenia wysięgnika pomocniczego",
         "Załączenie mechanizmu podnoszenia wysięgnika głównego",
@@ -1107,7 +1107,7 @@
     {
       "id": 93,
       "question": "Wciśnięcie przycisków oznaczonych literą C znajdujących się na dźwigni sterującej powoduje:",
-      "image": "/img/podesty/zdjecia/PODESTY_91-92-93.webp",
+      "image": "/img/podesty/PODESTY_91-92-93.webp",
       "options": [
         "Załączenie mechanizmu podnoszenia wysięgnika głównego",
         "Załączenie mechanizmu teleskopowania",
@@ -1119,7 +1119,7 @@
     {
       "id": 94,
       "question": "Przedstawiony symbol określa:",
-      "image": "/img/podesty/zdjecia/PODESTY_94.webp",
+      "image": "/img/podesty/PODESTY_94.webp",
       "options": [
         "Przycisk załączający mechanizm jazdy",
         "Przycisk załączający mechanizm podnoszenia",
@@ -1131,7 +1131,7 @@
     {
       "id": 95,
       "question": "Mechaniczny element bezpieczeństwa zabezpieczający podest nożycowy przed skutkami uszkodzenia kół jezdnych podczas jazdy z uniesioną platformą to oznaczony na rysunku element:",
-      "image": "/img/podesty/zdjecia/PODESTY_95.webp",
+      "image": "/img/podesty/PODESTY_95.webp",
       "options": [
         "A",
         "B",
@@ -1695,7 +1695,7 @@
     {
       "id": 142,
       "question": "W oparciu o przedstawiony rysunek wskaż poprawny pomiar bezpiecznej odległości podestu od krawędzi wykopu:",
-      "image": "/img/podesty/zdjecia/PODESTY_142.webp",
+      "image": "/img/podesty/PODESTY_142.webp",
       "options": [
         "A",
         "B",
@@ -1755,7 +1755,7 @@
     {
       "id": 147,
       "question": "W oparciu o przedstawiony rysunek wskaż prawidłowy pomiar minimalnej odległości od linii elektroenergetycznych:",
-      "image": "/img/podesty/zdjecia/PODESTY_147.webp",
+      "image": "/img/podesty/PODESTY_147.webp",
       "options": [
         "A",
         "B",
@@ -1791,7 +1791,7 @@
     {
       "id": 150,
       "question": "W oparciu o przedstawiony rysunek określ prawidłowe parametry podestu:",
-      "image": "/img/podesty/zdjecia/PODESTY_150-151.webp",
+      "image": "/img/podesty/PODESTY_150-151.webp",
       "options": [
         "Maksymalny udźwig podestu przy maksymalnym dopuszczalnym pochyleniu 80 kg",
         "Maksymalna wysokość robocza 12 m",
@@ -1803,7 +1803,7 @@
     {
       "id": 151,
       "question": "W oparciu o rysunek określ prawidłowe parametry podestu:",
-      "image": "/img/podesty/zdjecia/PODESTY_150-151.webp",
+      "image": "/img/podesty/PODESTY_150-151.webp",
       "options": [
         "Maksymalny udźwig 250 kg plus 2 osoby",
         "Dopuszczalna ilość osób - 2",
@@ -2139,7 +2139,7 @@
     {
       "id": 179,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
-      "image": "/img/podesty/zdjecia/PODESTY_179-186.webp",
+      "image": "/img/podesty/PODESTY_179-186.webp",
       "options": [
         "Maksymalna wysokość podnoszenia 20,5 m",
         "Maksymalna wysokość robocza 22,5 m",
@@ -2151,7 +2151,7 @@
     {
       "id": 180,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
-      "image": "/img/podesty/zdjecia/PODESTY_179-186.webp",
+      "image": "/img/podesty/PODESTY_179-186.webp",
       "options": [
         "Maksymalny wysięg podestu obciążonego ładunkiem 200 kg - 13 m",
         "Maksymalna wysokość podnoszenia 23 m",
@@ -2163,7 +2163,7 @@
     {
       "id": 181,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
-      "image": "/img/podesty/zdjecia/PODESTY_179-186.webp",
+      "image": "/img/podesty/PODESTY_179-186.webp",
       "options": [
         "Maksymalny zakres obrotu 280°",
         "Maksymalny wysięg podestu obciążonego ładunkiem 80 kg - 13, 5 m",
@@ -2175,7 +2175,7 @@
     {
       "id": 182,
       "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 15 m i wysięgu 11 m:",
-      "image": "/img/podesty/zdjecia/PODESTY_179-186.webp",
+      "image": "/img/podesty/PODESTY_179-186.webp",
       "options": [
         "360 kg",
         "280 kg",
@@ -2187,7 +2187,7 @@
     {
       "id": 183,
       "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 15 m i wysięgu 7 m:",
-      "image": "/img/podesty/zdjecia/PODESTY_179-186.webp",
+      "image": "/img/podesty/PODESTY_179-186.webp",
       "options": [
         "360 kg",
         "280 kg",
@@ -2199,7 +2199,7 @@
     {
       "id": 184,
       "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 22 m i wysięgu 4m:",
-      "image": "/img/podesty/zdjecia/PODESTY_179-186.webp",
+      "image": "/img/podesty/PODESTY_179-186.webp",
       "options": [
         "360 kg",
         "280 kg",
@@ -2211,7 +2211,7 @@
     {
       "id": 185,
       "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 22 m i wysięgu 9m:",
-      "image": "/img/podesty/zdjecia/PODESTY_179-186.webp",
+      "image": "/img/podesty/PODESTY_179-186.webp",
       "options": [
         "360 kg",
         "280 kg",
@@ -2223,7 +2223,7 @@
     {
       "id": 186,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż maksymalny wysięg platformy roboczej obciążonej masą 200 kg:",
-      "image": "/img/podesty/zdjecia/PODESTY_179-186.webp",
+      "image": "/img/podesty/PODESTY_179-186.webp",
       "options": [
         "9 m",
         "10 m",
@@ -2235,7 +2235,7 @@
     {
       "id": 187,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
-      "image": "/img/podesty/zdjecia/PODESTY_187-197.webp",
+      "image": "/img/podesty/PODESTY_187-197.webp",
       "options": [
         "Maksymalna wysokość podnoszenia 25 m",
         "Maksymalny wysięg podstawy obciążonej masą 230 kg - 11 m",
@@ -2247,7 +2247,7 @@
     {
       "id": 188,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
-      "image": "/img/podesty/zdjecia/PODESTY_187-197.webp",
+      "image": "/img/podesty/PODESTY_187-197.webp",
       "options": [
         "Maksymalny wysięg podestu obciążonego ładunkiem 220 kg - 13 m",
         "Praca podestu bez podpór",
@@ -2259,7 +2259,7 @@
     {
       "id": 189,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
-      "image": "/img/podesty/zdjecia/PODESTY_187-197.webp",
+      "image": "/img/podesty/PODESTY_187-197.webp",
       "options": [
         "Maksymalny udźwig podestu 230 kg",
         "Maksymalny wysięg podestu obciążonego ładunkiem 80 kg - 13 m",
@@ -2271,7 +2271,7 @@
     {
       "id": 190,
       "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 17 m i wysięgu 11 m:",
-      "image": "/img/podesty/zdjecia/PODESTY_187-197.webp",
+      "image": "/img/podesty/PODESTY_187-197.webp",
       "options": [
         "230 kg",
         "200 kg",
@@ -2283,7 +2283,7 @@
     {
       "id": 191,
       "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 18 m i wysięgu 8 m :",
-      "image": "/img/podesty/zdjecia/PODESTY_187-197.webp",
+      "image": "/img/podesty/PODESTY_187-197.webp",
       "options": [
         "Praca niedozwolona ze względu na przekroczenia dopuszczalnych parametrów pracy",
         "230 kg",
@@ -2295,7 +2295,7 @@
     {
       "id": 192,
       "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 22 m i wysięgu 4m:",
-      "image": "/img/podesty/zdjecia/PODESTY_187-197.webp",
+      "image": "/img/podesty/PODESTY_187-197.webp",
       "options": [
         "Praca niedozwolona ze względu na przekroczenia dopuszczalnych parametrów pracy",
         "230 kg",
@@ -2307,7 +2307,7 @@
     {
       "id": 193,
       "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 26 m i wysięgu 7m:",
-      "image": "/img/podesty/zdjecia/PODESTY_187-197.webp",
+      "image": "/img/podesty/PODESTY_187-197.webp",
       "options": [
         "100 kg",
         "200 kg",
@@ -2319,7 +2319,7 @@
     {
       "id": 194,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż maksymalny wysięg platformy roboczej obciążonej masą 200 kg uniesionej na wysokość 22 m:",
-      "image": "/img/podesty/zdjecia/PODESTY_187-197.webp",
+      "image": "/img/podesty/PODESTY_187-197.webp",
       "options": [
         "4.7 m",
         "6,7 m",
@@ -2331,7 +2331,7 @@
     {
       "id": 195,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż maksymalny wysięg platformy roboczej obciążonej masą 230 kg uniesionej na wysokość 17 m:",
-      "image": "/img/podesty/zdjecia/PODESTY_187-197.webp",
+      "image": "/img/podesty/PODESTY_187-197.webp",
       "options": [
         "4 m",
         "6 m",
@@ -2343,7 +2343,7 @@
     {
       "id": 196,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż maksymalny wysięg platformy roboczej obciążonej masą 100 kg uniesionej na wysokość 14 m:",
-      "image": "/img/podesty/zdjecia/PODESTY_187-197.webp",
+      "image": "/img/podesty/PODESTY_187-197.webp",
       "options": [
         "6 m",
         "7 m",
@@ -2355,7 +2355,7 @@
     {
       "id": 197,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż maksymalny wysięg platformy roboczej obciążonej masą 100 kg uniesionej na wysokość 18 m:",
-      "image": "/img/podesty/zdjecia/PODESTY_187-197.webp",
+      "image": "/img/podesty/PODESTY_187-197.webp",
       "options": [
         "6 m",
         "8 m",
@@ -2367,7 +2367,7 @@
     {
       "id": 198,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
-      "image": "/img/podesty/zdjecia/PODESTY_198-208.webp",
+      "image": "/img/podesty/PODESTY_198-208.webp",
       "options": [
         "Maksymalna wysokość podnoszenia 21 m",
         "Maksymalny wysięg podstawy obciążonej masą 215 kg - 8,2 m",
@@ -2379,7 +2379,7 @@
     {
       "id": 199,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
-      "image": "/img/podesty/zdjecia/PODESTY_198-208.webp",
+      "image": "/img/podesty/PODESTY_198-208.webp",
       "options": [
         "Maksymalny wysięg podestu obciążonego ładunkiem 115 kg - 11,8 m",
         "Maksymalny udźwig podestu 80 kg",
@@ -2391,7 +2391,7 @@
     {
       "id": 200,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
-      "image": "/img/podesty/zdjecia/PODESTY_198-208.webp",
+      "image": "/img/podesty/PODESTY_198-208.webp",
       "options": [
         "Maksymalny udźwig podestu 215 kg",
         "Maksymalny wysięg podestu obciążonego ładunkiem 215 kg - 11,8 m",
@@ -2403,7 +2403,7 @@
     {
       "id": 201,
       "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 21 m i wysięgu 11 m:",
-      "image": "/img/podesty/zdjecia/PODESTY_198-208.webp",
+      "image": "/img/podesty/PODESTY_198-208.webp",
       "options": [
         "215 kg",
         "115 kg",
@@ -2415,7 +2415,7 @@
     {
       "id": 202,
       "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 18 m i wysięgu 8m:",
-      "image": "/img/podesty/zdjecia/PODESTY_198-208.webp",
+      "image": "/img/podesty/PODESTY_198-208.webp",
       "options": [
         "Praca niedozwolona ze względu na przekroczenia dopuszczalnych parametrów pracy",
         "215 kg",
@@ -2427,7 +2427,7 @@
     {
       "id": 203,
       "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 20 m i wysięgu 10 m:",
-      "image": "/img/podesty/zdjecia/PODESTY_198-208.webp",
+      "image": "/img/podesty/PODESTY_198-208.webp",
       "options": [
         "Praca niedozwolona ze względu na przekroczenia dopuszczalnych parametrów pracy",
         "215 kg",
@@ -2439,7 +2439,7 @@
     {
       "id": 204,
       "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 19 m i wysięgu 11 m:",
-      "image": "/img/podesty/zdjecia/PODESTY_198-208.webp",
+      "image": "/img/podesty/PODESTY_198-208.webp",
       "options": [
         "215 kg",
         "115 kg",
@@ -2451,7 +2451,7 @@
     {
       "id": 205,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż maksymalny wysięg platformy roboczej obciążonej masą 215kg uniesionej na wysokość 22 m:",
-      "image": "/img/podesty/zdjecia/PODESTY_198-208.webp",
+      "image": "/img/podesty/PODESTY_198-208.webp",
       "options": [
         "7 m",
         "6 m",
@@ -2463,7 +2463,7 @@
     {
       "id": 206,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż maksymalny wysięg platformy roboczej obciążonej masą 215 kg uniesionej na wysokość 17 m:",
-      "image": "/img/podesty/zdjecia/PODESTY_198-208.webp",
+      "image": "/img/podesty/PODESTY_198-208.webp",
       "options": [
         "10,2 m",
         "11,2 m",
@@ -2475,7 +2475,7 @@
     {
       "id": 207,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż maksymalny wysięg platformy roboczej obciążonej masą 115 kg uniesionej na wysokość 14 m:",
-      "image": "/img/podesty/zdjecia/PODESTY_198-208.webp",
+      "image": "/img/podesty/PODESTY_198-208.webp",
       "options": [
         "6 m",
         "9,4 m",
@@ -2487,7 +2487,7 @@
     {
       "id": 208,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż maksymalny wysięg platformy roboczej obciążonej masą 80 kg uniesionej na wysokość 18 m:",
-      "image": "/img/podesty/zdjecia/PODESTY_198-208.webp",
+      "image": "/img/podesty/PODESTY_198-208.webp",
       "options": [
         "8,6 m",
         "11,8 m",
@@ -2499,7 +2499,7 @@
     {
       "id": 209,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
-      "image": "/img/podesty/zdjecia/PODESTY_209-212.webp",
+      "image": "/img/podesty/PODESTY_209-212.webp",
       "options": [
         "Maksymalna wysokość podnoszenia 19,8 m",
         "Maksymalna wysokość robocza 19,8 m",
@@ -2511,7 +2511,7 @@
     {
       "id": 210,
       "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 16 m i wysięgu 8 m:",
-      "image": "/img/podesty/zdjecia/PODESTY_209-212.webp",
+      "image": "/img/podesty/PODESTY_209-212.webp",
       "options": [
         "360 kg",
         "280 kg",
@@ -2523,7 +2523,7 @@
     {
       "id": 211,
       "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 15 m i wysięgu 10 m:",
-      "image": "/img/podesty/zdjecia/PODESTY_209-212.webp",
+      "image": "/img/podesty/PODESTY_209-212.webp",
       "options": [
         "300 kg",
         "280 kg",
@@ -2535,7 +2535,7 @@
     {
       "id": 212,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż maksymalny wysięg platformy roboczej obciążonej masą 200 kg:",
-      "image": "/img/podesty/zdjecia/PODESTY_209-212.webp",
+      "image": "/img/podesty/PODESTY_209-212.webp",
       "options": [
         "9,5 m",
         "8,5 m",
@@ -2547,7 +2547,7 @@
     {
       "id": 213,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
-      "image": "/img/podesty/zdjecia/PODESTY_213-219.webp",
+      "image": "/img/podesty/PODESTY_213-219.webp",
       "options": [
         "Maksymalna wysokość podnoszenia 14,5 m",
         "Maksymalna wysokość robocza 14,5 m",
@@ -2559,7 +2559,7 @@
     {
       "id": 214,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
-      "image": "/img/podesty/zdjecia/PODESTY_213-219.webp",
+      "image": "/img/podesty/PODESTY_213-219.webp",
       "options": [
         "Maksymalny wysięg podestu obciążonego ładunkiem 80 kg - 6 m",
         "Maksymalna wysokość podnoszenia 14,5 m",
@@ -2571,7 +2571,7 @@
     {
       "id": 215,
       "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 12 m i wysięgu 4m:",
-      "image": "/img/podesty/zdjecia/PODESTY_213-219.webp",
+      "image": "/img/podesty/PODESTY_213-219.webp",
       "options": [
         "Praca niedozwolona ze względu na przekroczenia dopuszczalnych parametrów pracy",
         "280 kg",
@@ -2583,7 +2583,7 @@
     {
       "id": 216,
       "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 8 m i wysięgu 6 m:",
-      "image": "/img/podesty/zdjecia/PODESTY_213-219.webp",
+      "image": "/img/podesty/PODESTY_213-219.webp",
       "options": [
         "Praca niedozwolona ze względu na przekroczenia dopuszczalnych parametrów pracy",
         "280 kg",
@@ -2595,7 +2595,7 @@
     {
       "id": 217,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż maksymalny wysięg platformy roboczej obciążonej masą 200 kg:",
-      "image": "/img/podesty/zdjecia/PODESTY_213-219.webp",
+      "image": "/img/podesty/PODESTY_213-219.webp",
       "options": [
         "5 m",
         "6 m",
@@ -2607,7 +2607,7 @@
     {
       "id": 218,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż maksymalny wysięg platformy roboczej obciążonej masą 80 kg:",
-      "image": "/img/podesty/zdjecia/PODESTY_213-219.webp",
+      "image": "/img/podesty/PODESTY_213-219.webp",
       "options": [
         "5,5 m",
         "6,6 m",
@@ -2619,7 +2619,7 @@
     {
       "id": 219,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż maksymalny wysięg platformy roboczej obciążonej masą 240 kg:",
-      "image": "/img/podesty/zdjecia/PODESTY_213-219.webp",
+      "image": "/img/podesty/PODESTY_213-219.webp",
       "options": [
         "5 m",
         "6 m",
@@ -2631,7 +2631,7 @@
     {
       "id": 220,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
-      "image": "/img/podesty/zdjecia/PODESTY_220-228.webp",
+      "image": "/img/podesty/PODESTY_220-228.webp",
       "options": [
         "Maksymalna wysokość podnoszenia 23 m",
         "Maksymalna wysokość robocza 25,5 m",
@@ -2643,7 +2643,7 @@
     {
       "id": 221,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
-      "image": "/img/podesty/zdjecia/PODESTY_220-228.webp",
+      "image": "/img/podesty/PODESTY_220-228.webp",
       "options": [
         "Maksymalny wysięg podestu obciążonego ładunkiem 80 kg - 13 m",
         "Maksymalny wysięg platformy obciążonej masą 200 kg - 12 m",
@@ -2667,7 +2667,7 @@
     {
       "id": 223,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
-      "image": "/img/podesty/zdjecia/PODESTY_220-228.webp",
+      "image": "/img/podesty/PODESTY_220-228.webp",
       "options": [
         "Maksymalna wysokość podnoszenia z dwiema osobami 23 m",
         "Dopuszczalna ilość osób na platformie - 2",
@@ -2679,7 +2679,7 @@
     {
       "id": 224,
       "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 23 m i wysięgu 6m:",
-      "image": "/img/podesty/zdjecia/PODESTY_220-228.webp",
+      "image": "/img/podesty/PODESTY_220-228.webp",
       "options": [
         "Praca niedozwolona ze względu na przekroczenie dopuszczalnych parametrów pracy",
         "280 kg",
@@ -2691,7 +2691,7 @@
     {
       "id": 225,
       "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej uniesionej na wysokość 22 m i wysięgu 9m:",
-      "image": "/img/podesty/zdjecia/PODESTY_220-228.webp",
+      "image": "/img/podesty/PODESTY_220-228.webp",
       "options": [
         "Praca niedozwolona ze względu na przekroczenie dopuszczalnych parametrów pracy",
         "280 kg",
@@ -2703,7 +2703,7 @@
     {
       "id": 226,
       "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalną dopuszczalną ilość osób jaką można podnieść na wysokość 24 m",
-      "image": "/img/podesty/zdjecia/PODESTY_220-228.webp",
+      "image": "/img/podesty/PODESTY_220-228.webp",
       "options": [
         "3",
         "2",
@@ -2715,7 +2715,7 @@
     {
       "id": 227,
       "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalną dopuszczalną ilość osób jaką można podnieść na wysokość 18 m przy wysięgu 10m",
-      "image": "/img/podesty/zdjecia/PODESTY_220-228.webp",
+      "image": "/img/podesty/PODESTY_220-228.webp",
       "options": [
         "3",
         "2",
@@ -2727,7 +2727,7 @@
     {
       "id": 228,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż maksymalny wysięg platformy roboczej obciążonej masą 200 kg:",
-      "image": "/img/podesty/zdjecia/PODESTY_220-228.webp",
+      "image": "/img/podesty/PODESTY_220-228.webp",
       "options": [
         "9 m",
         "10 m",
@@ -2739,7 +2739,7 @@
     {
       "id": 229,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
-      "image": "/img/podesty/zdjecia/PODESTY_229-235.webp",
+      "image": "/img/podesty/PODESTY_229-235.webp",
       "options": [
         "Maksymalny wysięg boczny po stronie prawej 13 m",
         "Maksymalny wysięg z tyłu pojazdu 16,2",
@@ -2751,7 +2751,7 @@
     {
       "id": 230,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
-      "image": "/img/podesty/zdjecia/PODESTY_229-235.webp",
+      "image": "/img/podesty/PODESTY_229-235.webp",
       "options": [
         "Maksymalny zakres obrotu 280°",
         "Maksymalny wysięg podestu obciążonego ładunkiem 120 kg z tyłu pojazdu - 13,0 m",
@@ -2763,7 +2763,7 @@
     {
       "id": 231,
       "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej po lewej stronie pojazdu w odległości 6 m od osi obrotu:",
-      "image": "/img/podesty/zdjecia/PODESTY_229-235.webp",
+      "image": "/img/podesty/PODESTY_229-235.webp",
       "options": [
         "Praca niedozwolona ze względu na przekroczenie dopuszczalnych parametrów pracy",
         "200 kg",
@@ -2775,7 +2775,7 @@
     {
       "id": 232,
       "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalne obciążenie platformy roboczej po lewej stronie pojazdu w odległości 8 m od osi obrotu:",
-      "image": "/img/podesty/zdjecia/PODESTY_229-235.webp",
+      "image": "/img/podesty/PODESTY_229-235.webp",
       "options": [
         "Praca niedozwolona ze względu na przekroczenie dopuszczalnych parametrów pracy",
         "200 kg",
@@ -2787,7 +2787,7 @@
     {
       "id": 233,
       "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalny wysięg podestu z obciążeniem 200 kg",
-      "image": "/img/podesty/zdjecia/PODESTY_229-235.webp",
+      "image": "/img/podesty/PODESTY_229-235.webp",
       "options": [
         "8 m z lewej strony pojazdu",
         "13 m z prawej strony pojazdu",
@@ -2799,7 +2799,7 @@
     {
       "id": 234,
       "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalny wysięg podestu z obciążeniem 120 kg",
-      "image": "/img/podesty/zdjecia/PODESTY_229-235.webp",
+      "image": "/img/podesty/PODESTY_229-235.webp",
       "options": [
         "13 m z lewej strony pojazdu",
         "13 m z prawej strony pojazdu",
@@ -2811,7 +2811,7 @@
     {
       "id": 235,
       "question": "W oparciu o przedstawiony wykres pola pracy określ maksymalne dopuszczalny wysięg podestu z obciążeniem 80 kg",
-      "image": "/img/podesty/zdjecia/PODESTY_229-235.webp",
+      "image": "/img/podesty/PODESTY_229-235.webp",
       "options": [
         "8 m z lewej strony pojazdu",
         "10 m z prawej strony pojazdu",
@@ -2823,7 +2823,7 @@
     {
       "id": 236,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
-      "image": "/img/podesty/zdjecia/PODESTY_236-238.webp",
+      "image": "/img/podesty/PODESTY_236-238.webp",
       "options": [
         "Maksymalna wysokość podnoszenia 12,0 m",
         "Maksymalna wysokość robocza 12,0 m",
@@ -2835,7 +2835,7 @@
     {
       "id": 237,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
-      "image": "/img/podesty/zdjecia/PODESTY_236-238.webp",
+      "image": "/img/podesty/PODESTY_236-238.webp",
       "options": [
         "Maksymalny wysięg podestu obciążonego ładunkiem 200 kg - 13 m",
         "Praca wyłącznie na podporach",
@@ -2847,7 +2847,7 @@
     {
       "id": 238,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż, która z pozycji uniesienia platformy jest niemożliwa:",
-      "image": "/img/podesty/zdjecia/PODESTY_236-238.webp",
+      "image": "/img/podesty/PODESTY_236-238.webp",
       "options": [
         "Wysokość robocza 8 m, wysięg 4m",
         "Wysokość robocza 10m, wysięg 4m",
@@ -2859,7 +2859,7 @@
     {
       "id": 239,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
-      "image": "/img/podesty/zdjecia/PODESTY_239.webp",
+      "image": "/img/podesty/PODESTY_239.webp",
       "options": [
         "Maksymalna wysokość podnoszenia 9 m",
         "Maksymalna wysokość robocza 10,5 m",

@@ -1203,7 +1203,7 @@
     {
       "id": 101,
       "question": "Świecąca się kontrolka ciśnienia oleju może świadczyć o:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_101.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_101.webp",
       "options": [
         "Niskim poziomie oleju",
         "Podwyższonej temperaturze silnika",
@@ -1215,7 +1215,7 @@
     {
       "id": 102,
       "question": "Oznaczenie przedstawione na rysunku znajduje się na dźwigni:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_102.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_102.webp",
       "options": [
         "Mechanizmu podnoszenia",
         "Mechanizmu przechyłu masztu",
@@ -1227,7 +1227,7 @@
     {
       "id": 103,
       "question": "Widząc świecącą się kontrolkę operator:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_103.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_103.webp",
       "options": [
         "Powinien sprawdzić, czy pasy są prawidłowo zapięte",
         "Może kontynuować pracę",
@@ -1239,7 +1239,7 @@
     {
       "id": 104,
       "question": "Dźwignia oznaczona tym piktogramem po wychyleniu przez operatora do przodu spowoduje:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_104.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_104.webp",
       "options": [
         "Ruch wideł w dół",
         "Ruch wideł w górę",
@@ -1251,7 +1251,7 @@
     {
       "id": 105,
       "question": "Dźwignia oznaczona poniższym piktogramem po wychyleniu przez operatora spowoduje:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_105.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_105.webp",
       "options": [
         "Ruch wideł w dół",
         "Ruch wideł w górę",
@@ -1359,7 +1359,7 @@
     {
       "id": 114,
       "question": "Oznaczenie na poniższym rysunku przedstawia:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_114.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_114.webp",
       "options": [
         "Lampkę kontrolną świec żarowych",
         "Lampkę kontrolną ładowania",
@@ -1371,7 +1371,7 @@
     {
       "id": 115,
       "question": "Oznaczenie na poniższym rysunku przedstawia:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_115.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_115.webp",
       "options": [
         "Lampkę sygnalizującą błędne podłączenie biegunów akumulatora (dotyczy tylko wózków akumulatorowych)",
         "Lampkę sprawności akumulatora, która dotyczy tylko wózków akumulatorowych",
@@ -1383,7 +1383,7 @@
     {
       "id": 116,
       "question": "Oznaczenie na poniższym rysunku przedstawia:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_116.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_116.webp",
       "options": [
         "Wskazania ogranicznika udźwigu wózka",
         "Lampkę kontrolną temperatury cieczy chłodzącej",
@@ -1395,7 +1395,7 @@
     {
       "id": 117,
       "question": "Oznaczenie na poniższym rysunku przedstawia:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_117.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_117.webp",
       "options": [
         "Lampkę kontrolną – włączenia hamulca postojowego",
         "Lampkę kontrolną – awaria silnika",
@@ -1407,7 +1407,7 @@
     {
       "id": 118,
       "question": "Zapalona lub migająca lampka kontrolna:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_118.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_118.webp",
       "options": [
         "Oznacza przekroczenie okresu serwisowego lub awarię urządzenia",
         "Oznacza konieczność regulacji naciągu cięgien nośnych",
@@ -1467,7 +1467,7 @@
     {
       "id": 123,
       "question": "Dźwignia oznaczona poniższym piktogramem, po wychyleniu przez operatora powoduje:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_123.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_123.webp",
       "options": [
         "Uruchomienie mechanizmu podnoszenia",
         "Uruchomienie mechanizmu przechyłu",
@@ -2187,7 +2187,7 @@
     {
       "id": 183,
       "question": "W oparciu o tabelę określ jakie max obciążenie może przenieść gniazdo ładunkowe regału:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_183.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_183.webp",
       "options": [
         "1320 kg",
         "1100 kg",
@@ -2199,7 +2199,7 @@
     {
       "id": 184,
       "question": "W oparciu o tabelę, określ na które najwyższe gniazdo ładunkowe podasz towar dysponując wózkiem o maksymalnej wysokości podnoszenia 2100 mm:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_184.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_184.webp",
       "options": [
         "Gniazdo 1",
         "Gniazdo 2",
@@ -2475,7 +2475,7 @@
     {
       "id": 207,
       "question": "W oparciu o przedstawiony diagram udźwigu i rysunek określ maksymalną bezpieczną wysokość podnoszenia ładunku pobranego od strony A:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_207-208.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_207-208.webp",
       "options": [
         "4836 mm",
         "4030 mm",
@@ -2487,7 +2487,7 @@
     {
       "id": 208,
       "question": "W oparciu o diagram udźwigu i rysunek określ maksymalną bezpieczną wysokość podnoszenia ładunku pobranego od strony B:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_207-208.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_207-208.webp",
       "options": [
         "3100 mm",
         "4836 mm",
@@ -2499,7 +2499,7 @@
     {
       "id": 209,
       "question": "W oparciu o przedstawiony diagram udźwigu i rysunek określ maksymalną bezpieczną wysokość podnoszenia ładunku pobranego od strony A:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_209-210.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_209-210.webp",
       "options": [
         "3510 mm",
         "4212 mm",
@@ -2511,7 +2511,7 @@
     {
       "id": 210,
       "question": "W oparciu o diagram udźwigu i rysunek określ maksymalną bezpieczną wysokość podnoszenia ładunku pobranego od strony B:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_209-210.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_209-210.webp",
       "options": [
         "4212 mm",
         "2700 mm",
@@ -2523,7 +2523,7 @@
     {
       "id": 211,
       "question": "W oparciu o przedstawiony diagram udźwigu i rysunek określ maksymalną bezpieczną wysokość podnoszenia ładunku pobranego od strony A:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_211-212.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_211-212.webp",
       "options": [
         "2600 mm",
         "3380 mm",
@@ -2535,7 +2535,7 @@
     {
       "id": 212,
       "question": "W oparciu o diagram udźwigu i rysunek określ maksymalną bezpieczną wysokość podnoszenia ładunku pobranego od strony B:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_211-212.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_211-212.webp",
       "options": [
         "4056 mm",
         "2600 mm",
@@ -2547,7 +2547,7 @@
     {
       "id": 213,
       "question": "W oparciu o przedstawiony diagram udźwigu i rysunek określ maksymalną bezpieczną wysokość podnoszenia ładunku pobranego od strony A:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_213-214.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_213-214.webp",
       "options": [
         "3640 mm",
         "4368 mm",
@@ -2559,7 +2559,7 @@
     {
       "id": 214,
       "question": "W oparciu o diagram udźwigu i rysunek określ maksymalną bezpieczną wysokość podnoszenia ładunku pobranego od strony B:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_213-214.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_213-214.webp",
       "options": [
         "2800 mm",
         "3640 mm",
@@ -2571,7 +2571,7 @@
     {
       "id": 215,
       "question": "W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalną bezpieczną wysokość podnoszenia ładunku pobranego z kierunku A:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_215.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_215.webp",
       "options": [
         "2350 mm",
         "3300 mm",
@@ -2583,7 +2583,7 @@
     {
       "id": 216,
       "question": "W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalną bezpieczną wysokość podnoszenia, ładunku pobranego z kierunku A:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_216.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_216.webp",
       "options": [
         "700 mm",
         "1200 mm",
@@ -2595,7 +2595,7 @@
     {
       "id": 217,
       "question": "W oparciu o przedstawiony diagram udźwigu oraz rysunek wskaż, na który regał lub regały można postawić ładunek:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_217.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_217.webp",
       "options": [
         "Regał 1",
         "Regał 2",
@@ -2607,7 +2607,7 @@
     {
       "id": 218,
       "question": "W oparciu o przedstawiony diagram udźwigu oraz rysunek wskaż, na który regał lub regały można postawić ładunek:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_218.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_218.webp",
       "options": [
         "Regał 1",
         "Regał 2",
@@ -2619,7 +2619,7 @@
     {
       "id": 219,
       "question": "W oparciu o przedstawiony diagram udźwigu oraz rysunek wskaż, na który regał lub regały można postawić ładunek:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_219.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_219.webp",
       "options": [
         "Regał 1",
         "Regał 2",
@@ -2631,7 +2631,7 @@
     {
       "id": 220,
       "question": "W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalną bezpieczną wysokość podnoszenia, ładunku pobranego z kierunku A:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_220-221.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_220-221.webp",
       "options": [
         "5940 mm",
         "7890 mm",
@@ -2643,7 +2643,7 @@
     {
       "id": 221,
       "question": "W oparciu o diagram udźwigu oraz rysunek, określ maksymalną bezpieczną wysokość podnoszenia, ładunku pobranego z kierunku B:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_220-221.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_220-221.webp",
       "options": [
         "5940 mm",
         "7890 mm",
@@ -2655,7 +2655,7 @@
     {
       "id": 222,
       "question": "W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalną bezpieczną wysokość podnoszenia, ładunku pobranego z kierunku A:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_222-223.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_222-223.webp",
       "options": [
         "4860 mm",
         "8820 mm",
@@ -2667,7 +2667,7 @@
     {
       "id": 223,
       "question": "W oparciu o diagram udźwigu oraz rysunek, określ maksymalną bezpieczną wysokość podnoszenia, ładunku pobranego z kierunku B:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_222-223.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_222-223.webp",
       "options": [
         "4860 mm",
         "5660 mm",
@@ -2679,7 +2679,7 @@
     {
       "id": 224,
       "question": "W oparciu o przedstawiony diagram udźwigu określ maksymalny udźwig wózka na wys. 6m:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_224-225.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_224-225.webp",
       "options": [
         "1300 kg",
         "1500 kg",
@@ -2691,7 +2691,7 @@
     {
       "id": 225,
       "question": "W oparciu o diagram udźwigu określ maksymalny udźwig wózka na wys. 6,7m:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_224-225.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_224-225.webp",
       "options": [
         "1400 kg",
         "1200 kg",
@@ -2703,7 +2703,7 @@
     {
       "id": 226,
       "question": "W oparciu o przedstawiony diagram udźwigu określ maksymalną masę ładunku, o wymiarach podstawy 1,6 m x 1,6 m:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_226-227.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_226-227.webp",
       "options": [
         "4,5 t",
         "4,0 t",
@@ -2715,7 +2715,7 @@
     {
       "id": 227,
       "question": "W oparciu o diagram określ maksymalną masę ładunku, o wymiarach podstawy 2 m x 2 m:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_226-227.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_226-227.webp",
       "options": [
         "2,5 t",
         "3,5 t",
@@ -2727,7 +2727,7 @@
     {
       "id": 228,
       "question": "W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalną masę ładunku pobranego od strony B:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_228-229.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_228-229.webp",
       "options": [
         "1300 kg",
         "1400 kg",
@@ -2739,7 +2739,7 @@
     {
       "id": 229,
       "question": "W oparciu o diagram udźwigu oraz rysunek określ maksymalną masę ładunku pobranego od strony A:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_228-229.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_228-229.webp",
       "options": [
         "1500 kg",
         "2000 kg",
@@ -2751,7 +2751,7 @@
     {
       "id": 230,
       "question": "W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalną masę ładunku pobranego od strony B:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_230-231.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_230-231.webp",
       "options": [
         "1100 kg",
         "1450 kg",
@@ -2763,7 +2763,7 @@
     {
       "id": 231,
       "question": "W oparciu o diagram udźwigu oraz rysunek, określ maksymalną masę ładunku, jaką można bezpiecznie podnieść pobierając ładunek od strony A:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_230-231.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_230-231.webp",
       "options": [
         "1500 kg",
         "2000 kg",
@@ -2775,7 +2775,7 @@
     {
       "id": 232,
       "question": "W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalną masę ładunku, jaką można bezpiecznie podnieść pobierając ładunek od strony A:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_232-233.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_232-233.webp",
       "options": [
         "2695 kg",
         "3185 kg",
@@ -2787,7 +2787,7 @@
     {
       "id": 233,
       "question": "W oparciu o diagram udźwigu oraz rysunek określ maksymalną masę ładunku, jaką można bezpiecznie podnieść pobierając ładunek od strony B:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_232-233.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_232-233.webp",
       "options": [
         "2695 kg",
         "3500 kg",
@@ -2799,7 +2799,7 @@
     {
       "id": 234,
       "question": "W oparciu o przedstawiony diagram udźwigu określ maksymalny udźwig wózka, podnoszącego ładunek na wysokość 3000 mm:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_234-236.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_234-236.webp",
       "options": [
         "2400 kg",
         "3600 kg",
@@ -2811,7 +2811,7 @@
     {
       "id": 235,
       "question": "W oparciu o diagram udźwigu, określ maksymalny udźwig wózka, podnoszącego ładunek na wysokość 4000 mm:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_234-236.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_234-236.webp",
       "options": [
         "3300 kg",
         "4000 kg",
@@ -2823,7 +2823,7 @@
     {
       "id": 236,
       "question": "W oparciu o diagram udźwigu, określ maksymalny udźwig wózka, podnoszącego ładunek na wysokość 5000 mm:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_234-236.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_234-236.webp",
       "options": [
         "4000 kg",
         "2700 kg",
@@ -2835,7 +2835,7 @@
     {
       "id": 237,
       "question": "W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalną masę ładunku jaką można bezpiecznie podnieść na wysokość 4000 mm, pobierając od strony B:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_237-238.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_237-238.webp",
       "options": [
         "3400 kg",
         "2900 kg",
@@ -2847,7 +2847,7 @@
     {
       "id": 238,
       "question": "W oparciu o diagram udźwigu oraz rysunek, określ maksymalną masę ładunku jaką można bezpiecznie podnieść na wysokość 4000 mm, pobierając od strony A:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_237-238.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_237-238.webp",
       "options": [
         "2900 kg",
         "3600 kg",
@@ -2859,7 +2859,7 @@
     {
       "id": 239,
       "question": "W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalną masę ładunku, pobranego od strony B:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_239-240.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_239-240.webp",
       "options": [
         "1000 kg",
         "1200 kg",
@@ -2871,7 +2871,7 @@
     {
       "id": 240,
       "question": "W oparciu o diagram udźwigu oraz rysunek określ maksymalną masę ładunku, pobranego od strony A:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_239-240.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_239-240.webp",
       "options": [
         "1600 kg",
         "1900 kg",
@@ -2883,7 +2883,7 @@
     {
       "id": 241,
       "question": "W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalną masę ładunku, pobranego od strony A:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_241-242.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_241-242.webp",
       "options": [
         "400 kg",
         "600 kg",
@@ -2895,7 +2895,7 @@
     {
       "id": 242,
       "question": "W oparciu o diagram udźwigu oraz rysunek określ maksymalną masę ładunku, pobranego od strony B:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_241-242.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_241-242.webp",
       "options": [
         "400 kg",
         "600 kg",
@@ -2907,7 +2907,7 @@
     {
       "id": 243,
       "question": "W oparciu o przedstawiony diagram udźwigu oraz rysunek określ maksymalną masę ładunku, pobranego od strony A:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_243-244.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_243-244.webp",
       "options": [
         "1400 kg",
         "1255 kg",
@@ -2919,7 +2919,7 @@
     {
       "id": 244,
       "question": "W oparciu o diagram udźwigu oraz rysunek określ maksymalną masę ładunku, pobranego od strony B:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_243-244.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_243-244.webp",
       "options": [
         "1400 kg",
         "1255 kg",
@@ -2931,7 +2931,7 @@
     {
       "id": 245,
       "question": "Świecąca się kontrolka ciśnienia oleju może świadczyć o:",
-      "image": "/img/wozki-podnosnikowe/zdjecia/WOZKI-PODNOSNIKOWE_245.webp",
+      "image": "/img/wozki-podnosnikowe/WOZKI-PODNOSNIKOWE_245.webp",
       "options": [
         "Zbyt niskim poziomie płyny w układzie hamulcowym",
         "Podwyższonej temperaturze silnika",
