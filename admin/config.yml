@@ -76,7 +76,7 @@ collections:
               - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false }
               - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
               - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false }
-              - { label: "Plik dźwiękowy MP3 / Audio (opcjonalnie)", name: "audio", widget: "file", required: false }
+              - { label: "Nagranie lektora (opcjonalnie) — dowolny format audio, automatycznie zmniejszane do lekkiego MP3", name: "audio", widget: "file", required: false }
               - { label: "Link do wideo / strony (opcjonalnie)", name: "link", widget: "string", required: false }
       - name: "exam"
         label: "Ustawienia Egzaminu"
@@ -124,7 +124,7 @@ collections:
               - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false }
               - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
               - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false }
-              - { label: "Plik dźwiękowy MP3 / Audio (opcjonalnie)", name: "audio", widget: "file", required: false }
+              - { label: "Nagranie lektora (opcjonalnie) — dowolny format audio, automatycznie zmniejszane do lekkiego MP3", name: "audio", widget: "file", required: false }
               - { label: "Link do wideo / strony (opcjonalnie)", name: "link", widget: "string", required: false }
       - name: "exam"
         label: "Ustawienia Egzaminu"
@@ -172,7 +172,7 @@ collections:
               - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false }
               - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
               - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false }
-              - { label: "Plik dźwiękowy MP3 / Audio (opcjonalnie)", name: "audio", widget: "file", required: false }
+              - { label: "Nagranie lektora (opcjonalnie) — dowolny format audio, automatycznie zmniejszane do lekkiego MP3", name: "audio", widget: "file", required: false }
               - { label: "Link do wideo / strony (opcjonalnie)", name: "link", widget: "string", required: false }
       - name: "exam"
         label: "Ustawienia Egzaminu"
@@ -220,7 +220,7 @@ collections:
               - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false }
               - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
               - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false }
-              - { label: "Plik dźwiękowy MP3 / Audio (opcjonalnie)", name: "audio", widget: "file", required: false }
+              - { label: "Nagranie lektora (opcjonalnie) — dowolny format audio, automatycznie zmniejszane do lekkiego MP3", name: "audio", widget: "file", required: false }
               - { label: "Link do wideo / strony (opcjonalnie)", name: "link", widget: "string", required: false }
       - name: "exam"
         label: "Ustawienia Egzaminu"
@@ -268,7 +268,7 @@ collections:
               - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false }
               - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
               - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false }
-              - { label: "Plik dźwiękowy MP3 / Audio (opcjonalnie)", name: "audio", widget: "file", required: false }
+              - { label: "Nagranie lektora (opcjonalnie) — dowolny format audio, automatycznie zmniejszane do lekkiego MP3", name: "audio", widget: "file", required: false }
               - { label: "Link do wideo / strony (opcjonalnie)", name: "link", widget: "string", required: false }
       - name: "exam"
         label: "Ustawienia Egzaminu"
@@ -316,7 +316,7 @@ collections:
               - { label: "Odpowiedź / Opis (formatowanie tekstu, zdjęcia, listy - jak w Wordzie)", name: "answer", widget: "markdown", required: false }
               - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
               - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false }
-              - { label: "Plik dźwiękowy MP3 / Audio (opcjonalnie)", name: "audio", widget: "file", required: false }
+              - { label: "Nagranie lektora (opcjonalnie) — dowolny format audio, automatycznie zmniejszane do lekkiego MP3", name: "audio", widget: "file", required: false }
               - { label: "Link do wideo / strony (opcjonalnie)", name: "link", widget: "string", required: false }
       - name: "exam"
         label: "Ustawienia Egzaminu"

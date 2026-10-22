@@ -9,14 +9,57 @@
   </head>
   <body>
     <script>
-      // Automatyczna konwersja każdego wgrywanego zdjęcia (PNG/JPG/JPEG/BMP) na lekki format WebP przed wysyłką
+      // Automatyczna konwersja przed wysyłką na GitHub:
+      //  - każde zdjęcie (PNG/JPG/JPEG/BMP) -> lekki format WebP
+      //  - każde nagranie (MP3/WAV/M4A/OGG/FLAC...) -> lekkie MP3 dla lektora (mono, 22 kHz, 32 kbps ≈ 240 KB / minutę)
       (function () {
         const MAX_DIM = 1600;
         const QUALITY = 0.85;
 
+        // ─── Ustawienia kompresji nagrań lektora ───
+        const AUDIO_SR = 22050;   // częstotliwość próbkowania (w pełni wystarczająca dla mowy)
+        const AUDIO_KBPS = 32;    // bitrate MP3 (wyraźny głos, bardzo mały plik)
+        const AUDIO_MAX_GAIN = 4; // maksymalne wzmocnienie cichych nagrań
+        const LAME_URL = 'https://cdn.jsdelivr.net/npm/lamejs@1.2.1/lame.min.js';
+        let lamePromise = null;
+
         function isConvertibleImage(file) {
           if (!file || !file.type) return false;
           return /^image\/(png|jpe?g|bmp)$/i.test(file.type);
+        }
+
+        function isAudioFile(file) {
+          if (!file) return false;
+          if (file.type && /^video\//i.test(file.type)) return false;
+          if (file.type && /^audio\//i.test(file.type)) return true;
+          return /\.(mp3|wav|wave|m4a|aac|ogg|oga|opus|flac|wma|amr|weba)$/i.test(file.name || '');
+        }
+
+        function fmtSize(bytes) {
+          if (bytes >= 1024 * 1024) return (bytes / 1024 / 1024).toFixed(1).replace('.', ',') + ' MB';
+          return Math.max(1, Math.round(bytes / 1024)) + ' KB';
+        }
+
+        // ─── Dymek z informacją o postępie (na dole ekranu) ───
+        let toastTimer = null;
+        function showToast(text, autoHideMs) {
+          let el = document.getElementById('conv-toast');
+          if (!el) {
+            el = document.createElement('div');
+            el.id = 'conv-toast';
+            el.style.cssText =
+              'position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:2147483647;' +
+              'background:#101218;color:#f5b84f;border:1px solid #f5b84f;padding:10px 18px;border-radius:999px;' +
+              'font:600 14px system-ui,-apple-system,Segoe UI,sans-serif;box-shadow:0 6px 24px rgba(0,0,0,.45);' +
+              'max-width:92vw;text-align:center;pointer-events:none';
+            document.body.appendChild(el);
+          }
+          el.textContent = text;
+          el.style.display = 'block';
+          clearTimeout(toastTimer);
+          if (autoHideMs) {
+            toastTimer = setTimeout(() => { el.style.display = 'none'; }, autoHideMs);
+          }
         }
 
         function convertFileToWebp(file) {
@@ -62,34 +105,172 @@
           });
         }
 
+        // ─── Koder MP3 (ładowany tylko wtedy, gdy wgrywasz nagranie) ───
+        function loadLame() {
+          if (window.lamejs && window.lamejs.Mp3Encoder) return Promise.resolve(window.lamejs);
+          if (!lamePromise) {
+            lamePromise = new Promise((resolve, reject) => {
+              const s = document.createElement('script');
+              s.src = LAME_URL;
+              s.async = true;
+              s.onload = () => (window.lamejs && window.lamejs.Mp3Encoder ? resolve(window.lamejs) : reject(new Error('Brak lamejs')));
+              s.onerror = () => { lamePromise = null; reject(new Error('Nie udało się pobrać kodera MP3')); };
+              document.head.appendChild(s);
+            });
+          }
+          return lamePromise;
+        }
+
+        function decodeAudio(arrayBuffer) {
+          const AC = window.AudioContext || window.webkitAudioContext;
+          const ac = new AC();
+          return new Promise((resolve, reject) => {
+            const p = ac.decodeAudioData(arrayBuffer, resolve, reject);
+            if (p && typeof p.then === 'function') p.then(resolve, reject);
+          }).finally(() => {
+            try { ac.close(); } catch (_) {}
+          });
+        }
+
+        async function convertAudioToMp3(file) {
+          try {
+            const [lame, buf] = await Promise.all([loadLame(), file.arrayBuffer()]);
+            const decoded = await decodeAudio(buf);
+
+            // 1) Mono + 22 kHz (wystarczające dla mowy, kilkukrotnie mniejszy plik)
+            const frames = Math.max(1, Math.ceil(decoded.duration * AUDIO_SR));
+            const off = new OfflineAudioContext(1, frames, AUDIO_SR);
+            const src = off.createBufferSource();
+            src.buffer = decoded;
+            src.connect(off.destination);
+            src.start(0);
+            const rendered = await off.startRendering();
+            let data = rendered.getChannelData(0);
+
+            // 2) Przycięcie ciszy na początku i końcu (z zapasem 0,2 s)
+            const THR = 0.01;
+            let start = 0;
+            let end = data.length - 1;
+            while (start < data.length && Math.abs(data[start]) < THR) start++;
+            while (end > start && Math.abs(data[end]) < THR) end--;
+            if (end > start) {
+              const pad = Math.round(AUDIO_SR * 0.2);
+              start = Math.max(0, start - pad);
+              end = Math.min(data.length - 1, end + pad);
+              data = data.subarray(start, end + 1);
+            }
+
+            // 3) Wyrównanie głośności (ciche nagrania są delikatnie wzmacniane)
+            let peak = 0;
+            for (let i = 0; i < data.length; i++) {
+              const v = Math.abs(data[i]);
+              if (v > peak) peak = v;
+            }
+            const gain = peak > 0 ? Math.min(AUDIO_MAX_GAIN, 0.95 / peak) : 1;
+
+            const pcm = new Int16Array(data.length);
+            for (let i = 0; i < data.length; i++) {
+              let v = data[i] * gain;
+              v = v > 1 ? 1 : v < -1 ? -1 : v;
+              pcm[i] = v < 0 ? v * 0x8000 : v * 0x7fff;
+            }
+
+            // 4) Kodowanie do lekkiego MP3
+            const enc = new lame.Mp3Encoder(1, AUDIO_SR, AUDIO_KBPS);
+            const parts = [];
+            const BLOCK = 1152;
+            for (let i = 0, n = 0; i < pcm.length; i += BLOCK, n++) {
+              const out = enc.encodeBuffer(pcm.subarray(i, i + BLOCK));
+              if (out.length) parts.push(new Uint8Array(out));
+              if (n % 300 === 0) await new Promise((r) => setTimeout(r, 0)); // nie blokuj okna przeglądarki
+            }
+            const tail = enc.flush();
+            if (tail.length) parts.push(new Uint8Array(tail));
+
+            const blob = new Blob(parts, { type: 'audio/mpeg' });
+            if (!blob.size || blob.size >= file.size) return file; // nie powiększaj już lekkich plików
+            const newName = (file.name || 'nagranie').replace(/\.[^.]+$/, '') + '.mp3';
+            return new File([blob], newName, { type: 'audio/mpeg', lastModified: Date.now() });
+          } catch (err) {
+            console.warn('Kompresja nagrania nie powiodła się — wysyłam oryginał:', err);
+            return file;
+          }
+        }
+
+        async function convertFiles(files) {
+          const out = [];
+          const notes = [];
+          for (const f of files) {
+            if (isConvertibleImage(f)) {
+              out.push(await convertFileToWebp(f));
+            } else if (isAudioFile(f)) {
+              showToast(`🎧 Zmniejszanie nagrania „${f.name}”… proszę czekać`);
+              const c = await convertAudioToMp3(f);
+              out.push(c);
+              notes.push(c !== f
+                ? `✅ Nagranie zmniejszone: ${fmtSize(f.size)} → ${fmtSize(c.size)}`
+                : `ℹ️ Nagranie „${f.name}” wysłane bez zmian (już lekkie lub nieobsługiwany format)`);
+            } else {
+              out.push(f);
+            }
+          }
+          if (notes.length) showToast(notes.join('  •  '), 6000);
+          return out;
+        }
+
+        // ─── Wybór pliku przyciskiem ───
         document.addEventListener(
           'change',
           async (e) => {
             const input = e.target;
-            if (!input || input.tagName !== 'INPUT' || input.type !== 'file' || input._webpDone) {
+            if (!input || input.tagName !== 'INPUT' || input.type !== 'file' || input._convDone) {
               return;
             }
             const files = Array.from(input.files || []);
-            if (!files.some(isConvertibleImage)) return;
+            if (!files.some((f) => isConvertibleImage(f) || isAudioFile(f))) return;
 
             e.stopImmediatePropagation();
             e.preventDefault();
 
+            const converted = await convertFiles(files);
             const dt = new DataTransfer();
-            for (const f of files) {
-              if (isConvertibleImage(f)) {
-                const conv = await convertFileToWebp(f);
-                dt.items.add(conv);
-              } else {
-                dt.items.add(f);
-              }
-            }
+            converted.forEach((f) => dt.items.add(f));
             input.files = dt.files;
-            input._webpDone = true;
+            input._convDone = true;
             input.dispatchEvent(new Event('change', { bubbles: true }));
             setTimeout(() => {
-              input._webpDone = false;
+              input._convDone = false;
             }, 200);
+          },
+          true
+        );
+
+        // ─── Przeciągnięcie nagrania myszką (drag & drop) ───
+        // (zdjęcia przeciągane myszką kompresuje już sam panel CMS, więc tu obsługujemy tylko nagrania)
+        document.addEventListener(
+          'drop',
+          async (e) => {
+            if (e._convDone || !e.dataTransfer) return;
+            const files = Array.from(e.dataTransfer.files || []);
+            if (!files.some(isAudioFile)) return;
+
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            const target = e.target;
+            const clientX = e.clientX;
+            const clientY = e.clientY;
+
+            const converted = await convertFiles(files);
+            const dt = new DataTransfer();
+            converted.forEach((f) => dt.items.add(f));
+            let ev;
+            try {
+              ev = new DragEvent('drop', { bubbles: true, cancelable: true, composed: true, clientX, clientY, dataTransfer: dt });
+            } catch (_) {
+              return;
+            }
+            ev._convDone = true;
+            (target && target.isConnected ? target : document.body).dispatchEvent(ev);
           },
           true
         );
