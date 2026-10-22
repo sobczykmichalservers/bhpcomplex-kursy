@@ -3,7 +3,7 @@
     {
       "id": 1,
       "question": "Sprawdzenie dokumentacji pod kątem możliwości eksploatacji urządzenia",
-      "answer": "Sprawdzamy decyzję wydaną przez UDT. Powinna być:\n\n- aktualna (zwróć uwagę do kiedy jest ważna),\n- pozytywna - zezwalająca na eksploatację,\n- powinna dotyczyć urządzenia, które chcemy obsługiwać (sprawdź nr fabryczny podany na decyzji z numerem fabrycznym na tabliczce znamionowej urządzenia)\n![](/img/Decyzja%20pozytywna%20UDT.webp)\n\nSprawdzamy dziennik konserwacji prowadzony \nprzez uprawnionego konserwatora a w nim:\n\n![](/img/dziennik%20konserwacji.webp)\n\n- ostatni wpis dopuszczający do eksploatacji,\n- ocenę stanu technicznego  (pozytywna / urządzenie sprawne / dopuszczam do eksploatacji)\n- numer uprawnień i podpis konserwatora,\n- przypisanie dziennika konserwacji do urządzenia (nr seryjny, dane techniczne)",
+      "answer": "Sprawdzamy decyzję wydaną przez UDT. Powinna być:\n\n- aktualna (zwróć uwagę do kiedy jest ważna),\n- pozytywna - zezwalająca na eksploatację,\n- powinna dotyczyć urządzenia, które chcemy obsługiwać (sprawdź nr fabryczny podany na decyzji z numerem fabrycznym na tabliczce znamionowej urządzenia)\n![](/img/podesty/zdjecia/Decyzja%20pozytywna%20UDT.webp)\n\nSprawdzamy dziennik konserwacji prowadzony \nprzez uprawnionego konserwatora a w nim:\n\n![](/img/podesty/zdjecia/dziennik%20konserwacji.webp)\n\n- ostatni wpis dopuszczający do eksploatacji,\n- ocenę stanu technicznego  (pozytywna / urządzenie sprawne / dopuszczam do eksploatacji)\n- numer uprawnień i podpis konserwatora,\n- przypisanie dziennika konserwacji do urządzenia (nr seryjny, dane techniczne)",
       "image": "",
       "file": "",
       "link": ""
@@ -11,7 +11,7 @@
     {
       "id": 2,
       "question": "Sprawdzenie zgodności oznakowania urządzenia, omówienie znaczenia wskazanych piktogramów i oznakowań.",
-      "answer": "Omawiamy piktogramy znajdujące się na podeście:\n\n- **tabliczka znamionowa (piktogram identyfikacyjny zlokalizowany obok czerwonej dźwigni awaryjnego opuszczania)**\n\n![](/img/jlg%20tabliczka%20znamionowa.webp)\n\n- **awaryjne opuszczanie**\n\n![](/img/jlg%20awaryjne%20opuszcz.webp)\n\n- **ryzyko zmiażdżenia przez mechanizm nożycowy**\n\n![](/img/jlg%20piktogram%20gilotyna.webp)\n\n- **ryzyko porażenia prądem, zachowanie bezpiecznej odległości od linii energetycznych**\n\n![](/img/bhp-icon.png)\n\n- **warunki pracy (piktogram na platformie roboczej)**\n\n![](/img/jlg%20piktogram%20na%20pode%C5%9Bcie.webp)",
+      "answer": "Omawiamy piktogramy znajdujące się na podeście:\n\n- **tabliczka znamionowa (piktogram identyfikacyjny zlokalizowany obok czerwonej dźwigni awaryjnego opuszczania)**\n\n![](/img/podesty/zdjecia/jlg%20tabliczka%20znamionowa.webp)\n\n- **awaryjne opuszczanie**\n\n![](/img/podesty/zdjecia/jlg%20awaryjne%20opuszcz.webp)\n\n- **ryzyko zmiażdżenia przez mechanizm nożycowy**\n\n![](/img/podesty/zdjecia/jlg%20piktogram%20gilotyna.webp)\n\n- **ryzyko porażenia prądem, zachowanie bezpiecznej odległości od linii energetycznych**\n\n![](/img/bhp-icon.png)\n\n- **warunki pracy (piktogram na platformie roboczej)**\n\n![](/img/podesty/zdjecia/jlg%20piktogram%20na%20pode%C5%9Bcie.webp)",
       "image": "",
       "file": "",
       "link": ""
@@ -51,7 +51,7 @@
     {
       "id": 7,
       "question": "Sprawdzenie prawidłowości działania układu awaryjnego opuszczania platformy roboczej.",
-      "answer": "- Pociągnąć za linkę awaryjnego opuszczania (czerwona na dole podestu obok tabliczki znamionowej),\n\n![](/img/jlg%20awaryjne%20opuszcz.webp)\n\n- Przed awaryjnym opuszczeniem sprawdzić czy nie ma nikogo dookoła podestu, z\n- Zwrócić szczególną uwaga na możliwość zmiażdżenia drugiej ręki.",
+      "answer": "- Pociągnąć za linkę awaryjnego opuszczania (czerwona na dole podestu obok tabliczki znamionowej),\n\n![](/img/podesty/zdjecia/jlg%20awaryjne%20opuszcz.webp)\n\n- Przed awaryjnym opuszczeniem sprawdzić czy nie ma nikogo dookoła podestu, z\n- Zwrócić szczególną uwaga na możliwość zmiażdżenia drugiej ręki.",
       "image": "",
       "file": "",
       "link": ""

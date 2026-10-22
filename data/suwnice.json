@@ -1323,7 +1323,7 @@
     {
       "id": 111,
       "question": "Na zdjęciu przedstawiono suwnicę:",
-      "image": "/img/SUWNICE_111.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_111.webp",
       "options": [
         "Wspornikową",
         "Bramową",
@@ -1827,7 +1827,7 @@
     {
       "id": 153,
       "question": "Poniższy rysunek przedstawia cechę:",
-      "image": "/img/SUWNICE_153.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_153.webp",
       "options": [
         "Zawiesia łańcuchowego",
         "Zawiesia linowego",
@@ -1839,7 +1839,7 @@
     {
       "id": 154,
       "question": "Poniższy rysunek przedstawia cechę:",
-      "image": "/img/SUWNICE_154.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_154.webp",
       "options": [
         "Zawiesia łańcuchowego",
         "Zawiesia linowego",
@@ -1851,7 +1851,7 @@
     {
       "id": 155,
       "question": "Poniższy rysunek przedstawia cechę:",
-      "image": "/img/SUWNICE_155.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_155.webp",
       "options": [
         "Zawiesia łańcuchowego",
         "Zawiesia linowego",
@@ -1875,7 +1875,7 @@
     {
       "id": 157,
       "question": "Minimalny udźwig urządzenia dźwignicowego podnoszącego ładunek o masie 24 t przy użyciu przedstawionej trawersy wynosi:",
-      "image": "/img/SUWNICE_157.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_157.webp",
       "options": [
         "20,0 t",
         "25,2 t",
@@ -1923,7 +1923,7 @@
     {
       "id": 161,
       "question": "W oparciu o przedstawiony rysunek wskaż wartość A dla zawiesia linowego:",
-      "image": "/img/SUWNICE_161.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_161.webp",
       "options": [
         "6,0 t",
         "5,0 t",
@@ -1935,7 +1935,7 @@
     {
       "id": 162,
       "question": "W oparciu o przedstawiony rysunek wskaż wartość A dla zawiesia linowego:",
-      "image": "/img/SUWNICE_162.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_162.webp",
       "options": [
         "2,0 t",
         "5,0 t",
@@ -1947,7 +1947,7 @@
     {
       "id": 163,
       "question": "Na rysunku pokazana jest:",
-      "image": "/img/SUWNICE_163.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_163.webp",
       "options": [
         "Tabliczka znamionowa zawiesia łańcuchowego dwucięgnowego",
         "Tabliczka znamionowa zawiesia łańcuchowego, o udźwigu maksymalnym 2 500 kg",
@@ -1959,7 +1959,7 @@
     {
       "id": 164,
       "question": "W oparciu o przedstawiony rysunek wskaż wartość A (kąt α) dla zawiesia dwucięgnowego:",
-      "image": "/img/SUWNICE_164.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_164.webp",
       "options": [
         "100°",
         "90°",
@@ -1971,7 +1971,7 @@
     {
       "id": 165,
       "question": "W oparciu o przedstawiony rysunek wskaż wartość A (kąt α) dla zawiesia dwucięgnowego:",
-      "image": "/img/SUWNICE_165.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_165.webp",
       "options": [
         "120°",
         "90°",
@@ -1983,7 +1983,7 @@
     {
       "id": 166,
       "question": "W oparciu o przedstawiony rysunek wskaż wartość A (DOR w oparciu o kąt α) dla zawiesia dwucięgnowego:",
-      "image": "/img/SUWNICE_166.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_166.webp",
       "options": [
         "70%",
         "90%",
@@ -1995,7 +1995,7 @@
     {
       "id": 167,
       "question": "W oparciu o przedstawiony rysunek wskaż wartość A (DOR w oparciu o kąt α) dla zawiesia dwucięgnowego:",
-      "image": "/img/SUWNICE_167.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_167.webp",
       "options": [
         "70%",
         "90%",
@@ -2007,7 +2007,7 @@
     {
       "id": 168,
       "question": "W oparciu o przedstawiony rysunek wskaż wartość A (DOR w oparciu o sposób zawieszenia) dla zawiesia pasowego:",
-      "image": "/img/SUWNICE_168.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_168.webp",
       "options": [
         "1",
         "1,4",
@@ -2019,7 +2019,7 @@
     {
       "id": 169,
       "question": "W oparciu o przedstawiony rysunek wskaż wartość A (DOR w oparciu o sposób zawieszenia) dla zawiesia pasowego:",
-      "image": "/img/SUWNICE_169.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_169.webp",
       "options": [
         "1",
         "1,4",
@@ -2031,7 +2031,7 @@
     {
       "id": 170,
       "question": "W oparciu o przedstawiony rysunek wskaż wartość A (DOR w oparciu o sposób zawieszenia) dla zawiesia pasowego:",
-      "image": "/img/SUWNICE_170.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_170.webp",
       "options": [
         "1",
         "1,4",
@@ -2043,7 +2043,7 @@
     {
       "id": 171,
       "question": "Wskaż, który ze sposobów podwieszenia ładunku jest prawidłowy:",
-      "image": "/img/SUWNICE_171.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_171.webp",
       "options": [
         "Rys A",
         "Rys B",
@@ -2055,7 +2055,7 @@
     {
       "id": 172,
       "question": "Wskaż, który ze sposobów podwieszenia ładunku przy pomocy zawiesia linowego jest prawidłowy:",
-      "image": "/img/SUWNICE_172.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_172.webp",
       "options": [
         "Rys A",
         "Rys B",
@@ -2067,7 +2067,7 @@
     {
       "id": 173,
       "question": "Poniższy rysunek przedstawia:",
-      "image": "/img/SUWNICE_173.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_173.webp",
       "options": [
         "Osprzęt wymienny montowany do głowic urządzeń dźwignicowych",
         "Element układu podnoszenia wózków jezdniowych podnośnikowych",
@@ -2079,7 +2079,7 @@
     {
       "id": 174,
       "question": "Poniższy rysunek przedstawia:",
-      "image": "/img/SUWNICE_174.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_174.webp",
       "options": [
         "Zawiesie specjalistyczne do transportu rur stalowych i betonowych",
         "Chwytak kleszczowy do przeładunku złomu",
@@ -2091,7 +2091,7 @@
     {
       "id": 175,
       "question": "Przedstawione na rysunku zawiesie specjalistyczne służy do:",
-      "image": "/img/SUWNICE_175.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_175.webp",
       "options": [
         "Podnoszenia arkuszy blach stalowych",
         "Podnoszenia prętów stalowych",
@@ -2103,7 +2103,7 @@
     {
       "id": 176,
       "question": "Przedstawione na rysunku zawiesie specjalistyczne służy do:",
-      "image": "/img/SUWNICE_176.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_176.webp",
       "options": [
         "Podnoszenia elementów betonowych",
         "Podnoszenia elementów z tworzywa sztucznego",
@@ -2247,7 +2247,7 @@
     {
       "id": 188,
       "question": "Wskaż, który ze sposobów podwieszenia ładunku przy pomocy zawiesia linowego jest nieprawidłowy:",
-      "image": "/img/SUWNICE_188.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_188.webp",
       "options": [
         "Rys A",
         "Rys B",
@@ -2259,7 +2259,7 @@
     {
       "id": 189,
       "question": "Wskaż, który ze sposobów zamocowania haka jest prawidłowy:",
-      "image": "/img/SUWNICE_189.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_189.webp",
       "options": [
         "Rys A",
         "Rys B",
@@ -2271,7 +2271,7 @@
     {
       "id": 190,
       "question": "Wskaż, który ze sposobów zamocowania haka jest nieprawidłowy:",
-      "image": "/img/SUWNICE_190.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_190.webp",
       "options": [
         "Rys A, B, C",
         "Rys A, B, D",
@@ -2283,7 +2283,7 @@
     {
       "id": 191,
       "question": "W oparciu o przedstawiony rysunek wskaż wartość A dla zawiesia dwucięgnowego:",
-      "image": "/img/SUWNICE_191.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_191.webp",
       "options": [
         "120%",
         "90%",
@@ -2295,7 +2295,7 @@
     {
       "id": 192,
       "question": "W oparciu o przedstawiony rysunek wskaż wartość A dla zawiesia dwucięgnowego:",
-      "image": "/img/SUWNICE_192.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_192.webp",
       "options": [
         "120%",
         "90%",
@@ -2403,7 +2403,7 @@
     {
       "id": 201,
       "question": "Poniższy rysunek przedstawia:",
-      "image": "/img/SUWNICE_201.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_201.webp",
       "options": [
         "Cecha zawiesia łańcuchowego czterocięgnowego",
         "Cecha zawiesia linowego o długości cięgien 10 m",
@@ -2451,7 +2451,7 @@
     {
       "id": 205,
       "question": "W oparciu o przedstawiony rysunek wskaż poprawny sposób zamocowania haka:",
-      "image": "/img/SUWNICE_205.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_205.webp",
       "options": [
         "A",
         "B",
@@ -2463,7 +2463,7 @@
     {
       "id": 206,
       "question": "Maksymalna masa podnoszonego ładunku przy kącie β wynoszącym 55° nie może przekraczać:",
-      "image": "/img/SUWNICE_206-209.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_206-209.webp",
       "options": [
         "12000 kg",
         "9000 kg",
@@ -2475,7 +2475,7 @@
     {
       "id": 207,
       "question": "Maksymalna masa podnoszonego ładunku przy kącie β wynoszącym 40° nie może przekraczać:",
-      "image": "/img/SUWNICE_206-209.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_206-209.webp",
       "options": [
         "12000 kg",
         "9000 kg",
@@ -2487,7 +2487,7 @@
     {
       "id": 208,
       "question": "Maksymalna masa podnoszonego ładunku przy kącie β wynoszącym 50° nie może przekraczać:",
-      "image": "/img/SUWNICE_206-209.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_206-209.webp",
       "options": [
         "12000 kg",
         "9000 kg",
@@ -2499,7 +2499,7 @@
     {
       "id": 209,
       "question": "Maksymalna masa podnoszonego ładunku przy kącie β wynoszącym 65° nie może przekraczać:",
-      "image": "/img/SUWNICE_206-209.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_206-209.webp",
       "options": [
         "12000 kg",
         "9000 kg",
@@ -2511,7 +2511,7 @@
     {
       "id": 210,
       "question": "W oparciu o przedstawiony rysunek określ maksymalną masę ładunku jaką można podnieść przy pomocy zawiesia 4 cięgnowego:",
-      "image": "/img/SUWNICE_210.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_210.webp",
       "options": [
         "6 t",
         "8,4 t",
@@ -2523,7 +2523,7 @@
     {
       "id": 211,
       "question": "W oparciu o przedstawiony rysunek określ maksymalną masę ładunku jaką można podnieść przy pomocy zawiesia 4 cięgnowego:",
-      "image": "/img/SUWNICE_211.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_211.webp",
       "options": [
         "6 t",
         "8,4 t",
@@ -2535,7 +2535,7 @@
     {
       "id": 212,
       "question": "W oparciu o przedstawiony rysunek określ maksymalną masę ładunku jaką można podnieść przy pomocy zawiesia 4 cięgnowego:",
-      "image": "/img/SUWNICE_212.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_212.webp",
       "options": [
         "7 t",
         "8,4 t",
@@ -2547,7 +2547,7 @@
     {
       "id": 213,
       "question": "Które z przedstawionych zawiesi specjalnych można wykorzystać do podnoszenia blach w pozycji pionowej:",
-      "image": "/img/SUWNICE_213-214.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_213-214.webp",
       "options": [
         "RYS. 1",
         "RYS. 2",
@@ -2559,7 +2559,7 @@
     {
       "id": 214,
       "question": "Które z przedstawionego osprzętu do podnoszenia można wykorzystać do podnoszenia blach w pozycji poziomej:",
-      "image": "/img/SUWNICE_213-214.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_213-214.webp",
       "options": [
         "RYS. 1",
         "RYS. 2",
@@ -2571,7 +2571,7 @@
     {
       "id": 215,
       "question": "Które z przedstawionego osprzętu do podnoszenia można wykorzystać do podnoszenia dwuteowych dźwigarów stalowych:",
-      "image": "/img/SUWNICE_215-216.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_215-216.webp",
       "options": [
         "RYS. 1",
         "RYS. 2",
@@ -2583,7 +2583,7 @@
     {
       "id": 216,
       "question": "Które z przedstawionego osprzętu do podnoszenia można wykorzystać do podnoszenia prętów stalowych o znacznej długości:",
-      "image": "/img/SUWNICE_215-216.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_215-216.webp",
       "options": [
         "RYS. 1",
         "RYS. 2",
@@ -2595,7 +2595,7 @@
     {
       "id": 217,
       "question": "Które z przedstawionego osprzętu do podnoszenia można wykorzystać do podnoszenia ładunków składowanych na paletach transportowych:",
-      "image": "/img/SUWNICE_217-218.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_217-218.webp",
       "options": [
         "RYS. 1",
         "RYS. 2",
@@ -2607,7 +2607,7 @@
     {
       "id": 218,
       "question": "Które z przedstawionego osprzętu do podnoszenia można wykorzystać do podnoszenia arkusza blachy w pozycji poziomej:",
-      "image": "/img/SUWNICE_217-218.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_217-218.webp",
       "options": [
         "RYS. 1 i RYS. 2",
         "RYS. 2 i RYS. 3",
@@ -2619,7 +2619,7 @@
     {
       "id": 219,
       "question": "Na zdjęciu poniżej symbol α oznacza:",
-      "image": "/img/SUWNICE_219-220.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_219-220.webp",
       "options": [
         "Kąt rozwarcia cięgien zawiesia",
         "Maksymalny kąt wierzchołkowy",
@@ -2631,7 +2631,7 @@
     {
       "id": 220,
       "question": "Na zdjęciu poniżej symbol β oznacza:",
-      "image": "/img/SUWNICE_219-220.webp",
+      "image": "/img/suwnice/zdjecia/SUWNICE_219-220.webp",
       "options": [
         "Długość zawiesia",
         "Kąt odchylenia cięgien od pionu",
