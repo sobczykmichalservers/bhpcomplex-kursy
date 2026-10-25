@@ -1,3 +1,12 @@
 {
-  "items": []
+  "items": [
+    {
+      "id": 1,
+      "question": "Wybrane regulacje prawne z zakresu prawa pracy dotyczące BHP.",
+      "answer": "1. **System źródeł prawa i zasada odpowiedzialności pracodawcy.**\n\nW praktyce administracyjno-biurowej należy rozróżniać: przepisy powszechnie obowiązujące (Konstytucja, Kodeks pracy, ustawy i rozporządzenia), przepisy i normy techniczne stosowane w procesie projektowania i oceny rozwiązań, oraz regulacje wewnętrzne pracodawcy (regulamin pracy, instrukcje, procedury, ocena ryzyka, instrukcje ppoż., zasady pracy zdalnej). W razie kolizji instrukcja wewnętrzna nie może obniżać poziomu ochrony wynikającego z prawa powszechnego.\n\n2. **Podstawowe obowiązki pracodawcy**\n\n- pracodawca odpowiada za stan bezpieczeństwa i higieny pracy w zakładzie pracy;\n- organizuje pracę w sposób zapewniający bezpieczne i higieniczne warunki pracy;\n- uwzględnia ochronę zdrowia młodocianych, kobiet w ciąży i karmiących, a także innych pracowników wymagających szczególnej ochrony zgodnie z przepisami;\n- ocenia i dokumentuje ryzyko zawodowe, informuje pracowników o ryzyku i zasadach ochrony;\n- zapewnia profilaktyczną opiekę zdrowotną, szkolenia, środki pierwszej pomocy, ochronę ppoż. i ewakuację;\n- reaguje na zgłoszenia o zagrożeniach oraz usuwa nieprawidłowości w organizacji pracy i wyposażeniu.\n\n3. **Obowiązki i prawa pracownika**\n\n- pracownik ma obowiązek znać i przestrzegać przepisów i zasad BHP oraz poleceń przełożonych dotyczących bezpiecznej organizacji pracy;\n- ma obowiązek stosować środki ochrony zbiorowej i indywidualnej oraz dbać o powierzone wyposażenie;\n- powinien współdziałać z pracodawcą w realizacji obowiązków BHP, zgłaszać zauważone zagrożenia i wypadki;\n- ma prawo powstrzymać się od wykonywania pracy, gdy warunki pracy stwarzają bezpośrednie zagrożenie dla zdrowia lub życia - zgodnie z Kodeksem pracy i z zastrzeżeniem wyjątków dla niektórych kategorii pracowników.",
+      "image": "",
+      "file": "",
+      "link": ""
+    }
+  ]
 }
