@@ -1230,16 +1230,16 @@
         `;
       }).join('');
 
-      // Dokładna szerokość 718px odpowiada 190mm (A4 210mm minus marginesy 2x10mm) przy 96 DPI
       const certEl = document.createElement('div');
-      certEl.style.width = '718px';
+      certEl.style.width = '100%';
+      certEl.style.boxSizing = 'border-box';
       certEl.style.background = '#ffffff';
       certEl.style.color = '#0f172a';
       certEl.style.fontFamily = "'Segoe UI', Arial, sans-serif";
 
       certEl.innerHTML = `
         <!-- STRONA 1: OFICJALNY PROTOKÓŁ I ZAŚWIADCZENIE Z EGZAMINU BHP -->
-        <div style="box-sizing:border-box;width:718px;height:1010px;padding:28px 32px;display:flex;flex-direction:column;justify-content:space-between;border:2px solid #1e3a8a;border-radius:8px;background:#ffffff;position:relative;">
+        <div style="box-sizing:border-box;width:100%;min-height:262mm;padding:26px 28px;display:flex;flex-direction:column;justify-content:space-between;border:2px solid #1e3a8a;border-radius:8px;background:#ffffff;position:relative;">
           
           <div>
             <!-- Górna belka nagłówkowa -->
@@ -1290,29 +1290,27 @@
             <div style="font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:1.2px;color:#64748b;margin-bottom:8px;">
               2. WYNIKI EGZAMINU TESTOWEGO I OCENA KOŃCOWA
             </div>
-            <table style="width:100%;border-collapse:separate;border-spacing:8px 0;margin:0 -8px 18px -8px;width:calc(100% + 16px);">
-              <tr>
-                <td style="width:25%;border:1px solid #cbd5e1;border-radius:10px;padding:12px 10px;text-align:center;background:#ffffff;">
-                  <div style="font-size:10px;font-weight:700;color:#64748b;text-transform:uppercase;">Uzyskany wynik</div>
-                  <div style="font-size:21px;font-weight:900;color:#0f172a;margin-top:4px;">${sc} / ${tot}</div>
-                  <div style="font-size:11px;font-weight:700;color:#1e3a8a;">(${pct}% punktów)</div>
-                </td>
-                <td style="width:25%;border:1px solid #86efac;border-radius:10px;padding:12px 10px;text-align:center;background:#f0fdf4;">
-                  <div style="font-size:10px;font-weight:700;color:#166534;text-transform:uppercase;">Poprawne odpowiedzi</div>
-                  <div style="font-size:21px;font-weight:900;color:#15803d;margin-top:4px;">${sc} na ${tot}</div>
-                  <div style="font-size:11px;font-weight:700;color:#16a34a;">odpowiedzi dobrze</div>
-                </td>
-                <td style="width:25%;border:1px solid #cbd5e1;border-radius:10px;padding:12px 10px;text-align:center;background:#ffffff;">
-                  <div style="font-size:10px;font-weight:700;color:#64748b;text-transform:uppercase;">Błędne odpowiedzi</div>
-                  <div style="font-size:21px;font-weight:900;color:${wrong > 0 ? '#dc2626' : '#15803d'};margin-top:4px;">${wrong} z ${tot}</div>
-                  <div style="font-size:11px;color:#64748b;">błędnych w teście</div>
-                </td>
-                <td style="width:25%;border:1px solid #93c5fd;border-radius:10px;padding:12px 10px;text-align:center;background:#eff6ff;">
-                  <div style="font-size:10px;font-weight:700;color:#1e40af;text-transform:uppercase;">Ocena końcowa</div>
-                  <div style="font-size:14px;font-weight:900;color:#1d4ed8;margin-top:6px;line-height:1.25;">${grade}</div>
-                </td>
-              </tr>
-            </table>
+            <div style="display:flex;gap:10px;width:100%;margin-bottom:18px;">
+              <div style="flex:1;border:1px solid #cbd5e1;border-radius:10px;padding:12px 8px;text-align:center;background:#ffffff;">
+                <div style="font-size:10px;font-weight:700;color:#64748b;text-transform:uppercase;">Uzyskany wynik</div>
+                <div style="font-size:21px;font-weight:900;color:#0f172a;margin-top:4px;">${sc} / ${tot}</div>
+                <div style="font-size:11px;font-weight:700;color:#1e3a8a;">(${pct}% punktów)</div>
+              </div>
+              <div style="flex:1;border:1px solid #86efac;border-radius:10px;padding:12px 8px;text-align:center;background:#f0fdf4;">
+                <div style="font-size:10px;font-weight:700;color:#166534;text-transform:uppercase;">Poprawne odpowiedzi</div>
+                <div style="font-size:21px;font-weight:900;color:#15803d;margin-top:4px;">${sc} na ${tot}</div>
+                <div style="font-size:11px;font-weight:700;color:#16a34a;">odpowiedzi dobrze</div>
+              </div>
+              <div style="flex:1;border:1px solid #cbd5e1;border-radius:10px;padding:12px 8px;text-align:center;background:#ffffff;">
+                <div style="font-size:10px;font-weight:700;color:#64748b;text-transform:uppercase;">Błędne odpowiedzi</div>
+                <div style="font-size:21px;font-weight:900;color:${wrong > 0 ? '#dc2626' : '#15803d'};margin-top:4px;">${wrong} z ${tot}</div>
+                <div style="font-size:11px;color:#64748b;">błędnych w teście</div>
+              </div>
+              <div style="flex:1;border:1px solid #93c5fd;border-radius:10px;padding:12px 8px;text-align:center;background:#eff6ff;">
+                <div style="font-size:10px;font-weight:700;color:#1e40af;text-transform:uppercase;">Ocena końcowa</div>
+                <div style="font-size:14px;font-weight:900;color:#1d4ed8;margin-top:6px;line-height:1.25;">${grade}</div>
+              </div>
+            </div>
 
             <!-- Orzeczenie o zdaniu egzaminu -->
             <div style="background:#f0fdf4;border:2px solid #22c55e;border-radius:10px;padding:15px 20px;text-align:center;margin-bottom:20px;">
@@ -1359,7 +1357,7 @@
         <div class="html2pdf__page-break" style="page-break-before:always;break-before:always;height:0;"></div>
 
         <!-- STRONA 2+: SZCZEGÓŁOWY WYKAZ PYTAŃ I ODPOWIEDZI -->
-        <div style="box-sizing:border-box;width:718px;padding:8px 2px;">
+        <div style="box-sizing:border-box;width:100%;padding:8px 2px;">
           <div style="border-bottom:2px solid #1e3a8a;padding-bottom:10px;margin-bottom:14px;display:flex;justify-content:space-between;align-items:flex-end;">
             <div>
               <div style="font-size:10px;font-weight:800;color:#1e3a8a;text-transform:uppercase;letter-spacing:1px;">ZAŁĄCZNIK DO PROTOKOŁU NR ${protocolNo}</div>
@@ -1429,7 +1427,7 @@
           margin:       [10, 10, 10, 10],
           filename:     filename,
           image:        { type: 'jpeg', quality: 0.98 },
-          html2canvas:  { scale: 2, useCORS: true, width: 718, windowWidth: 800, scrollY: 0 },
+          html2canvas:  { scale: 2, useCORS: true },
           jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
           pagebreak:    { mode: ['css', 'legacy'], before: '.html2pdf__page-break', avoid: '.pdf-card' }
         };
