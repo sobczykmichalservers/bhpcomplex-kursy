@@ -5,14 +5,14 @@
    Zmień CACHE_VER przy każdym deployu kodu, aby wymusić odświeżenie.
    ═══════════════════════════════════════════════════════════════ */
 
-const CACHE_VER = 'udt-v72';
+const CACHE_VER = 'udt-v73';
 
 // Pliki powłoki aplikacji (HTML/CSS/JS) z Firebase; wszystkie treści (JSON, zdjęcia, ikony, PDF) idą bezpośrednio z GitHub
 const PRECACHE = [
   '/',
   '/index.html',
-  '/style.css?v=72',
-  '/app.js?v=72'
+  '/style.css?v=73',
+  '/app.js?v=73'
 ];
 
 // ─── INSTALL: Precache kluczowych plików ────────────────────
@@ -45,7 +45,7 @@ self.addEventListener('activate', (e) => {
 self.addEventListener('fetch', (e) => {
   const url = new URL(e.request.url);
 
-  // NIE cachuj: panelu CMS (/admin), panelu instruktora (/panel), zapytań Range (audio/video), Firebase, Firestore, Telegram, metod innych niż GET
+  // NIE cachuj: panelu CMS (/admin), panelu instruktora (/panel), zapytań Range (audio/video), Firebase, Firestore, metod innych niż GET
   if (
     e.request.method !== 'GET' ||
     e.request.headers.has('range') ||
@@ -55,8 +55,6 @@ self.addEventListener('fetch', (e) => {
     url.hostname.includes('googleapis') ||
     url.hostname.includes('gstatic') ||
     url.hostname.includes('firebase') ||
-    url.hostname.includes('telegram') ||
-    url.hostname.includes('api.telegram') ||
     url.hostname.includes('unpkg.com') ||
     url.hostname.includes('cdnjs.cloudflare.com')
   ) {
