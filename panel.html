@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Panel Instruktora — UDT & BHP</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <style>
     :root {
       --bg: #0f1218;
@@ -1166,8 +1167,80 @@
       approveAndDownloadPdf(CURRENT_MODAL_ID, $('pm-approve-btn'));
     });
 
-    // ─── GENEROWANIE DOPRACOWANEGO PROTOKOŁU PDF (PIXEL-PERFECT A4) ───
-    async function buildExamPdfContainer(r, datePl, grade) {
+    // ─── GENEROWANIE DOPRACOWANEGO PROTOKOŁU PDF (STRONA PO STRONIE A4 794x1123px) ───
+    function createA4PageShell() {
+      const page = document.createElement('div');
+      page.style.cssText = [
+        'width:794px',
+        'height:1123px',
+        'box-sizing:border-box',
+        'padding:34px 38px',
+        'background:#ffffff',
+        'color:#0f172a',
+        "font-family:'Segoe UI',Arial,sans-serif",
+        'display:flex',
+        'flex-direction:column',
+        'justify-content:space-between',
+        'overflow:hidden',
+        'position:relative'
+      ].join(';');
+      return page;
+    }
+
+    function buildQuestionCardElement(q, uIdx, i, totalCount) {
+      const LT = ['A', 'B', 'C', 'D'];
+      const isCorr = uIdx === q.correct;
+      const optsHtml = (q.options || []).map((optText, oIdx) => {
+        const isCorrectOpt = oIdx === q.correct;
+        const isUserOpt = oIdx === uIdx;
+        let bg = '#f8fafc';
+        let border = '#e2e8f0';
+        let color = '#334155';
+        let badge = '';
+
+        if (isCorrectOpt && isUserOpt) {
+          bg = '#f0fdf4';
+          border = '#86efac';
+          color = '#14532d';
+          badge = `<span style="font-size:10px;font-weight:700;color:#15803d;background:#dcfce7;padding:2px 8px;border-radius:99px;">✓ Odpowiedź zdającego (Poprawna)</span>`;
+        } else if (isCorrectOpt) {
+          bg = '#f0fdf4';
+          border = '#bbf7d0';
+          color = '#166534';
+          badge = `<span style="font-size:10px;font-weight:700;color:#15803d;">✓ Prawidłowa odpowiedź</span>`;
+        } else if (isUserOpt) {
+          bg = '#fef2f2';
+          border = '#fca5a5';
+          color = '#991b1b';
+          badge = `<span style="font-size:10px;font-weight:700;color:#b91c1c;background:#fee2e2;padding:2px 8px;border-radius:99px;">✗ Odpowiedź zdającego (Błąd)</span>`;
+        }
+
+        return `
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;padding:5px 10px;margin-top:4px;border-radius:6px;border:1px solid ${border};background:${bg};color:${color};font-size:11px;line-height:1.3;">
+            <div><strong>${LT[oIdx] || (oIdx + 1)}.</strong> ${optText}</div>
+            <div style="white-space:nowrap;flex-shrink:0;">${badge}</div>
+          </div>
+        `;
+      }).join('');
+
+      const card = document.createElement('div');
+      card.style.cssText = `margin-bottom:10px;padding:10px 14px;border-radius:8px;border:1px solid #cbd5e1;border-left:6px solid ${isCorr ? '#16a34a' : '#dc2626'};background:#ffffff;box-sizing:border-box;`;
+      card.innerHTML = `
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+          <span style="font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#475569;">Pytanie ${i + 1} z ${totalCount}</span>
+          <span style="font-size:10px;font-weight:800;padding:2px 9px;border-radius:99px;background:${isCorr ? '#dcfce7' : '#fee2e2'};color:${isCorr ? '#15803d' : '#b91c1c'};">
+            ${isCorr ? '✓ POPRAWNIE (1/1 pkt)' : '✗ BŁĄD (0/1 pkt)'}
+          </span>
+        </div>
+        <div style="font-weight:700;font-size:12px;color:#0f172a;margin-bottom:5px;line-height:1.35;">
+          ${q.question}
+        </div>
+        ${optsHtml}
+      `;
+      return card;
+    }
+
+    async function generateExamPdfDocument(r, datePl, grade, filename) {
       const { sc, tot } = parseScoreParts(r);
       const pct = r.procent ?? (tot > 0 ? Math.round((sc / tot) * 100) : 0);
       const wrong = Math.max(0, tot - sc);
@@ -1177,210 +1250,252 @@
       const protocolNo = `BHP/${new Date().getFullYear()}/${String(r.id || '001').slice(0, 6).toUpperCase()}`;
 
       const items = await reconstructExamItems(r);
-      const LT = ['A', 'B', 'C', 'D'];
 
-      const qCardsHtml = items.map(({ q, uIdx }, i) => {
-        const isCorr = uIdx === q.correct;
-        const optsHtml = (q.options || []).map((optText, oIdx) => {
-          const isCorrectOpt = oIdx === q.correct;
-          const isUserOpt = oIdx === uIdx;
-          let bg = '#f8fafc';
-          let border = '#e2e8f0';
-          let color = '#334155';
-          let badge = '';
+      const prevScrollX = window.scrollX;
+      const prevScrollY = window.scrollY;
 
-          if (isCorrectOpt && isUserOpt) {
-            bg = '#f0fdf4';
-            border = '#86efac';
-            color = '#14532d';
-            badge = `<span style="font-size:10.5px;font-weight:700;color:#15803d;background:#dcfce7;padding:2px 8px;border-radius:99px;">✓ Odpowiedź zdającego (Poprawna)</span>`;
-          } else if (isCorrectOpt) {
-            bg = '#f0fdf4';
-            border = '#bbf7d0';
-            color = '#166534';
-            badge = `<span style="font-size:10.5px;font-weight:700;color:#15803d;">✓ Prawidłowa odpowiedź</span>`;
-          } else if (isUserOpt) {
-            bg = '#fef2f2';
-            border = '#fca5a5';
-            color = '#991b1b';
-            badge = `<span style="font-size:10.5px;font-weight:700;color:#b91c1c;background:#fee2e2;padding:2px 8px;border-radius:99px;">✗ Odpowiedź zdającego (Błąd)</span>`;
-          }
+      // Zasłona ładowania, aby scena A4 na (0,0) była niewidoczna dla użytkownika
+      const veil = document.createElement('div');
+      veil.id = 'pdf-loading-veil';
+      veil.style.cssText = 'position:fixed;inset:0;background:rgba(11,15,26,0.92);z-index:100000;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#f8fafc;font-family:system-ui,sans-serif;';
+      veil.innerHTML = `
+        <div style="font-size:18px;font-weight:800;margin-bottom:6px;">⏳ Generowanie protokołu PDF (format A4)...</div>
+        <div style="font-size:13px;color:#94a3b8;">Przygotowywanie zaświadczenia i karty odpowiedzi (${items.length} pytań)</div>
+      `;
+      document.body.appendChild(veil);
 
-          return `
-            <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;padding:6px 10px;margin-top:5px;border-radius:6px;border:1px solid ${border};background:${bg};color:${color};font-size:11.5px;line-height:1.35;">
-              <div><strong>${LT[oIdx] || (oIdx + 1)}.</strong> ${optText}</div>
-              <div style="white-space:nowrap;flex-shrink:0;">${badge}</div>
+      const stage = document.createElement('div');
+      stage.id = 'pdf-stage-host';
+      stage.style.cssText = 'position:absolute;top:0;left:0;width:794px;height:1123px;margin:0;padding:0;background:#ffffff;z-index:99990;overflow:hidden;';
+      document.body.appendChild(stage);
+
+      try {
+        window.scrollTo(0, 0);
+
+        const pages = [];
+
+        // ─── STRONA 1: OFICJALNY PROTOKÓŁ I ZAŚWIADCZENIE ───
+        const page1 = createA4PageShell();
+        page1.innerHTML = `
+          <div style="box-sizing:border-box;width:100%;height:100%;padding:26px 28px;display:flex;flex-direction:column;justify-content:space-between;border:2px solid #1e3a8a;border-radius:10px;background:#ffffff;">
+            <div>
+              <!-- Górna belka nagłówkowa -->
+              <div style="background:#0f172a;color:#ffffff;padding:15px 20px;border-radius:8px;border-bottom:4px solid #f59e0b;display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;">
+                <div>
+                  <div style="font-size:10.5px;font-weight:800;letter-spacing:2px;color:#f59e0b;text-transform:uppercase;">OŚRODEK SZKOLENIOWY • DOKUMENTACJA BHP</div>
+                  <div style="font-size:15px;font-weight:800;color:#f8fafc;margin-top:3px;">PROTOKÓŁ WERYFIKACJI WIEDZY BHP</div>
+                </div>
+                <div style="text-align:right;">
+                  <div style="font-size:10px;color:#94a3b8;text-transform:uppercase;font-weight:700;">Nr protokołu: ${protocolNo}</div>
+                  <div style="font-size:13.5px;font-weight:800;color:#ffffff;margin-top:3px;">Data: ${datePl} r.</div>
+                </div>
+              </div>
+
+              <!-- Tytuł główny -->
+              <div style="text-align:center;margin-bottom:24px;">
+                <div style="display:inline-block;padding:4px 16px;background:#eff6ff;color:#1d4ed8;border:1px solid #bfdbfe;border-radius:99px;font-size:11px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:8px;">
+                  POTWIERDZENIE ZDANIA EGZAMINU KOŃCOWEGO
+                </div>
+                <h1 style="font-size:23px;font-weight:900;color:#0f172a;margin:0 0 6px;letter-spacing:0.3px;">
+                  ZAŚWIADCZENIE I PROTOKÓŁ EGZAMINU BHP
+                </h1>
+                <div style="font-size:15px;font-weight:700;color:#1e3a8a;">
+                  Szkolenie: ${courseTitle}
+                </div>
+              </div>
+
+              <!-- 1. Dane Zdającego -->
+              <div style="background:#f8fafc;border:1px solid #cbd5e1;border-radius:10px;padding:16px 22px;margin-bottom:22px;">
+                <div style="font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:1.2px;color:#64748b;margin-bottom:8px;">
+                  1. DANE OSOBOWE ZDAJĄCEGO (UCZESTNIKA SZKOLENIA)
+                </div>
+                <table style="width:100%;border-collapse:collapse;">
+                  <tr>
+                    <td style="padding:0;border:none;width:65%;">
+                      <div style="font-size:11.5px;color:#475569;">Imię i nazwisko kursanta:</div>
+                      <div style="font-size:22px;font-weight:900;color:#0f172a;margin-top:2px;">${studentName}</div>
+                    </td>
+                    <td style="padding:0;border:none;text-align:right;width:35%;">
+                      <div style="font-size:11.5px;color:#475569;">Identyfikator konta (Login):</div>
+                      <div style="font-size:13.5px;font-weight:700;color:#1e293b;background:#e2e8f0;padding:4px 10px;border-radius:6px;margin-top:4px;display:inline-block;">${studentLogin}</div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <!-- 2. Wyniki egzaminu -->
+              <div style="font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:1.2px;color:#64748b;margin-bottom:8px;">
+                2. WYNIKI EGZAMINU TESTOWEGO I OCENA KOŃCOWA
+              </div>
+              <div style="display:flex;gap:10px;width:100%;margin-bottom:20px;">
+                <div style="flex:1;border:1px solid #cbd5e1;border-radius:10px;padding:13px 8px;text-align:center;background:#ffffff;">
+                  <div style="font-size:10px;font-weight:700;color:#64748b;text-transform:uppercase;">Uzyskany wynik</div>
+                  <div style="font-size:21px;font-weight:900;color:#0f172a;margin-top:4px;">${sc} / ${tot}</div>
+                  <div style="font-size:11px;font-weight:700;color:#1e3a8a;">(${pct}% punktów)</div>
+                </div>
+                <div style="flex:1;border:1px solid #86efac;border-radius:10px;padding:13px 8px;text-align:center;background:#f0fdf4;">
+                  <div style="font-size:10px;font-weight:700;color:#166534;text-transform:uppercase;">Poprawne odpowiedzi</div>
+                  <div style="font-size:21px;font-weight:900;color:#15803d;margin-top:4px;">${sc} na ${tot}</div>
+                  <div style="font-size:11px;font-weight:700;color:#16a34a;">odpowiedzi dobrze</div>
+                </div>
+                <div style="flex:1;border:1px solid #cbd5e1;border-radius:10px;padding:13px 8px;text-align:center;background:#ffffff;">
+                  <div style="font-size:10px;font-weight:700;color:#64748b;text-transform:uppercase;">Błędne odpowiedzi</div>
+                  <div style="font-size:21px;font-weight:900;color:${wrong > 0 ? '#dc2626' : '#15803d'};margin-top:4px;">${wrong} z ${tot}</div>
+                  <div style="font-size:11px;color:#64748b;">błędnych w teście</div>
+                </div>
+                <div style="flex:1;border:1px solid #93c5fd;border-radius:10px;padding:13px 8px;text-align:center;background:#eff6ff;">
+                  <div style="font-size:10px;font-weight:700;color:#1e40af;text-transform:uppercase;">Ocena końcowa</div>
+                  <div style="font-size:14px;font-weight:900;color:#1d4ed8;margin-top:6px;line-height:1.25;">${grade}</div>
+                </div>
+              </div>
+
+              <!-- Orzeczenie o zdaniu egzaminu -->
+              <div style="background:#f0fdf4;border:2px solid #22c55e;border-radius:10px;padding:16px 20px;text-align:center;margin-bottom:22px;">
+                <div style="font-size:15.5px;font-weight:900;color:#15803d;letter-spacing:0.4px;">
+                  ✓ WYNIK EGZAMINU: POZYTYWNY — EGZAMIN ZALICZONY
+                </div>
+                <div style="font-size:12px;color:#166534;margin-top:5px;line-height:1.45;">
+                  Zaświadcza się, że uczestnik <strong>${studentName}</strong> w dniu <strong>${datePl} r.</strong> ukończył(a) egzamin sprawdzający z zakresu <strong>${courseTitle}</strong>, uzyskując <strong>${sc} poprawnych odpowiedzi na ${tot} możliwych (${pct}%)</strong> oraz ocenę: <strong>${grade}</strong>.
+                </div>
+              </div>
+
+              <!-- 3. Komisja Egzaminacyjna — Michał Kostecki -->
+              <div style="font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:1.2px;color:#64748b;margin-bottom:8px;">
+                3. KOMISJA EGZAMINACYJNA — WERYFIKACJA I ZATWIERDZENIE WYNIKU
+              </div>
+              <div style="border:1px solid #cbd5e1;border-radius:10px;padding:18px 20px;background:#f8fafc;">
+                <table style="width:100%;border-collapse:collapse;">
+                  <tr>
+                    <td style="width:48%;padding:0 16px 0 0;border:none;border-right:1px solid #cbd5e1;vertical-align:top;">
+                      <div style="font-size:10.5px;color:#64748b;text-transform:uppercase;font-weight:700;">Podpis uczestnika (Zdającego):</div>
+                      <div style="font-size:17px;font-weight:800;color:#0f172a;margin-top:6px;">${studentName}</div>
+                      <div style="font-size:11px;color:#475569;margin-top:5px;">✓ Złożono podpis elektroniczny po zakończeniu testu</div>
+                    </td>
+                    <td style="width:52%;padding:0 0 0 18px;border:none;vertical-align:top;">
+                      <div style="font-size:10.5px;color:#64748b;text-transform:uppercase;font-weight:700;">Egzamin sprawdził i zatwierdził:</div>
+                      <div style="font-size:18px;font-weight:900;color:#1e3a8a;margin-top:5px;">${EXAMINER_NAME}</div>
+                      <div style="font-size:11px;color:#334155;font-weight:600;margin-top:2px;">Uprawniony przeprowadzający / Egzaminator BHP</div>
+                      <div style="font-size:11px;color:#15803d;font-weight:700;margin-top:4px;">
+                        ✓ Zweryfikowano i zatwierdzono dnia ${datePl} r.
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
             </div>
-          `;
-        }).join('');
 
-        return `
-          <div class="pdf-card" style="page-break-inside:avoid;break-inside:avoid;margin-bottom:11px;padding:12px 15px;border-radius:8px;border:1px solid #cbd5e1;border-left:6px solid ${isCorr ? '#16a34a' : '#dc2626'};background:#ffffff;">
-            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;">
-              <span style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#475569;">Pytanie ${i + 1} z ${items.length}</span>
-              <span style="font-size:10.5px;font-weight:800;padding:2px 9px;border-radius:99px;background:${isCorr ? '#dcfce7' : '#fee2e2'};color:${isCorr ? '#15803d' : '#b91c1c'};">
-                ${isCorr ? '✓ POPRAWNIE (1/1 pkt)' : '✗ BŁĄD (0/1 pkt)'}
-              </span>
+            <!-- Stopka strony 1 -->
+            <div style="border-top:1px solid #cbd5e1;padding-top:10px;display:flex;justify-content:space-between;align-items:center;font-size:10px;color:#64748b;">
+              <div>Protokół wygenerowany z Panelu Instruktora BHP • Nr ${protocolNo}</div>
+              <div class="pdf-page-num" style="font-weight:700;color:#1e3a8a;">Strona 1</div>
             </div>
-            <div style="font-weight:700;font-size:12.5px;color:#0f172a;margin-bottom:6px;line-height:1.4;">
-              ${q.question}
-            </div>
-            ${optsHtml}
           </div>
         `;
-      }).join('');
+        pages.push(page1);
 
-      const certEl = document.createElement('div');
-      certEl.style.width = '100%';
-      certEl.style.boxSizing = 'border-box';
-      certEl.style.background = '#ffffff';
-      certEl.style.color = '#0f172a';
-      certEl.style.fontFamily = "'Segoe UI', Arial, sans-serif";
-
-      certEl.innerHTML = `
-        <!-- STRONA 1: OFICJALNY PROTOKÓŁ I ZAŚWIADCZENIE Z EGZAMINU BHP -->
-        <div style="box-sizing:border-box;width:100%;min-height:262mm;padding:26px 28px;display:flex;flex-direction:column;justify-content:space-between;border:2px solid #1e3a8a;border-radius:8px;background:#ffffff;position:relative;">
-          
-          <div>
-            <!-- Górna belka nagłówkowa -->
-            <div style="background:#0f172a;color:#ffffff;padding:14px 20px;border-radius:8px;border-bottom:4px solid #f59e0b;display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;">
+        // ─── STRONY 2..N: SZCZEGÓŁOWA KARTA ODPOWIEDZI (DYNAMICZNY PODZIAŁ BEZ PRZECINANIA KART) ───
+        function createQuestionsPage() {
+          const p = createA4PageShell();
+          p.innerHTML = `
+            <div style="display:flex;flex-direction:column;height:100%;justify-content:space-between;">
               <div>
-                <div style="font-size:10.5px;font-weight:800;letter-spacing:2px;color:#f59e0b;text-transform:uppercase;">OŚRODEK SZKOLENIOWY • DOKUMENTACJA BHP</div>
-                <div style="font-size:15px;font-weight:800;color:#f8fafc;margin-top:2px;">PROTOKÓŁ WERYFIKACJI WIEDZY BHP</div>
-              </div>
-              <div style="text-align:right;">
-                <div style="font-size:10px;color:#94a3b8;text-transform:uppercase;font-weight:700;">Nr protokołu: ${protocolNo}</div>
-                <div style="font-size:13.5px;font-weight:800;color:#ffffff;margin-top:2px;">Data: ${datePl} r.</div>
-              </div>
-            </div>
-
-            <!-- Tytuł główny -->
-            <div style="text-align:center;margin-bottom:22px;">
-              <div style="display:inline-block;padding:4px 16px;background:#eff6ff;color:#1d4ed8;border:1px solid #bfdbfe;border-radius:99px;font-size:11px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:8px;">
-                POTWIERDZENIE ZDANIA EGZAMINU KOŃCOWEGO
-              </div>
-              <h1 style="font-size:24px;font-weight:900;color:#0f172a;margin:0 0 6px;letter-spacing:0.3px;">
-                ZAŚWIADCZENIE I PROTOKÓŁ EGZAMINU BHP
-              </h1>
-              <div style="font-size:15px;font-weight:700;color:#1e3a8a;">
-                Szkolenie: ${courseTitle}
-              </div>
-            </div>
-
-            <!-- Karta Zdającego -->
-            <div style="background:#f8fafc;border:1px solid #cbd5e1;border-radius:10px;padding:16px 22px;margin-bottom:20px;">
-              <div style="font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:1.2px;color:#64748b;margin-bottom:8px;">
-                1. DANE OSOBOWE ZDAJĄCEGO (UCZESTNIKA SZKOLENIA)
-              </div>
-              <table style="width:100%;border-collapse:collapse;">
-                <tr>
-                  <td style="padding:0;border:none;width:65%;">
-                    <div style="font-size:11.5px;color:#475569;">Imię i nazwisko kursanta:</div>
-                    <div style="font-size:22px;font-weight:900;color:#0f172a;margin-top:2px;">${studentName}</div>
-                  </td>
-                  <td style="padding:0;border:none;text-align:right;width:35%;">
-                    <div style="font-size:11.5px;color:#475569;">Identyfikator konta (Login):</div>
-                    <div style="font-size:13.5px;font-weight:700;color:#1e293b;background:#e2e8f0;padding:4px 10px;border-radius:6px;margin-top:4px;display:inline-block;">${studentLogin}</div>
-                  </td>
-                </tr>
-              </table>
-            </div>
-
-            <!-- Zestawienie wyników: Kto zdał, ile na ile dobrze, ocena -->
-            <div style="font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:1.2px;color:#64748b;margin-bottom:8px;">
-              2. WYNIKI EGZAMINU TESTOWEGO I OCENA KOŃCOWA
-            </div>
-            <div style="display:flex;gap:10px;width:100%;margin-bottom:18px;">
-              <div style="flex:1;border:1px solid #cbd5e1;border-radius:10px;padding:12px 8px;text-align:center;background:#ffffff;">
-                <div style="font-size:10px;font-weight:700;color:#64748b;text-transform:uppercase;">Uzyskany wynik</div>
-                <div style="font-size:21px;font-weight:900;color:#0f172a;margin-top:4px;">${sc} / ${tot}</div>
-                <div style="font-size:11px;font-weight:700;color:#1e3a8a;">(${pct}% punktów)</div>
-              </div>
-              <div style="flex:1;border:1px solid #86efac;border-radius:10px;padding:12px 8px;text-align:center;background:#f0fdf4;">
-                <div style="font-size:10px;font-weight:700;color:#166534;text-transform:uppercase;">Poprawne odpowiedzi</div>
-                <div style="font-size:21px;font-weight:900;color:#15803d;margin-top:4px;">${sc} na ${tot}</div>
-                <div style="font-size:11px;font-weight:700;color:#16a34a;">odpowiedzi dobrze</div>
-              </div>
-              <div style="flex:1;border:1px solid #cbd5e1;border-radius:10px;padding:12px 8px;text-align:center;background:#ffffff;">
-                <div style="font-size:10px;font-weight:700;color:#64748b;text-transform:uppercase;">Błędne odpowiedzi</div>
-                <div style="font-size:21px;font-weight:900;color:${wrong > 0 ? '#dc2626' : '#15803d'};margin-top:4px;">${wrong} z ${tot}</div>
-                <div style="font-size:11px;color:#64748b;">błędnych w teście</div>
-              </div>
-              <div style="flex:1;border:1px solid #93c5fd;border-radius:10px;padding:12px 8px;text-align:center;background:#eff6ff;">
-                <div style="font-size:10px;font-weight:700;color:#1e40af;text-transform:uppercase;">Ocena końcowa</div>
-                <div style="font-size:14px;font-weight:900;color:#1d4ed8;margin-top:6px;line-height:1.25;">${grade}</div>
-              </div>
-            </div>
-
-            <!-- Orzeczenie o zdaniu egzaminu -->
-            <div style="background:#f0fdf4;border:2px solid #22c55e;border-radius:10px;padding:15px 20px;text-align:center;margin-bottom:20px;">
-              <div style="font-size:16px;font-weight:900;color:#15803d;letter-spacing:0.4px;">
-                ✓ WYNIK EGZAMINU: POZYTYWNY — EGZAMIN ZALICZONY
-              </div>
-              <div style="font-size:12px;color:#166534;margin-top:4px;line-height:1.45;">
-                Zaświadcza się, że uczestnik <strong>${studentName}</strong> w dniu <strong>${datePl} r.</strong> ukończył(a) egzamin sprawdzający z zakresu <strong>${courseTitle}</strong>, uzyskując <strong>${sc} poprawnych odpowiedzi na ${tot} możliwych (${pct}%)</strong> oraz ocenę: <strong>${grade}</strong>.
-              </div>
-            </div>
-
-            <!-- Sekcja 3: Komisja / Sprawdzający Michał Kostecki -->
-            <div style="font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:1.2px;color:#64748b;margin-bottom:8px;">
-              3. KOMISJA EGZAMINACYJNA — WERYFIKACJA I ZATWIERDZENIE WYNIKU
-            </div>
-            <div style="border:1px solid #cbd5e1;border-radius:10px;padding:16px 20px;background:#f8fafc;">
-              <table style="width:100%;border-collapse:collapse;">
-                <tr>
-                  <td style="width:48%;padding:0 16px 0 0;border:none;border-right:1px solid #cbd5e1;vertical-align:top;">
-                    <div style="font-size:10.5px;color:#64748b;text-transform:uppercase;font-weight:700;">Podpis uczestnika (Zdającego):</div>
-                    <div style="font-size:16px;font-weight:800;color:#0f172a;margin-top:6px;">${studentName}</div>
-                    <div style="font-size:11px;color:#475569;margin-top:4px;">✓ Złożono podpis elektroniczny po zakończeniu testu</div>
-                  </td>
-                  <td style="width:52%;padding:0 0 0 18px;border:none;vertical-align:top;">
-                    <div style="font-size:10.5px;color:#64748b;text-transform:uppercase;font-weight:700;">Egzamin sprawdził i zatwierdził:</div>
-                    <div style="font-size:18px;font-weight:900;color:#1e3a8a;margin-top:5px;">${EXAMINER_NAME}</div>
-                    <div style="font-size:11px;color:#334155;font-weight:600;margin-top:2px;">Uprawniony przeprowadzający / Egzaminator BHP</div>
-                    <div style="font-size:11px;color:#15803d;font-weight:700;margin-top:4px;">
-                      ✓ Zweryfikowano i zatwierdzono dnia ${datePl} r.
+                <div style="border-bottom:2px solid #1e3a8a;padding-bottom:9px;margin-bottom:12px;display:flex;justify-content:space-between;align-items:flex-end;">
+                  <div>
+                    <div style="font-size:10px;font-weight:800;color:#1e3a8a;text-transform:uppercase;letter-spacing:1px;">ZAŁĄCZNIK DO PROTOKOŁU NR ${protocolNo}</div>
+                    <h2 style="font-size:16px;font-weight:900;color:#0f172a;margin:2px 0 3px;">SZCZEGÓŁOWA KARTA ODPOWIEDZI Z EGZAMINU</h2>
+                    <div style="font-size:11px;color:#334155;">
+                      Zdający: <strong>${studentName}</strong> (${studentLogin}) • Szkolenie: <strong>${courseTitle}</strong> • Data: <strong>${datePl} r.</strong>
                     </div>
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </div>
-
-          <!-- Stopka strony 1 -->
-          <div style="border-top:1px solid #cbd5e1;padding-top:10px;display:flex;justify-content:space-between;align-items:center;font-size:10px;color:#64748b;">
-            <div>Protokół wygenerowany z Panelu Instruktora BHP • Nr ${protocolNo}</div>
-            <div>Sprawdzający: <strong>${EXAMINER_NAME}</strong> • Załącznik: Karta odpowiedzi na kolejnej stronie</div>
-          </div>
-        </div>
-
-        <div class="html2pdf__page-break" style="page-break-before:always;break-before:always;height:0;"></div>
-
-        <!-- STRONA 2+: SZCZEGÓŁOWY WYKAZ PYTAŃ I ODPOWIEDZI -->
-        <div style="box-sizing:border-box;width:100%;padding:8px 2px;">
-          <div style="border-bottom:2px solid #1e3a8a;padding-bottom:10px;margin-bottom:14px;display:flex;justify-content:space-between;align-items:flex-end;">
-            <div>
-              <div style="font-size:10px;font-weight:800;color:#1e3a8a;text-transform:uppercase;letter-spacing:1px;">ZAŁĄCZNIK DO PROTOKOŁU NR ${protocolNo}</div>
-              <h2 style="font-size:17px;font-weight:900;color:#0f172a;margin:2px 0 3px;">SZCZEGÓŁOWA KARTA ODPOWIEDZI Z EGZAMINU</h2>
-              <div style="font-size:11.5px;color:#334155;">
-                Zdający: <strong>${studentName}</strong> (${studentLogin}) • Szkolenie: <strong>${courseTitle}</strong> • Data: <strong>${datePl} r.</strong>
+                  </div>
+                  <div style="text-align:right;">
+                    <div style="font-size:11px;font-weight:800;color:#15803d;background:#f0fdf4;padding:3px 9px;border-radius:6px;border:1px solid #86efac;">
+                      Wynik: ${sc} na ${tot} dobrze (${pct}%) • Ocena: ${grade}
+                    </div>
+                    <div style="font-size:10px;color:#475569;margin-top:3px;">
+                      Sprawdził i zatwierdził: <strong>${EXAMINER_NAME}</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="q-cards-slot"></div>
+              </div>
+              <div style="border-top:1px solid #cbd5e1;padding-top:8px;display:flex;justify-content:space-between;align-items:center;font-size:10px;color:#64748b;">
+                <div>Załącznik do protokołu nr ${protocolNo} • Zdający: ${studentName} • Sprawdził: ${EXAMINER_NAME}</div>
+                <div class="pdf-page-num" style="font-weight:700;color:#1e3a8a;">Strona</div>
               </div>
             </div>
-            <div style="text-align:right;">
-              <div style="font-size:11.5px;font-weight:800;color:#15803d;background:#f0fdf4;padding:4px 10px;border-radius:6px;border:1px solid #86efac;">
-                Wynik: ${sc} na ${tot} dobrze (${pct}%) • Ocena: ${grade}
-              </div>
-              <div style="font-size:10.5px;color:#475569;margin-top:3px;">
-                Sprawdził i zatwierdził: <strong>${EXAMINER_NAME}</strong>
-              </div>
-            </div>
-          </div>
+          `;
+          return p;
+        }
 
-          ${qCardsHtml}
-        </div>
-      `;
+        if (items.length > 0) {
+          let currentQPage = createQuestionsPage();
+          stage.innerHTML = '';
+          stage.appendChild(currentQPage);
+          let currentSlot = currentQPage.querySelector('.q-cards-slot');
+          const MAX_SLOT_HEIGHT = 925; // bezpieczna wysokość obszaru kart pytań na stronie A4
 
-      return certEl;
+          for (let i = 0; i < items.length; i++) {
+            const { q, uIdx } = items[i];
+            const cardEl = buildQuestionCardElement(q, uIdx, i, items.length);
+            currentSlot.appendChild(cardEl);
+
+            // Jeśli dodana karta przekracza wysokość strony (i nie jest pierwszą kartą na stronie), przenieś ją na nową stronę
+            if (currentSlot.children.length > 1 && currentSlot.offsetHeight > MAX_SLOT_HEIGHT) {
+              currentSlot.removeChild(cardEl);
+              pages.push(currentQPage);
+
+              currentQPage = createQuestionsPage();
+              stage.innerHTML = '';
+              stage.appendChild(currentQPage);
+              currentSlot = currentQPage.querySelector('.q-cards-slot');
+              currentSlot.appendChild(cardEl);
+            }
+          }
+          pages.push(currentQPage);
+        }
+
+        // Uzupełnij numerację stron "Strona X z Y"
+        const totalPages = pages.length;
+        pages.forEach((p, idx) => {
+          const numEl = p.querySelector('.pdf-page-num');
+          if (numEl) numEl.textContent = `Strona ${idx + 1} z ${totalPages}`;
+        });
+
+        // Renderuj każdą stronę A4 osobno z użyciem html2canvas + jsPDF
+        const { jsPDF } = window.jspdf;
+        const pdf = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+
+        for (let pIdx = 0; pIdx < pages.length; pIdx++) {
+          stage.innerHTML = '';
+          stage.appendChild(pages[pIdx]);
+          window.scrollTo(0, 0);
+
+          const canvas = await window.html2canvas(pages[pIdx], {
+            scale: 2,
+            useCORS: true,
+            backgroundColor: '#ffffff',
+            width: 794,
+            height: 1123,
+            windowWidth: 794,
+            windowHeight: 1123,
+            x: 0,
+            y: 0,
+            scrollX: 0,
+            scrollY: 0,
+            ignoreElements: (el) => el.id === 'pdf-loading-veil'
+          });
+
+          const imgData = canvas.toDataURL('image/jpeg', 0.96);
+          if (pIdx > 0) pdf.addPage();
+          pdf.addImage(imgData, 'JPEG', 0, 0, 210, 297);
+        }
+
+        pdf.save(filename);
+      } finally {
+        stage.remove();
+        veil.remove();
+        window.scrollTo(prevScrollX, prevScrollY);
+      }
     }
 
     async function approveAndDownloadPdf(resId, btnEl) {
@@ -1418,21 +1533,11 @@
         r.ocena = grade;
         r.sprawdzil = EXAMINER_NAME;
 
-        // 2. Zbuduj i pobierz plik PDF
-        const certEl = await buildExamPdfContainer(r, datePl, grade);
+        // 2. Wygeneruj i pobierz wielostronicowy dokument PDF A4
         const safeName = String(r.podpis || r.login || 'kursant').trim().replace(/\s+/g, '_').replace(/[^a-zA-Z0-9ąćęłńóśźżĄĆĘŁŃÓŚŹŻ_-]/g, '');
         const filename = `Protokol_BHP_${safeName}_${dateIso}.pdf`;
 
-        const opt = {
-          margin:       [10, 10, 10, 10],
-          filename:     filename,
-          image:        { type: 'jpeg', quality: 0.98 },
-          html2canvas:  { scale: 2, useCORS: true },
-          jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
-          pagebreak:    { mode: ['css', 'legacy'], before: '.html2pdf__page-break', avoid: '.pdf-card' }
-        };
-
-        await html2pdf().set(opt).from(certEl).save();
+        await generateExamPdfDocument(r, datePl, grade, filename);
         showToast('✅ Zatwierdzono egzamin i pobrano protokół PDF!');
         await loadBhpResults();
       } catch (err) {
