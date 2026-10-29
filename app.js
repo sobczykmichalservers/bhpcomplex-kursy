@@ -1418,6 +1418,7 @@ function startExam() {
   S.eq = generateExam(S.qs, S.cat);
   const n = S.eq.length;
   S.ei = 0; S.ea = Array(n).fill(-1); S.et = EXAM_T;
+  S.savedResult = false;
   clearInterval(S.eInt);
   S.eInt = setInterval(() => {
     S.et--; updTmr();
@@ -1486,32 +1487,26 @@ function updTmr() {
 }
 
 // ═════════════════════════════════════════════════════════════
-// WIDOK — Podpis egzaminu (tylko BHP)
+// WIDOK — Podpis egzaminu (tylko BHP — wyłącznie Imię i Nazwisko)
 function vSignature() {
-  const d = new Date();
-  const dStr = d.toLocaleDateString('pl-PL') + ' ' + d.toLocaleTimeString('pl-PL', {hour: '2-digit', minute:'2-digit'});
   const defName = S.studentLogin ? S.studentLogin.replace(/\./g, ' ').replace(/\b\w/g, l => l.toUpperCase()) : '';
 
   appEl.innerHTML = `<div>
     <header class="hdr" style="padding-top:16px">
       <h1 style="font-size:1.5rem">Podsumowanie <span class="a">egzaminu</span></h1>
-      <p>Wymagany podpis do zatwierdzenia wyniku</p>
+      <p>Podaj imię i nazwisko, aby przekazać egzamin do zatwierdzenia</p>
     </header>
     <div class="lbox" style="margin-top:24px">
       <div class="fld">
-        <label>DATA I CZAS ZAKOŃCZENIA</label>
-        <input type="text" value="${dStr}" disabled style="background:#f5f5f5; color:#555; cursor:not-allowed;" />
-      </div>
-      <div class="fld" style="margin-top:16px;">
-        <label for="sig-name">TWÓJ PODPIS (Imię i Nazwisko)</label>
+        <label for="sig-name">IMIĘ I NAZWISKO KURSANTA</label>
         <input type="text" id="sig-name" placeholder="np. Jan Kowalski" value="${defName}" autocomplete="off"/>
         <div class="fld-err" id="sig-er">${I.alrt}<span></span></div>
       </div>
       <div style="text-align: center; margin-top:24px;">
-        <button class="btn btn--a" id="sig-btn" style="min-width: 200px;">${I.chkC} <span>Zatwierdź Egzamin</span></button>
+        <button class="btn btn--a" id="sig-btn" style="min-width: 200px;">${I.chkC} <span>Zakończ i przekaż wynik</span></button>
       </div>
     </div>
-  </div>`.replace(/\\/g, ''); // Fix escaping
+  </div>`.replace(/\\/g, '');
 
   $('sig-btn').onclick = () => {
     const name = $('sig-name').value.trim();
@@ -1521,8 +1516,6 @@ function vSignature() {
       return;
     }
     S.studentSignature = name;
-    S.examDate = dStr;
-    S.examDateObj = d;
     go('result');
   };
 }
@@ -1546,7 +1539,6 @@ function vResult() {
   if (isBhp) {
     if (pass) {
       actsHtml = `
-        <button class="btn btn--a" id="r-pdf" style="background:var(--ok)">${I.doc || '📄'} Pobierz Certyfikat PDF</button>
         <button class="btn btn--o" id="rh">${I.home} Menu</button>
       `;
     } else {
@@ -1634,7 +1626,7 @@ function vResult() {
       <div class="r-sub">${pct}% poprawnych</div>
       <span class="r-badge ${pass ? 'r-badge--p' : 'r-badge--f'}">
         ${pass ? '👏 Zdałeś! Gratulacje!' : 'Nie zdałeś. Spróbuj ponownie.'}</span>
-      ${isBhp && pass ? `<div style="margin-top:12px; font-weight:600; color:#555;">Podpis: ${S.studentSignature}<br/>Data: ${S.examDate}</div>` : ''}
+      ${isBhp && pass ? `<div style="margin-top:14px; font-weight:600; color:var(--txt2);">Kursant: <strong>${S.studentSignature}</strong><div style="font-size:0.84rem; color:var(--ok); margin-top:4px;">✓ Wynik przesłany do zatwierdzenia przez instruktora</div></div>` : ''}
     </div>
     ${revHtml}
     <div class="r-acts">
@@ -1649,159 +1641,31 @@ function vResult() {
 
   if ($('rr')) $('rr').onclick = startExam;
   if ($('rh')) $('rh').onclick = () => go('menu');
-  if ($('r-pdf')) {
-    $('r-pdf').style.display = 'none';
-  }
 
   if (isBhp && pass && !S.savedResult) {
     S.savedResult = true;
-    saveBhpResult(S.studentLogin, S.studentSignature, S.examDateObj, sc, tot, pct);
-    sendBhpToTelegram(S.studentLogin, S.studentSignature, sc, tot, pct, S.examDate);
+    saveBhpResult(S.studentLogin, S.studentSignature, sc, tot, pct);
   }
 }
 
-  async function sendBhpToTelegram(login, signature, sc, tot, pct, dateStr) {
-    try {
-      const certEl = document.createElement('div');
-      
-      const qListHtml = S.eq.map((q, i) => {
-        const aIdx = S.ea[i];
-        const isCorr = aIdx === q.correct;
-        const ansText = aIdx >= 0 ? q.options[aIdx] : 'Brak odpowiedzi';
-        const corrText = q.options[q.correct];
-        
-        return `
-          <div class="pdf-card" style="page-break-inside: avoid; break-inside: avoid; margin-bottom: 14px; padding: 14px 18px; border-radius: 8px; border: 1px solid #e2e8f0; border-left: 6px solid ${isCorr ? '#22c55e' : '#ef4444'}; background: ${isCorr ? '#fafdfa' : '#fdfafa'};">
-            <div style="font-weight: 700; font-size: 13.5px; color: #0f172a; margin-bottom: 8px; line-height: 1.4;">
-              <span style="color: #64748b; font-weight: 600; margin-right: 4px;">Pytanie ${i + 1}:</span> ${q.question}
-            </div>
-            ${q.image ? `<img src="${q.image}" style="max-height: 120px; display: block; margin: 8px 0; border-radius: 4px; border: 1px solid #e2e8f0;" />` : ''}
-            <div style="font-size: 12.5px; line-height: 1.5; padding-top: 4px;">
-              <div style="color: ${isCorr ? '#15803d' : '#b91c1c'}; font-weight: 600;">
-                ${isCorr ? '✓' : '✗'} Odpowiedź uczestnika: <span style="font-weight: 500; color: #1e293b;">${ansText}</span>
-              </div>
-              ${!isCorr ? `
-                <div style="color: #15803d; font-weight: 600; margin-top: 4px;">
-                  → Prawidłowa odpowiedź: <span style="font-weight: 500; color: #1e293b;">${corrText}</span>
-                </div>
-              ` : ''}
-            </div>
-          </div>
-        `;
-      }).join('');
-
-      certEl.innerHTML = `
-        <div style="box-sizing: border-box; width: 100%; min-height: 260mm; padding: 40px 30px; display: flex; flex-direction: column; justify-content: space-between; border: 8px double #1e3a8a; background: #ffffff; font-family: 'Segoe UI', Arial, sans-serif; text-align: center;">
-          <div>
-            <div style="font-size: 13px; letter-spacing: 3px; color: #64748b; font-weight: bold; text-transform: uppercase; margin-bottom: 8px;">OFICJALNE POTWIERDZENIE ZDANIA EGZAMINU</div>
-            <h1 style="color: #1e3a8a; font-size: 28px; margin: 0 0 10px; font-weight: 800; letter-spacing: 1px;">ZAŚWIADCZENIE UKOŃCZENIA TESTU</h1>
-            <div style="display: inline-block; padding: 6px 20px; background: #eff6ff; color: #1d4ed8; border-radius: 20px; font-size: 15px; font-weight: 700; border: 1px solid #bfdbfe; margin-bottom: 25px;">
-              ${CATS[S.cat].label}
-            </div>
-            
-            <div style="width: 80px; height: 3px; background: #1e3a8a; margin: 0 auto 30px;"></div>
-
-            <p style="font-size: 16px; color: #475569; margin-bottom: 8px;">Niniejszym zaświadcza się, że uczestnik kursu:</p>
-            <div style="font-size: 26px; font-weight: 800; color: #0f172a; margin-bottom: 4px;">${signature || 'Nie podano'}</div>
-            <div style="font-size: 13px; color: #64748b; margin-bottom: 25px;">Identyfikator słuchacza (login): <strong>${login}</strong></div>
-
-            <p style="font-size: 15px; color: #334155; line-height: 1.6; max-width: 600px; margin: 0 auto 30px;">
-              W dniu <strong>${dateStr}</strong> przystąpił(a) do egzaminu sprawdzającego wiedzę i uzyskał(a) <strong>wynik pozytywny</strong>.
-            </p>
-
-            <div style="display: inline-block; padding: 18px 40px; background: #f0fdf4; border: 2px solid #86efac; border-radius: 12px; margin-bottom: 20px;">
-              <div style="font-size: 13px; color: #166534; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Wynik końcowy egzaminu</div>
-              <div style="font-size: 32px; font-weight: 800; color: #15803d; margin: 4px 0;">${sc} / ${tot} (${pct}%)</div>
-              <div style="font-size: 12px; color: #16a34a; font-weight: 600;">Status: ZALICZONY</div>
-            </div>
-          </div>
-
-          <div style="border-top: 1px solid #e2e8f0; padding-top: 20px; display: flex; justify-content: space-between; align-items: flex-end; font-size: 11px; color: #94a3b8; text-align: left;">
-            <div>
-              <div>System Testowy BHP</div>
-              <div>Data wygenerowania: ${dateStr}</div>
-            </div>
-            <div style="text-align: right;">
-              <div>Dokument wygenerowany automatycznie</div>
-              <div>Podpis kursanta zarejestrowany elektronicznie</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="html2pdf__page-break" style="page-break-before: always; break-before: always; height: 0;"></div>
-
-        <div style="box-sizing: border-box; width: 100%; padding: 20px 0; font-family: 'Segoe UI', Arial, sans-serif;">
-          <div style="border-bottom: 2px solid #1e3a8a; padding-bottom: 12px; margin-bottom: 25px; display: flex; justify-content: space-between; align-items: flex-end;">
-            <div>
-              <h2 style="font-size: 20px; font-weight: 800; color: #1e3a8a; margin: 0 0 4px;">SZCZEGÓŁOWY WYKAZ ODPOWIEDZI</h2>
-              <div style="font-size: 13px; color: #475569;">Kursant: <strong>${signature}</strong> (${login}) | Kurs: <strong>${CATS[S.cat].label}</strong></div>
-            </div>
-            <div style="text-align: right;">
-              <span style="font-size: 14px; font-weight: 700; color: #15803d; background: #f0fdf4; padding: 4px 12px; border-radius: 6px; border: 1px solid #86efac;">
-                Wynik: ${sc}/${tot} (${pct}%)
-              </span>
-            </div>
-          </div>
-          ${qListHtml}
-        </div>
-      `;
-      
-      const opt = {
-        margin:       [10, 10, 10, 10],
-        filename:     `Raport_${CATS[S.cat].label}_${login || 'wynik'}.pdf`.replace(/ /g, '_'),
-        image:        { type: 'jpeg', quality: 0.98 },
-        html2canvas:  { scale: 2, useCORS: true },
-        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
-        pagebreak:    { mode: ['css', 'legacy'], before: '.html2pdf__page-break', avoid: '.pdf-card' }
-      };
-      
-      const BOT_TOKEN = "8975055071:AAHYX24xUKnWDtM87WxwNjXX9Gc_B91WU8g";
-      const CHAT_ID = "8131415949";
-      
-      const pdfBlob = await html2pdf().set(opt).from(certEl).outputPdf('blob');
-      
-      const formData = new FormData();
-      formData.append('chat_id', CHAT_ID);
-      formData.append('caption', `✅ Uczeń **${signature}** (${login}) zdał egzamin z **${CATS[S.cat].label}**!\n\nWynik: ${sc}/${tot} (${pct}%)\n\nW załączniku certyfikat oraz pełny wykaz pytań z odpowiedziami.`);
-      formData.append('document', pdfBlob, opt.filename);
-      
-      await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendDocument`, {
-        method: 'POST',
-        body: formData
-      });
-      console.log("PDF wysłany na Telegram!");
-    } catch(e) {
-      console.error("Błąd wysyłania do Telegrama:", e);
-    }
-  }
-
-  async function saveBhpResult(login, signature, dateObj, sc, tot, pct) {
+async function saveBhpResult(login, signature, sc, tot, pct) {
   try {
-    const now = new Date();
-    const expireDate = new Date(now.getTime() + 30 * 24 * 60 * 60 * 1000);
-    const dFmt = (dateObj instanceof Date ? dateObj : now).toLocaleString('pl-PL', {
-      day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit'
-    });
-
+    const expireDate = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000);
     await addDoc(collection(db, "wyniki-bhp"), {
       login: login || 'nieznany',
       podpis: signature || '',
       kurs: CATS[S.cat].label,
       kurs_id: S.cat,
+      sc: sc,
+      tot: tot,
       wynik: `${sc}/${tot}`,
       procent: pct,
-      data_egzaminu: dFmt,
-      data_utworzenia: serverTimestamp(),
+      q_ids: S.eq.map(q => q.id),
+      ans: S.ea.slice(),
+      status: 'pending',
       wygasa: expireDate
     });
-    console.log("Zapisano wynik do bazy!");
-
-    // Automatyczne usuwanie wyników starszych niż 30 dni (wygasa < teraz)
-    try {
-      const expQ = query(collection(db, "wyniki-bhp"), where("wygasa", "<", now));
-      const snap = await getDocs(expQ);
-      snap.forEach(d => deleteDoc(doc(db, "wyniki-bhp", d.id)).catch(() => {}));
-    } catch (_) {}
+    console.log("Zapisano egzamin BHP do zatwierdzenia w /panel!");
   } catch(e) {
     console.error("Błąd zapisu:", e);
   }
