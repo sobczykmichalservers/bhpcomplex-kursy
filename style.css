@@ -1883,6 +1883,11 @@ body::after {
     gap: 20px;
   }
 
+  body.view-menu .modes.modes--single {
+    grid-template-columns: minmax(0, 480px);
+    justify-content: center;
+  }
+
   body.view-home #app>div,
   body.view-subcats #app>div,
   body.view-menu #app>div {

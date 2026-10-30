@@ -199,6 +199,31 @@
       background: rgba(59, 130, 246, 0.16);
       color: #60a5fa;
     }
+    .course-bubble {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 3px;
+      padding: 8px 14px;
+      border-radius: 12px;
+      background: rgba(59, 130, 246, 0.12);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      max-width: 280px;
+      line-height: 1.3;
+    }
+    .course-bubble__title {
+      font-size: 0.79rem;
+      font-weight: 800;
+      color: #60a5fa;
+      letter-spacing: 0.02em;
+    }
+    .course-bubble__desc {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: #bfdbfe;
+    }
     .table-wrap {
       overflow-x: auto;
       margin-top: 18px;
@@ -208,13 +233,14 @@
     table {
       width: 100%;
       border-collapse: collapse;
-      text-align: left;
+      text-align: center;
       font-size: 0.88rem;
     }
     th, td {
-      padding: 12px 13px;
+      padding: 12px 11px;
       border-bottom: 1px solid var(--border);
       vertical-align: middle;
+      text-align: center;
     }
     th {
       background: var(--card-2);
@@ -524,7 +550,7 @@
               <th>Hasło</th>
               <th>Szkolenie</th>
               <th>Ważność</th>
-              <th style="text-align:right">Akcje</th>
+              <th>Akcje</th>
             </tr>
           </thead>
           <tbody id="bhp-accounts-tbody">
@@ -539,7 +565,7 @@
       <div class="card__hdr">
         <div>
           <div class="card__title">🏆 Egzaminy BHP — Do zatwierdzenia i protokoły PDF</div>
-          <div class="card__sub">Sprawdź odpowiedzi kursanta (<strong>👁️ Do wglądu</strong>), wybierz datę oraz ocenę, a następnie zatwierdź i pobierz oficjalny protokół PDF (Sprawdzający: <strong>Michał Kostecki</strong>).</div>
+          <div class="card__sub">Sprawdź odpowiedzi kursanta (<strong>👁️ Do wglądu</strong>), wybierz datę sprawdzenia oraz ocenę, a następnie zatwierdź i pobierz oficjalny protokół PDF (Sprawdzający: <strong>Michał Kostecki</strong>).</div>
         </div>
         <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
           <span class="badge" id="bhp-pending-count">0 do zatwierdzenia</span>
@@ -555,9 +581,9 @@
               <th>Kursant & Status</th>
               <th>Szkolenie</th>
               <th>Wynik & Wgląd</th>
-              <th>Data egzaminu</th>
+              <th>Data sprawdzenia</th>
               <th>Ocena końcowa</th>
-              <th style="text-align:right">Zatwierdzenie / PDF</th>
+              <th>Zatwierdzenie / PDF</th>
             </tr>
           </thead>
           <tbody id="bhp-results-tbody">
@@ -632,6 +658,20 @@
       'Dobra (4)',
       'Dostateczna (3)'
     ];
+
+    function renderCourseBubble(rawText) {
+      const txt = String(rawText || 'Szkolenie BHP');
+      const colonIdx = txt.indexOf(':');
+      if (colonIdx > 0) {
+        const title = txt.slice(0, colonIdx).trim();
+        const desc = txt.slice(colonIdx + 1).trim();
+        return `<div class="course-bubble">
+          <span class="course-bubble__title">${title}</span>
+          <span class="course-bubble__desc">${desc}</span>
+        </div>`;
+      }
+      return `<div class="course-bubble"><span class="course-bubble__title">${txt}</span></div>`;
+    }
 
     // Cache pytań pobranych z GitHuba (0 odczytów z Firebase!)
     const COURSE_QS_CACHE = {};
@@ -908,11 +948,13 @@
             <tr>
               <td><span class="mono">${r.id}</span></td>
               <td><span class="mono">${r.haslo || ''}</span></td>
-              <td><span class="badge badge--blue" style="white-space:normal;line-height:1.35;text-align:left;max-width:320px">${courseName}</span></td>
-              <td style="color:var(--muted);font-size:0.83rem">${expLabel}</td>
-              <td style="text-align:right">
-                <button type="button" class="btn btn--sm" data-copy-login="${r.id}" data-copy-pw="${r.haslo || ''}" data-copy-course="${courseName}">📋 Kopiuj</button>
-                <button type="button" class="btn btn--danger btn--sm" data-del-acc="${r.id}">🗑️ Usuń</button>
+              <td>${renderCourseBubble(courseName)}</td>
+              <td style="color:var(--muted);font-size:0.83rem;white-space:nowrap">${expLabel}</td>
+              <td style="white-space:nowrap">
+                <div style="display:inline-flex;align-items:center;justify-content:center;gap:6px;flex-wrap:nowrap">
+                  <button type="button" class="btn btn--sm" data-copy-login="${r.id}" data-copy-pw="${r.haslo || ''}" data-copy-course="${courseName}">📋 Kopiuj</button>
+                  <button type="button" class="btn btn--danger btn--sm" data-del-acc="${r.id}">🗑️ Usuń</button>
+                </div>
               </td>
             </tr>
           `;
@@ -1036,36 +1078,40 @@
           return `
             <tr class="${isApproved ? '' : 'row-pending'}" data-row-id="${r.id}">
               <td>
-                <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
-                  <strong style="font-size:0.95rem">${r.podpis || '—'}</strong>
-                  ${statusBadge}
-                </div>
-                <div style="font-size:0.78rem;color:var(--muted);margin-top:2px">
-                  Login: <span class="mono" style="padding:1px 6px;font-size:0.75rem">${r.login || '—'}</span>
-                </div>
-              </td>
-              <td>
-                <span class="badge badge--blue" style="white-space:normal;line-height:1.35;text-align:left;max-width:260px">${COURSE_LABELS[r.kurs_id] || r.kurs || 'BHP'}</span>
-              </td>
-              <td>
-                <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
-                  <span class="badge badge--ok">${sc}/${tot} (${pct}%)</span>
-                  <button type="button" class="btn btn--blue btn--sm" data-preview-id="${r.id}">👁️ Do wglądu</button>
-                </div>
-                <div style="font-size:0.76rem;color:var(--muted);margin-top:3px">
-                  Poprawnie: <strong>${sc} na ${tot}</strong> • Błędy: ${Math.max(0, tot - sc)}
+                <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+                  <div style="display:flex;align-items:center;justify-content:center;gap:7px;flex-wrap:wrap">
+                    <strong style="font-size:0.95rem">${r.podpis || '—'}</strong>
+                    ${statusBadge}
+                  </div>
+                  <div style="font-size:0.77rem;color:var(--muted)">
+                    Login: <span class="mono" style="padding:1px 6px;font-size:0.74rem">${r.login || '—'}</span>
+                  </div>
                 </div>
               </td>
               <td>
-                <input type="date" class="tbl-input" id="date-${r.id}" value="${dateIso}" />
+                ${renderCourseBubble(COURSE_LABELS[r.kurs_id] || r.kurs || 'BHP')}
               </td>
               <td>
-                <select class="tbl-select" id="grade-${r.id}">
+                <div style="display:flex;flex-direction:column;align-items:center;gap:5px">
+                  <div style="display:inline-flex;align-items:center;justify-content:center;gap:7px;white-space:nowrap">
+                    <span class="badge badge--ok">${sc}/${tot} (${pct}%)</span>
+                    <button type="button" class="btn btn--blue btn--sm" data-preview-id="${r.id}">👁️ Do wglądu</button>
+                  </div>
+                  <div style="font-size:0.75rem;color:var(--muted);white-space:nowrap">
+                    Poprawnie: <strong>${sc} na ${tot}</strong> • Błędy: <strong>${Math.max(0, tot - sc)}</strong>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <input type="date" class="tbl-input" id="date-${r.id}" value="${dateIso}" style="max-width:148px;text-align:center;margin:0 auto;display:block" />
+              </td>
+              <td>
+                <select class="tbl-select" id="grade-${r.id}" style="max-width:185px;text-align:center;margin:0 auto;display:block">
                   ${gradeOptsHtml}
                 </select>
               </td>
-              <td style="text-align:right;white-space:nowrap">
-                <div style="display:inline-flex;gap:6px;flex-wrap:wrap;justify-content:flex-end">
+              <td style="white-space:nowrap">
+                <div style="display:inline-flex;align-items:center;justify-content:center;gap:6px;flex-wrap:nowrap">
                   <button type="button" class="btn ${isApproved ? 'btn--blue' : 'btn--ok'} btn--sm" data-approve-id="${r.id}">
                     ${isApproved ? '📄 Pobierz PDF' : '✅ Zatwierdź i pobierz PDF'}
                   </button>
@@ -1291,7 +1337,7 @@
                 </div>
                 <div style="text-align:right;">
                   <div style="font-size:10px;color:#94a3b8;text-transform:uppercase;font-weight:700;">Nr protokołu: ${protocolNo}</div>
-                  <div style="font-size:13.5px;font-weight:800;color:#ffffff;margin-top:3px;">Data: ${datePl} r.</div>
+                  <div style="font-size:13.5px;font-weight:800;color:#ffffff;margin-top:3px;">Data sprawdzenia: ${datePl} r.</div>
                 </div>
               </div>
 
@@ -1315,7 +1361,7 @@
                 </div>
                 <table style="width:100%;border-collapse:collapse;">
                   <tr>
-                    <td style="padding:0;border:none;width:65%;">
+                    <td style="padding:0;border:none;width:65%;text-align:left;">
                       <div style="font-size:11.5px;color:#475569;">Imię i nazwisko kursanta:</div>
                       <div style="font-size:22px;font-weight:900;color:#0f172a;margin-top:2px;">${studentName}</div>
                     </td>
@@ -1359,7 +1405,7 @@
                   ✓ WYNIK EGZAMINU: POZYTYWNY — EGZAMIN ZALICZONY
                 </div>
                 <div style="font-size:12px;color:#166534;margin-top:5px;line-height:1.45;">
-                  Zaświadcza się, że uczestnik <strong>${studentName}</strong> w dniu <strong>${datePl} r.</strong> ukończył(a) egzamin sprawdzający z zakresu <strong>${courseTitle}</strong>, uzyskując <strong>${sc} poprawnych odpowiedzi na ${tot} możliwych (${pct}%)</strong> oraz ocenę: <strong>${grade}</strong>.
+                  Zaświadcza się, że uczestnik <strong>${studentName}</strong> ukończył(a) egzamin sprawdzający z zakresu <strong>${courseTitle}</strong>, uzyskując <strong>${sc} poprawnych odpowiedzi na ${tot} możliwych (${pct}%)</strong> oraz ocenę: <strong>${grade}</strong> (data sprawdzenia: <strong>${datePl} r.</strong>).
                 </div>
               </div>
 
@@ -1370,17 +1416,17 @@
               <div style="border:1px solid #cbd5e1;border-radius:10px;padding:18px 20px;background:#f8fafc;">
                 <table style="width:100%;border-collapse:collapse;">
                   <tr>
-                    <td style="width:48%;padding:0 16px 0 0;border:none;border-right:1px solid #cbd5e1;vertical-align:top;">
+                    <td style="width:48%;padding:0 16px 0 0;border:none;border-right:1px solid #cbd5e1;vertical-align:top;text-align:left;">
                       <div style="font-size:10.5px;color:#64748b;text-transform:uppercase;font-weight:700;">Podpis uczestnika (Zdającego):</div>
                       <div style="font-size:17px;font-weight:800;color:#0f172a;margin-top:6px;">${studentName}</div>
                       <div style="font-size:11px;color:#475569;margin-top:5px;">✓ Złożono podpis elektroniczny po zakończeniu testu</div>
                     </td>
-                    <td style="width:52%;padding:0 0 0 18px;border:none;vertical-align:top;">
+                    <td style="width:52%;padding:0 0 0 18px;border:none;vertical-align:top;text-align:left;">
                       <div style="font-size:10.5px;color:#64748b;text-transform:uppercase;font-weight:700;">Egzamin sprawdził i zatwierdził:</div>
                       <div style="font-size:18px;font-weight:900;color:#1e3a8a;margin-top:5px;">${EXAMINER_NAME}</div>
                       <div style="font-size:11px;color:#334155;font-weight:600;margin-top:2px;">Uprawniony przeprowadzający / Egzaminator BHP</div>
                       <div style="font-size:11px;color:#15803d;font-weight:700;margin-top:4px;">
-                        ✓ Zweryfikowano i zatwierdzono dnia ${datePl} r.
+                        ✓ Data sprawdzenia: ${datePl} r.
                       </div>
                     </td>
                   </tr>
@@ -1408,7 +1454,7 @@
                     <div style="font-size:10px;font-weight:800;color:#1e3a8a;text-transform:uppercase;letter-spacing:1px;">ZAŁĄCZNIK DO PROTOKOŁU NR ${protocolNo}</div>
                     <h2 style="font-size:16px;font-weight:900;color:#0f172a;margin:2px 0 3px;">SZCZEGÓŁOWA KARTA ODPOWIEDZI Z EGZAMINU</h2>
                     <div style="font-size:11px;color:#334155;">
-                      Zdający: <strong>${studentName}</strong> (${studentLogin}) • Szkolenie: <strong>${courseTitle}</strong> • Data: <strong>${datePl} r.</strong>
+                      Zdający: <strong>${studentName}</strong> (${studentLogin}) • Szkolenie: <strong>${courseTitle}</strong> • Data sprawdzenia: <strong>${datePl} r.</strong>
                     </div>
                   </div>
                   <div style="text-align:right;">

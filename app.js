@@ -1119,7 +1119,7 @@ function vMenu() {
         <h1 style="font-size:1.5rem">Wybierz <span class="a">tryb</span></h1>
         <p>${c.label}${c.desc ? ' — ' + c.desc : ''}</p>
       </header>
-      <div class="modes">
+      <div class="modes ${isExamOnly ? 'modes--single' : ''}">
         ${isExamOnly ? '' : `
         <button class="mbtn" id="m-mat">
           <div class="mbtn__ic mbtn__ic--b">${I.book}</div>
