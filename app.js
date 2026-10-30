@@ -177,10 +177,12 @@ const CATS = {
   'zurawie-przenosne': { label: 'Żurawie przenośne i przewoźne', desc: 'Obsługa żurawi HDS, przenośnych i przewoźnych', ic: 'crane_hds' },
   'zurawie-samojezdne': { label: 'Żurawie samojezdne', desc: 'Obsługa żurawi samojezdnych', ic: 'crane_mob' },
   'suwnice': { label: 'Suwnice', desc: 'Obsługa suwnic sterowanych z poziomu roboczego', ic: 'bridge' },
-  'bhp-1': { label: 'BHP Moduł 1', desc: 'Szkolenie BHP — Moduł 1', ic: 'helmet' },
-  'bhp-2': { label: 'BHP Moduł 2', desc: 'Szkolenie BHP — Moduł 2', ic: 'helmet' },
-  'bhp-3': { label: 'BHP Moduł 3', desc: 'Szkolenie BHP — Moduł 3', ic: 'helmet' },
-  'bhp-4': { label: 'BHP Moduł 4', desc: 'Szkolenie BHP — Moduł 4', ic: 'helmet' }
+  'bhp-1': { label: 'BHP Moduł 1', desc: 'Szkolenie okresowe pracodawców i innych osób kierujących pracownikami', ic: 'helmet' },
+  'bhp-2': { label: 'BHP Moduł 2', desc: 'Szkolenie okresowe pracowników na stanowiskach administracyjno-biurowych', ic: 'helmet' },
+  'bhp-3': { label: 'BHP Moduł 3', desc: 'Szkolenie okresowe pracowników służby bezpieczeństwa i higieny pracy i osób wykonujących zadania tej służby', ic: 'helmet' },
+  'bhp-4': { label: 'BHP Moduł 4', desc: 'Szkolenie okresowe pracodawców wykonujących zadania służby bezpieczeństwa i higieny pracy', ic: 'helmet' },
+  'bhp-5': { label: 'BHP Moduł 5', desc: 'Szkolenie okresowe pracowników inżynieryjno-technicznych', ic: 'helmet' },
+  'bhp-6': { label: 'BHP Moduł 6', desc: 'Test wiedzy dla pracowników robotniczych', ic: 'helmet', examOnly: true }
 };
 
 // ─── GRUPY (Poziom 1 nawigacji) ────────────────────────────
@@ -196,7 +198,7 @@ const GROUPS = {
     label: 'Szkolenia BHP',
     desc: 'Bezpieczeństwo i Higiena Pracy',
     ic: 'helmet',
-    cats: ['bhp-1', 'bhp-2', 'bhp-3', 'bhp-4'],
+    cats: ['bhp-1', 'bhp-2', 'bhp-3', 'bhp-4', 'bhp-5', 'bhp-6'],
   }
 };
 
@@ -646,6 +648,7 @@ async function getQs(c) {
   }
 
   const bhp = isBhpCat(c);
+  const hasBhpMat = bhp && !(CATS[c] && CATS[c].examOnly);
   const cb = `?t=${Math.floor(Date.now() / 30000)}`;
   // Wspólna kolekcja "Materiały szkoleniowe" dla wszystkich kursów UDT (data/udt_materialy.json z GitHub)
   const udtMatPromise = bhp
@@ -659,7 +662,7 @@ async function getQs(c) {
     fetch(ghUrl(`data/${c}.json`) + cb).then(r => r.ok ? r.json() : []),
     bhp ? Promise.resolve({ items: [] }) : fetch(ghUrl(`data/${c}_opisy.json`) + cb).then(r => r.ok ? r.json() : { items: [] }),
     udtMatPromise,
-    bhp ? fetch(ghUrl(`data/${c}_materialy.json`) + cb).then(r => r.ok ? r.json() : { items: [] }) : Promise.resolve({ items: [] }),
+    hasBhpMat ? fetch(ghUrl(`data/${c}_materialy.json`) + cb).then(r => r.ok ? r.json() : { items: [] }) : Promise.resolve({ items: [] }),
     fetch(ghUrl(`data/${c}_ustawienia.json`) + cb).then(r => r.ok ? r.json() : { rules: [] })
   ]);
 
@@ -1008,7 +1011,9 @@ function vLogin() {
 
   appEl.innerHTML = `<div>
     <form class="lbox" id="login-form" style="margin-top:0" autocomplete="on" onsubmit="return false">
-      <h2>${c.label}</h2><p>${isBhp ? 'Zaloguj się na swoje konto' : 'Wpisz hasło otrzymane od instruktora'}</p>
+      <h2>${c.label}</h2>
+      ${isBhp && c.desc ? `<p style="margin-top:4px;margin-bottom:6px;font-weight:600;color:var(--txt)">${c.desc}</p>` : ''}
+      <p>${isBhp ? 'Zaloguj się na swoje konto' : 'Wpisz hasło otrzymane od instruktora'}</p>
       ${loginHtml}
       <div class="fld"><label for="pw">HASŁO</label>
         <div class="pw-wrapper">
@@ -1108,30 +1113,32 @@ function vMenu() {
   if (isBhp) {
     const ec = examConf(S.cat, S.qs.length);
     const matCount = S.materialy ? S.materialy.length : 0;
+    const isExamOnly = !!c.examOnly;
     appEl.innerHTML = `<div>
       <header class="hdr" style="padding-top:4px">
         <h1 style="font-size:1.5rem">Wybierz <span class="a">tryb</span></h1>
-        <p>${c.label}</p>
+        <p>${c.label}${c.desc ? ' — ' + c.desc : ''}</p>
       </header>
       <div class="modes">
+        ${isExamOnly ? '' : `
         <button class="mbtn" id="m-mat">
           <div class="mbtn__ic mbtn__ic--b">${I.book}</div>
           <div class="mbtn__body">
             <div class="mbtn__t">Materiały szkoleniowe</div>
             <div class="mbtn__d">${matCount > 0 ? matCount + ' zagadnień szkoleniowych' : 'Materiały i zagadnienia do szkolenia'}</div>
           </div>
-        </button>
+        </button>`}
         <button class="mbtn" id="m-e">
           <div class="mbtn__ic mbtn__ic--r">${I.fChk}</div>
           <div class="mbtn__body">
-            <div class="mbtn__t">Egzamin</div>
+            <div class="mbtn__t">${isExamOnly ? 'Test wiedzy (Egzamin)' : 'Egzamin'}</div>
             <div class="mbtn__d">${ec.n} pytań • 30 min • próg: ${ec.pass}/${ec.n} (${ec.passPct}%)</div>
           </div>
         </button>
       </div>
     </div>`;
 
-    $('m-mat').onclick = () => go('materialyList');
+    if ($('m-mat')) $('m-mat').onclick = () => go('materialyList');
     $('m-e').onclick = startExam;
     return;
   }
@@ -1651,10 +1658,12 @@ function vResult() {
 async function saveBhpResult(login, signature, sc, tot, pct) {
   try {
     const expireDate = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000);
+    const c = CATS[S.cat];
+    const fullCourseLabel = c.desc ? `${c.label}: ${c.desc}` : c.label;
     await addDoc(collection(db, "wyniki-bhp"), {
       login: login || 'nieznany',
       podpis: signature || '',
-      kurs: CATS[S.cat].label,
+      kurs: fullCourseLabel,
       kurs_id: S.cat,
       sc: sc,
       tot: tot,
@@ -2237,7 +2246,8 @@ function vWiedzaList() {
 }
 
 function vMaterialyList() {
-  renderList("Materiały szkoleniowe", S.materialy, CATS[S.cat].label, "Temat");
+  if (CATS[S.cat] && CATS[S.cat].examOnly) { go('menu', false); return; }
+  renderList("Materiały szkoleniowe", S.materialy, `${CATS[S.cat].label}${CATS[S.cat].desc ? ' — ' + CATS[S.cat].desc : ''}`, "Temat");
 }
 
 // ═════════════════════════════════════════════════════════════

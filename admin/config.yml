@@ -345,10 +345,10 @@ collections:
               - { label: "Do pytania nr (ID)", name: "max", widget: "number" }
 
   # ==========================================
-  # SZKOLENIA BHP (4 MODUŁY)
+  # SZKOLENIA BHP (6 MODUŁÓW)
   # ==========================================
   - name: "bhp-1"
-    label: "🦺 BHP: Moduł 1"
+    label: "🦺 BHP Moduł 1: Pracodawcy i kierujący pracownikami"
     media_folder: "/img/bhp-1"
     public_folder: "/img/bhp-1"
     files:
@@ -392,7 +392,7 @@ collections:
           - { label: "Próg zdawalności w % (domyślnie 80% zależne od liczby pytań)", name: "pass_pct", widget: "number", default: 80, min: 1, max: 100 }
 
   - name: "bhp-2"
-    label: "🦺 BHP: Moduł 2"
+    label: "🦺 BHP Moduł 2: Administracyjno-biurowe"
     media_folder: "/img/bhp-2"
     public_folder: "/img/bhp-2"
     files:
@@ -436,7 +436,7 @@ collections:
           - { label: "Próg zdawalności w % (domyślnie 80% zależne od liczby pytań)", name: "pass_pct", widget: "number", default: 80, min: 1, max: 100 }
 
   - name: "bhp-3"
-    label: "🦺 BHP: Moduł 3"
+    label: "🦺 BHP Moduł 3: Służba BHP"
     media_folder: "/img/bhp-3"
     public_folder: "/img/bhp-3"
     files:
@@ -480,7 +480,7 @@ collections:
           - { label: "Próg zdawalności w % (domyślnie 80% zależne od liczby pytań)", name: "pass_pct", widget: "number", default: 80, min: 1, max: 100 }
 
   - name: "bhp-4"
-    label: "🦺 BHP: Moduł 4"
+    label: "🦺 BHP Moduł 4: Pracodawcy wykonujący zadania służby BHP"
     media_folder: "/img/bhp-4"
     public_folder: "/img/bhp-4"
     files:
@@ -519,6 +519,79 @@ collections:
       - name: "exam"
         label: "Ustawienia Egzaminu"
         file: "data/bhp-4_ustawienia.json"
+        fields:
+          - { label: "Liczba pytań na egzaminie (X pytań po kolei z bazy)", name: "count", widget: "number", default: 15, min: 1 }
+          - { label: "Próg zdawalności w % (domyślnie 80% zależne od liczby pytań)", name: "pass_pct", widget: "number", default: 80, min: 1, max: 100 }
+
+  - name: "bhp-5"
+    label: "🦺 BHP Moduł 5: Pracownicy inżynieryjno-techniczni"
+    media_folder: "/img/bhp-5"
+    public_folder: "/img/bhp-5"
+    files:
+      - name: "questions"
+        label: "Pytania Egzaminacyjne (ukryte w menu, używane w egzaminie)"
+        file: "data/bhp-5.json"
+        fields:
+          - label: "Lista pytań"
+            name: "questions"
+            widget: "list"
+            summary: "Pytanie {{fields.id}}: {{fields.question}}"
+            fields:
+              - { label: "ID pytania (Numer)", name: "id", widget: "number" }
+              - { label: "Treść pytania", name: "question", widget: "text" }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+              - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
+                name: "options"
+                widget: "list"
+                field: { label: "Odpowiedź", name: "option", widget: "string" }
+              - { label: "Poprawna odpowiedź (1=A, 2=B, 3=C, 4=D)", name: "correct", widget: "number", min: 1, max: 4 }
+      - name: "materialy"
+        label: "Materiały szkoleniowe"
+        file: "data/bhp-5_materialy.json"
+        fields:
+          - label: "Materiały szkoleniowe (Pytania / Zagadnienia)"
+            name: "items"
+            widget: "list"
+            summary: "Pytanie: {{fields.question}}"
+            fields:
+              - { label: "ID (opcjonalnie)", name: "id", widget: "number", required: false }
+              - { label: "Pytanie / Tytuł zagadnienia", name: "question", widget: "string" }
+              - { label: "Treść / Odpowiedź (formatowanie jak w Wordzie, zdjęcia, listy)", name: "answer", widget: "markdown", required: false }
+              - { label: "Zdjęcie / Ilustracja (opcjonalnie)", name: "image", widget: "image", required: false }
+              - { label: "Plik PDF (opcjonalnie)", name: "file", widget: "file", required: false, accept: ".pdf,application/pdf" }
+              - { label: "Link do wideo / prezentacji (opcjonalnie)", name: "link", widget: "string", required: false }
+      - name: "exam"
+        label: "Ustawienia Egzaminu"
+        file: "data/bhp-5_ustawienia.json"
+        fields:
+          - { label: "Liczba pytań na egzaminie (X pytań po kolei z bazy)", name: "count", widget: "number", default: 15, min: 1 }
+          - { label: "Próg zdawalności w % (domyślnie 80% zależne od liczby pytań)", name: "pass_pct", widget: "number", default: 80, min: 1, max: 100 }
+
+  - name: "bhp-6"
+    label: "🦺 BHP Moduł 6: Test wiedzy dla pracowników robotniczych"
+    media_folder: "/img/bhp-6"
+    public_folder: "/img/bhp-6"
+    files:
+      - name: "questions"
+        label: "Pytania Egzaminacyjne (Test wiedzy)"
+        file: "data/bhp-6.json"
+        fields:
+          - label: "Lista pytań"
+            name: "questions"
+            widget: "list"
+            summary: "Pytanie {{fields.id}}: {{fields.question}}"
+            fields:
+              - { label: "ID pytania (Numer)", name: "id", widget: "number" }
+              - { label: "Treść pytania", name: "question", widget: "text" }
+              - { label: "Zdjęcie (opcjonalnie)", name: "image", widget: "image", required: false }
+              - label: "Odpowiedzi (wpisz dokładnie 4: po kolei A, B, C, D)"
+                name: "options"
+                widget: "list"
+                field: { label: "Odpowiedź", name: "option", widget: "string" }
+              - { label: "Poprawna odpowiedź (1=A, 2=B, 3=C, 4=D)", name: "correct", widget: "number", min: 1, max: 4 }
+      - name: "exam"
+        label: "Ustawienia Egzaminu"
+        file: "data/bhp-6_ustawienia.json"
         fields:
           - { label: "Liczba pytań na egzaminie (X pytań po kolei z bazy)", name: "count", widget: "number", default: 15, min: 1 }
           - { label: "Próg zdawalności w % (domyślnie 80% zależne od liczby pytań)", name: "pass_pct", widget: "number", default: 80, min: 1, max: 100 }

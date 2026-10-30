@@ -495,11 +495,13 @@
         <div class="fld">
           <label for="bhp-course">Przypisane szkolenie BHP</label>
           <select id="bhp-course">
-            <option value="bhp-1">BHP Moduł 1</option>
-            <option value="bhp-2">BHP Moduł 2</option>
-            <option value="bhp-3">BHP Moduł 3</option>
-            <option value="bhp-4">BHP Moduł 4</option>
-            <option value="wszystkie">Wszystkie moduły BHP (1–4)</option>
+            <option value="bhp-1">BHP Moduł 1 — Pracodawcy i kierujący pracownikami</option>
+            <option value="bhp-2">BHP Moduł 2 — Stanowiska administracyjno-biurowe</option>
+            <option value="bhp-3">BHP Moduł 3 — Służba BHP i osoby wykonujące zadania tej służby</option>
+            <option value="bhp-4">BHP Moduł 4 — Pracodawcy wykonujący zadania służby BHP</option>
+            <option value="bhp-5">BHP Moduł 5 — Pracownicy inżynieryjno-techniczni</option>
+            <option value="bhp-6">BHP Moduł 6 — Test wiedzy dla pracowników robotniczych</option>
+            <option value="wszystkie">Wszystkie moduły BHP (1–6)</option>
           </select>
         </div>
         <div class="fld">
@@ -614,11 +616,13 @@
     const EXAMINER_NAME = 'Michał Kostecki';
 
     const COURSE_LABELS = {
-      'bhp-1': 'BHP Moduł 1',
-      'bhp-2': 'BHP Moduł 2',
-      'bhp-3': 'BHP Moduł 3',
-      'bhp-4': 'BHP Moduł 4',
-      'wszystkie': 'Wszystkie moduły BHP (1–4)'
+      'bhp-1': 'BHP Moduł 1: Szkolenie okresowe pracodawców i innych osób kierujących pracownikami',
+      'bhp-2': 'BHP Moduł 2: Szkolenie okresowe pracowników na stanowiskach administracyjno-biurowych',
+      'bhp-3': 'BHP Moduł 3: Szkolenie okresowe pracowników służby bezpieczeństwa i higieny pracy i osób wykonujących zadania tej służby',
+      'bhp-4': 'BHP Moduł 4: Szkolenie okresowe pracodawców wykonujących zadania służby bezpieczeństwa i higieny pracy',
+      'bhp-5': 'BHP Moduł 5: Szkolenie okresowe pracowników inżynieryjno-technicznych',
+      'bhp-6': 'BHP Moduł 6: Test wiedzy dla pracowników robotniczych',
+      'wszystkie': 'Wszystkie moduły BHP (1–6)'
     };
 
     const GRADE_OPTIONS = [
@@ -904,7 +908,7 @@
             <tr>
               <td><span class="mono">${r.id}</span></td>
               <td><span class="mono">${r.haslo || ''}</span></td>
-              <td><span class="badge badge--blue">${courseName}</span></td>
+              <td><span class="badge badge--blue" style="white-space:normal;line-height:1.35;text-align:left;max-width:320px">${courseName}</span></td>
               <td style="color:var(--muted);font-size:0.83rem">${expLabel}</td>
               <td style="text-align:right">
                 <button type="button" class="btn btn--sm" data-copy-login="${r.id}" data-copy-pw="${r.haslo || ''}" data-copy-course="${courseName}">📋 Kopiuj</button>
@@ -1040,8 +1044,8 @@
                   Login: <span class="mono" style="padding:1px 6px;font-size:0.75rem">${r.login || '—'}</span>
                 </div>
               </td>
-              <td style="white-space:nowrap">
-                <span class="badge badge--blue">${r.kurs || COURSE_LABELS[r.kurs_id] || 'BHP'}</span>
+              <td>
+                <span class="badge badge--blue" style="white-space:normal;line-height:1.35;text-align:left;max-width:260px">${COURSE_LABELS[r.kurs_id] || r.kurs || 'BHP'}</span>
               </td>
               <td>
                 <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
@@ -1244,7 +1248,7 @@
       const { sc, tot } = parseScoreParts(r);
       const pct = r.procent ?? (tot > 0 ? Math.round((sc / tot) * 100) : 0);
       const wrong = Math.max(0, tot - sc);
-      const courseTitle = r.kurs || COURSE_LABELS[r.kurs_id] || 'Szkolenie BHP';
+      const courseTitle = COURSE_LABELS[r.kurs_id] || r.kurs || 'Szkolenie BHP';
       const studentName = r.podpis || 'Nie podano';
       const studentLogin = r.login || '—';
       const protocolNo = `BHP/${new Date().getFullYear()}/${String(r.id || '001').slice(0, 6).toUpperCase()}`;
