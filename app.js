@@ -40,24 +40,32 @@ function ghUrl(p) {
   return `${GITHUB_RAW}/${clean}`;
 }
 
+const SVG_PROMISES = {};
+
 async function loadSvg(el, name) {
   if (I[name]) { if (el) el.innerHTML = I[name]; return; }
+  if (!IC_FILES[name]) return;
   try {
-    const r = await fetch(ghUrl('icons/' + IC_FILES[name]));
-    if (!r.ok) return;
-    let svg = await r.text();
-    svg = svg.replace(/<\?xml.*?\?>\s*/i, '')
-      .replace(/fill="#[A-Fa-f0-9]{6}"/gi, 'fill="currentColor"')
-      .replace(/<svg([^>]*)>/i, '<svg$1 fill="currentColor">');
-    I[name] = svg;
-    if (el) el.innerHTML = svg;
-    // Zapisz do localStorage
-    try {
-      const c = JSON.parse(localStorage.getItem(LS_SVG_CACHE) || '{}');
-      c[name] = svg;
-      localStorage.setItem(LS_SVG_CACHE, JSON.stringify(c));
-    } catch(e) {}
-  } catch (e) { }
+    if (!SVG_PROMISES[name]) {
+      SVG_PROMISES[name] = (async () => {
+        const r = await fetch(ghUrl('icons/' + IC_FILES[name]));
+        if (!r.ok) return '';
+        let svg = await r.text();
+        svg = svg.replace(/<\?xml.*?\?>\s*/i, '')
+          .replace(/fill="#[A-Fa-f0-9]{6}"/gi, 'fill="currentColor"')
+          .replace(/<svg([^>]*)>/i, '<svg$1 fill="currentColor">');
+        I[name] = svg;
+        try {
+          const c = JSON.parse(localStorage.getItem(LS_SVG_CACHE) || '{}');
+          c[name] = svg;
+          localStorage.setItem(LS_SVG_CACHE, JSON.stringify(c));
+        } catch (e) {}
+        return svg;
+      })();
+    }
+    const svg = await SVG_PROMISES[name];
+    if (el && svg) el.innerHTML = svg;
+  } catch (e) {}
 }
 
 const I = {
@@ -93,7 +101,7 @@ const I = {
 
   // Ikony grup i podkategorii
   shield: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>`,
-  helmet: `<img src="${GITHUB_RAW}/img/bhp-icon.png" alt="Szkolenia BHP" class="bhp-ic-img" />`,
+  helmet: `<img src="${GITHUB_RAW}/img/bhp-icon.png" alt="Szkolenia BHP" class="bhp-ic-img" width="60" height="60" decoding="sync" />`,
   file: `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>`,
   users: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
 };
@@ -103,6 +111,14 @@ try {
   const _sc = JSON.parse(localStorage.getItem(LS_SVG_CACHE) || '{}');
   for (const k in _sc) if (_sc[k]) I[k] = _sc[k];
 } catch(e) {}
+
+// Preload wszystkich ikon SVG oraz ikonki BHP w pamięci przeglądarki (zero migania)
+const _bhpImgPreload = new Image();
+_bhpImgPreload.decoding = 'sync';
+_bhpImgPreload.src = `${GITHUB_RAW}/img/bhp-icon.png`;
+for (const k of Object.keys(IC_FILES)) {
+  if (!I[k]) loadSvg(null, k);
+}
 
 // ─── STAŁE ──────────────────────────────────────────────────
 const LT = 'ABCD';
@@ -191,7 +207,7 @@ const GROUPS = {
     label: 'Szkolenia UDT',
     desc: 'TESTY UDT - Szkolenie operatorów urządzeń transportu bliskiego.',
     ic: 'udt_group',
-    icons: ['wozki-podnosnikowe.svg', 'zurawie-przenosne.svg', 'podesty.svg', 'wozki-specjalizowane.svg', 'suwnice.svg'],
+    iconKeys: ['fork_std', 'crane_hds', 'platform', 'fork_spec', 'bridge'],
     cats: ['wozki-podnosnikowe', 'wozki-specjalizowane', 'podesty', 'zurawie-przenosne', 'zurawie-samojezdne', 'suwnice'],
   },
   bhp: {
@@ -861,7 +877,17 @@ function vHome() {
     d.className = 'crd'; d.id = 'g-' + k;
     d.style.width = '100%';
     d.style.maxWidth = '360px';
-    d.innerHTML = `<div class="crd__ic" data-ic="${grp.ic}"></div>
+
+    let icHtml = '';
+    let icClass = 'crd__ic';
+    if (grp.iconKeys) {
+      icClass += ' crd__ic--multi';
+      icHtml = grp.iconKeys.map(ik => `<span class="crd__ic-svg" data-svg-key="${ik}">${I[ik] || ''}</span>`).join('');
+    } else {
+      icHtml = I[grp.ic] || '';
+    }
+
+    d.innerHTML = `<div class="${icClass}" data-ic="${grp.ic}">${icHtml}</div>
       <div class="crd__t">${grp.label}</div>
       <div class="crd__d">${grp.desc}</div>
       <span class="crd__arr">${I.chR}</span>`;
@@ -871,23 +897,16 @@ function vHome() {
     };
     g.appendChild(d);
 
-    // Render ikon
-    if (grp.icons) {
-      // Grupa z wieloma ikonkami (np. UDT) — ładowane z GitHub (0 zużycia Firebase + cache w SW)
-      const icEl = d.querySelector('.crd__ic');
-      icEl.classList.add('crd__ic--multi');
-      icEl.innerHTML = '';
-      grp.icons.forEach(file => {
-        const img = document.createElement('img');
-        img.src = ghUrl('icons/' + file);
-        img.alt = '';
-        img.className = 'crd__ic-img';
-        icEl.appendChild(img);
+    // Dograj z sieci tylko jeśli jakiejś ikony SVG nie ma jeszcze w pamięci podręcznej I
+    if (grp.iconKeys) {
+      grp.iconKeys.forEach(ik => {
+        if (!I[ik]) {
+          const slot = d.querySelector(`[data-svg-key="${ik}"]`);
+          loadSvg(slot, ik);
+        }
       });
-    } else if (IC_FILES[grp.ic]) {
+    } else if (IC_FILES[grp.ic] && !I[grp.ic]) {
       loadSvg(d.querySelector('.crd__ic'), grp.ic);
-    } else {
-      d.querySelector('.crd__ic').innerHTML = I[grp.ic] || '';
     }
   }
 }
@@ -907,7 +926,7 @@ function vSubcats() {
     const c = CATS[k];
     const d = document.createElement('div');
     d.className = 'crd crd--course' + (c.locked ? ' crd--locked' : ''); d.id = 'c-' + k;
-    d.innerHTML = `<div class="crd__ic" data-ic="${c.ic}"></div>
+    d.innerHTML = `<div class="crd__ic" data-ic="${c.ic}">${I[c.ic] || ''}</div>
       <div class="crd__t">${c.label}</div>
       <div class="crd__d">${c.locked ? '🔒 Moduł w przygotowaniu' : c.desc}</div>
       <span class="crd__arr">${I.chR}</span>`;
@@ -921,10 +940,8 @@ function vSubcats() {
       getQs(k);
     };
     g.appendChild(d);
-    if (IC_FILES[c.ic]) {
+    if (IC_FILES[c.ic] && !I[c.ic]) {
       loadSvg(d.querySelector('.crd__ic'), c.ic);
-    } else {
-      d.querySelector('.crd__ic').innerHTML = I[c.ic] || '';
     }
   }
 }
@@ -2344,13 +2361,28 @@ if ('serviceWorker' in navigator) {
   }).catch(() => {});
 }
 
-// ─── POLITYKA PRYWATNOŚCI (Zamykanie Modala) ───────────────────
+// ─── POLITYKA PRYWATNOŚCI (Akceptacja przy 1. wejściu + Modal) ──
+const LS_PRIVACY_OK = 'udt_privacy_accepted_v1';
 const polModal = $('pol-modal');
 const polX = $('pol-x');
+const polAccept = $('pol-accept');
 
-if (polModal && polX) {
-  polX.onclick = () => polModal.classList.remove('on');
+function acceptAndClosePrivacy() {
+  try { localStorage.setItem(LS_PRIVACY_OK, '1'); } catch (e) {}
+  if (polModal) polModal.classList.remove('on');
+}
+
+if (polModal) {
+  if (polX) polX.onclick = acceptAndClosePrivacy;
+  if (polAccept) polAccept.onclick = acceptAndClosePrivacy;
   polModal.onclick = (e) => {
-    if (e.target === polModal) polModal.classList.remove('on');
+    if (e.target === polModal) acceptAndClosePrivacy();
   };
+
+  // Pokaż automatycznie przy pierwszym wejściu na stronę
+  try {
+    if (localStorage.getItem(LS_PRIVACY_OK) !== '1') {
+      polModal.classList.add('on');
+    }
+  } catch (e) {}
 }

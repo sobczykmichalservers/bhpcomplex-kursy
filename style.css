@@ -423,11 +423,31 @@ body::after {
 
 .crd__ic--multi {
   display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
   width: 100%;
   max-width: 100%;
+  height: 46px;
+  min-height: 46px;
   margin-bottom: 12px;
+}
+
+.crd__ic-svg {
+  width: 44px;
+  height: 44px;
+  max-width: 18%;
+  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.crd__ic-svg svg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .crd__ic-img {
@@ -1611,6 +1631,25 @@ body::after {
 
 .pol-modal__body strong {
   color: var(--txt);
+}
+
+.pol-modal__ftr {
+  padding: 16px 24px;
+  border-top: 1px solid var(--brd);
+  background: var(--bg);
+  border-radius: 0 0 var(--r) var(--r);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.pol-modal__note {
+  font-size: 0.78rem;
+  color: var(--txt2);
+  flex: 1 1 200px;
+  line-height: 1.4;
 }
 
 /* ═══════ RESPONSIVE ═══════ */

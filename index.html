@@ -7,7 +7,8 @@
   <meta name="description" content="TESTY UDT - Szkolenie operatorów urządzeń transportu bliskiego." />
   <meta name="theme-color" content="#101218" />
   <title>Testy UDT – Uprawnienia Zawodowe</title>
-  <link rel="stylesheet" href="/style.css?v=76" />
+  <link rel="preload" as="image" href="https://raw.githubusercontent.com/sobczykmichalservers/bhpcomplex-kursy/main/img/bhp-icon.png" />
+  <link rel="stylesheet" href="/style.css?v=77" />
 </head>
 
 <body>
@@ -37,32 +38,28 @@
   </div>
 
   <!-- Polityka Prywatności Modal -->
-  <div class="pol-modal" id="pol-modal">
+  <div class="pol-modal" id="pol-modal" role="dialog" aria-modal="true" aria-labelledby="pol-title">
     <div class="pol-modal__content">
       <button class="pol-modal__x" id="pol-x" aria-label="Zamknij">&times;</button>
       <div class="pol-modal__body">
-        <h3>Polityka Prywatności i plików technicznych</h3>
-        <p>Niniejsza polityka wyjaśnia zasady działania aplikacji testowej oraz sposób, w jaki przetwarza ona dane na
-          Twoim urządzeniu. Aplikacja została zaprojektowana z myślą o maksymalnej ochronie prywatności – nie wymaga
-          zakładania konta i nie zbiera danych osobowych w celach marketingowych.</p>
+        <h3 id="pol-title">🛡️ Polityka Prywatności i plików technicznych</h3>
+        <p>Niniejsza polityka wyjaśnia zasady działania platformy szkoleniowo-egzaminacyjnej <strong>UDT &amp; BHP</strong> oraz sposób, w jaki przetwarza ona dane podczas nauki i egzaminów. Aplikacja została zaprojektowana zgodnie z zasadą minimalizacji danych — <strong>nie wykorzystuje żadnych reklamowych, śledzących ani analitycznych plików „cookies”</strong>.</p>
         <ul>
-          <li><strong>Pliki techniczne (Local Storage i Cache).</strong> Aplikacja nie używa śledzących plików
-            "cookies". Do poprawnego działania (w tym działania w trybie offline oraz zapisywania Twoich postępów i
-            wyników testów) wykorzystywane są wyłącznie technologie Local Storage oraz Cache API wbudowane w Twoją
-            przeglądarkę. Są to tzw. pliki niezbędne, na które nie jest wymagana zgoda. Jeśli chcesz je usunąć, możesz
-            to zrobić w dowolnej chwili, czyszcząc dane przeglądarki.</li>
-          <li><strong>Logi serwera.</strong> Aplikacja jest hostowana na serwerach Google Firebase. Jak każda strona
-            internetowa, podczas łączenia się z serwerem, automatycznie zapisywane są standardowe logi techniczne (np.
-            adres IP, rodzaj przeglądarki, czas zapytania). Dane te służą wyłącznie do zapewnienia bezpieczeństwa i
-            stabilności serwerów.</li>
-          <li><strong>Zmiany.</strong> Zastrzegamy sobie prawo do aktualizacji niniejszej polityki w przypadku zmian
-            technologicznych w aplikacji.</li>
+          <li><strong>1. Niezbędne pliki techniczne (Local Storage, Session Storage i Cache API).</strong> Do poprawnego działania aplikacji (zapamiętywania postępów w nauce, oznaczania trudnych pytań w schowku, utrzymania sesji logowania, wybranego motywu jasnego/ciemnego, rozmiaru tekstu oraz działania w trybie offline) wykorzystywane są wyłącznie wbudowane w przeglądarkę mechanizmy <em>Local Storage</em>, <em>Session Storage</em> oraz <em>Service Worker Cache API</em>. Są to pliki techniczne niezbędne do świadczenia usługi. Możesz je w dowolnej chwili usunąć, czyszcząc dane witryny w ustawieniach przeglądarki.</li>
+          <li><strong>2. Szkolenia UDT (brak gromadzenia danych osobowych).</strong> Dostęp do modułów szkoleniowych UDT odbywa się za pomocą hasła szkoleniowego przekazanego przez instruktora. Twoje postępy w nauce oraz wyniki próbnych egzaminów UDT zapisywane są wyłącznie lokalnie na Twoim urządzeniu i nie są przesyłane na serwer.</li>
+          <li><strong>3. Szkolenia okresowe i egzaminy BHP.</strong> W modułach szkoleniowych BHP uczestnik loguje się za pomocą tymczasowego loginu i hasła przekazanego przez organizatora szkolenia. Po zaliczeniu egzaminu końcowego BHP uczestnik podaje swoje <strong>Imię i Nazwisko</strong> wyłącznie w celu weryfikacji wyniku oraz wygenerowania imiennego zaświadczenia i protokołu z egzaminu przez uprawnionego instruktora / komisję egzaminacyjną. Dane konta oraz zapis egzaminu w bazie są <strong>automatycznie usuwane po upływie 30 dni</strong>.</li>
+          <li><strong>4. Infrastruktura techniczna i logi serwera.</strong> Aplikacja korzysta z serwerów Google Firebase (hosting oraz zabezpieczona baza danych do weryfikacji egzaminów BHP) oraz GitHub CDN (serwowanie pytań, materiałów dydaktycznych, grafik i nagrań audio). Podczas łączenia się z serwerem automatycznie rejestrowane są standardowe logi techniczne (np. adres IP, czas zapytania, rodzaj przeglądarki) służące wyłącznie zapewnieniu bezpieczeństwa i stabilności działania usługi.</li>
+          <li><strong>5. Prawa uczestnika i kontakt.</strong> Uczestnikowi szkolenia BHP przysługuje prawo wglądu do swoich danych egzaminacyjnych, ich sprostowania lub żądania wcześniejszego usunięcia poprzez kontakt z instruktorem prowadzącym szkolenie.</li>
         </ul>
+      </div>
+      <div class="pol-modal__ftr">
+        <span class="pol-modal__note">Korzystając z platformy, potwierdzasz zapoznanie się z powyższymi zasadami.</span>
+        <button type="button" class="btn btn--a" id="pol-accept">✓ Akceptuję i przechodzę dalej</button>
       </div>
     </div>
   </div>
 
-  <script type="module" src="/app.js?v=76"></script>
+  <script type="module" src="/app.js?v=77"></script>
 </body>
 
 </html>
