@@ -38,13 +38,13 @@
     },
     {
       "id": 4,
-      "question": "Do kogo należy obowiązek niezwłocznego zgłoszenia zauważonego wypadku lub zagrożenia w zakładzie pracy?",
+      "question": "W jakim czasie powinny być przeprowadzane okresowe i kontrolne badania lekarskie?",
       "image": "",
       "options": [
-        "Do każdego pracownika, który zauważył zdarzenie",
-        "Wyłącznie do poszkodowanego",
-        "Wyłącznie do kierownika działu BHP",
-        "Do lekarza medycyny pracy"
+        "Wyłącznie w dni wolne od pracy",
+        "W miarę możliwości w godzinach pracy, z zachowaniem prawa do wynagrodzenia",
+        "Podczas urlopu wypoczynkowego pracownika",
+        "Po zakończeniu zmiany roboczej bez prawa do wynagrodzenia"
       ],
       "correct": 1
     },
