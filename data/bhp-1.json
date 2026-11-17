@@ -46,7 +46,7 @@
         "Podczas urlopu wypoczynkowego pracownika",
         "Po zakończeniu zmiany roboczej bez prawa do wynagrodzenia"
       ],
-      "correct": 1
+      "correct": 2
     },
     {
       "id": 5,
@@ -62,15 +62,15 @@
     },
     {
       "id": 6,
-      "question": "Jaki kolor posiada znak bezpieczeństwa informujący o ewakuacji i pierwszej pomocy?",
+      "question": "Kiedy pracownik musi przejść kontrolne badania lekarskie przed ponownym dopuszczeniem do pracy?",
       "image": "",
       "options": [
-        "Zielony",
-        "Czerwony",
-        "Żółty",
-        "Niebieski"
+        "Po każdej chorobie trwającej dłużej niż 7 dni",
+        "Po niezdolności do pracy spowodowanej chorobą trwającą dłużej niż 30 dni",
+        "Po każdym urlopie wypoczynkowym",
+        "Po niezdolności do pracy trwającej dłużej niż 14 dni"
       ],
-      "correct": 1
+      "correct": 2
     },
     {
       "id": 7,
