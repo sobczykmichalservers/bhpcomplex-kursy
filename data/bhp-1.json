@@ -17,22 +17,22 @@
       "question": "W jakim terminie od zaistnienia wypadku przy pracy zespół powypadkowy powinien sporządzić protokół powypadkowy?",
       "image": "",
       "options": [
-        "Nie później niż w terminie 14 dni",
+        "Nie później niż w terminie 14 dni od daty zawiadomienia",
         "Nie później niż w terminie 7 dni",
         "Do końca danego miesiąca",
         "Nie ma określonego terminu"
       ],
-      "correct": 1
+      "correct": 2
     },
     {
       "id": 3,
-      "question": "Kiedy pracownik ma prawo powstrzymać się od wykonywania pracy?",
+      "question": "Kto ponosi koszty profilaktycznych badań lekarskich pracowników (wstępnych, okresowych i kontrolnych)?",
       "image": "",
       "options": [
-        "Gdy warunki stwarzają bezpośrednie zagrożenie dla zdrowia lub życia",
-        "Gdy temperatura na stanowisku pracy spadnie o 1 stopień",
-        "Gdy nie otrzymał premii regulaminowej",
-        "W dowolnym momencie po uprzedzeniu współpracowników"
+        "Pracownik",
+        "Pracodawca",
+        "NFZ",
+        "Badania wstępne opłaca zawsze pracownik, pozostałe pracodawca"
       ],
       "correct": 1
     },
