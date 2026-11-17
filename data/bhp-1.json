@@ -74,15 +74,15 @@
     },
     {
       "id": 7,
-      "question": "Jakie jest podstawowe zadanie gaśnicy śniegowej (CO2)?",
+      "question": "Kto przeprowadza instruktaż stanowiskowy dla nowo zatrudnionego pracownika?",
       "image": "",
       "options": [
-        "Gaszenie pożarów płynów, gazów oraz urządzeń elektrycznych pod napięciem",
-        "Gaszenie wyłącznie ciał stałych (np. drewna, papieru)",
-        "Schładzanie przegrzanych silników spalinowych",
-        "Gaszenie pożarów metali lekkich"
+        "Kadrowy",
+        "Wyznaczona przez pracodawcę osoba kierująca pracownikami lub pracodawca, jeżeli posiadają odpowiednie kwalifikacje i doświadczenie zawodowe oraz są przeszkolone w zakresie metod prowadzenia instruktażu stanowiskowego",
+        "Inspektor Państwowej Inspekcji Pracy",
+        "Główny księgowy"
       ],
-      "correct": 1
+      "correct": 2
     },
     {
       "id": 8,
@@ -90,21 +90,21 @@
       "image": "",
       "options": [
         "Odłączyć źródło prądu (wyłączyć bezpiecznik lub odciągnąć poszkodowanego izolatorem)",
-        "Natychmiast rozpocząć resuscytację bez wyłączania zasilania",
+        "Natychmiast rozpocząć resuscytację poszkodowanego bez wyłączania zasilania",
         "Polać poszkodowanego zimną wodą",
-        "Podać poszkodowanemu płyny do picia"
+        "Podać poszkodowanemu zimny płyn do picia"
       ],
       "correct": 1
     },
     {
       "id": 9,
-      "question": "Jaki jest ogólnoeuropejski numer alarmowy?",
+      "question": "Jak często należy przeprowadzać szkolenie okresowe BHP dla pracodawców oraz innych osób kierujących pracownikami?",
       "image": "",
       "options": [
-        "112",
-        "999",
-        "998",
-        "997"
+        "Pracodawca nie musi mieć szkolenia BHP",
+        "Nie rzadziej niż raz na 5 lat",
+        "Raz na 10 lat",
+        "Co 7 lat"
       ],
       "correct": 1
     },
