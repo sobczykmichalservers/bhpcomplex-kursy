@@ -22,7 +22,7 @@
         "Do końca danego miesiąca",
         "Nie ma określonego terminu"
       ],
-      "correct": 2
+      "correct": 1
     },
     {
       "id": 3,
@@ -106,7 +106,7 @@
         "Raz na 10 lat",
         "Co 7 lat"
       ],
-      "correct": 1
+      "correct": 2
     },
     {
       "id": 10,
