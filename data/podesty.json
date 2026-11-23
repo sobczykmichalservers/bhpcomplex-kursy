@@ -915,7 +915,7 @@
     {
       "id": 77,
       "question": "W oparciu o rysunek określ maksymalną ilość osób, które mogą przebywać na platformie:",
-      "image": null,
+      "image": "/img/podesty/PODESTY_76.webp",
       "options": [
         "Zawsze 6 osób",
         "Zawsze 5 osób",
@@ -927,7 +927,7 @@
     {
       "id": 78,
       "question": "W oparciu o rysunek określ poprawne parametry pracy podestu:",
-      "image": null,
+      "image": "/img/podesty/PODESTY_76.webp",
       "options": [
         "Udźwig maksymalny 225 kg",
         "Dopuszczalna ilość osób na podeście z rozłożonymi pomostami - 5",
@@ -2655,7 +2655,7 @@
     {
       "id": 222,
       "question": "W oparciu o przedstawiony wykres pola pracy wskaż poprawne parametry pracy podestu:",
-      "image": null,
+      "image": "/img/podesty/PODESTY_220-228.webp",
       "options": [
         "Maksymalna wysokość robocza 26 m",
         "Dopuszczalna maksymalna ilość osób na platformie - 2",
