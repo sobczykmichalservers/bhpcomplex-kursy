@@ -2403,7 +2403,7 @@
     {
       "id": 201,
       "question": "Poniższy rysunek przedstawia:",
-      "image": "/img/suwnice/SUWNICE_201.webp",
+      "image": "/img/suwnice/SUWNICE_201-204.webp",
       "options": [
         "Cecha zawiesia łańcuchowego czterocięgnowego",
         "Cecha zawiesia linowego o długości cięgien 10 m",
@@ -2415,7 +2415,7 @@
     {
       "id": 202,
       "question": "Maksymalny DOR zawiesia wynosi:",
-      "image": null,
+      "image": "/img/suwnice/SUWNICE_201-204.webp",
       "options": [
         "8,4 t",
         "6,0 t",
@@ -2427,7 +2427,7 @@
     {
       "id": 203,
       "question": "Maksymalny DOR zawiesia przy kącie wierzchołkowym β 60° wynosi:",
-      "image": null,
+      "image": "/img/suwnice/SUWNICE_201-204.webp",
       "options": [
         "10,0 t",
         "8,4 t",
@@ -2439,7 +2439,7 @@
     {
       "id": 204,
       "question": "Maksymalny DOR zawiesia przy kącie wierzchołkowym β 45° wynosi:",
-      "image": null,
+      "image": "/img/suwnice/SUWNICE_201-204.webp",
       "options": [
         "8,4 t",
         "8,0 t",
