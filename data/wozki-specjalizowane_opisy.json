@@ -80,6 +80,15 @@
       "file": "",
       "audio": "",
       "link": ""
+    },
+    {
+      "id": 10,
+      "question": "Sprawdzenie stanu wideł, elementów chwytających, osprzętu roboczego.",
+      "answer": "- Sprawdzenie połączeń spawanych przy widłach, kontrola zamocowania wideł na karetce, zabezpieczenia przed przesunięciem.\n- Max zużycie (wytarcie) wideł to 10% grubości nominalnej ale nie więcej niż 5 mm. Pomiaru dokonujemy około 10 - 15 cm od czoła wideł.\n- Na bocznej części wideł nabita cecha np. 1500x500 – oznacza to, że jedna widła może podnieść 1500 kg przy środku ciężkości 500 mm od czoła wideł. \n- Rozgięcie wideł max 3°\n- Nożycowatość wideł – 3% długości wideł",
+      "image": "",
+      "file": "",
+      "audio": "",
+      "link": ""
     }
   ]
 }
