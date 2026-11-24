@@ -62,6 +62,24 @@
       "file": "",
       "audio": "",
       "link": ""
+    },
+    {
+      "id": 8,
+      "question": "Ocena stanu układu hydraulicznego.",
+      "answer": "- **Rodzaje zaworów w układzie hydraulicznym:**\n    - **rozdzielacz** – zawór służący do kierowania oleju na określone odbiorniki np. mechanizm podnoszenia, przesów / wychylenie wideł, układ skręcania kołami, \n    - **przelewowy** – zabezpiecza przed przeciążeniem urządzenia, jego sprawdzenie polega na doprowadzeniu dowolnego siłownika do skrajnego położenia i przytrzymaniu dalej dźwigni rozdzielacza – słychać charakterystyczne syczenie przelewanego oleju do zbiornika, świadczy to o poprawnym działaniu zaworu\n    - **zawór zwrotny sterowany tzw. zamek hydrauliczny** - Podnieść i wysunąć ramię, wyłączyć wózek i rozdzielaczem sterować ruch w dół i od siebie – ramię nie powinno opaść a widły wychylić się do przodu.\n- **Ocena wzrokowa:** stan oleju hydraulicznego, stan przewodów i złączy hydraulicznych, wycieków zewnętrznych oleju hydraulicznego przy siłownikach, na złączach.\n- **Próba szczelności układu hydraulicznego**: ma na celu sprawdzenie czy są przecieki wewnętrzne – podnosimy ładunek nominalny na wysokość taką aby wszystkie siłowniki były co najmniej 10cm wysunięte. Wyłączamy wózek – ładunek nie może opaść więcej niż  _15cm w pionie przez 10min._",
+      "image": "",
+      "file": "",
+      "audio": "",
+      "link": ""
+    },
+    {
+      "id": 9,
+      "question": "Sprawdzenie poprawności działania układu sterowania.",
+      "answer": "- Sprawdzamy czy:\n    - Oznakowania dźwigni (piktogramy) odpowiadając im rzeczywiste ruchy.\n    - Po zwolnieniu dźwignie same wracają do pozycji  neutralnej i układ podnoszenia zatrzymuje się. \n- Sprawdzenie czy układ podnoszenia działa płynnie, nie ma skokowego działania.\n- Kontrola układu kierowniczego oraz zmiany trybu jazdy (budowlany, drogowy, krab)",
+      "image": "",
+      "file": "",
+      "audio": "",
+      "link": ""
     }
   ]
 }
