@@ -1,1 +1,22 @@
-{"items":[]}
+{
+  "items": [
+    {
+      "id": 1,
+      "question": "Sprawdzenie dokumentacji pod kątem możliwości eksploatacji urządzenia.",
+      "answer": "- Sprawdzić decyzję UDT powinna być aktualna i pozytywna, porównujemy nr fabryczny urządzenia z tymi na decyzji,\n- Sprawdzić ostatnie wpisy w dzienniku konserwacji czy są pozytywne (opinia , podpis, nr uprawnień konserwatora).",
+      "image": "",
+      "file": "",
+      "audio": "",
+      "link": ""
+    },
+    {
+      "id": 1,
+      "question": "Sprawdzenie zgodności oznakowania urządzenie, omówienie znaczenia wskazanych piktogramów i oznakowania.",
+      "answer": "Omówić piktogramy na wózku (np. nakaz jazdy w pasach, ryzyko utraty stateczności, zakaz podnoszenia ludzi na widłach, uwaga na linie energetyczne, ryzyko porażenia prądem, oznakowanie poszczególnych dźwigni rozdzielacza, tabliczka znamionowa, diagram obciążeń, oznaczenie wyjście ewakuacyjnego na tylnej szybie)",
+      "image": "",
+      "file": "",
+      "audio": "",
+      "link": ""
+    }
+  ]
+}
