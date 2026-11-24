@@ -35,6 +35,15 @@
       "file": "",
       "audio": "",
       "link": ""
+    },
+    {
+      "id": 5,
+      "question": "Sprawdzenie poprawności działania hamulca pomocniczego.",
+      "answer": "- Zaciągnąć hamulec ręczny i próbować ruszyć do przodu / tyłu.\n- W przypadku gdy wózek ma hamulec pomocniczy, który rozłącza mechanizm jazdy – wjeżdżamy na pochylenie i zaciągamy hamulec ręczny lub delikatnie rozpędzamy wózek i zaciągamy hamulec ręczny. \n- Pobrać ładunek nominalny wjechać na pochylenie (8% dla wózków elektrycznych, 15% dla spalinowych) zaciągnąć hamulec i wózek powinien utrzymać się 5 - 10 min",
+      "image": "",
+      "file": "",
+      "audio": "",
+      "link": ""
     }
   ]
 }
