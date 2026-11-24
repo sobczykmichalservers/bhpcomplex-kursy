@@ -53,6 +53,15 @@
       "file": "",
       "audio": "",
       "link": ""
+    },
+    {
+      "id": 7,
+      "question": "Ocena stanu kabiny.",
+      "answer": "Sprawdzenie zamocowania kabiny do podwozia, kontrola połączeń spawanych, sprawdzenie czy nie ma pęknięć deformacji na konstrukcji kabiny, uszkodzenia mechaniczne kraty zabezpieczającej na dachu, kontrola zamka w drzwiach, ocena szyb.",
+      "image": "",
+      "file": "",
+      "audio": "",
+      "link": ""
     }
   ]
 }
