@@ -179,30 +179,6 @@
         "Związki zawodowe"
       ],
       "correct": 1
-    },
-    {
-      "id": 16,
-      "question": "TESTOWE PYTANIE",
-      "image": "/img/images.webp",
-      "options": [
-        "prawidlowa odpowiedz",
-        "zła",
-        "zła",
-        "zła"
-      ],
-      "correct": 1
-    },
-    {
-      "id": 17,
-      "question": "aaaaa",
-      "image": "",
-      "options": [
-        "aaa",
-        "5",
-        "4",
-        "6"
-      ],
-      "correct": 1
     }
   ]
 }
