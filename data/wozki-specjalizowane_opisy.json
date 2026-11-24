@@ -10,9 +10,18 @@
       "link": ""
     },
     {
-      "id": 1,
+      "id": 2,
       "question": "Sprawdzenie zgodności oznakowania urządzenie, omówienie znaczenia wskazanych piktogramów i oznakowania.",
       "answer": "Omówić piktogramy na wózku (np. nakaz jazdy w pasach, ryzyko utraty stateczności, zakaz podnoszenia ludzi na widłach, uwaga na linie energetyczne, ryzyko porażenia prądem, oznakowanie poszczególnych dźwigni rozdzielacza, tabliczka znamionowa, diagram obciążeń, oznaczenie wyjście ewakuacyjnego na tylnej szybie)",
+      "image": "",
+      "file": "",
+      "audio": "",
+      "link": ""
+    },
+    {
+      "id": 3,
+      "question": "Sprawdzenie systemu sygnalizacji/oświetlenia.",
+      "answer": "Załączyć oświetlenie pozycyjne, mijania, drogowe, kierunkowskazy, światło stop, Pamiętaj! Światło wsteczne zapala się po wrzucaniu biegu wstecznego i zwolnieniu hamulca ręcznego. Sprawdzamy klakson. Po uruchomieniu urządzenia kontrolki na desce rozdzielczej. Kontrola wskaźnika ogranicznika udźwigu (prawy słupek u góry - naciśnij test i sprawdź czy wszystkie diody zapalą się)",
       "image": "",
       "file": "",
       "audio": "",
