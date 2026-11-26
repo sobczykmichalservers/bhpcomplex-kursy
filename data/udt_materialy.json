@@ -25,9 +25,17 @@
       "link": ""
     },
     {
-      "id": 5,
+      "id": 4,
       "question": "Badanie techniczne UDT i przeglądy konserwacyjne.",
-      "answer": "**Terminy badań okresowych i doraźnych kontrolnych** UTB określone są w rozporządzeniu określającym warunki techniczne dozoru technicznego i przeprowadzane są przez inspektorów UDT.\n**Terminy przeglądów konserwacyjnych urządzenia** mogą być określone w rozporządzeniu określającym warunki techniczne dozoru technicznego lub w instrukcji eksploatacji urządzenia. Przeglądy konserwacyjne wykonuje uprawniony konserwator pod warunkiem, że posiada zaświadczenie kwalifikacyjne do konserwacji lub jest to  pracownik autoryzowanego serwisu producenta urządzenia (pod warunkiem posiadania zaświadczeń kwalifikacyjnych do konserwacji). Nieobecność konserwującego na badaniu urządzenia technicznego jest dozwolona, ale wymaga min. wcześniejszego uzgodnienia tego faktu z organem właściwej jednostki dozoru technicznego",
+      "answer": "- **Terminy badań okresowych i doraźnych kontrolnych** urządzeń transportu bliskiego określone są w rozporządzeniu określającym warunki techniczne dozoru technicznego i przeprowadzane są przez inspektorów UDT.\n\n**Rodzaje badań technicznych przeprowadzanych przez inspektorów UDT:**\n\n- odbiorcze - pierwsze badanie urządzenia (przed wydaniem pierwszej decyzji zezwalającej na eksploatację),\n- okresowe - wykonywane w toku eksploatacji urządzenia, w terminach określonych w rozporządzeniu,\n- doraźne - wykonywane na wniosek eksploatującego np. po wymianie cięgien nośnych (łańcuchy w wózku widłowym, liny w suwnicy); po modernizacji urządzenia, którą może wykonać jedynie zakład uprawniony. \n\n**Terminy przeglądów konserwacyjnych urządzenia** mogą być określone w rozporządzeniu określającym warunki techniczne dozoru technicznego lub w instrukcji eksploatacji urządzenia. Przeglądy konserwacyjne wykonuje uprawniony konserwator pod warunkiem, że posiada zaświadczenie kwalifikacyjne do konserwacji lub jest to  pracownik autoryzowanego serwisu producenta urządzenia (pod warunkiem posiadania zaświadczeń kwalifikacyjnych do konserwacji). Nieobecność konserwującego na badaniu urządzenia technicznego jest dozwolona, ale wymaga min. wcześniejszego uzgodnienia tego faktu z organem właściwej jednostki dozoru technicznego",
+      "image": "",
+      "file": "",
+      "link": ""
+    },
+    {
+      "id": 5,
+      "question": "Przepisy karne.",
+      "answer": "**Niebezpieczne uszkodzenie urządzenia technicznego** – nieprzewidziane uszkodzenie urządzenia, w wyniku którego jego dalsza eksploatacja w tym stanie stanowi zagrożenie dla życia, zdrowia ludzkiego, mienia lub środowiska.\n\n**Nieszczęśliwy wypadek urządzenia technicznego** – zdarzenie nagłe, które spowodowało śmierć lub obrażenia osób, związane z montażem, naprawą, badaniem lub eksploatacją urządzenia. W przypadku niebezpiecznego uszkodzenia urządzenia lub nieszczęśliwego wypadku eksploatujący niezwłocznie powiadamia UDT o zdarzeniu.\n\n**Karze grzywny lub pozbawienia wolności podlega ten, kto:**\n\na) dopuszcza do eksploatacji urządzenie techniczne:\n\n\\- bez otrzymania UDT o dopuszczeniu urządzenia do eksploatacji lub obrotu,\n\n\\- wbrew decyzji UDT o wstrzymaniu eksploatacji lub wycofaniu z obrotu urządzenia technicznego,\n\nb) przerabia urządzenie techniczne bez zgody UDT.\n\n**Karze grzywny podlega ten, kto:**\n\n\\- uniemożliwia lub utrudnia wykonywanie czynności Inspektorów UDT,\n\n\\- nie wykonuje obowiązku zawiadomienia UDT o niebezpiecznym uszkodzeniu urządzenia technicznego lub nieszczęśliwym wypadku związanym z eksploatacją urządzenia technicznego.",
       "image": "",
       "file": "",
       "link": ""
